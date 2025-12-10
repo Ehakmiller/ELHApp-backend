@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# -----------------------------
-# EDIT THESE TWO PATHS
-# -----------------------------
-
 # Where your Python script saves the daily maps
 SOURCE_DIR="/c/Users/ehakm/OneDrive/Documents/Sankey/Corn Map"
 
@@ -16,10 +12,6 @@ TARGET_DIR="$REPO_DIR/static_data"
 TARGET_WITH_SPACE="$TARGET_DIR/Current Basis.html"
 TARGET_NO_SPACE="$TARGET_DIR/Current_Basis.html"   # recommended
 
-# -----------------------------
-# DO NOT EDIT BELOW (unless you want to)
-# -----------------------------
-
 echo "==> Finding newest ethanol_map_*.html in: $SOURCE_DIR"
 LATEST_FILE="$(ls -t "$SOURCE_DIR"/ethanol_map_*.html 2>/dev/null | head -n 1 || true)"
 
@@ -30,7 +22,7 @@ fi
 
 echo "==> Latest file: $LATEST_FILE"
 
-# Basic sanity check: ensure it's real HTML (Folium output)
+# Sanity check: ensure it's real HTML (Folium output)
 if ! head -n 5 "$LATEST_FILE" | grep -qiE '<!DOCTYPE html>|<html'; then
   echo "ERROR: Latest file does not look like full HTML (missing <!DOCTYPE html> or <html>)."
   echo "Refusing to publish. Check the source file content."
@@ -47,7 +39,6 @@ cd "$REPO_DIR"
 
 git add "static_data/Current Basis.html" "static_data/Current_Basis.html"
 
-# If nothing changed, exit cleanly
 if git diff --cached --quiet; then
   echo "No changes detected. Nothing to commit."
   exit 0
