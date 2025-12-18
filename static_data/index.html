@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Loading Latest Basis Map...</title>
-    <script>
-        // Date.now() creates a unique number (milliseconds) 
-        // which forces the browser to bypass any saved cache.
-        window.location.replace("Current_Basis.html?cache_bust=" + Date.now());
-    </script>
-</head>
-<body style="background:#f4f4f4; font-family:sans-serif; text-align:center; padding-top:50px;">
-    <p>Loading latest market data...</p>
-</body>
-</html>
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+        <script>
+            window.location.replace("Current_Basis.html?v=" + Date.now());
+        </script>
+    </body>
+    </html>
+    
