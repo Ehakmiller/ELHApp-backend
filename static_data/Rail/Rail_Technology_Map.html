@@ -1,0 +1,3120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_60a9e7eb1fafe56fc410f2992d2386aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <!-- BUILD_STAMP: 20260109161105 -->
+    
+            <div class="folium-map" id="map_60a9e7eb1fafe56fc410f2992d2386aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_60a9e7eb1fafe56fc410f2992d2386aa = L.map(
+                "map_60a9e7eb1fafe56fc410f2992d2386aa",
+                {
+                    center: [41.2565, -99.9345],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d2aa2f40c8928d7e90f9ef774d0bb506 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var feature_group_a3f30527e0f3db19f4cdc4acc47fa692 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+        (function() {
+          var target = feature_group_a3f30527e0f3db19f4cdc4acc47fa692;
+          fetch("BNSF.geojson?v=20260109161105")
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+              L.geoJSON(data, {
+                style: function(feature){ return {"color": "blue", "weight": 1}; }
+              }).addTo(target);
+            })
+            .catch(function(err){
+              console.error("Failed loading GeoJSON:", "BNSF.geojson?v=20260109161105", err);
+            });
+        })();
+        
+    
+            var feature_group_6368a801e912153780d038aa9a6d6cbd = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+        (function() {
+          var target = feature_group_6368a801e912153780d038aa9a6d6cbd;
+          fetch("UP.geojson?v=20260109161105")
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+              L.geoJSON(data, {
+                style: function(feature){ return {"color": "red", "weight": 1}; }
+              }).addTo(target);
+            })
+            .catch(function(err){
+              console.error("Failed loading GeoJSON:", "UP.geojson?v=20260109161105", err);
+            });
+        })();
+        
+    
+            var feature_group_62d9727b8a618d151f99eef4243d60c4 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+        (function() {
+          var target = feature_group_62d9727b8a618d151f99eef4243d60c4;
+          fetch("CN.geojson?v=20260109161105")
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+              L.geoJSON(data, {
+                style: function(feature){ return {"color": "green", "weight": 1}; }
+              }).addTo(target);
+            })
+            .catch(function(err){
+              console.error("Failed loading GeoJSON:", "CN.geojson?v=20260109161105", err);
+            });
+        })();
+        
+    
+            var feature_group_b3bee0255d2d963a4b6e6b74e31d6fbb = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+        (function() {
+          var target = feature_group_b3bee0255d2d963a4b6e6b74e31d6fbb;
+          fetch("CSX.geojson?v=20260109161105")
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+              L.geoJSON(data, {
+                style: function(feature){ return {"color": "purple", "weight": 1}; }
+              }).addTo(target);
+            })
+            .catch(function(err){
+              console.error("Failed loading GeoJSON:", "CSX.geojson?v=20260109161105", err);
+            });
+        })();
+        
+    
+            var feature_group_0f8b04fd83c2df64b2d5dff4ae64ede7 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+        (function() {
+          var target = feature_group_0f8b04fd83c2df64b2d5dff4ae64ede7;
+          fetch("NS.geojson?v=20260109161105")
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+              L.geoJSON(data, {
+                style: function(feature){ return {"color": "orange", "weight": 1}; }
+              }).addTo(target);
+            })
+            .catch(function(err){
+              console.error("Failed loading GeoJSON:", "NS.geojson?v=20260109161105", err);
+            });
+        })();
+        
+    
+            var feature_group_e58695accbb85032b2619a24e57b0ce8 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_7ec57f630f743239506fe8ae98a1f21d = L.circleMarker(
+                [43.49951, -92.91709],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_7ec57f630f743239506fe8ae98a1f21d.bindTooltip(
+                `<div>
+                     Absolute Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60ccb40263e585e5872f19bb98dbe800 = L.circleMarker(
+                [42.3586, -89.80342],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_60ccb40263e585e5872f19bb98dbe800.bindTooltip(
+                `<div>
+                     Pearl City Elevator
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65ec91386eccb6d3653f582236ba96ef = L.circleMarker(
+                [44.049412, -93.017379],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_65ec91386eccb6d3653f582236ba96ef.bindTooltip(
+                `<div>
+                     Al–Corn Clean Fuel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b88caaf87aefaaa7b3545caff0a967b = L.circleMarker(
+                [40.555063, -89.663302],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_6b88caaf87aefaaa7b3545caff0a967b.bindTooltip(
+                `<div>
+                     Alto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bf313c0624352d95512330f6af6aaac6 = L.circleMarker(
+                [37.107107, -101.03083],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_bf313c0624352d95512330f6af6aaac6.bindTooltip(
+                `<div>
+                     Conestoga Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c21b9b991ec8b8fbe43693fb34f26e9 = L.circleMarker(
+                [42.5949, -89.66691],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_1c21b9b991ec8b8fbe43693fb34f26e9.bindTooltip(
+                `<div>
+                     Badger State Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c337c38e9d1004db2dfd726c9517ab45 = L.circleMarker(
+                [45.050596, -91.980063],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_c337c38e9d1004db2dfd726c9517ab45.bindTooltip(
+                `<div>
+                     Big River Resources
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49edc86388b1e96c3d43f8cb1cb5a3b1 = L.circleMarker(
+                [41.169691, -90.024473],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_49edc86388b1e96c3d43f8cb1cb5a3b1.bindTooltip(
+                `<div>
+                     Big River Resources
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55be4d00b1c70c13987cc47a052c2211 = L.circleMarker(
+                [40.831196, -91.220611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_55be4d00b1c70c13987cc47a052c2211.bindTooltip(
+                `<div>
+                     Big River Resources
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9c814ef2ee71ea6372572fc4166a1761 = L.circleMarker(
+                [42.4872, -91.1633],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_9c814ef2ee71ea6372572fc4166a1761.bindTooltip(
+                `<div>
+                     Big River Resources
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4a10b42169e32c0658c92aada352c282 = L.circleMarker(
+                [47.377226, -101.152303],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_4a10b42169e32c0658c92aada352c282.bindTooltip(
+                `<div>
+                     Harvestone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5bf6b9832b01881e52e61252afd464d8 = L.circleMarker(
+                [37.959051, -100.839134],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_5bf6b9832b01881e52e61252afd464d8.bindTooltip(
+                `<div>
+                     Conestoga Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_690228e1d9ac742d3381e2b0b6e01fa9 = L.circleMarker(
+                [41.6432, -103.078632],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_690228e1d9ac742d3381e2b0b6e01fa9.bindTooltip(
+                `<div>
+                     Bridgeport Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b31c8fb26f8473fc81da57c1280c93e5 = L.circleMarker(
+                [45.07333, -94.755556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_b31c8fb26f8473fc81da57c1280c93e5.bindTooltip(
+                `<div>
+                     Bushmills Ethanol Inc.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7cb6ae8ab6fbdb69eb33ab92b23a4a5 = L.circleMarker(
+                [42.76601, -85.07428],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_e7cb6ae8ab6fbdb69eb33ab92b23a4a5.bindTooltip(
+                `<div>
+                     Carbon Green Bioenergy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a47421f863ae1e476f95065a59d50b0 = L.circleMarker(
+                [40.18682, -84.86226],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_5a47421f863ae1e476f95065a59d50b0.bindTooltip(
+                `<div>
+                     Cardinal Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_03bbdb5a4dfd778a80ee122415793bf5 = L.circleMarker(
+                [41.393398, -89.872214],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_03bbdb5a4dfd778a80ee122415793bf5.bindTooltip(
+                `<div>
+                     CHS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aa7241a7331f84dc4ba484c7ee8deddf = L.circleMarker(
+                [41.89508, -89.02898],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_aa7241a7331f84dc4ba484c7ee8deddf.bindTooltip(
+                `<div>
+                     CHS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ca6033f578301aba680309609c0cd28 = L.circleMarker(
+                [40.56492, -85.72772],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_7ca6033f578301aba680309609c0cd28.bindTooltip(
+                `<div>
+                     Central Indiana Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5057448d3c5902153f705e02914d0aa5 = L.circleMarker(
+                [42.06672, -97.3815],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_5057448d3c5902153f705e02914d0aa5.bindTooltip(
+                `<div>
+                     Central Indiana Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f498b133ee8b82d9109ab5cb501e2716 = L.circleMarker(
+                [36.81342, -87.41009],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_f498b133ee8b82d9109ab5cb501e2716.bindTooltip(
+                `<div>
+                     Hopkinsville Elevator CO-OP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4fd540ccfc582b7f2c7b0ca6574b93e7 = L.circleMarker(
+                [42.733339, -93.910902],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_4fd540ccfc582b7f2c7b0ca6574b93e7.bindTooltip(
+                `<div>
+                     Gold-Eagle Cooperative
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_17f0ef3607b9b5e237fa55c3261d894e = L.circleMarker(
+                [43.976389, -96.95333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_17f0ef3607b9b5e237fa55c3261d894e.bindTooltip(
+                `<div>
+                     Dakota Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_adc468e10ad12a62edd464fe4f00073b = L.circleMarker(
+                [46.924798, -98.503225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_adc468e10ad12a62edd464fe4f00073b.bindTooltip(
+                `<div>
+                     Harvestone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d405bac4fa987a24f798135479297ed = L.circleMarker(
+                [45.57516, -95.912386],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_4d405bac4fa987a24f798135479297ed.bindTooltip(
+                `<div>
+                     DENCO II
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92a2136e83c35adca605e049af4acee8 = L.circleMarker(
+                [33.588611, -102.262778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_92a2136e83c35adca605e049af4acee8.bindTooltip(
+                `<div>
+                     Conestoga Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c8386466dd58a00b9a3ce56c72326b6 = L.circleMarker(
+                [40.4842, -96.5459],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_4c8386466dd58a00b9a3ce56c72326b6.bindTooltip(
+                `<div>
+                     E Energy Adams, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aadd6936955812b918b63f70c8fcf8f4 = L.circleMarker(
+                [38.271522, -95.237414],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_aadd6936955812b918b63f70c8fcf8f4.bindTooltip(
+                `<div>
+                     East Kansas Agri-Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_180f2657a9051fca9c1a24a84be9d2bc = L.circleMarker(
+                [41.41772, -95.03182],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_180f2657a9051fca9c1a24a84be9d2bc.bindTooltip(
+                `<div>
+                     Elite Octane
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e9879e5375c05fc2c0ca19d3c6c6423e = L.circleMarker(
+                [40.45746, -104.856211],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_e9879e5375c05fc2c0ca19d3c6c6423e.bindTooltip(
+                `<div>
+                     Front Range Energy LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84b6e59e00f846c0a79186ef03874c8a = L.circleMarker(
+                [45.459444, -98.542789],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_84b6e59e00f846c0a79186ef03874c8a.bindTooltip(
+                `<div>
+                     Glacial Lakes Cooperative
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4695bd864bda8e24690c380bc334ad9a = L.circleMarker(
+                [44.374508, -98.253288],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_4695bd864bda8e24690c380bc334ad9a.bindTooltip(
+                `<div>
+                     Glacial Lakes Cooperative
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55cfaeb7a3891b26961924d393f13cd7 = L.circleMarker(
+                [45.442417, -98.787139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_55cfaeb7a3891b26961924d393f13cd7.bindTooltip(
+                `<div>
+                     Glacial Lakes Cooperative
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be3b38a5a99c35add8b144d9f220295d = L.circleMarker(
+                [44.87624, -97.11367],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_be3b38a5a99c35add8b144d9f220295d.bindTooltip(
+                `<div>
+                     Glacial Lakes Cooperative
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e19b2a2e2c6a837a3921657b499eea03 = L.circleMarker(
+                [43.11204, -93.23104],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_e19b2a2e2c6a837a3921657b499eea03.bindTooltip(
+                `<div>
+                     Golden Grain Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_20e038eba1399e63ebf629ece1c53c2d = L.circleMarker(
+                [44.7999, -95.4869],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_20e038eba1399e63ebf629ece1c53c2d.bindTooltip(
+                `<div>
+                     Granite Falls Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c16c1d75365d24eb857c8df1fff062f8 = L.circleMarker(
+                [41.1111, -97.9727],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_c16c1d75365d24eb857c8df1fff062f8.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5ba03e688cf90af90f34def7a31b2bbe = L.circleMarker(
+                [36.28305, -89.147607],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_5ba03e688cf90af90f34def7a31b2bbe.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1ac99e875fbdd52bd708b989dfbcf7d = L.circleMarker(
+                [40.7549, -95.3953],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_c1ac99e875fbdd52bd708b989dfbcf7d.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2f6d35ef5b75dbed5294760fe539a4e4 = L.circleMarker(
+                [41.5701, -98.821],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_2f6d35ef5b75dbed5294760fe539a4e4.bindTooltip(
+                `<div>
+                     GreenAmerica
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_41272dfcdd678e7c1b5d274122a94c68 = L.circleMarker(
+                [44.111944, -93.678611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_41272dfcdd678e7c1b5d274122a94c68.bindTooltip(
+                `<div>
+                     Guardian Energy, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_69a383cd602c1fa3af8c943c1ce28ca1 = L.circleMarker(
+                [46.073186, -96.886775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_69a383cd602c1fa3af8c943c1ce28ca1.bindTooltip(
+                `<div>
+                     Guardian Energy, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d5ded0e6a74ccd6fa8317e6ffd30b61e = L.circleMarker(
+                [40.70588, -84.08007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_d5ded0e6a74ccd6fa8317e6ffd30b61e.bindTooltip(
+                `<div>
+                     Guardian Energy, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4ec7763193bd14c75ab7a2bdaaabd4cb = L.circleMarker(
+                [44.541944, -94.341667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_4ec7763193bd14c75ab7a2bdaaabd4cb.bindTooltip(
+                `<div>
+                     Heartland Corn Products
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_44264cc6f92651b3e0a199d177921c51 = L.circleMarker(
+                [43.862199, -95.300983],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_44264cc6f92651b3e0a199d177921c51.bindTooltip(
+                `<div>
+                     Granite Falls Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5210038c72bc9289ec78c60267defde3 = L.circleMarker(
+                [44.23202, -95.30027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_5210038c72bc9289ec78c60267defde3.bindTooltip(
+                `<div>
+                     High Water Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_619fb30cc7edb1c80bce4ff14a1420e1 = L.circleMarker(
+                [43.070207, -92.205],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_619fb30cc7edb1c80bce4ff14a1420e1.bindTooltip(
+                `<div>
+                     Homeland Energy Solutions
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae8390ec30ef3594e391689365be80f3 = L.circleMarker(
+                [42.35066, -97.708],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_ae8390ec30ef3594e391689365be80f3.bindTooltip(
+                `<div>
+                     Husker Ag
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2fce78d1d83e803b35b80ec29bab145a = L.circleMarker(
+                [39.74025, -94.8468],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_2fce78d1d83e803b35b80ec29bab145a.bindTooltip(
+                `<div>
+                     ICM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cfc22d6cf8f9410d4bdc69f0a09405a9 = L.circleMarker(
+                [40.933056, -87.067222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_cfc22d6cf8f9410d4bdc69f0a09405a9.bindTooltip(
+                `<div>
+                     Harvestone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b3ee061f02b692235f657c699a1253eb = L.circleMarker(
+                [40.48343, -99.0733],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_b3ee061f02b692235f657c699a1253eb.bindTooltip(
+                `<div>
+                     KAAPA Ethanol & Grain, LLC.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47c06ca2c39b78054e851f0075569827 = L.circleMarker(
+                [38.28959, -98.19522],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_47c06ca2c39b78054e851f0075569827.bindTooltip(
+                `<div>
+                     Kansas Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87f566f09f0ca2df9530ac4587a034aa = L.circleMarker(
+                [39.004293, -87.631325],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_87f566f09f0ca2df9530ac4587a034aa.bindTooltip(
+                `<div>
+                     Lincolnland Agri Energy, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4957ff9e6b7abaa6ef77e7bf48527d2c = L.circleMarker(
+                [42.024869, -93.510114],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_4957ff9e6b7abaa6ef77e7bf48527d2c.bindTooltip(
+                `<div>
+                     Lincolnway Energy LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92c5c120f04e7b82e147765ada858a88 = L.circleMarker(
+                [42.82085, -95.7609],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_92c5c120f04e7b82e147765ada858a88.bindTooltip(
+                `<div>
+                     Little Sioux Corn Processors
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_70988647d6131647cb32a8ce7e241564 = L.circleMarker(
+                [42.05199, -94.24234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_70988647d6131647cb32a8ce7e241564.bindTooltip(
+                `<div>
+                     Louis Dreyfus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_41d7a6d7ecd5fedcadbd9c1781cc2c88 = L.circleMarker(
+                [43.99187, -90.07219],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_41d7a6d7ecd5fedcadbd9c1781cc2c88.bindTooltip(
+                `<div>
+                     United Cooperative
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_396f1bc5f89f2c8d59cfe7c010d09245 = L.circleMarker(
+                [41.276711, -89.319504],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_396f1bc5f89f2c8d59cfe7c010d09245.bindTooltip(
+                `<div>
+                     Marquis Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_051567f5409e9bb313eee9392811e1c1 = L.circleMarker(
+                [42.88335, -82.491547],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_051567f5409e9bb313eee9392811e1c1.bindTooltip(
+                `<div>
+                     DCP Midstream
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38069e4f979eebbb745c61537e0e3c85 = L.circleMarker(
+                [39.19446, -93.38376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_38069e4f979eebbb745c61537e0e3c85.bindTooltip(
+                `<div>
+                     Mid-Missouri Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60712151969ddee4d0342f58520518ea = L.circleMarker(
+                [43.433852, -97.260926],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_60712151969ddee4d0342f58520518ea.bindTooltip(
+                `<div>
+                     Rex American
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9fe9a4418701104f4fee1f352cfda008 = L.circleMarker(
+                [40.471085, -88.39574],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_9fe9a4418701104f4fee1f352cfda008.bindTooltip(
+                `<div>
+                     Rex American
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5295c0827b1f7cfdf9f07f05bc44c02a = L.circleMarker(
+                [41.03082, -78.4298],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_5295c0827b1f7cfdf9f07f05bc44c02a.bindTooltip(
+                `<div>
+                     Pennsylvania Grain Processing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_adc05027a1b22f7a806ee27e315f5a3b = L.circleMarker(
+                [42.331111, -95.346667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_adc05027a1b22f7a806ee27e315f5a3b.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d034fdbe0e8dee6a910320de792eec14 = L.circleMarker(
+                [42.639333, -92.031139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_d034fdbe0e8dee6a910320de792eec14.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ecc45f4c5fd35e73e94f7051ef073586 = L.circleMarker(
+                [40.61125, -97.60154],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_ecc45f4c5fd35e73e94f7051ef073586.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9c2f7be57ca6827f966e7e24b57929a8 = L.circleMarker(
+                [42.507192, -93.28041],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_9c2f7be57ca6827f966e7e24b57929a8.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74e873a4c362de3d4d67269f1b985d2b = L.circleMarker(
+                [41.5236, -94.3819],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_74e873a4c362de3d4d67269f1b985d2b.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_07e9e31fe918c9119710d6463fcdd8ac = L.circleMarker(
+                [43.6861, -92.0917],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_07e9e31fe918c9119710d6463fcdd8ac.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_813a3350242f644147a44c5899caea7e = L.circleMarker(
+                [45.872608, -96.725109],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_813a3350242f644147a44c5899caea7e.bindTooltip(
+                `<div>
+                     Red River Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0562cc4adcdb5778a05a4b0c57a9a97 = L.circleMarker(
+                [46.878642, -102.296038],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_e0562cc4adcdb5778a05a4b0c57a9a97.bindTooltip(
+                `<div>
+                     Red Trail Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84d7ec0424498713b8eaf3968bdaa023 = L.circleMarker(
+                [44.91167, -98.50145],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_84d7ec0424498713b8eaf3968bdaa023.bindTooltip(
+                `<div>
+                     Redfield Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7cc8c08995655c90fd84d701b1937b40 = L.circleMarker(
+                [44.69334, -100.062568],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_7cc8c08995655c90fd84d701b1937b40.bindTooltip(
+                `<div>
+                     Ringneck Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_548f8a6ff3d619adc7161557c5a5a894 = L.circleMarker(
+                [39.364417, -93.449361],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_548f8a6ff3d619adc7161557c5a5a894.bindTooltip(
+                `<div>
+                     Show Me Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fa30f0b08b19bd36e34ef5dd24b561de = L.circleMarker(
+                [42.45196, -96.591844],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_fa30f0b08b19bd36e34ef5dd24b561de.bindTooltip(
+                `<div>
+                     Siouxland Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a28064d87e3ba383311853738f6397d = L.circleMarker(
+                [41.6552, -86.2962],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_1a28064d87e3ba383311853738f6397d.bindTooltip(
+                `<div>
+                     Verbio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9ef1a0ce49d203c1d01e96e73ab8df3f = L.circleMarker(
+                [41.16747, -95.82403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_9ef1a0ce49d203c1d01e96e73ab8df3f.bindTooltip(
+                `<div>
+                     SIRE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b35c6c97a743f244eaa135dd8c74926c = L.circleMarker(
+                [40.6255, -103.2067],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_b35c6c97a743f244eaa135dd8c74926c.bindTooltip(
+                `<div>
+                     Sterling Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60933ceb1075d4521a82be5e3781b637 = L.circleMarker(
+                [42.259646, -84.789726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_60933ceb1075d4521a82be5e3781b637.bindTooltip(
+                `<div>
+                     The Andersons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0273ae0a6f2dcdd62c10dfc7198d277 = L.circleMarker(
+                [40.719022, -86.435982],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_a0273ae0a6f2dcdd62c10dfc7198d277.bindTooltip(
+                `<div>
+                     The Andersons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2be633bb82e46b2ddd4d9a72920a304c = L.circleMarker(
+                [41.994167, -95.39],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_2be633bb82e46b2ddd4d9a72920a304c.bindTooltip(
+                `<div>
+                     The Andersons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d833340de61506af012f68cf3b165fbd = L.circleMarker(
+                [40.081111, -84.591667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_d833340de61506af012f68cf3b165fbd.bindTooltip(
+                `<div>
+                     The Andersons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81af44ed8a4a39c77ac7979acd658b56 = L.circleMarker(
+                [40.19618, -100.98],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_81af44ed8a4a39c77ac7979acd658b56.bindTooltip(
+                `<div>
+                     Trenton Agri Products
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f92f85578d796dbe8531f9db77145eee = L.circleMarker(
+                [43.5706, -89.0613],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_f92f85578d796dbe8531f9db77145eee.bindTooltip(
+                `<div>
+                     United WI Grain Producers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_597d9081fc81f88f9a96365eb3903daa = L.circleMarker(
+                [42.775352, -94.942432],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_597d9081fc81f88f9a96365eb3903daa.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d13fd534c73d90a45759e3de799e9c0 = L.circleMarker(
+                [41.6775, -97.982222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_1d13fd534c73d90a45759e3de799e9c0.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae008fd090a1be5dc9b90d1841e3c0fe = L.circleMarker(
+                [44.297222, -96.717222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_ae008fd090a1be5dc9b90d1841e3c0fe.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f43f6d8f24095d1b3418dd3583f4011b = L.circleMarker(
+                [39.597501, -83.390444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_f43f6d8f24095d1b3418dd3583f4011b.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b0230d5ad5fb4c4caf477efa0f6d8a2a = L.circleMarker(
+                [40.722139, -85.193722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_b0230d5ad5fb4c4caf477efa0f6d8a2a.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_df221ff8a255e0a0ffac2e75df830f2c = L.circleMarker(
+                [43.0973, -92.7423],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_df221ff8a255e0a0ffac2e75df830f2c.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fede2a703fc9ffe4e6529078d9936d1 = L.circleMarker(
+                [42.510763, -94.300479],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_6fede2a703fc9ffe4e6529078d9936d1.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bf01b8fcb2b72717a2a3dfb8e279e125 = L.circleMarker(
+                [43.18294, -95.50569],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_bf01b8fcb2b72717a2a3dfb8e279e125.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_818c850f43bc35ad3046ad5ab3638e99 = L.circleMarker(
+                [43.38391, -94.14706],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_818c850f43bc35ad3046ad5ab3638e99.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6a5ea9094362fb29758ece6c9bb2259e = L.circleMarker(
+                [40.20064, -86.91],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_6a5ea9094362fb29758ece6c9bb2259e.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a802f738267ac5dd0060899ca3ea50d3 = L.circleMarker(
+                [43.663889, -94.582222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_a802f738267ac5dd0060899ca3ea50d3.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f9ef8b9d93c2754a268576df78b28d70 = L.circleMarker(
+                [42.7363, -92.6174],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_f9ef8b9d93c2754a268576df78b28d70.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_96d4bbc40396b395a9d5b6142e2b4bd2 = L.circleMarker(
+                [43.210491, -78.365416],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_96d4bbc40396b395a9d5b6142e2b4bd2.bindTooltip(
+                `<div>
+                     Western New York Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bdee48e54135cfbaaaaa21732418bcf5 = L.circleMarker(
+                [39.12461, -100.738037],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_bdee48e54135cfbaaaaa21732418bcf5.bindTooltip(
+                `<div>
+                     Western Plains Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_579e4ffcd06043b9719453f68801005d = L.circleMarker(
+                [34.180594, -101.627387],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_579e4ffcd06043b9719453f68801005d.bindTooltip(
+                `<div>
+                     White Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6adbe8504303bda02ca3af8f4368ac00 = L.circleMarker(
+                [40.1222, -102.7252],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_6adbe8504303bda02ca3af8f4368ac00.bindTooltip(
+                `<div>
+                     Yuma Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8887ac5e6f3b72b2fc07a55316e32a5e = L.circleMarker(
+                [37.78682, -97.53099],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_8887ac5e6f3b72b2fc07a55316e32a5e.bindTooltip(
+                `<div>
+                     Cardinal Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_36d13043469e88c3a46518d3804f138e = L.circleMarker(
+                [39.760046, -99.304262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_36d13043469e88c3a46518d3804f138e.bindTooltip(
+                `<div>
+                     Prairie Horizon Agri–Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24aeadc83ba6c1cc907bd4dc449c3313 = L.circleMarker(
+                [31.169408, -84.162558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e58695accbb85032b2619a24e57b0ce8);
+        
+    
+            circle_marker_24aeadc83ba6c1cc907bd4dc449c3313.bindTooltip(
+                `<div>
+                     Flint Hills Resources Camilla, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_37058c3de4fabccc835c5d460fb060fb = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_464acb3f189fae24834937d515a86df3 = L.circleMarker(
+                [44.9589, -90.9608],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_464acb3f189fae24834937d515a86df3.bindTooltip(
+                `<div>
+                     ACE Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_52cbddb19ce06c1cb2f50803b67fb929 = L.circleMarker(
+                [37.553007, -120.916475],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_52cbddb19ce06c1cb2f50803b67fb929.bindTooltip(
+                `<div>
+                     Aemetis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5bf9b34ea4228dc8e85f04b7e0bdad39 = L.circleMarker(
+                [45.855921, -119.656083],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_5bf9b34ea4228dc8e85f04b7e0bdad39.bindTooltip(
+                `<div>
+                     Alto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_103e2c35da4e666a5b944501f526d5bb = L.circleMarker(
+                [42.521324, -113.815693],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_103e2c35da4e666a5b944501f526d5bb.bindTooltip(
+                `<div>
+                     Alto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a8b4c0c544a498f7eaa64ae11a124f0 = L.circleMarker(
+                [45.327, -95.6377],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_3a8b4c0c544a498f7eaa64ae11a124f0.bindTooltip(
+                `<div>
+                     Chippewa Valley Ethanol Co.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_edf651d25c51c445d9941fcd275ade61 = L.circleMarker(
+                [43.53731, -89.10315],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_edf651d25c51c445d9941fcd275ade61.bindTooltip(
+                `<div>
+                     Didion Milling
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5ee1e07b2630f795a1325c36f2be69f0 = L.circleMarker(
+                [43.980233, -88.651815],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_5ee1e07b2630f795a1325c36f2be69f0.bindTooltip(
+                `<div>
+                     ACE Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_644331bc95891b2441e858078e2376bc = L.circleMarker(
+                [42.51899, -98.9596],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_644331bc95891b2441e858078e2376bc.bindTooltip(
+                `<div>
+                     Husker Ag
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_997434cc4fab49e724242563725a3529 = L.circleMarker(
+                [43.664021, -94.492559],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_997434cc4fab49e724242563725a3529.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e60aba697737e5dab86aa7cd428a056 = L.circleMarker(
+                [46.3125, -96.1337],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_0e60aba697737e5dab86aa7cd428a056.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24370361b3cda5305e900b3e350fd223 = L.circleMarker(
+                [43.431367, -94.95422],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_24370361b3cda5305e900b3e350fd223.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a40eb1808e4982dbcf7b608a9e7c1937 = L.circleMarker(
+                [40.81577, -98.60739],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_a40eb1808e4982dbcf7b608a9e7c1937.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23cc01267b33f7050f0e2c6277acefb1 = L.circleMarker(
+                [43.760415, -94.149858],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_23cc01267b33f7050f0e2c6277acefb1.bindTooltip(
+                `<div>
+                     Greenfield Global
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ad00a96c390b67f854583f8f6caca09 = L.circleMarker(
+                [40.86801, -98.0364],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_2ad00a96c390b67f854583f8f6caca09.bindTooltip(
+                `<div>
+                     KAAPA Ethanol & Grain, LLC.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_070f3443432f3fe843d55530b53968b0 = L.circleMarker(
+                [40.85401, -101.54],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_070f3443432f3fe843d55530b53968b0.bindTooltip(
+                `<div>
+                     Standard Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13e8673f3575c5fd7cfce9705e948823 = L.circleMarker(
+                [40.28048, -100.163],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_13e8673f3575c5fd7cfce9705e948823.bindTooltip(
+                `<div>
+                     Nebraska Corn Processing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6175c4c4a897f0463337f621c04e7ab6 = L.circleMarker(
+                [34.0988304189557, -117.537506213792],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_6175c4c4a897f0463337f621c04e7ab6.bindTooltip(
+                `<div>
+                     Parallel Products
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c390f1bc4f1bc83cea420eb189a03424 = L.circleMarker(
+                [38.2175523882665, -85.7859630221699],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_c390f1bc4f1bc83cea420eb189a03424.bindTooltip(
+                `<div>
+                     Parallel Products
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_01725d1c89b21aa7045a57c177d978b4 = L.circleMarker(
+                [37.9413, -121.3385],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_01725d1c89b21aa7045a57c177d978b4.bindTooltip(
+                `<div>
+                     Innergex Renewable Energy Inc.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fb95d41fc043739670c899e37a91171 = L.circleMarker(
+                [33.01552, -111.9826],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_6fb95d41fc043739670c899e37a91171.bindTooltip(
+                `<div>
+                     Arizona Grain
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8dd7f3753d0ff54d19219655a4ce0bd6 = L.circleMarker(
+                [42.457778, -93.055833],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_8dd7f3753d0ff54d19219655a4ce0bd6.bindTooltip(
+                `<div>
+                     Innovative Ag Services
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f73ad08cb6a48ec41912c5f4f23b1616 = L.circleMarker(
+                [42.732855, -96.252702],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_f73ad08cb6a48ec41912c5f4f23b1616.bindTooltip(
+                `<div>
+                     Plymouth Energy Llc 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2620d382afe9400c27f22cfbdefa8b78 = L.circleMarker(
+                [42.47684, -95.41516],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_2620d382afe9400c27f22cfbdefa8b78.bindTooltip(
+                `<div>
+                     Quad County Corn Processors 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_795ddd8e5e1e5145bf086b099b760032 = L.circleMarker(
+                [36.922085, -119.974893],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_795ddd8e5e1e5145bf086b099b760032.bindTooltip(
+                `<div>
+                     Seaboard
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8b9f8660b5e5eaa556cde265584560ba = L.circleMarker(
+                [43.08446, -96.23038],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_8b9f8660b5e5eaa556cde265584560ba.bindTooltip(
+                `<div>
+                     Sioux Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b19d9b02b1e6944cbab8e5d7f983a74 = L.circleMarker(
+                [40.2154, -81.86021],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_0b19d9b02b1e6944cbab8e5d7f983a74.bindTooltip(
+                `<div>
+                     Plymouth Energy Llc 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a27ca292094e75b3f984be60e2bbd37 = L.circleMarker(
+                [42.75991, -88.91711],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_5a27ca292094e75b3f984be60e2bbd37.bindTooltip(
+                `<div>
+                     United Cooperative
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d39f5bcffd4c16c7437850236be175bd = L.circleMarker(
+                [37.934, -87.8727],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_d39f5bcffd4c16c7437850236be175bd.bindTooltip(
+                `<div>
+                     Valero Renewables
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b9731c96f10d8b58301953f9316a030d = L.circleMarker(
+                [41.8166, -83.836001],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_b9731c96f10d8b58301953f9316a030d.bindTooltip(
+                `<div>
+                     Zeeland Farm Services, Inc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_93e5b15dd81e920e8b4499f2261738eb = L.circleMarker(
+                [43.0403847505437, -88.7961769806411],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_93e5b15dd81e920e8b4499f2261738eb.bindTooltip(
+                `<div>
+                     Clonbio/Pannonia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b3d61cfd3d8d3dc5ed706ad0fbb2a49 = L.circleMarker(
+                [43.3, -76.381],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_7b3d61cfd3d8d3dc5ed706ad0fbb2a49.bindTooltip(
+                `<div>
+                     Attis Industries Inc.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec73888756195ae0be3d733781518f0e = L.circleMarker(
+                [43.6474487685906, -96.2248918435399],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_ec73888756195ae0be3d733781518f0e.bindTooltip(
+                `<div>
+                     Gevo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92fec5c3ae1f56018ddb6133861b6015 = L.circleMarker(
+                [47.9439737609467, -97.0851760097759],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_92fec5c3ae1f56018ddb6133861b6015.bindTooltip(
+                `<div>
+                     Red River Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_df022f25a1c818129b2157fac72eadf3 = L.circleMarker(
+                [41.227, -96.4878],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_df022f25a1c818129b2157fac72eadf3.bindTooltip(
+                `<div>
+                     AltEn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5918622701a911d93615a128470b64ce = L.circleMarker(
+                [37.3045, -77.2892],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_5918622701a911d93615a128470b64ce.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2112da73bbcb0f8782f0279188214eb3 = L.circleMarker(
+                [38.595413, -90.176648],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_2112da73bbcb0f8782f0279188214eb3.bindTooltip(
+                `<div>
+                     Crysalis Biosciences
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e65ae2b49b3f656824a505bed9da287c = L.circleMarker(
+                [48.910797, -97.888743],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_e65ae2b49b3f656824a505bed9da287c.bindTooltip(
+                `<div>
+                     ADM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d31b3088776944868e368249c635a02f = L.circleMarker(
+                [40.18925, -95.36789],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_d31b3088776944868e368249c635a02f.bindTooltip(
+                `<div>
+                     GOLDEN TRIANGLE ENERGY LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9283d5af5737ae9ced660c545b1324c2 = L.circleMarker(
+                [40.501343, -90.006266],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_9283d5af5737ae9ced660c545b1324c2.bindTooltip(
+                `<div>
+                     PACIFIC ETHANOL CANTON, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ecb501a442e2eef5c51fec16e0a9a1b0 = L.circleMarker(
+                [40.7535, -86.3605],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_ecb501a442e2eef5c51fec16e0a9a1b0.bindTooltip(
+                `<div>
+                     THE ANDERSONS MARATHON HOLDINGS LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86105e99499afba7b7ee8cf785190fe8 = L.circleMarker(
+                [44.362778, -97.375],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_37058c3de4fabccc835c5d460fb060fb);
+        
+    
+            circle_marker_86105e99499afba7b7ee8cf785190fe8.bindTooltip(
+                `<div>
+                     Gevo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_1a1c06cbb4a0a55e2f84fb5772085a19 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_559bd1f17b2bb20e1a3d0efc035e070c = L.circleMarker(
+                [40.555, -89.6698],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_559bd1f17b2bb20e1a3d0efc035e070c.bindTooltip(
+                `<div>
+                     Alto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_31262c6abdaac890546dbe683c034553 = L.circleMarker(
+                [41.544697, -96.13507],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_31262c6abdaac890546dbe683c034553.bindTooltip(
+                `<div>
+                     Cargill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_368046ea75aaf9398658a5d35225f422 = L.circleMarker(
+                [40.585, -98.318889],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_368046ea75aaf9398658a5d35225f422.bindTooltip(
+                `<div>
+                     Chief Industries
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b81887b65cb671766b8d9d88561e80ca = L.circleMarker(
+                [40.746088, -99.767869],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_b81887b65cb671766b8d9d88561e80ca.bindTooltip(
+                `<div>
+                     Chief Industries
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e9361ebb7396efd360727ca11452773 = L.circleMarker(
+                [38.67995, -90.17185],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_7e9361ebb7396efd360727ca11452773.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ee04068890a2e9d05f32d05ebf639647 = L.circleMarker(
+                [37.9082, -87.7257],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_ee04068890a2e9d05f32d05ebf639647.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_644380e7d4269bfbe976c33ac4f3f3ab = L.circleMarker(
+                [41.023749, -98.87511],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_644380e7d4269bfbe976c33ac4f3f3ab.bindTooltip(
+                `<div>
+                     KAAPA Ethanol & Grain, LLC.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0ede403647fba7b75c3dfbc867f5b25 = L.circleMarker(
+                [46.90361, -97.26349],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_a0ede403647fba7b75c3dfbc867f5b25.bindTooltip(
+                `<div>
+                     Tharaldson Ethanol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b1e3ad9fd8828af7cf59e786b446b053 = L.circleMarker(
+                [34.84998, -102.28679],
+                {"bubblingMouseEvents": true, "color": "navy", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "navy", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1a1c06cbb4a0a55e2f84fb5772085a19);
+        
+    
+            circle_marker_b1e3ad9fd8828af7cf59e786b446b053.bindTooltip(
+                `<div>
+                     White Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_81d39b144c5cf55acf67c68076ff7861 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_bed40835b026496908aebb2417444d6d = L.circleMarker(
+                [40.5534, -89.6631],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_bed40835b026496908aebb2417444d6d.bindTooltip(
+                `<div>
+                     Alto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8ec2e3016bde60b5bac8acfdd0dd9e60 = L.circleMarker(
+                [41.9156, -91.6888],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_8ec2e3016bde60b5bac8acfdd0dd9e60.bindTooltip(
+                `<div>
+                     ADM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9c9c37a69f14ebb74907b24c95dc8dda = L.circleMarker(
+                [41.4153, -97.2869],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_9c9c37a69f14ebb74907b24c95dc8dda.bindTooltip(
+                `<div>
+                     ADM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4dc6889a4e9bc046e1c1413009442019 = L.circleMarker(
+                [39.8635, -88.8896],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_4dc6889a4e9bc046e1c1413009442019.bindTooltip(
+                `<div>
+                     ADM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_89669750719e54306abdacf301c2bbc4 = L.circleMarker(
+                [44.4748, -95.7796],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_89669750719e54306abdacf301c2bbc4.bindTooltip(
+                `<div>
+                     ADM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_32fa446054fdae63bd3aeaa1c5d310d1 = L.circleMarker(
+                [41.55, -92.6343],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_32fa446054fdae63bd3aeaa1c5d310d1.bindTooltip(
+                `<div>
+                     Cargill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_745fa766ff2f8baa1ef0914c15209b32 = L.circleMarker(
+                [42.506334, -94.313203],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_745fa766ff2f8baa1ef0914c15209b32.bindTooltip(
+                `<div>
+                     Cargill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29a70c7cb7eea87961dbeaa9ce18254b = L.circleMarker(
+                [41.4004008422343, -91.0629891795703],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_29a70c7cb7eea87961dbeaa9ce18254b.bindTooltip(
+                `<div>
+                     Grain Processing Corp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_10b4cad5a974195e16dd12c7c88be90f = L.circleMarker(
+                [38.6359263728874, -87.2244655000325],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_10b4cad5a974195e16dd12c7c88be90f.bindTooltip(
+                `<div>
+                     Grain Processing Corp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_97479b12062772ef65bc1c2889a6b9e8 = L.circleMarker(
+                [39.098994032848, -84.8610889416364],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_97479b12062772ef65bc1c2889a6b9e8.bindTooltip(
+                `<div>
+                     MGP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b8e19553d0629facf12519b86342cd9 = L.circleMarker(
+                [35.7347562702955, -84.3199618667687],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_81d39b144c5cf55acf67c68076ff7861);
+        
+    
+            circle_marker_3b8e19553d0629facf12519b86342cd9.bindTooltip(
+                `<div>
+                     Tate & Lyle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_c9eb709daa1bbb8c8d41a0cf2bb56478 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_e6a63e591f691fbeb32bbab18168257d = L.circleMarker(
+                [38.363339, -97.783411],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "grey", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c9eb709daa1bbb8c8d41a0cf2bb56478);
+        
+    
+            circle_marker_e6a63e591f691fbeb32bbab18168257d.bindTooltip(
+                `<div>
+                     Summit Sustainable Ingredients
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7470b164b54f7f77e417c44009954ab0 = L.circleMarker(
+                [38.90005, -98.84066],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "grey", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c9eb709daa1bbb8c8d41a0cf2bb56478);
+        
+    
+            circle_marker_7470b164b54f7f77e417c44009954ab0.bindTooltip(
+                `<div>
+                     Purefield
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_a3f06b3f7fb0cd7178f84bb4aba7d436 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_020cf0ea8e487170fc28b26590967b3b = L.circleMarker(
+                [41.929, -91.6885],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_a3f06b3f7fb0cd7178f84bb4aba7d436);
+        
+    
+            circle_marker_020cf0ea8e487170fc28b26590967b3b.bindTooltip(
+                `<div>
+                     ADM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d8b28b3705292ef9fc01653da08e81e7 = L.circleMarker(
+                [41.8173, -90.2162],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_a3f06b3f7fb0cd7178f84bb4aba7d436);
+        
+    
+            circle_marker_d8b28b3705292ef9fc01653da08e81e7.bindTooltip(
+                `<div>
+                     ADM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8868bf4e716194051f9f6c2905a97028 = L.circleMarker(
+                [41.419, -97.2896],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_a3f06b3f7fb0cd7178f84bb4aba7d436);
+        
+    
+            circle_marker_8868bf4e716194051f9f6c2905a97028.bindTooltip(
+                `<div>
+                     ADM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_46699d48e5f0f297f52cf0a16705fefc = L.circleMarker(
+                [40.6776, -89.6069],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_a3f06b3f7fb0cd7178f84bb4aba7d436);
+        
+    
+            circle_marker_46699d48e5f0f297f52cf0a16705fefc.bindTooltip(
+                `<div>
+                     BioUrja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_5acf38c40bcd8b64287bfd57b4f2b6ab = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_29891439f075d457f83eb276f5ded6de = L.circleMarker(
+                [36.0019, -119.302327],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_5acf38c40bcd8b64287bfd57b4f2b6ab);
+        
+    
+            circle_marker_29891439f075d457f83eb276f5ded6de.bindTooltip(
+                `<div>
+                     Calgren Renewable Fuels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b2a4335bd94d904848a3146768369b51 = L.circleMarker(
+                [34.84998, -102.28679],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_5acf38c40bcd8b64287bfd57b4f2b6ab);
+        
+    
+            circle_marker_b2a4335bd94d904848a3146768369b51.bindTooltip(
+                `<div>
+                     Hereford Ethanol Partners
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0b94b9a73cb37577f6fa290bafe2c8b = L.circleMarker(
+                [41.161141, -101.092141],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_5acf38c40bcd8b64287bfd57b4f2b6ab);
+        
+    
+            circle_marker_c0b94b9a73cb37577f6fa290bafe2c8b.bindTooltip(
+                `<div>
+                     Midwest Renewable Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e6f0777e6b9dc23d894c22368e7b1763 = L.circleMarker(
+                [37.68962, -98.70704],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_5acf38c40bcd8b64287bfd57b4f2b6ab);
+        
+    
+            circle_marker_e6f0777e6b9dc23d894c22368e7b1763.bindTooltip(
+                `<div>
+                     Pratt Energy (Scoular / Pratt JV)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_3645df9db13835f8827018b469fe9c94 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_c3fffd94dae89b8fc7f2b11b6753c9de = L.circleMarker(
+                [40.69874, -97.567402],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3645df9db13835f8827018b469fe9c94);
+        
+    
+            circle_marker_c3fffd94dae89b8fc7f2b11b6753c9de.bindTooltip(
+                `<div>
+                     Green Plains
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0843e6cd3406c95e5bdde5c6e8f07292 = L.circleMarker(
+                [37.881418, -100.885662],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3645df9db13835f8827018b469fe9c94);
+        
+    
+            circle_marker_0843e6cd3406c95e5bdde5c6e8f07292.bindTooltip(
+                `<div>
+                     Reeve Agri–Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2ee120e511ae07cbe701c35cf9c68dd = L.circleMarker(
+                [34.946728, -79.144518],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3645df9db13835f8827018b469fe9c94);
+        
+    
+            circle_marker_f2ee120e511ae07cbe701c35cf9c68dd.bindTooltip(
+                `<div>
+                     Tyton NC Biofuels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_4aaf8532bba8f7720adb103401c3f613 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_c0971803eea5238aea18fd6743e329fc = L.circleMarker(
+                [43.576274, -93.301773],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_c0971803eea5238aea18fd6743e329fc.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d9f6b9bf570e33f7e0d3d039d9c0c4a1 = L.circleMarker(
+                [40.29655, -85.65281],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_d9f6b9bf570e33f7e0d3d039d9c0c4a1.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_94f608ba5c1c765987f9b4bf08a1037e = L.circleMarker(
+                [43.27694, -95.80833],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_94f608ba5c1c765987f9b4bf08a1037e.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_979b02454b49c19df95c453f1b2c50cb = L.circleMarker(
+                [45.301333, -96.511361],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_979b02454b49c19df95c453f1b2c50cb.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f92814b1421f242c4c4d2632b0d83176 = L.circleMarker(
+                [43.897083, -95.045278],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_f92814b1421f242c4c4d2632b0d83176.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b9dd421b81bad5c3425f143242f6d9ef = L.circleMarker(
+                [43.472883, -83.410497],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_b9dd421b81bad5c3425f143242f6d9ef.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1784cc8a050a9dc6c2a4150b96138c35 = L.circleMarker(
+                [43.370231, -96.958069],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_1784cc8a050a9dc6c2a4150b96138c35.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a1c8ef01c148229fd7a4933b8dab20a4 = L.circleMarker(
+                [39.546725, -86.814389],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_a1c8ef01c148229fd7a4933b8dab20a4.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f973a8bf6d0d856c480ad2dc973ef562 = L.circleMarker(
+                [41.862565, -94.632821],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_f973a8bf6d0d856c480ad2dc973ef562.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64eb5e287a9a669b4c2293e486447109 = L.circleMarker(
+                [40.965933, -94.79506],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_64eb5e287a9a669b4c2293e486447109.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e159eea7dd770e0ed8be5afd03550f0 = L.circleMarker(
+                [43.089625, -94.646632],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_5e159eea7dd770e0ed8be5afd03550f0.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8b05fea8f55615d7566af6e6197af83b = L.circleMarker(
+                [41.17562, -83.3806],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_8b05fea8f55615d7566af6e6197af83b.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef62bd23c3bac0abaf5273e82a624395 = L.circleMarker(
+                [42.324722, -94.289722],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_ef62bd23c3bac0abaf5273e82a624395.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6990f3e8b60c001b45557e03ea89ac97 = L.circleMarker(
+                [45.453963, -98.137741],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_6990f3e8b60c001b45557e03ea89ac97.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c454cf1365c79a04f6f375f83c7ef2d2 = L.circleMarker(
+                [43.29083, -93.39027],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_c454cf1365c79a04f6f375f83c7ef2d2.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f33b2754e31e62c4472a0008d3b73fae = L.circleMarker(
+                [43.096842, -96.477478],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_f33b2754e31e62c4472a0008d3b73fae.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bdb8eb1a45bf7e61dd0ec7c986814553 = L.circleMarker(
+                [42.3289, -93.6626],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_bdb8eb1a45bf7e61dd0ec7c986814553.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_034cadb0694c120c6f48e10bd4759015 = L.circleMarker(
+                [39.2499, -91.6405],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_034cadb0694c120c6f48e10bd4759015.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_40600b4757fa64c340ff1ae67fba353f = L.circleMarker(
+                [44.13022, -94.274363],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_40600b4757fa64c340ff1ae67fba353f.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39036be0bff797a6530cbb66bb069bbe = L.circleMarker(
+                [41.119594, -83.971018],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_39036be0bff797a6530cbb66bb069bbe.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4743da5fb5b2b0d81d526c2fa08828a3 = L.circleMarker(
+                [39.7481, -92.3851],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_4743da5fb5b2b0d81d526c2fa08828a3.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c81a869c6d4749e273f841f33c20c281 = L.circleMarker(
+                [40.61855, -83.15954],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_c81a869c6d4749e273f841f33c20c281.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26eb216d365e45b91b908e92d7a6159e = L.circleMarker(
+                [43.80342, -98.10491],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_26eb216d365e45b91b908e92d7a6159e.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d819bde520ac9999487928ad26fe87b = L.circleMarker(
+                [40.9461, -85.7834],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_4d819bde520ac9999487928ad26fe87b.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3bb8ee97e8442f4d19f83d35a5605ab8 = L.circleMarker(
+                [40.41393, -85.01926],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_3bb8ee97e8442f4d19f83d35a5605ab8.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65177b16bc6109d19c3f0a0475cbc365 = L.circleMarker(
+                [43.1468, -97.7264],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_65177b16bc6109d19c3f0a0475cbc365.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0692e5fac76ca591144fb81409899a25 = L.circleMarker(
+                [39.56604, -85.82205],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4aaf8532bba8f7720adb103401c3f613);
+        
+    
+            circle_marker_0692e5fac76ca591144fb81409899a25.bindTooltip(
+                `<div>
+                     POET Biorefining
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_872b6c093e405d15d603ee7e4682ed24 = L.featureGroup(
+                {}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+        
+    
+            var circle_marker_21ea09ab6dfa9e4a5770b1b15033cb1c = L.circleMarker(
+                [42.024244, -93.518659],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_872b6c093e405d15d603ee7e4682ed24);
+        
+    
+            circle_marker_21ea09ab6dfa9e4a5770b1b15033cb1c.bindTooltip(
+                `<div>
+                     Verbio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_1e1c049d9f993f1ea77cb295df28a0ed = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d2aa2f40c8928d7e90f9ef774d0bb506,
+                },
+                overlays :  {
+                    "BNSF Rail Lines" : feature_group_a3f30527e0f3db19f4cdc4acc47fa692,
+                    "UP Rail Lines" : feature_group_6368a801e912153780d038aa9a6d6cbd,
+                    "CN Rail Lines" : feature_group_62d9727b8a618d151f99eef4243d60c4,
+                    "CSX Rail Lines" : feature_group_b3bee0255d2d963a4b6e6b74e31d6fbb,
+                    "NS Rail Lines" : feature_group_0f8b04fd83c2df64b2d5dff4ae64ede7,
+                    "Plants: ICM" : feature_group_e58695accbb85032b2619a24e57b0ce8,
+                    "Plants: Other / Unknown" : feature_group_37058c3de4fabccc835c5d460fb060fb,
+                    "Plants: Vogelbusch" : feature_group_1a1c06cbb4a0a55e2f84fb5772085a19,
+                    "Plants: Wet Mill" : feature_group_81d39b144c5cf55acf67c68076ff7861,
+                    "Plants: Wheat" : feature_group_c9eb709daa1bbb8c8d41a0cf2bb56478,
+                    "Plants: ADM" : feature_group_a3f06b3f7fb0cd7178f84bb4aba7d436,
+                    "Plants: Lurgi" : feature_group_5acf38c40bcd8b64287bfd57b4f2b6ab,
+                    "Plants: Katzen" : feature_group_3645df9db13835f8827018b469fe9c94,
+                    "Plants: Poet" : feature_group_4aaf8532bba8f7720adb103401c3f613,
+                    "Plants: Verbio" : feature_group_872b6c093e405d15d603ee7e4682ed24,
+                },
+            };
+            L.control.layers(
+                layer_control_1e1c049d9f993f1ea77cb295df28a0ed.base_layers,
+                layer_control_1e1c049d9f993f1ea77cb295df28a0ed.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_60a9e7eb1fafe56fc410f2992d2386aa);
+            feature_group_37058c3de4fabccc835c5d460fb060fb.remove();
+        
+</script>
+</html>
