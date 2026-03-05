@@ -1074,14 +1074,14 @@ header, main{ position:relative; z-index:1; }
   // ----------------------------
   // SETTINGS
   // ----------------------------
-  const DATA_URL = new URL("./static_data/LCFS/lcfs_dropdown_v1.json", window.location.href).toString();
+  const DATA_URL = new URL("static_data/LCFS/lcfs_dropdown_v1.json", window.location.origin + window.location.pathname).toString(); = new URL("./static_data/LCFS/lcfs_dropdown_v1.json", window.location.href).toString();
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-05 15:05:16");
+  console.log("✅ BUILD_STAMP:", "2026-03-05 15:15:37");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-05 15:05:16");
+  console.log("BUILD_STAMP:", "2026-03-05 15:15:37");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
