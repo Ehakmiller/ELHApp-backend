@@ -1,105 +1,99 @@
-epm,ca_facility_id,ownership,plant_name,state,city,latitude,longitude,rail_lines,ethanol_capacity_mgy,co2_pipeline_direct,co2_pipeline_3rd_party,ci_drop_with_pipeline,sponsor,efficient_producer,high_pro,chp,white_fox,dco_enhancement,icm_p10
-3283,No LCFS Score,GOLDEN TRIANGLE ENERGY LLC,Golden Triangle Energy LLC,MO,Craig,40.18925,-95.36789,UnKnown,21.0,,,,None,,,,,,
-3547,No LCFS Score,ACE Ethanol,Ace Ethanol LLC,WI,Stanley,44.9589,-90.9608,CN,52.0,,,,,,,,White Fox ICE,Fluid Quip,
-3548,No LCFS Score,Pearl City Elevator,Adkins Energy LLC,IL,Lena,42.3586,-89.80342,CN,60.0,,,,,EP3,,CHP,,,
-3551,No LCFS Score,Alto,Alto Columbia LLC,OR,Boardman,45.855921,-119.656083,UP,40.0,,,,,,,,,,
-3552,No LCFS Score,Alto,Alto Magic Valley Ethanol,ID,Burley,42.521324,-113.815693,UP,60.0,,,,,,Harvesting Tech HI PRO,,,,
-3553,No LCFS Score,Alto,Alto ICP LLC,IL,Pekin,40.555,-89.6698,IMRR/BNSF,82.0,,,,,,,,,,
-3554,No LCFS Score,Alto,Alto Pekin LLC Dry Mill,IL,Pekin,40.555063,-89.663302,IMRR/BNSF,63.0,Direct,,,,,,,,,
-3555,No LCFS Score,Alto,Alto Pekin LLC Wet Mill,IL,Pekin,40.5534,-89.6631,UP/BNSF/CN/NS/IAIS,100.0,Direct,,,,,,,,,
-3556,No LCFS Score,Summit Sustainable Ingredients,Amber Wave,KS,Phillipsburg,38.363339,-97.783411,UP,50.0,,,,,,,,,,
-3557,No LCFS Score,ADM,VCP Corn Processing,IA,Cedar Rapids,41.929,-91.6885,UP,300.0,,,,,,,CHP,,,
-3558,No LCFS Score,ADM,ADM Cedar Rapids IA Wet Mill,IA,Cedar Rapids,41.9156,-91.6888,UP,240.0,,,,,,,CHP,,,
-3559,No LCFS Score,ADM,ADM Clinton IA,IA,Clinton,41.8173,-90.2162,UP/CP,237.0,,,,,,,CHP,,,
-3560,No LCFS Score,ADM,VCP Corn Processing,NE,Columbus,41.419,-97.2896,UP/BNSF,313.0,,Tall Grass,,Tall Grass,,,CHP,,,
-3561,No LCFS Score,ADM,ADM Columbus Wet Mill,NE,Columbus,41.4153,-97.2869,UP/BNSF,100.0,,Tall Grass,,Tall Grass,,,CHP,,,
-3562,No LCFS Score,ADM,ADM,IL,Decatur,39.8635,-88.8896,NS/CN,375.0,Direct,,,Direct Inject,,,,,,
-3563,No LCFS Score,ADM,ADM,MN,Marshall,44.4748,-95.7796,BNSF,48.0,,,,None,,,,,,
-3568,No LCFS Score,Big River Resources,Big River Resources Boyceville LLC,WI,Boyceville,45.050596,-91.980063,CN,70.0,,,,None,,,,,,
-3569,No LCFS Score,Big River Resources,Big River Resources Galva LLC,IL,Galva,41.169691,-90.024473,BNSF,140.0,,,,None,EP3,,,,,
-3570,No LCFS Score,Big River Resources,Big River Resources West Burlington LLC,IA,West Burlington,40.831196,-91.220611,BNSF,130.0,,,,None,,,,,,
-3571,No LCFS Score,Big River Resources,Big River United Energy LLC,IA,Dyersville,42.4872,-91.1633,CN,140.0,,,,None,EP3,,,,,
-3572,No LCFS Score,BioUrja,Biourja Renewables LLC,IL,Peoria,40.6776,-89.6069,UP,61.0,,,,None,,,,,,
-3573,No LCFS Score,Harvestone,Blue Flint Ethanol LLC,ND,Underwood,47.377226,-101.152303,UP,75.7,Direct,,,Direct Inject,,,CHP,,,
-3576,70109,Bushmills Ethanol Inc.,Bushmills Ethanol Inc,MN,Atwater,45.07333,-94.755556,BNSF,90.0,,SCS,,Summit Carbon Solutions,EP3,,,,,
-3578,No LCFS Score,Carbon Green Bioenergy,Carbon Green Bioenergy LLC,MI,Lake Odessa,42.76601,-85.07428,CSX,59.0,,,,None,EP3,,,,,
-3579,No LCFS Score,Cardinal Ethanol,Cardinal Ethanol LLC,IN,Union City,40.18682,-84.86226,CSX,136.0,,,,None,EP3,ICM HI PRO,,,,
-3580,No LCFS Score,Cargill,Cargill Inc,NE,Blair,41.544697,-96.13507,UP,210.0,,,,None,,,,,,
-3581,No LCFS Score,Cargill,Cargill Inc,IA,Eddyville,41.55,-92.6343,UP/BNSF,71.0,,,,None,,,CHP,,,
-3582,No LCFS Score,Cargill,Cargill Inc,IA,Fort Dodge,42.506334,-94.313203,UP/CN,130.0,,,,None,,,,,,
-3583,No LCFS Score,Central Indiana Ethanol,Central Indiana Ethanol,IN,Marion,40.56492,-85.72772,NS,50.0,,,,None,,,,,,
-3584,70095,Central Indiana Ethanol,CIE Norfolk GNS LLC,NE,Norfolk,42.06672,-97.3815,NCRC/WC1s,60.0,,,,None,EP3,,,,,
-3588,No LCFS Score,CHS,CHS - Annawan,IL,Annawan,41.393398,-89.872214,IAIS,130.0,,,,None,EP3,,,White Fox,,
-3589,No LCFS Score,CHS,CHS - Rochelle,IL,Rochelle,41.89508,-89.02898,BNSF,138.0,,,,None,EP3,,,,,
-3590,No LCFS Score,Hopkinsville Elevator CO-OP,Commonwealth Agri-Energy,KY,Hopkinsville,36.81342,-87.41009,CSX,49.0,,,,None,EP3,,CHP,,,
-3591,70145,Gold-Eagle Cooperative,Corn LP,IA,Goldfield,42.733339,-93.910902,UP,80.0,,SCS,,Summit Carbon Solutions,,ICM HI PRO,,,,
-3593,No LCFS Score,Harvestone,Dakota Spirit Agenergy,ND,Spiritwood,46.924798,-98.503225,BNSF,80.0,Direct,,,Direct Inject,,,,,Alpha Laval,
-3595,No LCFS Score,Conestoga Energy,HET Levelland LLC,TX,Levelland,33.588611,-102.262778,BNSF,50.274,,,,None,,,,,,
-3596,No LCFS Score,Didion Milling,Didion Ethanol LLC,WI,Cambria,43.53731,-89.10315,WSOR/CN/UP,54.0,,,,None,EP3,,,,,
-3598,83483,East Kansas Agri-Energy,East Kansas Agri-Energy LLC,KS,Garnett,38.271522,-95.237414,UP,48.0,,,,,EP3,,,,,
-3601,No LCFS Score,ACE Ethanol,Fox River Valley Ethanol LLC,WI,Oshkosh,43.980233,-88.651815,WSOR/CN/UP,64.0,,,,None,,,,White Fox ICE,,
-3602,70058,Front Range Energy LLC,Front Range Energy LLC,CO,Windsor,40.45746,-104.856211,UP/BNSF,46.0,,,,None,,,,White Fox,,
-3608,70691,Golden Grain Energy,Golden Grain Energy LLC,IA,Mason City,43.11204,-93.23104,UP,140.0,,SCS,,Summit Carbon Solutions,,ICM HI PRO,,White Fox ICE,,
-3609,No LCFS Score,Grain Processing Corp,Grain Processing Corp,IA,Muscatine,41.4004008422343,-91.0629891795703,CP,82.5,,,,None,,,,White Fox ICE,,
-3610,No LCFS Score,Grain Processing Corp,Grain Processing Corp,IN,Washington,38.6359263728874,-87.2244655000325,CSX,36.72,,,,None,,,,,,
-3615,No LCFS Score,Green Plains,Green Plains Fairmont LLC,MN,Fairmont,43.664021,-94.492559,UP,122.9,,SCS,,Summit Carbon Solutions,,,,,,ICM P10
-3616,No LCFS Score,Green Plains,Green Plains Madison LLC,IL,Madison,38.67995,-90.17185,PH/BNSF/UP/CN/NS,100.0,,,,None,EP3,,,,,ICM P10
-3617,No LCFS Score,Green Plains,Green Plains Mount Vernon LLC,IN,Mount Vernon,37.9082,-87.7257,CSX,135.0,,,,None,,FQPT HI PRO,,,FQPT HI PRO,ICM P10
-3618,No LCFS Score,Green Plains,Poet Biorefining-Obion LLC,TN,Rives,36.28305,-89.147607,CN,135.0,,,,None,EP3,FQPT HI PRO,,,FQPT HI PRO,
-3620,No LCFS Score,Green Plains,Green Plains Shenandoah LLC,IA,Shenandoah,40.7549,-95.3953,BNSF,100.0,,,,None,EP3,FQPT HI PRO,,,FQPT HI PRO,
-3623,No LCFS Score,Green Plains,Green Plains York LLC,NE,York,40.69874,-97.567402,BNSF,60.0,,Tall Grass,,Tall Grass,,,,,,
-3624,No LCFS Score,Greenfield Global,Greenfield Global Corn Plus LLC,MN,Winnebago,43.760415,-94.149858,CP,43.0,,,,None,EP3,,,,,
-3627,No LCFS Score,"Guardian Energy, LLC",Guardian Lima LLC,OH,Lima,40.70588,-84.08007,IORY//CSX/NS,84.0,,,,None,EP3,,,,,
-3634,No LCFS Score,ICM,ICM Biofuels LLC,MO,St Joseph,39.74025,-94.8468,BNSF,50.0,,,,None,,,,,,
-3635,No LCFS Score,Harvestone,Iroquois Bio-Energy Co LLC,IN,Rensselaer,40.933056,-87.067222,CSX,65.0,Direct,,,Direct Inject,EP3,,,,,
-3640,No LCFS Score,"Lincolnland Agri Energy, LLC",Lincolnland Agri-Energy LLC,IL,Palestine,39.004293,-87.631325,CSX,68.0,,,,None,,ICM HI PRO,CHP,White Fox,,
-3644,No LCFS Score,Marquis Energy,Marquis Energy LLC,IL,Hennepin,41.276711,-89.319504,NS,400.0,Direct,,,Direct Inject,EP3,Marquis HI PRO,,,,
-3645,70269,United Cooperative,United Energy Necadah,WI,Necedah,43.99187,-90.07219,CN,106.0,,,,None,EP3,,,,,
-3646,No LCFS Score,DCP Midstream,Marysville Ethanol LLC,MI,Marysville,42.88335,-82.491547,CSX/CN,60.0,,,,None,,,,,,
-3647,No LCFS Score,MGP,MGP,IN,Lawrenceburg,39.098994032848,-84.8610889416364,CSX,,,,,None,,,,,,
-3653,No LCFS Score,Rex American,One Earth Energy LLC,IL,Gibson City,40.471085,-88.39574,NS/CN,150.0,Direct,,,None,EP3,,,,,
-3655,No LCFS Score,Parallel Products,Parallel Products Inc,KY,Louisville,38.2175523882665,-85.7859630221699,UnKnown,5.5,,,,None,,,,,,
-3656,No LCFS Score,Innergex Renewable Energy Inc.,Innergex Renewable Energy Inc.,CA,Stockton,37.9413,-121.3385,BNSF,60.0,,,,None,,,,White Fox,,
-3657,No LCFS Score,Pennsylvania Grain Processing,Pennsylvania Grain Processing LLC,PA,Clearfield,41.03082,-78.4298,CN/NS,128.0,,,,None,,,,,,
-3658,No LCFS Score,Arizona Grain,Pinal,AZ,Maricopa,33.01552,-111.9826,UP,,,,,None,,,CHP,,,
-3659,No LCFS Score,Innovative Ag Services,Pine Lake Corn Processors,IA,Steamboat Rock,42.457778,-93.055833,CN,87.12,,,,None,EP3,,,White Fox ICE,ICM FOT,
-3693,No LCFS Score,POET Biorefining,Poet Research Center,SD,Scottland,43.1468,-97.7264,BNSF,12.0,,,,None,,,,,,
-3696,No LCFS Score,Quad County Corn Processors,Quad County Corn Processors Coop,IA,Galva,42.47684,-95.41516,None,38.0,,SCS,,Summit Carbon Solutions,EP3,,,,,
-3698,No LCFS Score,Red River Energy,Red River Energy LLC,SD,Rosholt,45.872608,-96.725109,CP,36.0,,,,None,,,,,,
-3699,No LCFS Score,Red Trail Energy,Red Trail Energy LLC,ND,Richardton,46.878642,-102.296038,BNSF,70.0,Pipeline,,,Direct Inject,EP3,,,,,
-3701,No LCFS Score,Reeve Agri–Energy,Reeve Agri Energy Inc,KS,Garden City,37.881418,-100.885662,None,20.0,,,,None,,,,,,
-3703,No LCFS Score,Seaboard,Seaboard,CA,Madera,36.922085,-119.974893,BNSF,40.0,,,,None,,,,,,
-3704,No LCFS Score,Show Me Ethanol,Show Me Ethanol,MO,Carrollton,39.364417,-93.449361,BNSF,65.5,,,,None,EP3,,,,,
-3707,No LCFS Score,Verbio,Southbend Ethanol LLC,IN,South Bend,41.6552,-86.2962,CN,100.0,,,,None,,,,,,
-3710,No LCFS Score,Tate & Lyle,Tate & Lyle,TN,Loudon,35.7347562702955,-84.3199618667687,NS,110.0,,,,None,,,CHP,,,
-3711,No LCFS Score,Tharaldson Ethanol,Tharaldson Ethanol,ND,Casselton,46.90361,-97.26349,BNSF,165.0,,SCS,,Summit Carbon Solutions,EP3,FQPT HI PRO,,,FQPT HI PRO,
-3712,No LCFS Score,The Andersons,The Andersons Marathon Holdings LLC,MI,Albion,42.259646,-84.789726,NS,147.0,,,,None,EP3,,CHP,,,
-3713,No LCFS Score,The Andersons,The Andersons Marathon Holdings LLC,IN,Clymers,40.719022,-86.435982,NS,140.0,,,,None,EP3,,,,,
-3715,No LCFS Score,The Andersons,The Andersons Marathon Holdings LLC,OH,Greenville,40.081111,-84.591667,CSX,154.0,,,,None,EP3,,,,,
-3716,No LCFS Score,Plymouth Energy Llc,Three Rivers Energy,OH,Coshocton,40.2154,-81.86021,NS,50.0,,,,None,,,,,,
-3719,No LCFS Score,United Cooperative,United Energy Milton,WI,Milton,42.75991,-88.91711,WSOR/BNSF/CN/CP/UP,61.0,,,,None,,,,White Fox ICE,,
-3720,No LCFS Score,United WI Grain Producers,United Wisconsin Grain Producers LLC,WI,Friesland,43.5706,-89.0613,UP,71.0,,,,None,EP3,FQPT HI PRO,,,FQPT HI PRO,
-3724,No LCFS Score,Valero Renewables,Valero Renewable Fuels LLC,OH,Bloomingburg,39.597501,-83.390444,IORY/CSX/NS/CN,140.0,,,,None,EP3,,,,,
-3725,No LCFS Score,Valero Renewables,Valero Renewable Fuels LLC,IN,Bluffton,40.722139,-85.193722,NS,140.0,,,,None,EP3,,,,,
-3729,No LCFS Score,Valero Renewables,Valero Renewable Fuels LLC,IA,Lakota,43.38391,-94.14706,UP,110.0,,SCS,,Summit Carbon Solutions,,,,,,
-3731,No LCFS Score,Valero Renewables,Valero Renewable Fuels LLC,IN,Mount Vernon,37.934,-87.8727,CSX,100.0,,,,None,,,,,,
-3732,No LCFS Score,"Zeeland Farm Services, Inc",ZFS Riga LLC,MI,Riga,41.8166,-83.836001,ADBF/IORY/NS,,,,,None,,,,,,
-3734,No LCFS Score,Verbio,Verbio,IA,Nevada,42.024244,-93.518659,UP,60.0,,,,None,,,,,,
-3735,No LCFS Score,Western New York Energy,Western New York Energy LLC,NY,Medina,43.210491,-78.365416,CSX,62.0,,,,None,EP3,,,,ICM FOT,
-3755,No LCFS Score,Clonbio/Pannonia,Aztalan Bio LLC,WI,Johnson Creek,43.0403847505437,-88.7961769806411,UP,106.0,,,,None,,Front End Frac,,,,
-3757,No LCFS Score,Crysalis Biosciences,Crysalis Biosciences,IL,Sauget,38.595413,-90.176648,CSX,57.0,,,,None,,,,,,
-3758,No LCFS Score,Gevo,Gevo,SD,Lake Preston,44.362778 ,-97.375,RCPE/BNSF,,,,,,,,,,,
-3759,No LCFS Score,LanzaJet,LanzaJet,GA,Soperton,,,GC,,,,,,,,,,,
-3760,No LCFS Score,New Energy Blue,New Energy Blue,IA,,,,IATR/up,18555.714,,,,,,,,,,
-3761,No LCFS Score,Sumitomo Corporation of Americas,Sumitomo Corporation of Americas,,,,,,,,,,,,,,,,
-3762,No LCFS Score,AE Innovation,AE Innovation,MN,Luverne,43.6474487685906,-96.2248918435399,MSR/BNSF,,,,,None,,,,,,
-8888,No LCFS Score,Green Plains,Green Plains,VA,Hopewell,37.3045,-77.2892,UnKnown,,,,,None,,,,,,
-SD-02,No LCFS Score,Attis Industries Inc.,Attis Industries Inc.,NY,Fulton,43.3,-76.381,CSX,,,,,None,,,,,,
-SD-06,No LCFS Score,Prairie Horizon Agri–Energy,Prairie Horizon Agri–Energy,KS,Phillipsburg,39.760046,-99.304262,UP,,,,,None,,ICM HI PRO,CHP,,,
-SD-07,No LCFS Score,Red River Energy,Red River Energy,ND,Grand Forks,47.9439737609467,-97.0851760097759,BNSF,,,,,None,,,,,,
-SD-08,No LCFS Score,Tyton NC Biofuels,Tyton NC Biofuels,NC,Raeford,34.946728,-79.144518,CSX/NS,,,,,None,,,,,,
-SD-09,No LCFS Score,AltEn,AltEn,NE,Mead,41.227,-96.4878,UnKnown,,,,,None,,,,,,
-SD-12,No LCFS Score,ADM,ADM,ND,Walhalla,48.910797,-97.888743,UnKnown,,,,,None,,,,,,
-SD-13,No LCFS Score,"Flint Hills Resources Camilla, LLC",Flint Hills,GA,Pelham,31.169408,-84.162558,UnKnown,,,,,None,EP3,,,,,
-SD-15,No LCFS Score,"PACIFIC ETHANOL CANTON, LLC","PACIFIC ETHANOL CANTON, LLC",IL,CANTON,40.501343,-90.006266,UnKnown,,,,,None,,,,,,
-SD-16,No LCFS Score,THE ANDERSONS MARATHON HOLDINGS LLC,THE ANDERSONS MARATHON HOLDINGS LLC,IN,LOGANSPORT,40.7535,-86.3605,UnKnown,,,,,None,,,,,,
+epm,status,ca_facility_id,ownership,plant_name,state,city,latitude,longitude,rail_lines,ethanol_capacity_mgy,dryer_types,high_pro,chp,white_fox,icm_p10,reg_pathway,co2_pipeline_direct,co2_pipeline_3rd_party,co2_sponsor,d6_non_cellulosic,d3_cellulosic
+3283,Active,nan,GOLDEN TRIANGLE ENERGY LLC,Golden Triangle Energy LLC,MO ,Craig,40.18925,-95.36789,UnKnown,21.0,,,,,,,,,None,,
+3547,Active,nan,ACE Ethanol,Ace Ethanol LLC,WI ,Stanley,44.9589,-90.9608,CN,52.0,Ring Dryer,,,White Fox ICE,,,,,,D6,D3
+3548,Active,nan,Pearl City Elevator,Adkins Energy LLC,IL ,Lena,42.3586,-89.80342,CN,60.0,Rotary Dryer,,CHP,,,EP3,,,,D6,D3
+3551,Active,nan,Alto,Alto Columbia LLC,OR ,Boardman,45.855921,-119.656083,UP,40.0,Ring Dryer,,,,,,,,,D6,-
+3552,Active,nan,Alto,Alto Magic Valley Ethanol,ID ,Burley,42.521324,-113.815693,UP,60.0,Ring Dryer,Harvesting Tech HI PRO,,,,,,,,D6,-
+3553,Active,nan,Alto,Alto ICP LLC,IL ,Pekin,40.555,-89.6698,IMRR/BNSF,82.0,,,,,,,,,,,
+3554,Active,nan,Alto,Alto Pekin LLC Dry Mill,IL ,Pekin,40.555063,-89.663302,IMRR/BNSF,63.0,Rotary Dryer,,,,,,Direct,,,,
+3555,Active,nan,Alto,Alto Pekin LLC Wet Mill,IL ,Pekin,40.5534,-89.6631,UP/BNSF/CN/NS/IAIS,100.0,,,,,,,Direct,,,,
+3556,Active,nan,Summit Sustainable Ingredients,Amber Wave,KS ,Phillipsburg,38.363339,-97.783411,UP,50.0,,,,,,,,,,,
+3557,Active,nan,ADM,VCP Corn Processing,IA ,Cedar Rapids,41.929,-91.6885,UP,300.0,Rotary Dryer,,CHP,,,,,,,,
+3558,Active,nan,ADM,ADM Cedar Rapids IA Wet Mill,IA ,Cedar Rapids,41.9156,-91.6888,UP,240.0,Rotary Dryer,,CHP,,,,,,,,
+3559,Active,nan,ADM,ADM Clinton IA,IA ,Clinton,41.8173,-90.2162,UP/CP,237.0,Rotary Dryer,,CHP,,,,,,,D6,-
+3560,Active,nan,ADM,VCP Corn Processing,NE ,Columbus,41.419,-97.2896,UP/BNSF,313.0,Rotary Dryer,,CHP,,,,,Tall Grass,Tall Grass,,
+3561,Active,nan,ADM,ADM Columbus Wet Mill,NE ,Columbus,41.4153,-97.2869,UP/BNSF,100.0,Rotary Dryer,,CHP,,,,,Tall Grass,Tall Grass,,
+3562,Active,nan,ADM,ADM ,IL ,Decatur,39.8635,-88.8896,NS/CN,375.0,Rotary Dryer,,,,,,Direct,,Direct Inject,D6,-
+3563,Active,nan,ADM,ADM,MN ,Marshall,44.4748,-95.7796,BNSF,48.0,Rotary Dryer,,,,,,,,None,D6,-
+3568,Active,nan,Big River Resources,Big River Resources Boyceville LLC,WI ,Boyceville,45.050596,-91.980063,CN,70.0,Rotary Dryer,,,,,,,,None,D6,-
+3569,Active,nan,Big River Resources,Big River Resources Galva LLC,IL ,Galva,41.169691,-90.024473,BNSF,140.0,Rotary Dryer,,,,,EP3,,,None,D6,-
+3570,Active,nan,Big River Resources,Big River Resources West Burlington LLC,IA ,West Burlington,40.831196,-91.220611,BNSF,130.0,Rotary Dryer,,,,,,,,None,D6,-
+3571,Active,nan,Big River Resources,Big River United Energy LLC,IA ,Dyersville,42.4872,-91.1633,CN,140.0,Rotary Dryer,,,,,EP3,,,None,D6,-
+3572,Active,nan,BioUrja,Biourja Renewables LLC,IL ,Peoria,40.6776,-89.6069,UP,61.0,Rotary Dryer,,,,,,,,None,D6,-
+3573,Active,nan,Harvestone,Blue Flint Ethanol LLC,ND ,Underwood,47.377226,-101.152303,UP,75.7,Rotary Dryer,,CHP,,,,Direct,,Direct Inject,D6,-
+3576,Active,70109,Bushmills Ethanol Inc.,Bushmills Ethanol Inc,MN ,Atwater,45.07333,-94.755556,BNSF,90.0,Rotary Dryer,,,,,EP3,,SCS,Summit Carbon Solutions,D6,D3
+3578,Active,nan,Carbon Green Bioenergy,Carbon Green Bioenergy LLC,MI ,Lake Odessa,42.76601,-85.07428,CSX,59.0,Rotary Dryer,,,,,EP3,,,None,D6,D3
+3579,Active,nan,Cardinal Ethanol,Cardinal Ethanol LLC,IN ,Union City,40.18682,-84.86226,CSX,136.0,Rotary Dryer,ICM HI PRO,,,,EP3,,,None,D6,D3
+3580,Active,nan,Cargill,Cargill Inc,NE ,Blair,41.544697,-96.13507,UP,210.0,,,,,,,,,None,D6,-
+3581,Active,nan,Cargill,Cargill Inc,IA ,Eddyville,41.55,-92.6343,UP/BNSF,71.0,,,CHP,,,,,,None,D6,-
+3582,Active,nan,Cargill,Cargill Inc,IA ,Fort Dodge,42.506334,-94.313203,UP/CN,130.0,,,,,,,,,None,D6,-
+3583,Active,nan,Central Indiana Ethanol,Central Indiana Ethanol,IN ,Marion,40.56492,-85.72772,NS,50.0,Rotary Dryer,,,,,,,,None,D6,-
+3584,Active,70095,Central Indiana Ethanol,CIE Norfolk GNS LLC,NE ,Norfolk,42.06672,-97.3815,NCRC/WC1s,60.0,Rotary Dryer,,,,,EP3,,,None,D6,-
+3588,Active,nan,CHS,CHS - Annawan,IL ,Annawan,41.393398,-89.872214,IAIS,130.0,Rotary Dryer,,,White Fox,,EP3,,,None,D6,D3
+3589,Active,nan,CHS,CHS - Rochelle,IL ,Rochelle,41.89508,-89.02898,BNSF,138.0,Rotary Dryer,,,,,EP3,,,None,D6,-
+3590,Active,nan,Hopkinsville Elevator CO-OP,Commonwealth Agri-Energy,KY ,Hopkinsville,36.81342,-87.41009,CSX,49.0,Rotary Dryer,,CHP,,,EP3,,,None,D6,-
+3591,Active,70145,Gold-Eagle Cooperative,Corn LP,IA ,Goldfield,42.733339,-93.910902,UP,80.0,Rotary Dryer,ICM HI PRO,,,,,,SCS,Summit Carbon Solutions,D6,D3
+3593,Active,nan,Harvestone,Dakota Spirit Agenergy,ND ,Spiritwood,46.924798,-98.503225,BNSF,80.0,Rotary Dryer,,,,,,Direct,,Direct Inject,D6,-
+3595,Active,nan,Conestoga Energy,HET Levelland LLC,TX ,Levelland,33.588611,-102.262778,BNSF,50.274,Rotary Dryer,,,,,,,,None,D6,-
+3596,Active,nan,Didion Milling,Didion Ethanol LLC,WI ,Cambria,43.53731,-89.10315,WSOR/CN/UP,54.0,Ring Dryer,,,,,EP3,,,None,D6,D3
+3598,Active,83483,East Kansas Agri-Energy,East Kansas Agri-Energy LLC,KS ,Garnett,38.271522,-95.237414,UP,48.0,Rotary Dryer,,,,,EP3,,,,D6,D3
+3601,Active,nan,ACE Ethanol,Fox River Valley Ethanol LLC,WI ,Oshkosh,43.980233,-88.651815,WSOR/CN/UP,64.0,Ring Dryer,,,White Fox ICE,,,,,None,D6,D3
+3602,Active,70058,Front Range Energy LLC,Front Range Energy LLC,CO ,Windsor,40.45746,-104.856211,UP/BNSF,46.0,Rotary Dryer,,,White Fox,,,,,None,D6,-
+3608,Active,70691,Golden Grain Energy,Golden Grain Energy LLC,IA ,Mason City,43.11204,-93.23104,UP,140.0,Rotary Dryer,ICM HI PRO,,White Fox ICE,,,,SCS,Summit Carbon Solutions,D6,D3
+3609,Active,nan,Grain Processing Corp,Grain Processing Corp,IA ,Muscatine,41.4004008422343,-91.0629891795703,CP,82.5,,,,White Fox ICE,,,,,None,D6,-
+3610,Active,nan,Grain Processing Corp,Grain Processing Corp,IN ,Washington,38.6359263728874,-87.2244655000325,CSX,36.72,,,,,,,,,None,D6,-
+3615,Active,nan,Green Plains,Green Plains Fairmont LLC,MN ,Fairmont,43.664021,-94.492559,UP,122.9,Ring Dryer,,,,ICM P10,,,SCS,Summit Carbon Solutions,D6,D3
+3616,Active,nan,Green Plains,Green Plains Madison LLC,IL ,Madison,38.67995,-90.17185,PH/BNSF/UP/CN/NS,100.0,Rotary Dryer,,,,ICM P10,EP3,,,None,D6,-
+3617,Active,nan,Green Plains,Green Plains Mount Vernon LLC,IN ,Mount Vernon,37.9082,-87.7257,CSX,135.0,,FQPT HI PRO,,,ICM P10,,,,None,,
+3618,Active,nan,POET Biorefining,Poet Biorefining-Obion LLC,TN ,Rives,36.28305,-89.147607,CN,135.0,Rotary Dryer,FQPT HI PRO,,,,EP3,,,None,D6,D3
+3620,Active,nan,Green Plains,Green Plains Shenandoah LLC,IA ,Shenandoah,40.7549,-95.3953,BNSF,100.0,Rotary Dryer,FQPT HI PRO,,,,EP3,,,None,D6,-
+3623,Active,nan,Green Plains,Green Plains York LLC,NE ,York,40.69874,-97.567402,BNSF,60.0,,,,,,,,Tall Grass,Tall Grass,D6,D3
+3624,Active,nan,Greenfield Global,Greenfield Global Corn Plus LLC,MN ,Winnebago,43.760415,-94.149858,CP,43.0,Ring Dryer,,,,,EP3,,,None,D6,-
+3627,Active,nan,"Guardian Energy, LLC",Guardian Lima LLC,OH ,Lima,40.70588,-84.08007,IORY//CSX/NS,84.0,Rotary Dryer,,,,,EP3,,,None,D6,D3
+3634,Active,nan,ICM,ICM Biofuels LLC,MO ,St Joseph,39.74025,-94.8468,BNSF,50.0,Rotary Dryer,,,,,,,,None,D6,-
+3635,Active,nan,Harvestone,Iroquois Bio-Energy Co LLC,IN ,Rensselaer,40.933056,-87.067222,CSX,65.0,Rotary Dryer,,,,,EP3,Direct,,Direct Inject,-,-
+3640,Active,nan,"Lincolnland Agri Energy, LLC",Lincolnland Agri-Energy LLC,IL ,Palestine,39.004293,-87.631325,CSX,68.0,Rotary Dryer,ICM HI PRO,CHP,White Fox,,,,,None,D6,-
+3644,Active,nan,Marquis Energy,Marquis Energy LLC,IL ,Hennepin,41.276711,-89.319504,NS,400.0,Steam Tube Dryer,Marquis HI PRO,,,,EP3,Direct,,Direct Inject,D6,D3
+3645,Active,70269,United Cooperative,United Energy Necadah,WI ,Necedah,43.99187,-90.07219,CN,106.0,Rotary Dryer,,,,,EP3,,,None,D6,-
+3646,Active,nan,DCP Midstream,Marysville Ethanol LLC,MI ,Marysville,42.88335,-82.491547,CSX/CN,60.0,Rotary Dryer,,,,,,,,None,D6,-
+3647,Active,nan,MGP,MGP,IN ,Lawrenceburg,39.098994032848,-84.8610889416364,CSX,,,,,,,,,,None,,
+3653,Active,nan,Rex American,One Earth Energy LLC,IL ,Gibson City,40.471085,-88.39574,NS/CN,150.0,Rotary Dryer,,,,,EP3,Direct,,None,D6,-
+3655,Active,nan,Parallel Products,Parallel Products Inc,KY ,Louisville,38.2175523882665,-85.7859630221699,UnKnown,5.5,,,,,,,,,None,D6,-
+3656,Active,nan,Innergex Renewable Energy Inc.,Innergex Renewable Energy Inc.,CA ,Stockton,37.9413,-121.3385,BNSF,60.0,Ring Dryer,,,White Fox,,,,,None,-,-
+3657,Active,nan,Pennsylvania Grain Processing,Pennsylvania Grain Processing LLC,PA ,Clearfield,41.03082,-78.4298,CN/NS,128.0,Rotary Dryer,,,,,,,,None,D6,D3
+3658,Active,nan,Arizona Grain,Pinal,AZ ,Maricopa,33.01552,-111.9826,UP,,Ring Dryer,,CHP,,,,,,None,-,-
+3659,Active,nan,Innovative Ag Services,Pine Lake Corn Processors,IA ,Steamboat Rock,42.457778,-93.055833,CN,87.12,Ring Dryer,,,White Fox ICE,,EP3,,,None,D6,D3
+3693,Active,nan,POET Biorefining,Poet Research Center,SD ,Scottland,43.1468,-97.7264,BNSF,12.0,Ring Dryer,,,,,,,,None,,
+3696,Active,nan,Quad County Corn Processors ,Quad County Corn Processors Coop,IA ,Galva,42.47684,-95.41516,None,38.0,Ring Dryer,,,,,EP3,,SCS,Summit Carbon Solutions,D6,D3
+3698,Active,nan,Red River Energy,Red River Energy LLC,SD ,Rosholt,45.872608,-96.725109,CP,36.0,Rotary Dryer,,,,,,,,None,D6,-
+3699,Active,nan,Red Trail Energy,Red Trail Energy LLC,ND ,Richardton,46.878642,-102.296038,BNSF,70.0,Rotary Dryer,,,,,EP3,Direct,,Direct Inject,D6,D3
+3701,Active,nan,Reeve Agri–Energy,Reeve Agri Energy Inc,KS ,Garden City,37.881418,-100.885662,None,20.0,,,,,,,,,None,,
+3703,Active,nan,Seaboard,Seaboard,CA ,Madera,36.922085,-119.974893,BNSF,40.0,Ring Dryer,,,,,,,,None,-,-
+3704,Active,nan,Show Me Ethanol,Show Me Ethanol,MO ,Carrollton,39.364417,-93.449361,BNSF,65.5,Rotary Dryer,,,,,EP3,,,None,D6,D3
+3707,Active,nan,Verbio,Southbend Ethanol LLC,IN ,South Bend,41.6552,-86.2962,CN,100.0,Rotary Dryer,,,,,,,,None,-,-
+3710,Active,nan,Tate & Lyle,Tate & Lyle,TN ,Loudon,35.7347562702955,-84.3199618667687,NS,110.0,,,CHP,,,,,,None,D6,-
+3711,Active,nan,Tharaldson Ethanol,Tharaldson Ethanol,ND ,Casselton,46.90361,-97.26349,BNSF,165.0,,FQPT HI PRO,,,,EP3,,SCS,Summit Carbon Solutions,D6,D3
+3712,Active,nan,The Andersons,The Andersons Marathon Holdings LLC,MI ,Albion,42.259646,-84.789726,NS,147.0,Rotary Dryer,,CHP,,,EP3,,,None,D6,D3
+3713,Active,nan,The Andersons,The Andersons Marathon Holdings LLC,IN ,Clymers,40.719022,-86.435982,NS,140.0,Rotary Dryer,,,,,EP3,,,None,,
+3715,Active,nan,The Andersons,The Andersons Marathon Holdings LLC,OH ,Greenville,40.081111,-84.591667,CSX,154.0,Rotary Dryer,,,,,EP3,,,None,D6,D3
+3716,Active,nan,Plymouth Energy Llc ,Three Rivers Energy,OH ,Coshocton,40.2154,-81.86021,NS,50.0,Ring Dryer,,,,,,,,None,D6,-
+3719,Active,nan,United Cooperative,United Energy Milton,WI ,Milton,42.75991,-88.91711,WSOR/BNSF/CN/CP/UP,61.0,Ring Dryer,,,White Fox ICE,,,,,None,D6,-
+3720,Active,nan,United WI Grain Producers,United Wisconsin Grain Producers LLC,WI ,Friesland,43.5706,-89.0613,UP,71.0,Rotary Dryer,FQPT HI PRO,,,,EP3,,,None,D6,D3
+3724,Active,nan,Valero Renewables,Valero Renewable Fuels LLC,OH ,Bloomingburg,39.597501,-83.390444,IORY/CSX/NS/CN,140.0,Rotary Dryer,,,,,EP3,,,None,D6,D3
+3725,Active,nan,Valero Renewables,Valero Renewable Fuels LLC,IN ,Bluffton,40.722139,-85.193722,NS,140.0,Rotary Dryer,,,,,EP3,,,None,D6,D3
+3729,Active,nan,Valero Renewables,Valero Renewable Fuels LLC,IA ,Lakota,43.38391,-94.14706,UP,110.0,Rotary Dryer,,,,,,,SCS,Summit Carbon Solutions,D6,-
+3731,Active,nan,Valero Renewables,Valero Renewable Fuels LLC,IN ,Mount Vernon,37.934,-87.8727,CSX,100.0,Ring Dryer,,,,,,,,None,,
+3732,Active,nan,"Zeeland Farm Services, Inc",ZFS Riga LLC,MI ,Riga,41.8166,-83.836001,ADBF/IORY/NS,,Ring Dryer,,,,,,,,None,,
+3734,Active,nan,Verbio,Verbio,IA ,Nevada,42.024244,-93.518659,UP,60.0,,,,,,,,,None,,
+3735,Active,nan,Western New York Energy,Western New York Energy LLC,NY ,Medina,43.210491,-78.365416,CSX,62.0,Rotary Dryer,,,,,EP3,,,None,D6,-
+3755,Active,nan,Clonbio/Pannonia,Aztalan Bio LLC,WI ,Johnson Creek,43.0403847505437,-88.7961769806411,UP,106.0,Ring Dryer,Front End Frac,,,,,,,None,D6,-
+3757,Active,nan,Crysalis Biosciences,Crysalis Biosciences,IL ,Sauget ,38.595413,-90.176648,CSX,57.0,Ring Dryer,,,,,,,,None,D6,-
+3758,Startup,nan,Gevo,Gevo,SD ,Lake Preston,44.362778 ,-97.375,RCPE/BNSF,,,,,,,,,,,,
+3759,Startup,nan,LanzaJet,LanzaJet,GA,Soperton,,,GC,,,,,,,,,,,-,-
+3760,Startup,nan,New Energy Blue,New Energy Blue,IA ,,,,IATR/up,18555.714,,,,,,,,,,,
+3761,Startup,nan,Sumitomo Corporation of Americas,Sumitomo Corporation of Americas,,,,,,,,,,,,,,,,,
+3762,Active,nan,AE Innovation,AE Innovation,MN ,Luverne,43.6474487685906,-96.2248918435399,MSR/BNSF,,,,,,,,,,None,,
+None,,nan,,,,,,,,,,,,,,,,S,,,
+SD-02,Active,nan,Attis Industries Inc.,Attis Industries Inc.,NY ,Fulton,43.3,-76.381,CSX,,,,,,,,,,None,,
+SD-07,Active,nan,Red River Energy,Red River Energy,ND ,Grand Forks,47.9439737609467,-97.0851760097759,BNSF,,,,,,,,,,None,,
+SD-08,Active,nan,Tyton NC Biofuels,Tyton NC Biofuels,NC ,Raeford,34.946728,-79.144518,CSX/NS,,,,,,,,,,None,,

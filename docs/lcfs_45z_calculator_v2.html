@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LCFS → 45Z Calculator (V1)</title>
+  <title>LCFS → 45Z Calculator (V2)</title>
 
  <style>
   :root{
     --bg:#0b0f14; --card:#121825; --muted:#8ea0b8; --text:#e8eef7; --accent:#6fb1ff;
     --line:#223049; --good:#52d273; --bad:#ff6b6b; --warn:#ffcc66;
   }
+  #outRateDetail, #outRateDetailNote { white-space: pre-line; }
+  
   body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);}
   header{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;justify-content:space-between;}
   header h1{font-size:16px;margin:0;font-weight:650;letter-spacing:.2px;}
@@ -32,17 +34,15 @@
   flex-wrap:nowrap;
 }
 
-
-
-
-/* --- Output pills: compact + same row --- */
-.output-row{
-  display:flex;
-  gap:10px;
-  align-items:stretch;
-  flex-wrap:nowrap;          /* keeps them on one line */
+.noteSubhead{
+  font-size:12px;
+  color:var(--muted);
+  font-family:inherit;
+  font-weight:650;   /* tweak to 600/700 if you want */
+  text-transform:none;
+  letter-spacing:normal;
+  margin:10px 0 6px 0;
 }
-
 /* --- Output pills: compact + mobile-friendly --- */
 .output-row{
   display:flex;
@@ -70,17 +70,6 @@
   .pill.pill-compact{
     flex:1 1 100%;         /* ✅ stack cleanly if needed */
   }
-}
-
-.pill.pill-compact{
-  padding:6px 10px;
-  font-size:0.85rem;
-  line-height:1.1;
-  border-radius:999px;
-  min-width:0;               /* allow shrinking */
-  flex:1 1 0;                /* each takes 1/3 of the row */
-  text-align:center;
-  white-space:nowrap;        /* prevents wrapping inside pill */
 }
 
 
@@ -543,6 +532,17 @@ input[type="number"]{
   box-sizing:border-box;
 }
 
+/* Freight hub: make the CA hub select fill the left-half cleanly */
+.freightGrid > div { 
+  min-width: 0;     /* prevents weird shrink behavior */
+}
+
+.freightGrid .hubSelect{
+  display:block;
+  width:100%;
+  max-width:none;
+}
+
 /* Right half: output tiles should fill the half-column
    so they match the size/feel of the Misc box above
 */
@@ -558,22 +558,6 @@ input[type="number"]{
   box-sizing:border-box;
 }
 
-/* Keep your outPill styling consistent (if not already defined elsewhere)
-   If you already have .outPill defined above, you can remove this block.
-*/
-.outPill{
-  padding:10px 12px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:#0f1522;
-}
-.outPill .t{font-size:12px;color:var(--muted);margin-bottom:6px;}
-.outPill .n{font-size:16px;font-weight:750;}
-.outPill .s{font-size:12px;color:var(--muted);margin-top:6px;}
-  
-  
-  
-  
   .outputs{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
   @media (max-width: 520px){.outputs{grid-template-columns:1fr;}}
   .out{padding:12px;border:1px solid var(--line);border-radius:12px;background:#0f1522;}
@@ -695,11 +679,19 @@ header, main{ position:relative; z-index:1; }
 </div>
 <header>
   <div>
-    <h1>LCFS → 45Z Calculator (V1)</h1>
-    <div class="sub">Static HTML (no backend). Loads plant data from JSON and applies scenario adjustments.</div>
-  </div>
-  <div class="pill warn">V1 uses user inputs for freight / ILUC / CCS &amp; policy params</div>
+    <h1>LCFS → 45Z Calculator (V2)</h1>
+
+</div>
+
+<div class="pill warn">
+  V1 uses user inputs for freight / ILUC / CCS &amp; policy params
+</div>
 </header>
+
+
+
+
+
 
 <main>
   <div class="grid">
@@ -708,7 +700,6 @@ header, main{ position:relative; z-index:1; }
     <div class="card">
       <p class="sectionTitle">Plant selection</p>
 
-      <!-- Keep the card full width; narrow only the controls block -->
       <div class="plant-inner">
         <div class="row plant-row-inline">
           <select id="plantSelect" class="plantSelect"></select>
@@ -725,44 +716,12 @@ header, main{ position:relative; z-index:1; }
 
       <div class="hr"></div>
 
-     
       <div id="plantBadges" class="row" style="margin-bottom:6px;"></div>
       <div class="kv" id="plantKv"></div>
 
       <div class="hr"></div>
-      
-      <p class="sectionTitle">45Z policy parameters</p>
-        <div class="metricGrid">
-  <div class="metric">
-  <div class="metricLabel">45Z CI (kg/MMBtu)</div>
-  <div class="valuePill"><span class="value" id="proxyCiKgmmbtu">—</span></div>
-  <div class="metricSub">Sanity: <span id="proxyCiGmj">—</span> gCO2e/MJ</div>
-</div>
 
-  <div class="metric">
-    <div class="metricLabel">Max rate ($/gal)</div>
-    <div class="valuePill">
-      <input id="maxRate" type="number" step="0.01" value="1.00" />
-    </div>
-    <div class="metricSub">Transportation Fuel Maximum Payout</div>
-  </div>
-
-<div class="metric">
-  <div class="metricLabel">Benchmark (kg/MMBtu)</div>
-  <div class="valuePill">
-    <input id="ciBenchmark" type="number" step="0.01" value="48.92" />
-  </div>
-  <div class="metricSub">≈ <span id="benchGmjEq">—</span> g/MJ</div>
-</div>
-
-  <div class="metric">
-    <div class="metricLabel">Slope ($/gal per unit)</div>
-    <div class="valuePill">
-      <input id="slope" type="number" step="0.0001" value="0.02" />
-    </div>
-    <div class="metricSub">Per Gallon Slope of Payout</div>
-  </div>
-</div>
+     
         
         
         <div class="hr"></div>
@@ -777,6 +736,7 @@ header, main{ position:relative; z-index:1; }
     <div class="metricLabel">45Z CI (kg/MMBtu)</div>
     <div class="valuePill"><span class="value" id="out45zCi">—</span></div>
     <div class="metricSub">Converted from adjusted g/MJ</div>
+    <div class="metricSub"><span id="outConvLine">—</span></div>
   </div>
 
   <div class="metric">
@@ -788,7 +748,7 @@ header, main{ position:relative; z-index:1; }
   <div class="metric">
     <div class="metricLabel">Estimated payout ($/yr)</div>
     <div class="valuePill"><span class="value" id="outPayout">—</span></div>
-    <div class="metricSub" id="outPayoutDetail_inline">rate × capacity</div>
+    <div class="metricSub" id="outPayoutDetail_inline">Rate × Capacity</div>
   </div>
 
   <div class="metric">
@@ -817,11 +777,46 @@ header, main{ position:relative; z-index:1; }
         
         <!-- Details live below so the top row can stay tight -->
         <div class="note" style="margin-top:8px;">
-          <div><span class="mono"></span> <span id="outRateDetailNote">—</span>—</span></div>
+          <div><span class="mono">Rate detail:</span> <span id="outRateDetailNote">—</span></div>
           <div><span class="mono">Payout detail:</span> <span id="outPayoutDetail">rate × capacity</span></div>
         </div>
         
         <div class="hr"></div>
+
+ <p class="sectionTitle">45Z policy parameters</p>
+
+ <div class="metricGrid">
+
+   <!-- Benchmark -->
+   <div class="metric">
+     <div class="metricLabel">Benchmark (kg/MMBtu)</div>
+     <div class="valuePill">
+       <input id="ciBenchmark" type="number" step="0.1" value="50.0" />
+     </div>
+     <div class="metricSub">Unit of measure equivilant to <span id="benchGmjEq">—</span> g/MJ</div>
+   </div>
+
+   <!-- Max Rate (ONLY ONE) -->
+   <div class="metric">
+     <div class="metricLabel">Max rate ($/gal)</div>
+     <div class="valuePill">
+       <input id="maxRate" type="number" step="0.01" value="1.00" />
+     </div>
+     <div class="metricSub">Transportation fuel maximum payout</div>
+   </div>
+
+   <!-- Slope -->
+   <div class="metric">
+     <div class="metricLabel">Base slope ($/MMBtu per CI unit)</div>
+     <div class="valuePill">
+       <input id="slope" type="number" step="0.0001" value="0.02" />
+     </div>
+     <div class="metricSub">Final slope = base slope × gal/MMBtu (0.02 × 0.07633)</div>
+   </div>
+
+ </div>        
+        
+ <div class="hr"></div>
 
       <p class="sectionTitle">Notes</p>
       <div class="note" id="notes">
@@ -833,11 +828,15 @@ header, main{ position:relative; z-index:1; }
   The credit is earned on each gallon of eligible fuel produced and sold for transportation use. Producers can use the credit to offset federal tax liability or transfer it to other taxpayers under credit transfer provisions, converting it into cash value. Because the credit is calculated per gallon, total financial benefit depends on both the per-gallon rate and the facility’s annual production capacity.
 </p>
 
+<div class="hr"></div>
 
-<div class="noteSubhead">Model</div>
+<div class="noteSubhead">Model Mechanics</div>
+<ul class="noteList">
+  ...
+
   <ul class="noteList">
     <li>Starts with a facility carbon intensity in <span class="mono">gCO2e/MJ</span> (LCFS CI or proxy estimate).</li>
-    <li>Applies adjustments (freight, ILUC, CCS, agricultural practices, misc) in <span class="mono">gCO2e/MJ</span>.  Checked boxes are included in teh calculations</li>
+    <li>Applies adjustments (freight, ILUC, CCS, agricultural practices, misc) in <span class="mono">gCO2e/MJ</span>. Checked boxes are included in the calculations.</li>
     <li>Converts to the 45Z policy unit <span class="mono">kgCO2e/MMBtu</span> at the final step for rate mapping.</li>
     <li>Uses <span class="mono">Benchmark</span>, <span class="mono">Slope</span>, and <span class="mono">Max Rate</span> to estimate a $/gal credit rate.</li>
     <li>Calculates annual value as <span class="mono">rate × gallons</span> using ethanol capacity.</li>
@@ -847,70 +846,35 @@ header, main{ position:relative; z-index:1; }
     <li>$ /gal policy mapping is parameterized and editable in V1.</li>
   </ul>
 
-      
-      
-       
-      </div>
+  <!-- keep ONLY if JS uses it -->
+  <div id="modelSection"></div>
+</div> <!-- closes #notes -->
+</div> <!-- closes LEFT .card -->
+
+<!-- RIGHT column card: Scenario inputs -->
+<div class="card">
+  <p class="sectionTitle">Scenario inputs</p>
+
+  <p class="sectionTitle">Starting CI</p>
+
+  <div class="scoreRow nowrap" style="margin-bottom:10px;">
+    <div class="scoreBox">
+      <div class="t">Starting CI used for calculations (gCO2e/MJ)</div>
+      <div class="n" id="startCiValue">—</div>
+      <div class="s" id="startCiNote">—</div>
     </div>
 
-    <div class="card">
-      <p class="sectionTitle">Scenario inputs</p>
-     
-
-    <p class="sectionTitle">Starting CI</p>
-    
-    <div class="scoreRow nowrap" style="margin-bottom:10px;">
-      <div class="scoreBox">
-        <div class="t">Starting CI used for calculations (gCO2e/MJ)</div>
-        <div class="n" id="startCiValue">—</div>
-        <div class="s" id="startCiNote">—</div>
-      </div>
-    
-      <div class="note scoreNotes" id="startCiFeedstocks">
-        <!-- filled by JS -->
-      </div>
+    <div class="note scoreNotes" id="startCiFeedstocks">
+      <!-- filled by JS -->
     </div>
-    
-    <div class="hr"></div>
+  
+
+  <div class="hr"></div>
+</div>
 
       <!-- CHAPTER 2 (compact, matches Starting CI panel) -->
 <!-- CHAPTER 2 (compact, matches Starting CI panel) -->
-<p class="sectionTitle">CO2 sequestration reduction</p>
 
-<div class="scoreRow nowrap" style="margin-bottom:10px;">
-  <div class="scoreBox">
-    <div class="t">CO2 sequestration reduction (gCO2e/MJ)</div>
-
-    <div class="row" style="gap:8px; align-items:center; margin-top:6px; flex-wrap:nowrap;">
-      <input id="ch2_pipeline_apply" type="checkbox" />
-      <div style="flex:1; min-width:0;  font-weight:650; color:var(--text);font-size:11px; line-height:1.4; white-space:nowrap;">
-      
-        Apply
-      <div class="muted" style="font-size:12px;">CCS Value</div>
-      </div>
-      <input
-        id="ch2_pipeline_score"
-        class="small numBox"
-        type="number"
-        step="0.1"
-        value="0"
-        title="Pipeline / sequestration score (gCO2e/MJ)"
-      />
-    </div>
-
-    <div class="s" style="margin-top:6px;">Uses auto-defaults by plant flags</div>
-  </div>
-
-  <div class="note scoreNotes">
-  <div style="margin-bottom:6px;">Estimated reduction from CCS</div>
-  <ul class="noteList">
-    <li><span class="mono">Direct</span> = 30</li>
-    <li><span class="mono">Trailblazier</span> = 31</li>
-    <li><span class="mono">All else</span> = 0</li>
-  </ul>
-</div>
-</div>  <!-- ✅ ADD THIS: closes scoreRow -->
-<div class="hr"></div>
 
 
 
@@ -932,7 +896,7 @@ header, main{ position:relative; z-index:1; }
   </div>
 
   <div class="check compact">
-    <input id="applyCcs" type="checkbox" />
+    <input id="applyMisc" type="checkbox" />
     <div style="flex:1;">
       <div class="labelStrong">Misc Reduction</div>
       <div class="muted" style="font-size:12px;">Change misc g/MJ</div>
@@ -994,7 +958,7 @@ header, main{ position:relative; z-index:1; }
     </div>
 
     <!-- CA hub big pill -->
-    <div style="margin-top:10px;">
+    <div style="margin-top:20px;">
       <label for="caHub">California delivery hub</label>
       <select id="caHub" class="hubSelect"></select>
     </div>
@@ -1022,7 +986,42 @@ header, main{ position:relative; z-index:1; }
 
 <div class="hr"></div>
 
+<p class="sectionTitle">CO2 sequestration reduction</p>
 
+<div class="scoreRow nowrap" style="margin-bottom:10px;">
+  <div class="scoreBox">
+    <div class="t">CO2 sequestration reduction (gCO2e/MJ)</div>
+
+    <div class="row" style="gap:8px; align-items:center; margin-top:6px; flex-wrap:nowrap;">
+      <input id="ch2_pipeline_apply" type="checkbox" />
+      <div style="flex:1; min-width:0;  font-weight:650; color:var(--text);font-size:11px; line-height:1.4; white-space:nowrap;">
+      
+        Apply
+      <div class="muted" style="font-size:12px;">CCS Value</div>
+      </div>
+      <input
+        id="ch2_pipeline_score"
+        class="small numBox"
+        type="number"
+        step="0.1"
+        value="0"
+        title="Pipeline / sequestration score (gCO2e/MJ)"
+      />
+    </div>
+
+    <div class="s" style="margin-top:6px;">Uses auto-defaults by plant flags</div>
+  </div>
+
+  <div class="note scoreNotes">
+  <div style="margin-bottom:6px;">Estimated reduction from CCS</div>
+  <ul class="noteList">
+    <li><span class="mono">Direct</span> = 30</li>
+    <li><span class="mono">Trailblazier</span> = 31</li>
+    <li><span class="mono">All else</span> = 0</li>
+  </ul>
+</div>
+</div>  <!-- ✅ ADD THIS: closes scoreRow -->
+<div class="hr"></div>
 
 
 <!-- CHAPTER: Agricultural practices -->
@@ -1078,7 +1077,7 @@ header, main{ position:relative; z-index:1; }
   const DATA_URL = new URL("./static_data/LCFS/lcfs_dropdown_v1.json", window.location.href).toString();
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-02 08:11:08");
+  console.log("BUILD_STAMP:", "2026-03-04 21:11:00");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1117,17 +1116,23 @@ function bootRender(){
 
 console.log("SCRIPT LOADED OK");
 
- function computePipelineDefault(plant) {
-  const directPipe = !!plant.direct_pipe;
-  const tallgrass  = !!plant.tallgrass_positive;
-  const scs        = !!plant.scs_positive;
+function computePipelineDefault(plant) {
+  if (!plant) return { score: 0, applied: false };
 
+  const direct = normUpper(plant.co2_pipeline_direct);
+  const third  = normUpper(plant.co2_pipeline_3rd_party);
+
+  // Optional: if you have an SCS flag in JSON, keep this; otherwise it just stays false
+  const scs = !!plant.scs_positive;
 
   // SCS: force score=0, checkbox default OFF, but keep input editable
   if (scs) return { score: 0, applied: false };
 
-  if (directPipe) return { score: 30, applied: true };
-  if (tallgrass)  return { score: 31, applied: true };
+  // DIRECT pipeline -> default apply 30
+  if (direct.includes("DIRECT")) return { score: 30, applied: true };
+
+  // Tallgrass 3rd party -> default apply 31
+  if (third.includes("TALL") && third.includes("GRASS")) return { score: 31, applied: true };
 
   return { score: 0, applied: false };
 }
@@ -1175,7 +1180,22 @@ function toFiniteNumberOrNull(x){
   return Number.isFinite(n) ? n : null;
 } 
   
-  
+function parseLooseNumber(x){
+  if (x === null || x === undefined) return null;
+  let s = String(x).trim();
+  if (!s) return null;
+
+  const low = s.toLowerCase();
+  if (low === "nan" || low === "none" || low === "null" || low === "<na>" || low === "—" || low === "-") return null;
+
+  // remove commas and pull the first numeric token (handles "120 MGY", "120.0 (est)", etc.)
+  s = s.replace(/,/g, "");
+  const m = s.match(/-?\d+(\.\d+)?/);
+  if (!m) return null;
+
+  const n = Number(m[0]);
+  return Number.isFinite(n) ? n : null;
+}  
   // ----------------------------
 // TECH SCORING (NO-LCFS PROXY)
 // ----------------------------
@@ -1191,7 +1211,7 @@ const DEFAULT_NO_LCFS_PROXY = 70.0;
 const MJ_PER_MMBTU = 1055.056;
 const G_PER_KG = 1000.0;
 const CONV_G_PER_MJ_TO_KG_PER_MMBTU = MJ_PER_MMBTU / G_PER_KG; // 1.055056
-
+const MMBTU_PER_GAL_ETHANOL = 0.07633;
 
 
 
@@ -1264,6 +1284,7 @@ function getEnhancements(p){
   const out = [];
   if (!p) return out;
 
+  // 1) Plant-flag enhancements (your existing logic)
   for (const t of TECH_FIELDS){
     const raw = pickFirstField(p, t.fields);
     if (!asBool(raw)) continue;
@@ -1275,6 +1296,24 @@ function getEnhancements(p){
       reduction: (Number.isFinite(red) ? red : 0)
     });
   }
+
+  // 2) Synthetic enhancement: Fiber CI exists in LCFS feedstock CIs
+  //    (This is your “plant has corn fiber use already” signal.)
+  const fs = getFeedstockCI(p);
+  const hasFiberCI = (fs && fs.fiber !== null && Number.isFinite(fs.fiber) && fs.fiber > 0);
+
+  if (hasFiberCI){
+    // Avoid duplicates if you later also add a plant flag for fiber
+    const already = out.some(e => e.key === "fiber_ci_present" || e.key === "fiber_ethanol");
+    if (!already){
+      out.push({
+        key: "fiber_ci_present",
+        label: "Corn Fiber Ethanol",
+        reduction: 0 // display-only
+      });
+    }
+  }
+
   return out;
 }
 
@@ -1418,7 +1457,8 @@ function renderStartingPanel(){
 
     const lines = enh.map(e => {
       const r = Number.isFinite(e.reduction) ? e.reduction : 0;
-      return `<div>• <span class="mono">${e.label}</span>: −${fmt(r, 1)} g/MJ</div>`;
+      const suffix = (r > 0) ? `: −${fmt(r, 1)} g/MJ` : ""; // only show if it actually changes proxy
+      return `<div>• <span class="mono">${e.label}</span>${suffix}</div>`;
     }).join("");
 
     // Show the math line too
@@ -1522,7 +1562,7 @@ function nudgeNumber(id, delta){
   }
 
   function syncCcsUI(){
-  const cb  = document.getElementById("applyCcs");
+  const cb  = document.getElementById("applyMisc");
   const inp = document.getElementById("ccsReduction");
   if (!cb || !inp) return;
 
@@ -1654,8 +1694,15 @@ function syncFreightUI(){
       o.value = "";
       o.textContent = "No plants match filters";
       sel.appendChild(o);
+    
       selectedPlant = null;
+    
+      // ✅ deterministic freight reset when no plant
+      const freightCb = document.getElementById("applyFreight");
+      if (freightCb) freightCb.checked = false;
+    
       renderHubs();
+      syncFreightUI();
       renderPlantDetails();
       renderOutputs();
       return;
@@ -1664,19 +1711,36 @@ function syncFreightUI(){
     for (let i=0; i<filteredPlants.length; i++){
       const p = filteredPlants[i];
       const o = document.createElement("option");
-      o.value = String(i);
+      o.value = String(p.facility_id ?? p.ca_facility_id ?? p.__id ?? "").trim(); // ✅ key fix
       o.textContent = plantLabel(p);
       sel.appendChild(o);
     }
 
+       // keep current selection if possible; else default to first option
     if (selectedPlant){
-      const idx = filteredPlants.findIndex(p => p.__id === selectedPlant.__id);
-      sel.value = idx >= 0 ? String(idx) : "0";
+      const keepId = String(selectedPlant.facility_id ?? selectedPlant.ca_facility_id ?? selectedPlant.__id ?? "").trim();
+      const stillThere = filteredPlants.some(p =>
+        String(p.facility_id ?? p.ca_facility_id ?? p.__id ?? "").trim() === keepId
+      );
+      sel.value = stillThere
+        ? keepId
+        : String(filteredPlants[0].facility_id ?? filteredPlants[0].ca_facility_id ?? filteredPlants[0].__id ?? "").trim();
     } else {
-      sel.value = "0";
+      sel.value = String(filteredPlants[0].facility_id ?? filteredPlants[0].ca_facility_id ?? filteredPlants[0].__id ?? "").trim();
     }
 
-    selectedPlant = filteredPlants[Number(sel.value)] || null;
+    const chosenId = String(sel.value || "").trim();
+    selectedPlant = filteredPlants.find(p =>
+      String(p.facility_id ?? p.ca_facility_id ?? p.__id ?? "").trim() === chosenId
+    ) || null;
+    // ✅ Force freight default + sync AFTER selectedPlant is finalized
+    const freightCb = document.getElementById("applyFreight");
+    if (freightCb){
+      const mode = selectedPlant ? (startingCI(selectedPlant).mode || "proxy") : "proxy";
+      freightCb.checked = (mode === "lcfs");
+    }
+    syncFreightUI();
+    
     syncCcsUI();
     syncChapter2PipelineUI();
     renderHubs();
@@ -1684,7 +1748,10 @@ function syncFreightUI(){
     renderEnhancedTechnology();
     renderPlantDetails();
     renderOutputs();
-  }  // <-- CLOSE renderPlantSelect()
+  }  
+        
+        
+        // <-- CLOSE renderPlantSelect()
   // ----------------------------
   // PLANT DETAILS
   // ----------------------------
@@ -1721,9 +1788,33 @@ const enhText = enhList.length
   ? enhList.map(e => e.label).join(", ")
   : "No Enhanced Technologies";
 
+// --- Regulatory Pathways line (plant-level display) ---
+// Required order: D6, D3, EP#
+const d6Raw = selectedPlant.d6_non_cellulosic ?? "";
+const d3Raw = selectedPlant.d3_cellulosic ?? "";
+const epRaw =
+  selectedPlant.reg_pathway ??
+  selectedPlant["Efficient Producer"] ??
+  "";
+
+const d6 = String(d6Raw || "").trim();
+const d3 = String(d3Raw || "").trim();
+const ep = String(epRaw || "").trim();
+
+const clean = (s) => {
+  const t = String(s || "").trim();
+  if (!t) return "";
+  const low = t.toLowerCase();
+  if (low === "nan" || low === "none" || low === "null" || low === "<na>" || low === "—" || low === "-") return "";
+  return t;
+};
+
+const regParts = [clean(d6), clean(d3), clean(ep)].filter(Boolean);
+const regText = regParts.length ? regParts.join(", ") : "";
+
 const items = [
   ["Ownership", selectedPlant.ownership],
-  ["Enhanced Technologies", enhText],  // ✅ NEW LINE
+  
   ["Plant", selectedPlant.plant_name],
   ["Location", [selectedPlant.city, selectedPlant.state].filter(Boolean).join(", ")],
 
@@ -1732,6 +1823,9 @@ const items = [
       ? `${fmt(Number(selectedPlant.ethanol_capacity_mgy), 1)} MGY`
       : "—"
   ],
+  ["Enhanced Technologies", enhText],  // ✅ NEW LINE
+  ["Regulatory Pathways", regText],
+  ["Dryer type", selectedPlant.dryer_types],
 
   ["Rail lines", selectedPlant.rail_lines],
   ["CA Facility ID", selectedPlant.ca_facility_id || selectedPlant.facility_id || ""],
@@ -1797,8 +1891,8 @@ function compute(){
   const doIluc = getChecked("subtractIluc");
   const iluc = getNumber("ilucValue");
 
-  const doCcs = getChecked("applyCcs");
-  const ccs = getNumber("ccsReduction");
+  const doMisc = getChecked("applyMisc");
+  const misc = getNumber("ccsReduction");
 
   const bench_kg_per_mmbtu = getNumber("ciBenchmark");  // user enters kg/MMBtu
 const bench_g_per_mj = Number.isFinite(bench_kg_per_mmbtu)
@@ -1868,7 +1962,7 @@ if (Number.isFinite(res.startCi)){
     if (doIluc && Number.isFinite(iluc)) ci -= iluc;
 
     // Misc applies to ALL plants when checked
-   if (doCcs && Number.isFinite(ccs)) ci += ccs;
+   if (doMisc && Number.isFinite(misc)) ci += misc;
 
     // ✅ Chapter 2 pipeline reduction
     ci -= pipelineScore;
@@ -1893,9 +1987,18 @@ if (
   Number.isFinite(slope) &&
   Number.isFinite(maxRate)
 ){
-  const raw = (bench_kg_per_mmbtu - res.emissions_kg_per_mmbtu) * slope;
-  res.rate = clamp(raw, 0, maxRate);
-  res.rateDetail = `Benchmark=${fmt(bench_kg_per_mmbtu,2)} kg/MMBtu (≈${fmt(bench_g_per_mj,2)} g/MJ)`;
+  const dCI = (bench_kg_per_mmbtu - res.emissions_kg_per_mmbtu);  // kg/MMBtu
+
+// Interpret "slope" as BASE SLOPE in $/MMBtu per (kg/MMBtu)
+const finalSlope = slope * MMBTU_PER_GAL_ETHANOL;              // $/gal per (kg/MMBtu)
+
+const raw = dCI * finalSlope;                                 // $/gal
+res.rate = clamp(raw, 0, maxRate);
+
+res.rateDetail =
+  `Slope  $/MMBtu per CI unit  =  ${fmt(slope,4)}\n` +
+  `Ethanol MMBtu/gal  =  ${MMBTU_PER_GAL_ETHANOL}\n` +
+  `Rate $/gal per CI unit  =  ${fmt(finalSlope,6)}`;
 }
   return res;
 }
@@ -1906,14 +2009,16 @@ function renderOutputs(){
   const out45zCi       = document.getElementById("out45zCi");
   const outRate        = document.getElementById("outRate");
   const proxyCiKgmmbtu = document.getElementById("proxyCiKgmmbtu");
-const proxyCiGmj     = document.getElementById("proxyCiGmj");
+  const proxyCiGmj     = document.getElementById("proxyCiGmj");
   const outRateDetailNote  = document.getElementById("outRateDetailNote");
+  const outRateDetail      = document.getElementById("outRateDetail");
   const outMilesHub    = document.getElementById("outMilesHub");
   const outFreightHub  = document.getElementById("outFreightHub");
   const outPayout      = document.getElementById("outPayout");
   const outPayoutDetail= document.getElementById("outPayoutDetail");
   const outFinalNet    = document.getElementById("outFinalNet");
   const outFinalNetDetail = document.getElementById("outFinalNetDetail");
+  const outConvLine   = document.getElementById("outConvLine");
 
 const benchEq = document.getElementById("benchGmjEq");
 if (benchEq){
@@ -1938,15 +2043,19 @@ if (proxyCiGmj){
   if (!out45zCi || !outRate) return;
 
   if (!r.hasPlant){
-    if (outPayout) outPayout.textContent = "—";
-    if (outPayoutDetail) outPayoutDetail.textContent = "—";
-    out45zCi.textContent = "—";
-    outRate.textContent  = "—";
-    if (outRateDetail) outRateDetail.textContent = "—";
-    if (outMilesHub) outMilesHub.textContent = "—";
-    if (outFreightHub) outFreightHub.textContent = "—";
-    return;
-  }
+  if (outPayout) outPayout.textContent = "—";
+  if (outPayoutDetail) outPayoutDetail.textContent = "—";
+  out45zCi.textContent = "—";
+  outRate.textContent  = "—";
+  if (outRateDetail) outRateDetail.textContent = "—";
+  if (outMilesHub) outMilesHub.textContent = "—";
+  if (outFreightHub) outFreightHub.textContent = "—";
+
+  // ✅ NEW: clear the conversion line when no plant is selected
+  if (outConvLine) outConvLine.textContent = "—";
+
+  return;
+}
 
   if (outMilesHub)   outMilesHub.textContent   = Number.isFinite(r.milesEff) ? `${fmt(r.milesEff, 0)} mi` : "—";
   if (outFreightHub) outFreightHub.textContent = Number.isFinite(r.freightCi) ? fmt(r.freightCi, 2) : "—";
@@ -1957,23 +2066,29 @@ if (proxyCiGmj){
     : "—";
 
   // Rate ($/gal)
-  outRate.textContent = Number.isFinite(r.rate) ? `$${fmt(r.rate, 2)}` : "—";
+  outRate.textContent = Number.isFinite(r.rate) ? `$${fmt(r.rate, 5)}` : "—";
 
-  // Emissions check line MUST show the LCFS-unit value (g/MJ)
-  if (outRateDetail){
-    if (Number.isFinite(r.ci45z_g_per_mj)){
-      const kgTxt = Number.isFinite(r.emissions_kg_per_mmbtu)
-        ? ` → ${fmt(r.emissions_kg_per_mmbtu, 2)} kg/MMBtu`
-        : "";
-      const rateTxt = r.rateDetail ? ` | ${r.rateDetail}` : "";
-      outRateDetail.textContent = `Emissions check: ${fmt(r.ci45z_g_per_mj, 2)} g/MJ${kgTxt}${rateTxt}`;
-    } else {
-      outRateDetail.textContent = r.rateDetail || "—";
-    }
+ // ✅ Emissions check goes under the 45Z CI pill (NOT under rate)
+if (outConvLine){
+  if (Number.isFinite(r.ci45z_g_per_mj) && Number.isFinite(r.emissions_kg_per_mmbtu)){
+    outConvLine.textContent =
+      `Emissions check: ${fmt(r.ci45z_g_per_mj, 2)} g/MJ \u2192 ${fmt(r.emissions_kg_per_mmbtu, 2)} kg/MMBtu`;
+  } else {
+    outConvLine.textContent = "—";
   }
+}
 
+    // Under rate pill: show ONLY rate detail
+if (outRateDetail){
+  outRateDetail.textContent = r.rateDetail ? r.rateDetail : "—";
+}
+if (outRateDetailNote){
+  outRateDetailNote.textContent = "—"; // or "", or a short one-liner
+} 
+      
+      
   // ✅ payout = $/gal × (MMgy × 1,000,000)
-  const cap = selectedPlant ? Number(selectedPlant.ethanol_capacity_mgy) : NaN;
+  const cap = selectedPlant ? Number(selectedPlant.ethanol_capacity_mgy ?? selectedPlant["ethanol_capacity_mgy"]) : NaN;
   const gallonsPerYear = Number.isFinite(cap) ? cap * 1_000_000 : NaN;
 
     // ✅ payout = $/gal × (MMgy × 1,000,000)
@@ -2024,85 +2139,105 @@ if (proxyCiGmj){
 }
 
 
- // ----------------------------
+// ----------------------------
 // EVENTS
 // ----------------------------
 function wireEvents(){
-  // 1) Inputs that should trigger recompute / rerender on change
-const ids = [
-  "plantSelect","searchBox","caHub","applyFreight",
-  "freightMultiplier","gPerMjPerMile",
-  "subtractIluc","ilucValue","applyCcs","ccsReduction",
-  "ciBenchmark","maxRate","slope",
-  "ch2_pipeline_apply","ch2_pipeline_score","ag_apply","ag_score",
-  "aecValue","creditDiscount"
-];
 
-  // 2) Attach one "input" handler to each id above
-  for (const id of ids){
+  // Helpers
+  function onInput(id, fn){
     const el = document.getElementById(id);
     if (!el){
       console.warn(`[wireEvents] Missing element id="${id}"`);
-      continue;
+      return;
     }
+    el.addEventListener("input", fn);
+  }
 
-    el.addEventListener("input", () => {
-      // Filter controls: rebuild the plant list
-      if (id === "searchBox"){
-  applyFilters();
-  return;
-}
-if (id === "applyFreight"){
-  syncFreightUI();
-  renderOutputs();
-  return;
-}
+  function resetMiscOverride(){
+    const misc = document.getElementById("ccsReduction");
+    if (misc) misc.value = "0";
+    const miscCb = document.getElementById("applyMisc");
+    if (miscCb) miscCb.checked = false;
+  }
 
+  function handlePlantSelectChange(){
+    const sel = document.getElementById("plantSelect");
+    const chosenId = String(sel ? sel.value : "").trim();
 
-      // Plant selection: update selectedPlant and rerender panels that depend on plant
-      if (id === "plantSelect"){
-          const sel = document.getElementById("plantSelect");
-          const idx = Number(sel ? sel.value : NaN);
-          selectedPlant = Number.isFinite(idx) ? (filteredPlants[idx] || null) : null;
-          
-          // reset user override when switching plants
-          const misc = document.getElementById("ccsReduction");
-          if (misc) misc.value = "0";
-          const miscCb = document.getElementById("applyCcs");
-          if (miscCb) miscCb.checked = false;
-          
-          syncCcsUI();
-            syncChapter2PipelineUI();
-            renderHubs();
-            renderStartingPanel();
-            
-            // Auto-check freight for LCFS plants; force off for proxy plants
-            const freightCb = document.getElementById("applyFreight");
-            if (freightCb){
-              const mode = selectedPlant ? (startingCI(selectedPlant).mode || "proxy") : "proxy";
-              freightCb.checked = (mode === "lcfs");
-            }
-            syncFreightUI();
-            
-            renderPlantDetails();
-            renderOutputs();
-            return;
+    selectedPlant = filteredPlants.find(p =>
+      String(p.facility_id ?? p.ca_facility_id ?? p.__id ?? "").trim() === chosenId
+    ) || null;
 
-      }
+    // Reset misc override when switching plants
+    resetMiscOverride();
 
-      // Everything else: just recompute outputs
+    // Sync plant-dependent UI
+    syncCcsUI();
+    syncChapter2PipelineUI();
+
+    // Hubs depend on rail lines
+    renderHubs();
+
+    // Starting CI + feedstock/enhancement panel
+    renderStartingPanel();
+
+    // Freight: auto-on for LCFS plants, forced off for proxy plants
+    const freightCb = document.getElementById("applyFreight");
+    if (freightCb){
+      const mode = selectedPlant ? (startingCI(selectedPlant).mode || "proxy") : "proxy";
+      freightCb.checked = (mode === "lcfs");
+    }
+    syncFreightUI();
+
+    renderPlantDetails();
+    renderOutputs();
+  }
+
+  // --- Wire inputs ---
+
+  // Search: rebuild plant list
+  onInput("searchBox", () => {
+    applyFilters();
+  });
+
+  // Plant select: full re-sync
+  onInput("plantSelect", () => {
+    handlePlantSelectChange();
+  });
+
+  // Freight checkbox: enable/disable freight controls + recompute
+  onInput("applyFreight", () => {
+    syncFreightUI();
+    renderOutputs();
+  });
+
+  // All other calc-driving inputs: recompute only
+  const calcIds = [
+    "caHub",
+    "freightMultiplier","gPerMjPerMile",
+    "subtractIluc","ilucValue",
+    "applyMisc","ccsReduction",
+    "ciBenchmark","maxRate","slope",
+    "ch2_pipeline_apply","ch2_pipeline_score",
+    "ag_apply","ag_score",
+    "aecValue","creditDiscount"
+  ];
+
+  for (const id of calcIds){
+    onInput(id, () => {
       renderOutputs();
     });
   }
 
-  // 3) OPTIONAL: wire click buttons (like ▲/▼) here too
-  // (These are NOT part of the ids[] loop because they use "click", not "input")
+  // OPTIONAL: wire click buttons (▲/▼)
   const up = document.getElementById("miscUp");
   const dn = document.getElementById("miscDown");
-
   if (up) up.addEventListener("click", () => nudgeNumber("ccsReduction", +1.0));
   if (dn) dn.addEventListener("click", () => nudgeNumber("ccsReduction", -1.0));
 }
+          
+         
   // ----------------------------
   // INIT
   // ----------------------------
@@ -2153,45 +2288,58 @@ if (id === "applyFreight"){
       return;
     }
 
-    // 3) Normalize rows
+    function parseCap(x){
+      if (x === null || x === undefined || x === "") return null;
+      if (typeof x === "number") return Number.isFinite(x) ? x : null;
+    
+      const s = String(x).trim();
+      if (!s) return null;
+    
+      // remove commas + common unit text
+      const cleaned = s.replace(/,/g, "").replace(/mgy/ig, "").trim();
+      const n = Number(cleaned);
+      return Number.isFinite(n) ? n : null;
+    }
+
+
+
+
+
+       // 3) Normalize rows
     allPlants = rows.map((p, i) => {
       const out = { ...p };
 
-      // Stable ID
-      out.__id = String(out.epm ?? out.EPM ?? out.facility_id ?? out.ca_facility_id ?? i);
+      // ✅ Stable ID (helps plantSelect work)
+      out.__id = String(out.epm ?? out.EPM ?? out.facility_id ?? out.ca_facility_id ?? i).trim();
 
-      // Normalize key aliases (handles exporter variability)
-      out.plant_name = out.plant_name ?? out.Plant ?? out["Plant Name"] ?? out["Facility Name"] ?? out.Name ?? "";
-      out.ownership  = out.ownership  ?? out.Ownership ?? out.Owner ?? out.Company ?? "";
-      out.city       = out.city       ?? out.City ?? "";
-      out.state      = out.state      ?? out.State ?? "";
-      out.ethanol_capacity_mgy = out.ethanol_capacity_mgy ?? out["Ethanol Capacity"] ?? out["Capacity (M gals)"] ?? out["Ethanol Capacity (MGY)"] ?? null;
-      out.rail_lines = out.rail_lines ?? out["Rail Lines"] ?? out.Rail_Lines ?? "";
+      // ✅ Capacity (MMgy): simplest possible coercion
+      out.ethanol_capacity_mgy =
+        (out.ethanol_capacity_mgy === null || out.ethanol_capacity_mgy === "" || out.ethanol_capacity_mgy === undefined)
+          ? null
+          : Number(out.ethanol_capacity_mgy);
 
-      out.latitude  = out.latitude  ?? out.Latitude  ?? out["EPA Latitude"];
-      out.longitude = out.longitude ?? out.Longitude ?? out["EPA Longitude"];
-
-      // Delivered CI normalization
-      const v =
-        out.ci_lcfs_delivered_g_per_mj ??
-        out.ci_lcfs_g_per_mj ??
-        out.CI ??
-        out["LCFS CI"] ??
-        null;
-
-      out.ci_lcfs_delivered_g_per_mj =
-        (v === null || v === "" || v === undefined) ? null : Number(v);
+      if (!Number.isFinite(out.ethanol_capacity_mgy)) out.ethanol_capacity_mgy = null;
 
       return out;
     });
 
+    // ✅ Diagnostics MUST be outside the map
     console.log("Loaded rows:", allPlants.length);
     console.log("Sample keys:", allPlants[0] ? Object.keys(allPlants[0]) : "(none)");
+
+    const capCount = allPlants.filter(p => Number.isFinite(p.ethanol_capacity_mgy)).length;
+    console.log("Capacity non-null count:", capCount, "of", allPlants.length);
+
+    const capSamples = allPlants
+      .filter(p => Number.isFinite(p.ethanol_capacity_mgy))
+      .slice(0, 5)
+      .map(p => ({ name: p.plant_name, cap: p.ethanol_capacity_mgy }));
+    console.log("Capacity samples:", capSamples);
 
     // 4) Wire + render
     wireEvents();
     applyFilters();
-    syncFreightUI();
+    
   }
 
   // Kick off load after DOM is ready (ONLY ONCE)
