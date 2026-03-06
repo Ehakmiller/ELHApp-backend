@@ -969,9 +969,9 @@ header, main{ position:relative; z-index:1; }
   <div class="freightOut">
 
     <div class="outPill">
-      <div class="t">Miles to CA hub</div>
+      <div class="t">Net freight miles</div>
       <div class="n" id="outMilesHub">—</div>
-      <div class="s">Plant to Hub × Multiplier</div>
+      <div class="s">Plant to Hub × Multiplier − 300</div>
     </div>
 
     <div class="outPill">
@@ -1076,12 +1076,12 @@ header, main{ position:relative; z-index:1; }
   // ----------------------------
   const DATA_URL = new URL("static_data/LCFS/lcfs_dropdown_v1.json", window.location.origin + window.location.pathname).toString(); = new URL("./static_data/LCFS/lcfs_dropdown_v1.json", window.location.href).toString();
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-05 15:15:37");
+  console.log("✅ BUILD_STAMP:", "2026-03-05 19:46:52");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-05 15:15:37");
+  console.log("BUILD_STAMP:", "2026-03-05 19:46:52");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1216,6 +1216,7 @@ const MJ_PER_MMBTU = 1055.056;
 const G_PER_KG = 1000.0;
 const CONV_G_PER_MJ_TO_KG_PER_MMBTU = MJ_PER_MMBTU / G_PER_KG; // 1.055056
 const MMBTU_PER_GAL_ETHANOL = 0.07633;
+const BASELINE_45Z_FREIGHT_MILES = 300;
 
 
 
@@ -1849,12 +1850,13 @@ const items = [
   }
 
 function compute(){
-  const res = {
+ const res = {
   hasPlant: !!selectedPlant,
   hasCI: false,
   ciDelivered: NaN,
   miles: NaN,
   milesEff: NaN,
+  milesNet: NaN,
   freightCi: NaN,
   ciFob: NaN,
 
@@ -1941,14 +1943,20 @@ const slope = getNumber("slope");
 if (doFreight && Number.isFinite(lat) && Number.isFinite(lon) && hub){
   const miles = haversineMiles(lat, lon, hub.lat, hub.lon);
   res.miles = miles;
+
+  // Effective delivered miles after route multiplier
   res.milesEff = miles * (Number.isFinite(mult) ? mult : 1.0);
+
+  // 45Z already includes 300 baseline miles
+  res.milesNet = res.milesEff - BASELINE_45Z_FREIGHT_MILES;
 } else {
   res.miles = NaN;
   res.milesEff = NaN;
+  res.milesNet = NaN;
 }
 
-if (doFreight && Number.isFinite(res.milesEff) && Number.isFinite(factor)){
-  res.freightCi = res.milesEff * factor;
+if (doFreight && Number.isFinite(res.milesNet) && Number.isFinite(factor)){
+  res.freightCi = res.milesNet * factor;
 } else {
   res.freightCi = 0; // forced zero when proxy mode or unchecked
 }
@@ -2060,8 +2068,7 @@ if (proxyCiGmj){
 
   return;
 }
-
-  if (outMilesHub)   outMilesHub.textContent   = Number.isFinite(r.milesEff) ? `${fmt(r.milesEff, 0)} mi` : "—";
+  if (outMilesHub)   outMilesHub.textContent   = Number.isFinite(r.milesNet) ? `${fmt(r.milesNet, 0)} mi` : "—";
   if (outFreightHub) outFreightHub.textContent = Number.isFinite(r.freightCi) ? fmt(r.freightCi, 2) : "—";
 
    // 45Z CI output pill MUST be in kg/MMBtu
