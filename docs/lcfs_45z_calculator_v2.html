@@ -1074,14 +1074,14 @@ header, main{ position:relative; z-index:1; }
   // ----------------------------
   // SETTINGS
   // ----------------------------
-  const DATA_URL = new URL("static_data/LCFS/lcfs_dropdown_v1.json", window.location.origin + window.location.pathname).toString(); = new URL("./static_data/LCFS/lcfs_dropdown_v1.json", window.location.href).toString();
+  const DATA_URL = `${window.location.origin}/ELHApp-backend/static_data/LCFS/lcfs_dropdown_v1.json`;
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-05 19:46:52");
+  console.log("✅ BUILD_STAMP:", "2026-03-05 20:01:14");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-05 19:46:52");
+  console.log("BUILD_STAMP:", "2026-03-05 20:01:14");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
