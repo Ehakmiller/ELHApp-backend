@@ -1076,12 +1076,12 @@ header, main{ position:relative; z-index:1; }
   // ----------------------------
   const DATA_URL = `${window.location.origin}/ELHApp-backend/static_data/LCFS/lcfs_dropdown_v1.json`;
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-05 20:01:14");
+  console.log("✅ BUILD_STAMP:", "2026-03-05 20:30:15");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-05 20:01:14");
+  console.log("BUILD_STAMP:", "2026-03-05 20:30:15");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1822,7 +1822,7 @@ const items = [
   
   ["Plant", selectedPlant.plant_name],
   ["Location", [selectedPlant.city, selectedPlant.state].filter(Boolean).join(", ")],
-
+  ["Technology", selectedPlant.technology],
   ["Ethanol capacity",
     Number.isFinite(Number(selectedPlant.ethanol_capacity_mgy))
       ? `${fmt(Number(selectedPlant.ethanol_capacity_mgy), 1)} MGY`
