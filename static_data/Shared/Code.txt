@@ -1,1 +1,17 @@
+Code Additions:
+Add this in the <head>:
 
+<link rel="stylesheet" href="/ELHApp-backend/static_data/shared/license-footer.css">
+
+Then add this near the bottom of the <body> where you want the footer to appear:
+
+<div id="license-footer-holder"></div>
+
+<script>
+fetch('/ELHApp-backend/static_data/shared/license-footer.html')
+  .then(r => r.text())
+  .then(html => {
+    document.getElementById('license-footer-holder').innerHTML = html;
+  })
+  .catch(err => console.error('License footer load failed:', err));
+</script>
