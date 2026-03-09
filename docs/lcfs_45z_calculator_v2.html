@@ -811,7 +811,7 @@ header, main{ position:relative; z-index:1; }
      <div class="valuePill">
        <input id="slope" type="number" step="0.0001" value="0.02" />
      </div>
-     <div class="metricSub">Final slope = base slope × gal/MMBtu (0.02 × 0.07633)</div>
+     <div class="metricSub">Final slope = base slope × gal/MMBtu (0.02)</div>
    </div>
 
  </div>        
@@ -1074,14 +1074,14 @@ header, main{ position:relative; z-index:1; }
   // ----------------------------
   // SETTINGS
   // ----------------------------
-  const DATA_URL = `${window.location.origin}/ELHApp-backend/static_data/LCFS/lcfs_dropdown_v1.json`;
+  const DATA_URL = "./static_data/LCFS/lcfs_dropdown_v1.json";
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-05 20:30:15");
+  console.log("✅ BUILD_STAMP:", "2026-03-09 12:11:28");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-05 20:30:15");
+  console.log("BUILD_STAMP:", "2026-03-09 12:11:28");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1215,7 +1215,7 @@ const DEFAULT_NO_LCFS_PROXY = 70.0;
 const MJ_PER_MMBTU = 1055.056;
 const G_PER_KG = 1000.0;
 const CONV_G_PER_MJ_TO_KG_PER_MMBTU = MJ_PER_MMBTU / G_PER_KG; // 1.055056
-const MMBTU_PER_GAL_ETHANOL = 0.07633;
+const MMBTU_PER_GAL_ETHANOL =  1;
 const BASELINE_45Z_FREIGHT_MILES = 300;
 
 
