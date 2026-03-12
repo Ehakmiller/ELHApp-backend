@@ -11,7 +11,7 @@
     --line:#223049; --good:#52d273; --bad:#ff6b6b; --warn:#ffcc66;
   }
   #outRateDetail, #outRateDetailNote { white-space: pre-line; }
-  
+
   body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);}
   header{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;justify-content:space-between;}
   header h1{font-size:16px;margin:0;font-weight:650;letter-spacing:.2px;}
@@ -33,6 +33,33 @@
   align-items:flex-end;
   flex-wrap:nowrap;
 }
+
+.threeColGrid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:6px 16px;
+  margin-top:4px;
+}
+
+.gridItem{
+  font-size:12px;
+  color:var(--muted);
+  white-space:nowrap;
+}
+
+/* mobile */
+@media (max-width:720px){
+  .threeColGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:520px){
+  .threeColGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .noteSubhead{
   font-size:12px;
@@ -159,12 +186,12 @@
 }
 
 .outPill .t{font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:none;letter-spacing:normal;}
-   
+
 .outPill .n{font-size:16px;font-weight:750;}
 .outPill .s{font-size:12px;color:var(--muted);margin-top:6px;text-transform:none; letter-spacing:normal}
 
 
-  
+
 
 @media (max-width: 980px){
   .freightHub{ grid-template-columns: 1fr; }
@@ -182,8 +209,8 @@
   text-align: center;   /* centers the numbers visually */
   padding: 10px 8px;    /* slightly tighter to fit */
 }
-  
-  
+
+
   /* One-line Plant + Search (saves vertical space) */
 .row.plant-row-inline{
   display:flex;
@@ -233,8 +260,8 @@
     width:100%;
   }
 }
-  
-  
+
+
   /* --- Plant selection row: 1 line with compact search --- */
 .row.plant-row{
   align-items:flex-end;
@@ -291,10 +318,10 @@
   opacity:.45;
   cursor:not-allowed;
 }
-               
- 
-               
- 
+
+
+
+
                /* Standardize number boxes to the pipeline size */
 .numBox{
   width: 92px;           /* pipeline width */
@@ -304,7 +331,7 @@
 }
 
 
-  
+
   select{min-width:220px;max-width:100%;}
   .small{width:120px;}
   .mid{width:170px;}
@@ -318,8 +345,8 @@
   text-transform: none;
   letter-spacing: normal;
 }
-  
-  
+
+
   .pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);font-size:12px;color:var(--muted);}
 
   /* =========================
@@ -398,7 +425,7 @@
 }
 
 
-     
+
 /* =========================
    INPUTS: make ALL numeric inputs match “Starting input number”
    (bold + white + same size)
@@ -407,6 +434,24 @@ input[type="number"]{
   font-size:16px;
   font-weight:750;
   color:var(--text);
+}
+
+/* Date inputs styled like the other pill inputs */
+input[type="date"]{
+  font-size:14px;
+  font-weight:650;
+  color:var(--text);
+  background:#0f1522;
+  border:1px solid var(--line);
+  border-radius:999px;
+  height:36px;
+  padding:0 12px;
+  box-sizing:border-box;
+}
+
+.dateBox{
+  width: 135px;
+  max-width: 100%;
 }
 
 /* Make number inputs look like output pills when wrapped in .valuePill */
@@ -440,13 +485,13 @@ input[type="number"]{
 .freightMini{
   border-radius:999px;
 }
-  
+
  .pill.warn{border-color:rgba(255,204,102,.35);color:var(--warn);}
   .kv{display:grid;grid-template-columns:180px 1fr;gap:8px 10px;margin-top:10px;}
   .k{color:var(--muted);font-size:12px;}
   .v{font-size:13px;}
   .hr{height:1px;background:var(--line);margin:12px 0;}
-  
+
   .sectionTitle{
   font-size:14px;
   color:var(--text);     /* bright white */
@@ -599,7 +644,7 @@ input[type="number"]{
   align-items:flex-start;
   flex-wrap:wrap;        /* stacks on narrow screens */
 }
- 
+
  /* Keep notes to the right for Chapter 2 only */
 .scoreRow.nowrap{
   flex-wrap: nowrap;
@@ -639,9 +684,9 @@ input[type="number"]{
   /* Nudge notes up to align with the scoreBox title line */
   .scoreBox{ padding-top: 10px; }   /* keep the title from touching the top */
   .scoreNotes{ margin-top: -6px; }  /* pull notes upward */
-  
 
-  
+
+
   .watermark{
   position:fixed;
   right:16px;
@@ -670,6 +715,46 @@ header, main{ position:relative; z-index:1; }
   letter-spacing:normal !important;
   margin:10px 0 6px 0 !important;
 }
+
+.lcfsDetailGrid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:10px;
+  margin-top:6px;
+}
+
+.lcfsDetailCard{
+  padding:8px 10px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#0f1522;
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.35;
+  min-width:0;
+}
+
+.lcfsDetailCard div{
+  margin-bottom:4px;
+}
+
+.lcfsDetailCard div:last-child{
+  margin-bottom:0;
+}
+
+@media (max-width: 900px){
+  .lcfsDetailGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px){
+  .lcfsDetailGrid{
+    grid-template-columns: 1fr;
+  }
+}  
+
+
 </style>
 </head>
 
@@ -721,12 +806,12 @@ header, main{ position:relative; z-index:1; }
 
       <div class="hr"></div>
 
-     
-        
-        
+
+
+
         <div class="hr"></div>
-        
-       
+
+
 
  <p class="sectionTitle">Outputs</p>
 
@@ -774,13 +859,13 @@ header, main{ position:relative; z-index:1; }
   </div>
 
 </div>
-        
+
         <!-- Details live below so the top row can stay tight -->
         <div class="note" style="margin-top:8px;">
           <div><span class="mono">Rate detail:</span> <span id="outRateDetailNote">—</span></div>
           <div><span class="mono">Payout detail:</span> <span id="outPayoutDetail">rate × capacity</span></div>
         </div>
-        
+
         <div class="hr"></div>
 
  <p class="sectionTitle">45Z policy parameters</p>
@@ -815,7 +900,7 @@ header, main{ position:relative; z-index:1; }
    </div>
 
  </div>        
-        
+
  <div class="hr"></div>
 
       <p class="sectionTitle">Notes</p>
@@ -832,19 +917,16 @@ header, main{ position:relative; z-index:1; }
 
 <div class="noteSubhead">Model Mechanics</div>
 <ul class="noteList">
-  ...
-
-  <ul class="noteList">
-    <li>Starts with a facility carbon intensity in <span class="mono">gCO2e/MJ</span> (LCFS CI or proxy estimate).</li>
-    <li>Applies adjustments (freight, ILUC, CCS, agricultural practices, misc) in <span class="mono">gCO2e/MJ</span>. Checked boxes are included in the calculations.</li>
-    <li>Converts to the 45Z policy unit <span class="mono">kgCO2e/MMBtu</span> at the final step for rate mapping.</li>
-    <li>Uses <span class="mono">Benchmark</span>, <span class="mono">Slope</span>, and <span class="mono">Max Rate</span> to estimate a $/gal credit rate.</li>
-    <li>Calculates annual value as <span class="mono">rate × gallons</span> using ethanol capacity.</li>
-    <li><span class="mono">LCFS delivered CI</span> is treated as “delivered-to-CA” CI.</li>
-    <li>The tool estimates <span class="mono">FOB CI</span> by subtracting freight CI per mile × distance × multiplier.</li>
-    <li><span class="mono">45Z proxy CI</span> = FOB CI − ILUC (if checked) − CCS reduction (if checked) + other adjustment.</li>
-    <li>$ /gal policy mapping is parameterized and editable in V1.</li>
-  </ul>
+  <li>Starts with a facility carbon intensity in <span class="mono">gCO2e/MJ</span> (LCFS CI or proxy estimate).</li>
+  <li>Applies adjustments (freight, ILUC, CCS, agricultural practices, misc) in <span class="mono">gCO2e/MJ</span>. Checked boxes are included in the calculations.</li>
+  <li>Converts to the 45Z policy unit <span class="mono">kgCO2e/MMBtu</span> at the final step for rate mapping.</li>
+  <li>Uses <span class="mono">Benchmark</span>, <span class="mono">Slope</span>, and <span class="mono">Max Rate</span> to estimate a $/gal credit rate.</li>
+  <li>Calculates annual value as <span class="mono">rate × gallons</span> using ethanol capacity.</li>
+  <li><span class="mono">LCFS delivered CI</span> is treated as “delivered-to-CA” CI.</li>
+  <li>The tool estimates <span class="mono">FOB CI</span> by subtracting freight CI per mile × distance × multiplier.</li>
+  <li><span class="mono">45Z proxy CI</span> = FOB CI − ILUC (if checked) − CCS reduction (if checked) + other adjustment.</li>
+  <li>$ /gal policy mapping is parameterized and editable in V1.</li>
+</ul>
 
   <!-- keep ONLY if JS uses it -->
   <div id="modelSection"></div>
@@ -857,7 +939,7 @@ header, main{ position:relative; z-index:1; }
 
   <p class="sectionTitle">Starting CI</p>
 
-  <div class="scoreRow nowrap" style="margin-bottom:10px;">
+   <div class="scoreRow nowrap" style="margin-bottom:10px;">
     <div class="scoreBox">
       <div class="t">Starting CI used for calculations (gCO2e/MJ)</div>
       <div class="n" id="startCiValue">—</div>
@@ -867,10 +949,10 @@ header, main{ position:relative; z-index:1; }
     <div class="note scoreNotes" id="startCiFeedstocks">
       <!-- filled by JS -->
     </div>
-  
+  </div>
+
 
   <div class="hr"></div>
-</div>
 
       <!-- CHAPTER 2 (compact, matches Starting CI panel) -->
 <!-- CHAPTER 2 (compact, matches Starting CI panel) -->
@@ -986,6 +1068,8 @@ header, main{ position:relative; z-index:1; }
 
 <div class="hr"></div>
 
+
+
 <p class="sectionTitle">CO2 sequestration reduction</p>
 
 <div class="scoreRow nowrap" style="margin-bottom:10px;">
@@ -994,10 +1078,9 @@ header, main{ position:relative; z-index:1; }
 
     <div class="row" style="gap:8px; align-items:center; margin-top:6px; flex-wrap:nowrap;">
       <input id="ch2_pipeline_apply" type="checkbox" />
-      <div style="flex:1; min-width:0;  font-weight:650; color:var(--text);font-size:11px; line-height:1.4; white-space:nowrap;">
-      
+      <div style="flex:1; min-width:0; font-weight:650; color:var(--text); font-size:11px; line-height:1.4; white-space:nowrap;">
         Apply
-      <div class="muted" style="font-size:12px;">CCS Value</div>
+        <div class="muted" style="font-size:12px;">CCS Value</div>
       </div>
       <input
         id="ch2_pipeline_score"
@@ -1009,22 +1092,113 @@ header, main{ position:relative; z-index:1; }
       />
     </div>
 
+    <div style="margin-top:10px; display:flex; flex-direction:column; gap:8px;">
+
+      <div class="row" style="gap:8px; align-items:center; flex-wrap:nowrap;">
+        <div style="width:0px;"></div>
+        <div style="flex:1; min-width:0; font-size:12px; color:var(--muted); line-height:1.2;">
+          CCS in-service date
+        </div>
+        <input
+          id="ccs_in_service_date"
+          class="dateBox"
+          type="date"
+          value=""
+          title="CCS in-service date"
+        />
+      </div>
+
+      <div class="row" style="gap:8px; align-items:center; flex-wrap:nowrap;">
+        <div style="width:0px;"></div>
+        <div style="flex:1; min-width:0; font-size:12px; color:var(--muted); line-height:1.2;">
+          CCS CI effective date
+        </div>
+        <input
+          id="ccs_ci_effective_date"
+          class="dateBox"
+          type="date"
+          value=""
+          title="CCS CI effective date"
+        />
+      </div>
+
+    </div>
+
     <div class="s" style="margin-top:6px;">Uses auto-defaults by plant flags</div>
   </div>
 
-  <div class="note scoreNotes">
-  <div style="margin-bottom:6px;">Estimated reduction from CCS</div>
-  <ul class="noteList">
-    <li><span class="mono">Direct</span> = 30</li>
-    <li><span class="mono">Trailblazier</span> = 31</li>
-    <li><span class="mono">All else</span> = 0</li>
-  </ul>
+    <div class="note scoreNotes">
+    <div style="margin-bottom:6px;">Estimated reduction from CCS</div>
+    <ul class="noteList">
+      <li><span class="mono">Direct</span> = 30</li>
+      <li><span class="mono">Trailblazer</span> = 31</li>
+      <li><span class="mono">All else</span> = 0</li>
+    </ul>
+
+    <div style="margin-top:14px; margin-left:0;">
+      <div style="margin-bottom:6px;">
+        Carbon Credit Program Timelines
+      </div>
+      <ul class="noteList">
+        <li><span class="mono">CCS</span> Start on Effective Date</li>
+        <li><span class="mono">45Z</span> expires Dec 2029</li>
+        <li><span class="mono">45Q</span> expires 12 years after in-service date</li>
+      </ul>
+    </div>
+  </div>
 </div>
-</div>  <!-- ✅ ADD THIS: closes scoreRow -->
+
 <div class="hr"></div>
 
+<p class="sectionTitle">CCS credit value timeline</p>
 
-<!-- CHAPTER: Agricultural practices -->
+<div class="metricGrid">
+
+  <div class="metric">
+  <div class="metricLabel">Estimated Biogenic CO2</div>
+  <div class="valuePill"><span class="value" id="outBiogenicCo2">—</span></div>
+  <div class="metricSub">Capacity × 1,000,000 × 6.29 ÷ 2,204.62</div>
+</div>
+
+  <div class="metric">
+    <div class="metricLabel">45Q credit ($/ton)</div>
+    <div class="valuePill">
+      <input id="fortyfiveqCreditPerTon" type="number" step="1" value="85" />
+    </div>
+    <div class="metricSub">User-entered 45Q value</div>
+  </div>
+
+  <div class="metric">
+    <div class="metricLabel">45Q annual value ($/yr)</div>
+    <div class="valuePill"><span class="value" id="out45qAnnualValue">—</span></div>
+    <div class="metricSub">Biogenic CO2 × $/ton</div>
+  </div>
+
+ <div class="metric">
+  <div class="metricLabel">45Q remaining years</div>
+  <div class="valuePill"><span class="value" id="out45qRemainingYears">—</span></div>
+  <div class="metricSub">Post-2029 years remaining in 45Q term</div>
+</div>
+
+  <div class="metric">
+    <div class="metricLabel">Total 45Q remaining value ($)</div>
+    <div class="valuePill"><span class="value" id="out45qTotalValue">—</span></div>
+    <div class="metricSub">Annual 45Q × post-45Z years</div>
+  </div>
+
+  <div class="metric">
+    <div class="metricLabel">Program note</div>
+    <div class="valuePill"><span class="value" id="outProgramNote">—</span></div>
+    <div class="metricSub">45Z first, then 45Q</div>
+  </div>
+
+</div>
+
+
+
+<div class="hr"></div>
+
+<!-- Agricultural practices -->
 <p class="sectionTitle">Agricultural practices</p>
 
 <div class="scoreRow nowrap" style="margin-bottom:10px;">
@@ -1034,7 +1208,7 @@ header, main{ position:relative; z-index:1; }
     <div class="row" style="gap:8px; align-items:center; margin-top:6px; flex-wrap:nowrap;">
       <input id="ag_apply" type="checkbox" />
       <div style="flex:1; min-width:0; font-size:12px; color:var(--muted); line-height:1.2; white-space:nowrap;">
-        Apply 
+        Apply
       </div>
       <input
         id="ag_score"
@@ -1050,38 +1224,41 @@ header, main{ position:relative; z-index:1; }
   </div>
 
   <div class="note scoreNotes">
-    <div style="font-weight:650; color:var(--text); margin-bottom:6px;">
-      Examples of CI-lowering practices
-    </div>
-    <div>• <span class="mono">Cover crops</span> (soil carbon gains)</div>
-    <div>• <span class="mono">No-till / reduced tillage</span> </div>
-    <div>• <span class="mono">4R nitrogen management</span> </div>
-   
+    <div style="margin-bottom:6px;">Examples of CI-lowering practices</div>
+    <ul class="noteList">
+      <li><span class="mono">Cover crops</span> (soil carbon gains)</li>
+      <li><span class="mono">No-till / reduced tillage</span></li>
+      <li><span class="mono">4R nitrogen management</span></li>
+    </ul>
   </div>
 </div>
 
 <div class="hr"></div>
 
- 
-    <div class="hr"></div>
-        
-     
+<div class="note" id="lcfsDetailPanel" style="margin-top:10px; display:none;">
+  <div style="margin-bottom:6px;">LCFS pathway detail</div>
+  <div id="lcfsDetailRows"></div>
+</div>
 
-  </div>
+<div class="hr"></div>
+
+</div>  <!-- closes RIGHT .card -->
+
+</div>  <!-- closes .grid -->
 </main>
 
 <script>
   // ----------------------------
   // SETTINGS
   // ----------------------------
-  const DATA_URL = "./static_data/LCFS/lcfs_dropdown_KS.json";
+  const DATA_URL = "./static_data/LCFS/lcfs_dropdown_v2.json";
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-09 13:49:44");
+  console.log("✅ BUILD_STAMP:", "2026-03-12 11:51:35");
   console.log("✅ DATA_URL:", DATA_URL);
-  
+
   console.log("DATA_URL:", DATA_URL);
-  
-  console.log("BUILD_STAMP:", "2026-03-09 13:49:44");
+
+  console.log("BUILD_STAMP:", "2026-03-12 11:51:35");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1150,6 +1327,7 @@ function syncChapter2PipelineUI(){
     cb.checked = false;
     inp.value = "0";
     inp.disabled = false;
+    syncCcsDatesUI();
     return;
   }
 
@@ -1157,8 +1335,11 @@ function syncChapter2PipelineUI(){
   inp.value = String(def.score);
   cb.checked = !!def.applied;
 
-  // Always editable (SCS case needs editable even when unchecked)
+  // Always editable
   inp.disabled = false;
+
+  // Keep date fields synced with checkbox state
+  syncCcsDatesUI();
 }
 
 
@@ -1170,7 +1351,7 @@ function syncChapter2PipelineUI(){
     return Number(n).toFixed(digits);
   }
   function clamp(x, lo, hi){ return Math.max(lo, Math.min(hi, x)); }
-  
+
  function toFinitePositiveNumberOrNull(x){
   if (x === null || x === undefined || x === "") return null;
   const n = Number(x);
@@ -1183,7 +1364,7 @@ function toFiniteNumberOrNull(x){
   const n = Number(x);
   return Number.isFinite(n) ? n : null;
 } 
-  
+
 function parseLooseNumber(x){
   if (x === null || x === undefined) return null;
   let s = String(x).trim();
@@ -1217,7 +1398,13 @@ const G_PER_KG = 1000.0;
 const CONV_G_PER_MJ_TO_KG_PER_MMBTU = MJ_PER_MMBTU / G_PER_KG; // 1.055056
 const MMBTU_PER_GAL_ETHANOL =  1;
 const BASELINE_45Z_FREIGHT_MILES = 300;
-
+const ETHANOL_LB_PER_GAL = 6.58;
+const CO2_PER_ETHANOL_MASS_RATIO = 44.01 / 46.07;
+const CO2_LB_PER_GAL_ETHANOL = ETHANOL_LB_PER_GAL * CO2_PER_ETHANOL_MASS_RATIO;
+const LB_PER_METRIC_TON = 2204.62;
+const FORTYFIVEQ_TERM_YEARS = 12;
+const FORTYFIVEZ_LAST_YEAR = 2029;
+const CURRENT_MODEL_YEAR = new Date().getFullYear();
 
 
 
@@ -1384,6 +1571,43 @@ function startingCI(p){
   };
 }
 
+function renderLcfsDetail(){
+  const panel = document.getElementById("lcfsDetailPanel");
+  const rowsEl = document.getElementById("lcfsDetailRows");
+  if (!panel || !rowsEl) return;
+
+  if (!selectedPlant || !Array.isArray(selectedPlant.lcfs_detail) || !selectedPlant.lcfs_detail.length){
+    panel.style.display = "none";
+    rowsEl.innerHTML = "";
+    return;
+  }
+
+  panel.style.display = "block";
+
+  const rows = selectedPlant.lcfs_detail;
+
+  rowsEl.innerHTML =
+    `<div class="lcfsDetailGrid">` +
+    rows.map(d => {
+      const pathway = d?.pathway_type || "—";
+      const feedstock = d?.feedstock || "—";
+      const coproduct = d?.coproduct_type || "—";
+      const score = (d?.ci_score === null || d?.ci_score === undefined || Number.isNaN(Number(d?.ci_score)))
+        ? "—"
+        : Number(d.ci_score).toFixed(2);
+
+      return `
+        <div class="lcfsDetailCard">
+          <div><span class="mono">Pathway:</span> ${pathway}</div>
+          <div><span class="mono">Feedstock:</span> ${feedstock}</div>
+          <div><span class="mono">Co-product:</span> ${coproduct}</div>
+          <div><span class="mono">CI score:</span> ${score}</div>
+        </div>
+      `;
+    }).join("") +
+    `</div>`;
+}
+
 function renderEnhancedTechnology(){
   const panel = document.getElementById("enhTechPanel");
   const list  = document.getElementById("enhTechList");
@@ -1394,6 +1618,10 @@ function renderEnhancedTechnology(){
     list.innerHTML = "";
     return;
   }
+
+
+
+
 
   const enh = getEnhancements(selectedPlant) || [];
 
@@ -1446,8 +1674,14 @@ function renderStartingPanel(){
     ].filter(([_, v]) => v !== null); // ✅ hide blanks
 
     boxEl.innerHTML = rows.length
-      ? rows.map(([k,v]) => `<div>• <span class="mono">${k}</span>: ${fmt(v, 2)}</div>`).join("")
-      : `<div class="muted">No feedstock CI values found in JSON.</div>`;
+  ? `<div class="threeColGrid">` +
+      rows.map(([k,v]) =>
+        `<div class="gridItem">• <span class="mono">${k}</span>: ${fmt(v,2)}</div>`
+      ).join("") +
+    `</div>
+    <div style="margin-top:8px; color:var(--muted);">• <span class="mono">CI Score</span>: lowest starch CI selected</div>
+    <div style="margin-top:4px; color:var(--muted);">• <span class="mono">LCFS detail</span>: at the bottom</div>`
+  : `<div class="muted">No feedstock CI values found in JSON.</div>`;
 
   } else {
     // Show installed enhancements only (hide blanks)
@@ -1541,6 +1775,64 @@ function nudgeNumber(id, delta){
   el.dispatchEvent(new Event("input", { bubbles: true }));
 }
 
+function todayIsoLocal(){
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
+function yearFromIsoDate(s){
+  if (!s) return null;
+  const m = String(s).match(/^(\d{4})-\d{2}-\d{2}$/);
+  if (!m) return null;
+  const y = Number(m[1]);
+  return Number.isFinite(y) ? y : null;
+}
+
+function remaining45QYearsAfter45Z(inServiceDate){
+  const startYear = yearFromIsoDate(inServiceDate);
+  if (!startYear) return 0;
+
+  const endYear = startYear + FORTYFIVEQ_TERM_YEARS - 1;
+
+  // 45Q years only after 45Z is gone
+  const first45QValueYear = Math.max(CURRENT_MODEL_YEAR, FORTYFIVEZ_LAST_YEAR + 1);
+
+  if (endYear < first45QValueYear) return 0;
+
+  return endYear - first45QValueYear + 1;
+}
+
+
+
+
+
+function syncCcsDatesUI(){
+  const applyCb = document.getElementById("ch2_pipeline_apply");
+  const inSvc   = document.getElementById("ccs_in_service_date");
+  const ciEff   = document.getElementById("ccs_ci_effective_date");
+  if (!applyCb || !inSvc || !ciEff) return;
+
+  const on = !!applyCb.checked;
+
+  if (!on){
+    // Blank both when CCS is not applied
+    inSvc.value = "";
+    ciEff.value = "";
+    return;
+  }
+
+  const today = todayIsoLocal();
+
+  // First date: auto-fill today when checkbox turns on
+  if (!inSvc.value) inSvc.value = today;
+
+  // Second date: default to same day unless user changes it
+  if (!ciEff.value) ciEff.value = inSvc.value || today;
+}
+
   function carriersFromRail(railStr){
     const s = (railStr || "").toString().toUpperCase();
     return {
@@ -1608,8 +1900,8 @@ function syncFreightUI(){
   fac.disabled  = !on;
   hub.disabled  = !on;
 }  
-      
-      
+
+
   // ----------------------------
   // STATE
   // ----------------------------
@@ -1699,15 +1991,16 @@ function syncFreightUI(){
       o.value = "";
       o.textContent = "No plants match filters";
       sel.appendChild(o);
-    
+
       selectedPlant = null;
-    
+
       // ✅ deterministic freight reset when no plant
       const freightCb = document.getElementById("applyFreight");
       if (freightCb) freightCb.checked = false;
-    
-      renderHubs();
+
+     renderHubs();
       syncFreightUI();
+      renderLcfsDetail();
       renderPlantDetails();
       renderOutputs();
       return;
@@ -1745,17 +2038,18 @@ function syncFreightUI(){
       freightCb.checked = (mode === "lcfs");
     }
     syncFreightUI();
-    
+
     syncCcsUI();
     syncChapter2PipelineUI();
     renderHubs();
-    renderStartingPanel();   // <-- add this
+    renderStartingPanel();
+    renderLcfsDetail();
     renderEnhancedTechnology();
     renderPlantDetails();
     renderOutputs();
   }  
-        
-        
+
+
         // <-- CLOSE renderPlantSelect()
   // ----------------------------
   // PLANT DETAILS
@@ -1817,12 +2111,15 @@ const clean = (s) => {
 const regParts = [clean(d6), clean(d3), clean(ep)].filter(Boolean);
 const regText = regParts.length ? regParts.join(", ") : "";
 
-const items = [
+  const items = [
   ["Ownership", selectedPlant.ownership],
-  
+
   ["Plant", selectedPlant.plant_name],
   ["Location", [selectedPlant.city, selectedPlant.state].filter(Boolean).join(", ")],
   ["Technology", selectedPlant.technology],
+  ["Gas supply", selectedPlant.gas_supply],
+  ["Electricity type", selectedPlant.electricity_type],
+  ["Fiber technology", selectedPlant.fiber_technology],
   ["Ethanol capacity",
     Number.isFinite(Number(selectedPlant.ethanol_capacity_mgy))
       ? `${fmt(Number(selectedPlant.ethanol_capacity_mgy), 1)} MGY`
@@ -1860,6 +2157,17 @@ function compute(){
   freightCi: NaN,
   ciFob: NaN,
 
+  // CCS timeline fields
+  ccs_in_service_date: "",
+  ccs_ci_effective_date: "",
+
+  // 45Q / CCS value fields
+  biogenic_co2_tons_per_year: NaN,
+  fortyfiveq_credit_per_ton: NaN,
+  fortyfiveq_annual_value: NaN,
+  fortyfiveq_remaining_years: NaN,
+  fortyfiveq_total_value: NaN,
+
   // Final adjusted CI in LCFS units
   ci45z_g_per_mj: NaN,
 
@@ -1879,12 +2187,12 @@ function compute(){
   // LCFS delivered CI available?
   res.hasCI = (ciDel !== null);
   res.ciDelivered = (ciDel !== null) ? ciDel : NaN;   // or null if you prefer
-    
+
     // Starting CI used for calculations (LCFS if available, else proxy)
     const start = startingCI(selectedPlant);
     res.startCi = Number.isFinite(start.value) ? start.value : NaN;
     res.startNote = start.note || "";
-    
+
     const lcfsMode = (start.mode === "lcfs");
     const doFreight = lcfsMode && getChecked("applyFreight");
 
@@ -1916,7 +2224,41 @@ const slope = getNumber("slope");
   const ch2Apply = ch2ApplyEl ? ch2ApplyEl.checked : false;
   const ch2Score = ch2ScoreEl ? parseFloat(ch2ScoreEl.value || "0") : 0;
   const pipelineScore = (ch2Apply && Number.isFinite(ch2Score)) ? ch2Score : 0;
-  
+
+  const ccsInServiceEl = document.getElementById("ccs_in_service_date");
+  const ccsCiEffEl     = document.getElementById("ccs_ci_effective_date");
+
+  res.ccs_in_service_date  = ch2Apply && ccsInServiceEl ? (ccsInServiceEl.value || "") : "";
+  res.ccs_ci_effective_date = ch2Apply && ccsCiEffEl ? (ccsCiEffEl.value || "") : "";
+
+  const qCreditPerTon = getNumber("fortyfiveqCreditPerTon");
+  res.fortyfiveq_credit_per_ton = qCreditPerTon;
+
+const capMgy = selectedPlant ? Number(selectedPlant.ethanol_capacity_mgy ?? selectedPlant["ethanol_capacity_mgy"]) : NaN;
+const gallonsPerYear = Number.isFinite(capMgy) ? capMgy * 1_000_000 : NaN;
+
+if (ch2Apply && Number.isFinite(gallonsPerYear)){
+  res.biogenic_co2_tons_per_year =
+    gallonsPerYear * CO2_LB_PER_GAL_ETHANOL / LB_PER_METRIC_TON;
+} else {
+  res.biogenic_co2_tons_per_year = 0;
+}
+
+if (Number.isFinite(res.biogenic_co2_tons_per_year) && Number.isFinite(qCreditPerTon)){
+  res.fortyfiveq_annual_value = res.biogenic_co2_tons_per_year * qCreditPerTon;
+}
+
+res.fortyfiveq_remaining_years = ch2Apply
+  ? remaining45QYearsAfter45Z(res.ccs_in_service_date)
+  : 0;
+
+if (Number.isFinite(res.fortyfiveq_annual_value) && Number.isFinite(res.fortyfiveq_remaining_years)){
+  res.fortyfiveq_total_value = res.fortyfiveq_annual_value * res.fortyfiveq_remaining_years;
+}
+
+
+
+
   // ----------------------------
     // Agricultural reduction: counts ONLY if checkbox checked
     // ----------------------------
@@ -1981,7 +2323,7 @@ if (Number.isFinite(res.startCi)){
     // ✅ Agricultural practices reduction
     ci -= agReduction;
 
-    
+
 
     res.ci45z_g_per_mj = ci;
 
@@ -2030,79 +2372,140 @@ function renderOutputs(){
   const outPayoutDetail= document.getElementById("outPayoutDetail");
   const outFinalNet    = document.getElementById("outFinalNet");
   const outFinalNetDetail = document.getElementById("outFinalNetDetail");
-  const outConvLine   = document.getElementById("outConvLine");
+  const outConvLine    = document.getElementById("outConvLine");
+  const outBiogenicCo2 = document.getElementById("outBiogenicCo2");
+  const out45qAnnualValue    = document.getElementById("out45qAnnualValue");
+  const out45qRemainingYears = document.getElementById("out45qRemainingYears");
+  const out45qTotalValue     = document.getElementById("out45qTotalValue");
+  const outProgramNote       = document.getElementById("outProgramNote");
 
-const benchEq = document.getElementById("benchGmjEq");
-if (benchEq){
-  const b = getNumber("ciBenchmark"); // kg/MMBtu
-  benchEq.textContent = Number.isFinite(b)
-    ? fmt(b / CONV_G_PER_MJ_TO_KG_PER_MMBTU, 2)
-    : "—";
-}
-// ✅ Put FINAL 45Z CI into the "Proxy CI" pill
-if (proxyCiKgmmbtu){
-  proxyCiKgmmbtu.textContent = Number.isFinite(r.emissions_kg_per_mmbtu)
-    ? fmt(r.emissions_kg_per_mmbtu, 2)
-    : "—";
-}
-if (proxyCiGmj){
-  proxyCiGmj.textContent = Number.isFinite(r.ci45z_g_per_mj)
-    ? fmt(r.ci45z_g_per_mj, 2)
-    : "—";
-}
+  const benchEq = document.getElementById("benchGmjEq");
+  if (benchEq){
+    const b = getNumber("ciBenchmark"); // kg/MMBtu
+    benchEq.textContent = Number.isFinite(b)
+      ? fmt(b / CONV_G_PER_MJ_TO_KG_PER_MMBTU, 2)
+      : "—";
+  }
 
-  // Must-have outputs
+  if (proxyCiKgmmbtu){
+    proxyCiKgmmbtu.textContent = Number.isFinite(r.emissions_kg_per_mmbtu)
+      ? fmt(r.emissions_kg_per_mmbtu, 2)
+      : "—";
+  }
+  if (proxyCiGmj){
+    proxyCiGmj.textContent = Number.isFinite(r.ci45z_g_per_mj)
+      ? fmt(r.ci45z_g_per_mj, 2)
+      : "—";
+  }
+
   if (!out45zCi || !outRate) return;
 
+  // ----------------------------
+  // No plant selected
+  // ----------------------------
   if (!r.hasPlant){
-  if (outPayout) outPayout.textContent = "—";
-  if (outPayoutDetail) outPayoutDetail.textContent = "—";
-  out45zCi.textContent = "—";
-  outRate.textContent  = "—";
-  if (outRateDetail) outRateDetail.textContent = "—";
-  if (outMilesHub) outMilesHub.textContent = "—";
-  if (outFreightHub) outFreightHub.textContent = "—";
+    out45zCi.textContent = "—";
+    outRate.textContent  = "—";
 
-  // ✅ NEW: clear the conversion line when no plant is selected
-  if (outConvLine) outConvLine.textContent = "—";
+    if (outPayout) outPayout.textContent = "—";
+    if (outPayoutDetail) outPayoutDetail.textContent = "—";
+    if (outFinalNet) outFinalNet.textContent = "—";
+    if (outFinalNetDetail) outFinalNetDetail.textContent = "—";
 
-  return;
+    if (outBiogenicCo2) outBiogenicCo2.textContent = "—";
+    if (out45qAnnualValue) out45qAnnualValue.textContent = "—";
+    if (out45qRemainingYears) out45qRemainingYears.textContent = "—";
+    if (out45qTotalValue) out45qTotalValue.textContent = "—";
+    if (outProgramNote) outProgramNote.textContent = "—";
+
+    if (outRateDetail) outRateDetail.textContent = "—";
+    if (outRateDetailNote) outRateDetailNote.textContent = "—";
+    if (outMilesHub) outMilesHub.textContent = "—";
+    if (outFreightHub) outFreightHub.textContent = "—";
+    if (outConvLine) outConvLine.textContent = "—";
+    return;
+  }
+
+  // ----------------------------
+  // Normal outputs
+  // ----------------------------
+  if (outMilesHub){
+    outMilesHub.textContent = Number.isFinite(r.milesNet) ? `${fmt(r.milesNet, 0)} mi` : "—";
+  }
+  if (outFreightHub){
+    outFreightHub.textContent = Number.isFinite(r.freightCi) ? fmt(r.freightCi, 2) : "—";
+  }
+
+  if (outBiogenicCo2){
+  outBiogenicCo2.textContent = Number.isFinite(r.biogenic_co2_tons_per_year)
+    ? r.biogenic_co2_tons_per_year.toLocaleString(undefined, {
+        maximumFractionDigits: 0
+      })
+    : "—";
 }
-  if (outMilesHub)   outMilesHub.textContent   = Number.isFinite(r.milesNet) ? `${fmt(r.milesNet, 0)} mi` : "—";
-  if (outFreightHub) outFreightHub.textContent = Number.isFinite(r.freightCi) ? fmt(r.freightCi, 2) : "—";
 
-   // 45Z CI output pill MUST be in kg/MMBtu
+
+  if (out45qAnnualValue){
+    out45qAnnualValue.textContent = Number.isFinite(r.fortyfiveq_annual_value)
+      ? r.fortyfiveq_annual_value.toLocaleString(undefined, {
+          style: "currency",
+          currency: "USD",
+          maximumFractionDigits: 0
+        })
+      : "—";
+  }
+
+  if (out45qRemainingYears){
+    out45qRemainingYears.textContent = Number.isFinite(r.fortyfiveq_remaining_years)
+      ? String(r.fortyfiveq_remaining_years)
+      : "—";
+  }
+
+  if (out45qTotalValue){
+    out45qTotalValue.textContent = Number.isFinite(r.fortyfiveq_total_value)
+      ? r.fortyfiveq_total_value.toLocaleString(undefined, {
+          style: "currency",
+          currency: "USD",
+          maximumFractionDigits: 0
+        })
+      : "—";
+  }
+
+  if (outProgramNote){
+    outProgramNote.textContent = getChecked("ch2_pipeline_apply")
+      ? "45Z first, then 45Q"
+      : "CCS off";
+  }
+
   out45zCi.textContent = Number.isFinite(r.emissions_kg_per_mmbtu)
     ? fmt(r.emissions_kg_per_mmbtu, 2)
     : "—";
 
-  // Rate ($/gal)
-  outRate.textContent = Number.isFinite(r.rate) ? `$${fmt(r.rate, 5)}` : "—";
+  outRate.textContent = Number.isFinite(r.rate)
+    ? `$${fmt(r.rate, 5)}`
+    : "—";
 
- // ✅ Emissions check goes under the 45Z CI pill (NOT under rate)
-if (outConvLine){
-  if (Number.isFinite(r.ci45z_g_per_mj) && Number.isFinite(r.emissions_kg_per_mmbtu)){
-    outConvLine.textContent =
-      `Emissions check: ${fmt(r.ci45z_g_per_mj, 2)} g/MJ \u2192 ${fmt(r.emissions_kg_per_mmbtu, 2)} kg/MMBtu`;
-  } else {
-    outConvLine.textContent = "—";
+  if (outConvLine){
+    if (Number.isFinite(r.ci45z_g_per_mj) && Number.isFinite(r.emissions_kg_per_mmbtu)){
+      outConvLine.textContent =
+        `Emissions check: ${fmt(r.ci45z_g_per_mj, 2)} g/MJ → ${fmt(r.emissions_kg_per_mmbtu, 2)} kg/MMBtu`;
+    } else {
+      outConvLine.textContent = "—";
+    }
   }
-}
 
-    // Under rate pill: show ONLY rate detail
-if (outRateDetail){
-  outRateDetail.textContent = r.rateDetail ? r.rateDetail : "—";
-}
-if (outRateDetailNote){
-  outRateDetailNote.textContent = "—"; // or "", or a short one-liner
-} 
-      
-      
-  // ✅ payout = $/gal × (MMgy × 1,000,000)
-  const cap = selectedPlant ? Number(selectedPlant.ethanol_capacity_mgy ?? selectedPlant["ethanol_capacity_mgy"]) : NaN;
+  if (outRateDetail){
+    outRateDetail.textContent = r.rateDetail ? r.rateDetail : "—";
+  }
+  if (outRateDetailNote){
+    outRateDetailNote.textContent = "—";
+  }
+
+  const cap = selectedPlant
+    ? Number(selectedPlant.ethanol_capacity_mgy ?? selectedPlant["ethanol_capacity_mgy"])
+    : NaN;
   const gallonsPerYear = Number.isFinite(cap) ? cap * 1_000_000 : NaN;
 
-    // ✅ payout = $/gal × (MMgy × 1,000,000)
   let payout = NaN;
 
   if (outPayout){
@@ -2124,9 +2527,8 @@ if (outRateDetailNote){
     }
   }
 
-  // ✅ Final net value = (Estimated payout + AEC) × discount
   const aec = getNumber("aecValue");
-  const discPct = getNumber("creditDiscount");      // user enters 92 for 92%
+  const discPct = getNumber("creditDiscount");
   const disc = Number.isFinite(discPct) ? (discPct / 100.0) : NaN;
 
   if (outFinalNet){
@@ -2140,7 +2542,9 @@ if (outRateDetailNote){
       });
 
       if (outFinalNetDetail){
-        outFinalNetDetail.textContent = `(${payout.toLocaleString(undefined,{style:"currency",currency:"USD",maximumFractionDigits:0})} + ${aec.toLocaleString(undefined,{style:"currency",currency:"USD",maximumFractionDigits:0})}) × ${fmt(discPct,1)}%`;
+        outFinalNetDetail.textContent =
+          `(${payout.toLocaleString(undefined,{style:"currency",currency:"USD",maximumFractionDigits:0})} + ` +
+          `${aec.toLocaleString(undefined,{style:"currency",currency:"USD",maximumFractionDigits:0})}) × ${fmt(discPct,1)}%`;
       }
     } else {
       outFinalNet.textContent = "—";
@@ -2192,6 +2596,7 @@ function wireEvents(){
 
     // Starting CI + feedstock/enhancement panel
     renderStartingPanel();
+    renderLcfsDetail();
 
     // Freight: auto-on for LCFS plants, forced off for proxy plants
     const freightCb = document.getElementById("applyFreight");
@@ -2223,17 +2628,24 @@ function wireEvents(){
     renderOutputs();
   });
 
+  onInput("ch2_pipeline_apply", () => {
+  syncCcsDatesUI();
+  renderOutputs();
+});
+
   // All other calc-driving inputs: recompute only
   const calcIds = [
-    "caHub",
-    "freightMultiplier","gPerMjPerMile",
-    "subtractIluc","ilucValue",
-    "applyMisc","ccsReduction",
-    "ciBenchmark","maxRate","slope",
-    "ch2_pipeline_apply","ch2_pipeline_score",
-    "ag_apply","ag_score",
-    "aecValue","creditDiscount"
-  ];
+  "caHub",
+  "freightMultiplier","gPerMjPerMile",
+  "subtractIluc","ilucValue",
+  "applyMisc","ccsReduction",
+  "ciBenchmark","maxRate","slope",
+  "ch2_pipeline_apply","ch2_pipeline_score",
+  "ccs_in_service_date","ccs_ci_effective_date",
+  "fortyfiveqCreditPerTon",
+  "ag_apply","ag_score",
+  "aecValue","creditDiscount"
+];
 
   for (const id of calcIds){
     onInput(id, () => {
@@ -2247,8 +2659,8 @@ function wireEvents(){
   if (up) up.addEventListener("click", () => nudgeNumber("ccsReduction", +1.0));
   if (dn) dn.addEventListener("click", () => nudgeNumber("ccsReduction", -1.0));
 }
-          
-         
+
+
   // ----------------------------
   // INIT
   // ----------------------------
@@ -2302,10 +2714,10 @@ function wireEvents(){
     function parseCap(x){
       if (x === null || x === undefined || x === "") return null;
       if (typeof x === "number") return Number.isFinite(x) ? x : null;
-    
+
       const s = String(x).trim();
       if (!s) return null;
-    
+
       // remove commas + common unit text
       const cleaned = s.replace(/,/g, "").replace(/mgy/ig, "").trim();
       const n = Number(cleaned);
@@ -2350,7 +2762,7 @@ function wireEvents(){
     // 4) Wire + render
     wireEvents();
     applyFilters();
-    
+
   }
 
   // Kick off load after DOM is ready (ONLY ONCE)
