@@ -1,1 +1,19 @@
+### Ethanol Technology Dataset (Technical Description)
 
+- Structured dataset describing process technology and operational configuration for U.S. ethanol production facilities.
+- Primary key is the **EPM facility identifier**, allowing linkage to plant metadata, LCFS pathway data, and operational datasets.
+- Technology classification identifies the primary process licensor or engineering platform (e.g., ADM, ICM, Delta-T, Katzen, Lurgi, Poet, Vogelbusch).
+- Dataset includes flags for key plant technologies and operational features such as:
+  - Combined Heat and Power (CHP)
+  - White Fox membrane dehydration
+  - High-protein coproduct systems
+  - Wet vs. dry distillers grain configurations
+- Supports integration with:
+  - LCFS carbon-intensity pathway datasets
+  - plant production capacity and feedstock inputs
+  - logistics infrastructure such as rail connectivity
+- Used to generate interactive infrastructure maps, including:
+  - ethanol plant technology distribution
+  - rail-connected facility visualization
+  - technology-based filtering and analysis
+- Designed to function as a **join table for plant-level analytics across multiple industry datasets**.
