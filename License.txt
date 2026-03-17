@@ -1,1 +1,23 @@
+Hakmiller Non-Commercial Use License (NCUL)
 
+Copyright (c) 2026 E. Hakmiller
+
+Permission is hereby granted to any person to view, use, and share this software
+and associated materials for personal, educational, and non-commercial purposes only.
+
+You may:
+- Use this project for personal or internal analysis
+- Share the project with attribution
+- Modify the project for non-commercial purposes
+
+You may NOT:
+- Use this project or any portion of it for commercial purposes
+- Sell, sublicense, or distribute this project as part of a paid product or service
+- Use this project to support a commercial offering without prior written permission
+
+This project is provided "as is", without warranty of any kind, express or implied,
+including but not limited to the warranties of merchantability, fitness for a particular
+purpose, and noninfringement.
+
+To request commercial use, contact:
+E. Hakmiller
