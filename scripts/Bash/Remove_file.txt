@@ -1,1 +1,4 @@
-
+cd /c/Users/ehakm/Documents/ELHApp-backend
+git rm -r templates
+git commit -m "Remove templates directory"
+git push origin main
