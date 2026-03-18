@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LCFS → 45Z Calculator (V2)</title>
+  <title>LCFS → 45Z Calculator (V2 - KS)</title>
 
  <style>
   :root{
@@ -11,7 +11,7 @@
     --line:#223049; --good:#52d273; --bad:#ff6b6b; --warn:#ffcc66;
   }
   #outRateDetail, #outRateDetailNote { white-space: pre-line; }
-
+  
   body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);}
   header{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;justify-content:space-between;}
   header h1{font-size:16px;margin:0;font-weight:650;letter-spacing:.2px;}
@@ -40,6 +40,10 @@
   gap:6px 16px;
   margin-top:4px;
 }
+
+
+
+
 
 .gridItem{
   font-size:12px;
@@ -186,12 +190,12 @@
 }
 
 .outPill .t{font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:none;letter-spacing:normal;}
-
+   
 .outPill .n{font-size:16px;font-weight:750;}
 .outPill .s{font-size:12px;color:var(--muted);margin-top:6px;text-transform:none; letter-spacing:normal}
 
 
-
+  
 
 @media (max-width: 980px){
   .freightHub{ grid-template-columns: 1fr; }
@@ -209,8 +213,8 @@
   text-align: center;   /* centers the numbers visually */
   padding: 10px 8px;    /* slightly tighter to fit */
 }
-
-
+  
+  
   /* One-line Plant + Search (saves vertical space) */
 .row.plant-row-inline{
   display:flex;
@@ -260,8 +264,8 @@
     width:100%;
   }
 }
-
-
+  
+  
   /* --- Plant selection row: 1 line with compact search --- */
 .row.plant-row{
   align-items:flex-end;
@@ -318,10 +322,10 @@
   opacity:.45;
   cursor:not-allowed;
 }
-
-
-
-
+               
+ 
+               
+ 
                /* Standardize number boxes to the pipeline size */
 .numBox{
   width: 92px;           /* pipeline width */
@@ -331,7 +335,7 @@
 }
 
 
-
+  
   select{min-width:220px;max-width:100%;}
   .small{width:120px;}
   .mid{width:170px;}
@@ -345,8 +349,8 @@
   text-transform: none;
   letter-spacing: normal;
 }
-
-
+  
+  
   .pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);font-size:12px;color:var(--muted);}
 
   /* =========================
@@ -425,7 +429,7 @@
 }
 
 
-
+     
 /* =========================
    INPUTS: make ALL numeric inputs match “Starting input number”
    (bold + white + same size)
@@ -485,7 +489,7 @@ input[type="date"]{
 .freightMini{
   border-radius:999px;
 }
-
+  
  .pill.warn{border-color:rgba(255,204,102,.35);color:var(--warn);}
   .kv{
   display:grid;
@@ -513,7 +517,7 @@ input[type="date"]{
 }
 
   .hr{height:1px;background:var(--line);margin:12px 0;}
-
+  
   .sectionTitle{
   font-size:14px;
   color:var(--text);     /* bright white */
@@ -666,7 +670,7 @@ input[type="date"]{
   align-items:flex-start;
   flex-wrap:wrap;        /* stacks on narrow screens */
 }
-
+ 
  /* Keep notes to the right for Chapter 2 only */
 .scoreRow.nowrap{
   flex-wrap: nowrap;
@@ -706,9 +710,9 @@ input[type="date"]{
   /* Nudge notes up to align with the scoreBox title line */
   .scoreBox{ padding-top: 10px; }   /* keep the title from touching the top */
   .scoreNotes{ margin-top: -6px; }  /* pull notes upward */
+  
 
-
-
+  
   .watermark{
   position:fixed;
   right:16px;
@@ -737,7 +741,7 @@ header, main{ position:relative; z-index:1; }
   letter-spacing:normal !important;
   margin:10px 0 6px 0 !important;
 }
-
+  
 .lcfsDetailGrid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -775,23 +779,23 @@ header, main{ position:relative; z-index:1; }
     grid-template-columns: 1fr;
   }
 }  
-
-
+  
+  
 </style>
 </head>
 
 <body>
 <div class="watermark">
-   <img src="./static_data/Picture%20Files/Hakmiller-02.PNG" alt="Brand watermark">
+   <img src="./static_data/assets/Hakmiller-02.png" alt="Brand watermark">
 </div>
 <header>
   <div>
-    <h1>LCFS → 45Z Calculator (V2)</h1>
+    <h1>LCFS → 45Z Calculator (V2 - KS)</h1>
 
 </div>
 
 <div class="pill warn">
-  V1 uses user inputs for freight / ILUC / CCS &amp; policy params
+  V2 KS uses user inputs for freight / ILUC / CCS &amp; policy params
 </div>
 </header>
 
@@ -828,12 +832,12 @@ header, main{ position:relative; z-index:1; }
 
       <div class="hr"></div>
 
-
-
-
+     
+        
+        
         <div class="hr"></div>
-
-
+        
+       
 
  <p class="sectionTitle">45Z Credit Value</p>
 
@@ -857,29 +861,57 @@ header, main{ position:relative; z-index:1; }
     <div class="metricSub" id="outPayoutDetail_inline">Rate × Capacity</div>
   </div>
 
-
+  
 </div>
 
-<p class="sectionTitle" style="margin-top:14px;">45Q credit value</p>
+<div id="section45qValue">
+  <p class="sectionTitle" style="margin-top:14px;">45Q credit value</p>
+
+  <div class="metricGrid">
+
+    <div class="metric">
+      <div class="metricLabel">Estimated Biogenic CO2</div>
+      <div class="valuePill"><span class="value" id="outBiogenicCo2">—</span></div>
+      <div class="metricSub">Capacity × 1,000,000 × 6.29 ÷ 2,204.62</div>
+    </div>
+
+    <div class="metric">
+      <div class="metricLabel">45Q annual value per gallon</div>
+      <div class="valuePill"><span class="value" id="out45qValuePerGal">—</span></div>
+      <div class="metricSub">Annual value / annual gallons</div>
+    </div>
+
+    <div class="metric">
+      <div class="metricLabel">45Q annual value ($/yr)</div>
+      <div class="valuePill"><span class="value" id="out45qAnnualValue">—</span></div>
+      <div class="metricSub">Biogenic CO2 × $/ton</div>
+    </div>
+
+  </div>
+</div>
+
+<p class="sectionTitle" style="margin-top:14px;">Cash Flow Component</p>
 
 <div class="metricGrid">
 
   <div class="metric">
-    <div class="metricLabel">Estimated Biogenic CO2</div>
-    <div class="valuePill"><span class="value" id="outBiogenicCo2">—</span></div>
-    <div class="metricSub">Capacity × 1,000,000 × 6.29 ÷ 2,204.62</div>
+    <div class="metricLabel">45Z remaining years</div>
+    <div class="valuePill"><span class="value" id="out45zRemainingYears">—</span></div>
+    <div class="metricSub">Years remaining through Dec 2029</div>
   </div>
 
   <div class="metric">
-    <div class="metricLabel">45Q annual value per gallon</div>
-    <div class="valuePill"><span class="value" id="out45qValuePerGal">—</span></div>
-    <div class="metricSub">Annual value / annual gallons</div>
+    <div class="metricLabel">45Q effective years</div>
+    <div class="valuePill"><span class="value" id="out45qEffectiveYearsTop">—</span></div>
+    <div class="metricSub">Years of 45Q value after 45Z ends</div>
   </div>
 
   <div class="metric">
-    <div class="metricLabel">45Q annual value ($/yr)</div>
-    <div class="valuePill"><span class="value" id="out45qAnnualValue">—</span></div>
-    <div class="metricSub">Biogenic CO2 × $/ton</div>
+    <div class="metricLabel">Discount rate (%)</div>
+    <div class="valuePill">
+      <input id="discountRate" type="number" step="0.1" min="0" max="100" value="10.0" />
+    </div>
+    <div class="metricSub">Used to discount forward 45Z and 45Q credits</div>
   </div>
 
 </div>
@@ -891,7 +923,7 @@ header, main{ position:relative; z-index:1; }
   <div class="metric">
     <div class="metricLabel">Total discounted value ($)</div>
     <div class="valuePill"><span class="value" id="outTotalDiscountedValue">—</span></div>
-    <div class="metricSub">45Z + 45Q values discounted at 10%</div>
+    <div class="metricSub" id="outTotalDiscountedValueNote">45Z + 45Q values discounted at 10.0%</div>
   </div>
 
   <div class="metric">
@@ -911,13 +943,13 @@ header, main{ position:relative; z-index:1; }
 </div>
 
 
-
+        
         <!-- Details live below so the top row can stay tight -->
         <div class="note" style="margin-top:8px;">
-
+          
           <div><span class="mono">Payout detail:</span> <span id="outPayoutDetail">rate × capacity</span></div>
         </div>
-
+        
         <div class="hr"></div>
 
 <p class="sectionTitle">45Z policy parameters</p>
@@ -955,9 +987,6 @@ header, main{ position:relative; z-index:1; }
 
 <p class="sectionTitle" style="margin-top:14px;">45Q policy parameters</p>
 
-
-
-
 <div class="metricGrid">
 
   <div class="metric">
@@ -967,30 +996,27 @@ header, main{ position:relative; z-index:1; }
   </div>
 
   <div class="metric">
-    <div class="metricLabel">Effective years</div>
-    <div class="valuePill"><span class="value" id="out45qEffectiveYears">—</span></div>
-    <div class="metricSub">12 years − (Dec 2029 − in-service years)</div>
+    <div class="metricLabel">45Q storage type</div>
+    <div class="valuePill">
+      <select id="fortyfiveqStorageType" class="wide" style="min-width:0; border:none; background:transparent; text-align:center; text-align-last:center;">
+        <option value="85" selected>Permanent Sequester</option>
+        <option value="60">Utilization / EOR</option>
+      </select>
+    </div>
+    <div class="metricSub">Permanent Sequester = $85/ton | Utilization / EOR = $60/ton</div>
   </div>
 
   <div class="metric">
     <div class="metricLabel">45Q credit ($/ton)</div>
-    <div class="valuePill">
-      <input
-          id="fortyfiveqCreditPerTonPolicy"
-          type="number"
-          step="0.01"
-          value="85.00"
-        />
-
-    </div>
-    <div class="metricSub">User-entered 45Q value</div>
+    <div class="valuePill"><span class="value" id="out45qCreditPerTonPolicy">85.00</span></div>
+    <div class="metricSub">Driven by storage type selection</div>
   </div>
 
 </div>
 
 
-
-
+     
+        
  <div class="hr"></div>
 
       <div class="sectionTitle">Note – 45Z</div>
@@ -1010,7 +1036,7 @@ The Section 45Q Carbon Sequestration Credit is a federal tax incentive designed 
 </p>
 
 <p>
-The credit applies to qualifying carbon capture projects located in the United States and is available for twelve years after a carbon capture facility is placed in service. For projects that permanently sequester captured carbon dioxide in geological formations, the credit value is currently set at up to $85 per metric ton of CO₂. Because the credit is earned on each ton of carbon captured and stored, the total financial benefit depends on both the amount of CO₂ captured annually and the duration of the credit eligibility period following project start-up.
+The credit applies to qualifying carbon capture projects located in the United States and is available for twelve years after a carbon capture facility is placed in service. For projects that permanently sequester captured carbon dioxide in geological formations, the credit value is currently set at up to $85 per metric ton of CO₂. Because the credit is earned on each ton of carbon captured and stored, the total financial benefit depends on both the amount of CO₂ captured annually and the duration of the credit eligibility period following project start-up. Utilization pathways, including Enhanced Oil Recovery (EOR), qualify for a lower credit value of up to $60 per metric ton, as these uses may not ensure the same level of permanent carbon storage as dedicated geologic sequestration.
 </p>
 
 
@@ -1260,7 +1286,7 @@ The credit applies to qualifying carbon capture projects located in the United S
 
 
 <div class="hr"></div>
-
+  
 <!-- Agricultural practices -->
 <p class="sectionTitle">Agricultural practices</p>
 
@@ -1316,12 +1342,12 @@ The credit applies to qualifying carbon capture projects located in the United S
   // ----------------------------
   const DATA_URL = "./industry_data_ks/lcfs_dropdown_v2_KS.json";
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-13 16:06:31");
+  console.log("✅ BUILD_STAMP:", "2026-03-17 12:04:02");
   console.log("✅ DATA_URL:", DATA_URL);
-
+  
   console.log("DATA_URL:", DATA_URL);
-
-  console.log("BUILD_STAMP:", "2026-03-13 16:06:31");
+  
+  console.log("BUILD_STAMP:", "2026-03-17 12:04:02");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1386,11 +1412,12 @@ function syncChapter2PipelineUI(){
   const inp = document.getElementById("ch2_pipeline_score");
   if (!cb || !inp) return;
 
-  if (!selectedPlant){
+   if (!selectedPlant){
     cb.checked = false;
     inp.value = "0";
     inp.disabled = false;
     syncCcsDatesUI();
+    sync45QValueSection();
     return;
   }
 
@@ -1403,7 +1430,8 @@ function syncChapter2PipelineUI(){
 
   // Keep date fields synced with checkbox state
   syncCcsDatesUI();
-}
+  sync45QValueSection();
+  }
 
 
   // ----------------------------
@@ -1414,7 +1442,7 @@ function syncChapter2PipelineUI(){
     return Number(n).toFixed(digits);
   }
   function clamp(x, lo, hi){ return Math.max(lo, Math.min(hi, x)); }
-
+  
  function toFinitePositiveNumberOrNull(x){
   if (x === null || x === undefined || x === "") return null;
   const n = Number(x);
@@ -1427,7 +1455,7 @@ function toFiniteNumberOrNull(x){
   const n = Number(x);
   return Number.isFinite(n) ? n : null;
 } 
-
+  
 function parseLooseNumber(x){
   if (x === null || x === undefined) return null;
   let s = String(x).trim();
@@ -1468,8 +1496,7 @@ const LB_PER_METRIC_TON = 2204.62;
 const FORTYFIVEZ_LAST_YEAR = 2029;
 const CURRENT_MODEL_YEAR = new Date().getFullYear();
 const FORTYFIVEQ_TERM_YEARS = 12;
-const FORTYFIVEZ_DISCOUNT_RATE = 0.10;
-const FORTYFIVEQ_DISCOUNT_RATE = 0.10;
+const DEFAULT_DISCOUNT_RATE = 0.10;
 
 
 // ✅ SET YOUR REDUCTIONS HERE (gCO2e/MJ)
@@ -1821,7 +1848,7 @@ function firstNonEmpty(...vals){
   const n = Number(raw);
   return Number.isFinite(n) ? n : NaN;
 }
-
+  
 function formatCurrencyInput(id, decimals=2){
   const el = document.getElementById(id);
   if (!el) return;
@@ -1832,10 +1859,10 @@ function formatCurrencyInput(id, decimals=2){
   if (!Number.isFinite(n)) return;
   el.value = `$${n.toFixed(decimals)}`;
 }  
-
-
-
-
+  
+  
+  
+  
   function getChecked(id){
     const el = document.getElementById(id);
     return !!(el && el.checked);
@@ -1944,6 +1971,7 @@ function remaining45ZYearsFromToday(){
 function syncCcsDatesUI(){
   const applyCb = document.getElementById("ch2_pipeline_apply");
   const inSvc   = document.getElementById("ccs_in_service_date");
+  
   const ciEff   = document.getElementById("ccs_ci_effective_date");
   if (!applyCb || !inSvc || !ciEff) return;
 
@@ -1955,6 +1983,9 @@ function syncCcsDatesUI(){
     ciEff.value = "";
     return;
   }
+  
+  
+  
 
   const today = todayIsoLocal();
 
@@ -1964,6 +1995,15 @@ function syncCcsDatesUI(){
   // Second date: default to same day unless user changes it
   if (!ciEff.value) ciEff.value = inSvc.value || today;
 }
+
+function sync45QValueSection(){
+  const wrap = document.getElementById("section45qValue");
+  const applyCb = document.getElementById("ch2_pipeline_apply");
+  if (!wrap || !applyCb) return;
+
+  wrap.style.display = applyCb.checked ? "" : "none";
+}
+
 
   function carriersFromRail(railStr){
     const s = (railStr || "").toString().toUpperCase();
@@ -2032,8 +2072,8 @@ function syncFreightUI(){
   fac.disabled  = !on;
   hub.disabled  = !on;
 }  
-
-
+      
+      
   // ----------------------------
   // STATE
   // ----------------------------
@@ -2123,13 +2163,13 @@ function syncFreightUI(){
       o.value = "";
       o.textContent = "No plants match filters";
       sel.appendChild(o);
-
+    
       selectedPlant = null;
-
+    
       // ✅ deterministic freight reset when no plant
       const freightCb = document.getElementById("applyFreight");
       if (freightCb) freightCb.checked = false;
-
+    
      renderHubs();
       syncFreightUI();
       renderLcfsDetail();
@@ -2170,7 +2210,7 @@ function syncFreightUI(){
       freightCb.checked = (mode === "lcfs");
     }
     syncFreightUI();
-
+    
     syncCcsUI();
     syncChapter2PipelineUI();
     renderHubs();
@@ -2180,8 +2220,8 @@ function syncFreightUI(){
     renderPlantDetails();
     renderOutputs();
   }  
-
-
+        
+        
         // <-- CLOSE renderPlantSelect()
   // ----------------------------
   // PLANT DETAILS
@@ -2329,6 +2369,10 @@ function compute(){
   fortyfivez_remaining_years: NaN,
   fortyfivez_annual_value: NaN,
   fortyfivez_discounted_value: NaN,
+  
+  
+  discount_rate_pct: NaN,
+  discount_rate_decimal: NaN,
 
 
 
@@ -2352,12 +2396,12 @@ function compute(){
   // LCFS delivered CI available?
   res.hasCI = (ciDel !== null);
   res.ciDelivered = (ciDel !== null) ? ciDel : NaN;   // or null if you prefer
-
+    
     // Starting CI used for calculations (LCFS if available, else proxy)
     const start = startingCI(selectedPlant);
     res.startCi = Number.isFinite(start.value) ? start.value : NaN;
     res.startNote = start.note || "";
-
+    
     const lcfsMode = (start.mode === "lcfs");
     const doFreight = lcfsMode && getChecked("applyFreight");
 
@@ -2381,6 +2425,17 @@ const bench_g_per_mj = Number.isFinite(bench_kg_per_mmbtu)
 const maxRate = getNumber("maxRate");
 const slope = getNumber("slope");
 
+const discountRatePct = getNumber("discountRate");
+const discountRate = Number.isFinite(discountRatePct)
+  ? discountRatePct / 100
+  : DEFAULT_DISCOUNT_RATE;
+
+res.discount_rate_pct = Number.isFinite(discountRatePct)
+  ? discountRatePct
+  : DEFAULT_DISCOUNT_RATE * 100;
+
+res.discount_rate_decimal = discountRate;
+
   // ----------------------------
   // Chapter 2: pipeline score counts ONLY if checkbox checked
   // ----------------------------
@@ -2389,14 +2444,17 @@ const slope = getNumber("slope");
   const ch2Apply = ch2ApplyEl ? ch2ApplyEl.checked : false;
   const ch2Score = ch2ScoreEl ? parseFloat(ch2ScoreEl.value || "0") : 0;
   const pipelineScore = (ch2Apply && Number.isFinite(ch2Score)) ? ch2Score : 0;
-
+  
   const ccsInServiceEl = document.getElementById("ccs_in_service_date");
   const ccsCiEffEl     = document.getElementById("ccs_ci_effective_date");
 
   res.ccs_in_service_date  = ch2Apply && ccsInServiceEl ? (ccsInServiceEl.value || "") : "";
   res.ccs_ci_effective_date = ch2Apply && ccsCiEffEl ? (ccsCiEffEl.value || "") : "";
-
-  const qCreditPerTon = getNumber("fortyfiveqCreditPerTonPolicy");
+  
+const storageTypeEl = document.getElementById("fortyfiveqStorageType");
+  const qCreditPerTon = storageTypeEl
+    ? Number(storageTypeEl.value)
+    : 85;
 
 res.fortyfiveq_credit_per_ton = qCreditPerTon;
 res.fortyfiveq_remaining_years_policy = ch2Apply
@@ -2453,13 +2511,13 @@ if (ch2Apply && Number.isFinite(res.fortyfiveq_annual_value) && res.fortyfiveq_a
 
     // first partial 45Q period after Jan 1, 2030
     if (stubYears > 0){
-      pv += (res.fortyfiveq_annual_value * stubYears) / Math.pow(1 + FORTYFIVEQ_DISCOUNT_RATE, yearsTo2030 + stubYears);
+      pv += (res.fortyfiveq_annual_value * stubYears) / Math.pow(1 + discountRate, yearsTo2030 + stubYears);
     }
 
     // full years after that partial period
     for (let i = 1; i <= fullYears; i++){
       const t = yearsTo2030 + stubYears + i;
-      pv += res.fortyfiveq_annual_value / Math.pow(1 + FORTYFIVEQ_DISCOUNT_RATE, t);
+      pv += res.fortyfiveq_annual_value / Math.pow(1 + discountRate, t);
     }
 
     res.fortyfiveq_discounted_value = pv;
@@ -2470,10 +2528,10 @@ if (ch2Apply && Number.isFinite(res.fortyfiveq_annual_value) && res.fortyfiveq_a
   res.fortyfiveq_discounted_value = NaN;
 }
 
-
-
-
-
+  
+  
+  
+  
   // ----------------------------
     // Agricultural reduction: counts ONLY if checkbox checked
     // ----------------------------
@@ -2538,7 +2596,7 @@ if (Number.isFinite(res.startCi)){
     // ✅ Agricultural practices reduction
     ci -= agReduction;
 
-
+    
 
     res.ci45z_g_per_mj = ci;
 
@@ -2579,13 +2637,13 @@ if (Number.isFinite(res.rate) && Number.isFinite(gallonsPerYear) && gallonsPerYe
 
     // partial first period
     if (stubYears > 0){
-      pv45z += (res.fortyfivez_annual_value * stubYears) / Math.pow(1 + FORTYFIVEZ_DISCOUNT_RATE, stubYears);
+      pv45z += (res.fortyfivez_annual_value * stubYears) / Math.pow(1 + discountRate, stubYears);
     }
 
     // full years after the stub
     for (let i = 1; i <= fullYears; i++){
       const t = stubYears + i;
-      pv45z += res.fortyfivez_annual_value / Math.pow(1 + FORTYFIVEZ_DISCOUNT_RATE, t);
+      pv45z += res.fortyfivez_annual_value / Math.pow(1 + discountRate, t);
     }
 
     res.fortyfivez_discounted_value = pv45z;
@@ -2629,6 +2687,10 @@ function renderOutputs(){
   const out45qRemainingYearsPolicy = document.getElementById("out45qRemainingYearsPolicy");
   const out45qEffectiveYears = document.getElementById("out45qEffectiveYears");
   const out45qValuePerGal = document.getElementById("out45qValuePerGal");
+  const out45qCreditPerTonPolicy = document.getElementById("out45qCreditPerTonPolicy");
+  const out45zRemainingYears = document.getElementById("out45zRemainingYears");
+  const out45qEffectiveYearsTop = document.getElementById("out45qEffectiveYearsTop");
+  const outTotalDiscountedValueNote = document.getElementById("outTotalDiscountedValueNote");
 
 
 
@@ -2672,6 +2734,7 @@ function renderOutputs(){
     if (out45qRemainingYearsPolicy) out45qRemainingYearsPolicy.textContent = "—";
     if (out45qEffectiveYears) out45qEffectiveYears.textContent = "—";
     if (out45qValuePerGal) out45qValuePerGal.textContent = "—";
+    if (out45qCreditPerTonPolicy) out45qCreditPerTonPolicy.textContent = "—";
 
 
 
@@ -2680,6 +2743,9 @@ function renderOutputs(){
     if (outMilesHub) outMilesHub.textContent = "—";
     if (outFreightHub) outFreightHub.textContent = "—";
     if (outConvLine) outConvLine.textContent = "—";
+    if (out45zRemainingYears) out45zRemainingYears.textContent = "—";
+    if (out45qEffectiveYearsTop) out45qEffectiveYearsTop.textContent = "—";
+    if (outTotalDiscountedValueNote) outTotalDiscountedValueNote.textContent = "45Z + 45Q values discounted at —";
     return;
   }
 
@@ -2700,7 +2766,7 @@ function renderOutputs(){
       })
     : "—";
 }
-
+  
 
   if (out45qAnnualValue){
     out45qAnnualValue.textContent = Number.isFinite(r.fortyfiveq_annual_value)
@@ -2718,10 +2784,34 @@ if (out45qRemainingYearsPolicy){
     : "—";
 }
 
+if (out45qCreditPerTonPolicy){
+  out45qCreditPerTonPolicy.textContent = Number.isFinite(r.fortyfiveq_credit_per_ton)
+    ? fmt(r.fortyfiveq_credit_per_ton, 2)
+    : "—";
+}
+
 if (out45qEffectiveYears){
   out45qEffectiveYears.textContent = Number.isFinite(r.fortyfiveq_effective_years)
     ? fmt(r.fortyfiveq_effective_years, 1)
     : "—";
+}
+
+if (out45zRemainingYears){
+  out45zRemainingYears.textContent = Number.isFinite(r.fortyfivez_remaining_years)
+    ? fmt(r.fortyfivez_remaining_years, 1)
+    : "—";
+}
+
+if (out45qEffectiveYearsTop){
+  out45qEffectiveYearsTop.textContent = Number.isFinite(r.fortyfiveq_effective_years)
+    ? fmt(r.fortyfiveq_effective_years, 1)
+    : "—";
+}
+
+if (outTotalDiscountedValueNote){
+  outTotalDiscountedValueNote.textContent = Number.isFinite(r.discount_rate_pct)
+    ? `45Z + 45Q values discounted at ${fmt(r.discount_rate_pct, 1)}%`
+    : "45Z + 45Q values discounted at —";
 }
 
 
@@ -2786,9 +2876,9 @@ if (out45qValuePerGal){
     Number.isFinite(r.fortyfiveq_effective_years) &&
     Number.isFinite(r.fortyfiveq_value_per_gal)
   ){
-    outPayoutDetail.textContent =
-      `Total credit = 45Z annual payout: ${fmt(cap,1)} MMgy × $${fmt(r.rate,2)}/gal × ${zYears} years discounted at 10% + ` +
-      `45Q annual payout: ${fmt(cap,1)} MMgy × $${qPerGal}/gal × ${qYears} effective years discounted at 10%`;
+outPayoutDetail.textContent =
+  `Total credit = 45Z annual payout: ${fmt(cap,1)} MMgy × $${fmt(r.rate,2)}/gal × ${zYears} years discounted at ${fmt(r.discount_rate_pct,1)}% + ` +
+  `45Q annual payout: ${fmt(cap,1)} MMgy × $${qPerGal}/gal × ${qYears} effective years discounted at ${fmt(r.discount_rate_pct,1)}%`;
   } else {
     outPayoutDetail.textContent = "—";
   }
@@ -2889,7 +2979,7 @@ function wireEvents(){
     // Starting CI + feedstock/enhancement panel
     renderStartingPanel();
     renderLcfsDetail();
-
+    
     // Freight: auto-on for LCFS plants, forced off for proxy plants
     const freightCb = document.getElementById("applyFreight");
     if (freightCb){
@@ -2919,11 +3009,12 @@ function wireEvents(){
     syncFreightUI();
     renderOutputs();
   });
-
+  
   onInput("ch2_pipeline_apply", () => {
-  syncCcsDatesUI();
-  renderOutputs();
-});
+   syncCcsDatesUI();
+   sync45QValueSection();
+   renderOutputs();
+ });
 
   // All other calc-driving inputs: recompute only
   const calcIds = [
@@ -2934,9 +3025,9 @@ function wireEvents(){
   "ciBenchmark","maxRate","slope",
   "ch2_pipeline_apply","ch2_pipeline_score",
   "ccs_in_service_date","ccs_ci_effective_date",
-"fortyfiveqCreditPerTonPolicy",
-"ag_apply","ag_score",
-
+  "fortyfiveqStorageType",
+  "ag_apply","ag_score",
+  "discountRate",
   "creditDiscountCombined"
 ];
 
@@ -2956,8 +3047,8 @@ function wireEvents(){
   if (up) up.addEventListener("click", () => nudgeNumber("ccsReduction", +1.0));
   if (dn) dn.addEventListener("click", () => nudgeNumber("ccsReduction", -1.0));
 }
-
-
+          
+         
   // ----------------------------
   // INIT
   // ----------------------------
@@ -3011,10 +3102,10 @@ function wireEvents(){
     function parseCap(x){
       if (x === null || x === undefined || x === "") return null;
       if (typeof x === "number") return Number.isFinite(x) ? x : null;
-
+    
       const s = String(x).trim();
       if (!s) return null;
-
+    
       // remove commas + common unit text
       const cleaned = s.replace(/,/g, "").replace(/mgy/ig, "").trim();
       const n = Number(cleaned);
@@ -3059,7 +3150,8 @@ function wireEvents(){
     // 4) Wire + render
     wireEvents();
     applyFilters();
-
+    sync45QValueSection();
+    
   }
 
   // Kick off load after DOM is ready (ONLY ONCE)
