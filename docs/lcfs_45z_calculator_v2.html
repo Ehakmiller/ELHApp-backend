@@ -956,7 +956,6 @@ header, main{ position:relative; z-index:1; }
 
 <div class="metricGrid">
 
-  <!-- Benchmark -->
   <div class="metric">
     <div class="metricLabel">Benchmark (kg/MMBtu)</div>
     <div class="valuePill">
@@ -965,7 +964,6 @@ header, main{ position:relative; z-index:1; }
     <div class="metricSub">Unit of measure equivilant to <span id="benchGmjEq">—</span> g/MJ</div>
   </div>
 
-  <!-- Max Rate (ONLY ONE) -->
   <div class="metric">
     <div class="metricLabel">Max rate ($/gal)</div>
     <div class="valuePill">
@@ -974,13 +972,10 @@ header, main{ position:relative; z-index:1; }
     <div class="metricSub">Transportation fuel maximum payout</div>
   </div>
 
-  <!-- Slope -->
   <div class="metric">
-    <div class="metricLabel">Base slope ($/MMBtu per CI unit)</div>
-    <div class="valuePill">
-      <input id="slope" type="number" step="0.0001" value="0.02" />
-    </div>
-    <div class="metricSub">Final slope = base slope × gal/MMBtu (0.02)</div>
+    <div class="metricLabel">Emissions factor rounding</div>
+    <div class="valuePill"><span class="value">0.1</span></div>
+    <div class="metricSub">IRS-style rounding to nearest 0.1 emissions factor</div>
   </div>
 
 </div>
@@ -1049,7 +1044,7 @@ The credit applies to qualifying carbon capture projects located in the United S
   <li>Starts with a facility carbon intensity in <span class="mono">gCO2e/MJ</span> (LCFS CI or proxy estimate).</li>
   <li>Applies adjustments (freight, ILUC, CCS, agricultural practices, misc) in <span class="mono">gCO2e/MJ</span>. Checked boxes are included in the calculations.</li>
   <li>Converts to the 45Z policy unit <span class="mono">kgCO2e/MMBtu</span> at the final step for rate mapping.</li>
-  <li>Uses <span class="mono">Benchmark</span>, <span class="mono">Slope</span>, and <span class="mono">Max Rate</span> to estimate a $/gal credit rate.</li>
+  <li>Uses <span class="mono">Benchmark</span> and <span class="mono">Max Rate</span> to compute a raw emissions factor, rounds that factor to the nearest <span class="mono">0.1</span>, and maps the rounded factor to a $/gal credit rate.</li>
   <li>Calculates annual value as <span class="mono">rate × gallons</span> using ethanol capacity.</li>
   <li><span class="mono">LCFS delivered CI</span> is treated as “delivered-to-CA” CI.</li>
   <li>The tool estimates <span class="mono">FOB CI</span> by subtracting freight CI per mile × distance × multiplier.</li>
@@ -1342,12 +1337,12 @@ The credit applies to qualifying carbon capture projects located in the United S
   // ----------------------------
   const DATA_URL = "./static_data/LCFS/lcfs_dropdown_v2.json";
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-17 13:16:38");
+  console.log("✅ BUILD_STAMP:", "2026-03-23 15:00:42");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-17 13:16:38");
+  console.log("BUILD_STAMP:", "2026-03-23 15:00:42");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1449,6 +1444,22 @@ function syncChapter2PipelineUI(){
   return (Number.isFinite(n) && n > 0) ? n : null;
 }
 
+function roundToNearestTenthHalfUp(x){
+  if (!Number.isFinite(x)) return NaN;
+  return Math.round(x * 10) / 10;
+}
+
+function round45zEmissionsFactor(emissionsRate, benchmark){
+  if (!Number.isFinite(emissionsRate) || !Number.isFinite(benchmark) || benchmark <= 0) return NaN;
+
+  const rawFactor = (benchmark - emissionsRate) / benchmark;
+
+  // credit cannot be negative
+  const flooredFactor = Math.max(0, rawFactor);
+
+  // IRS-style nearest 0.1
+  return roundToNearestTenthHalfUp(flooredFactor);
+}
 
 function toFiniteNumberOrNull(x){
   if (x === null || x === undefined || x === "") return null;
@@ -2382,10 +2393,14 @@ function compute(){
 
   // Same value converted to 45Z units
   emissions_kg_per_mmbtu: NaN,
+  emissions_factor_raw: NaN,
+  emissions_factor_rounded: NaN,
 
   rate: NaN,
   rateDetail: ""
-};
+  };
+ 
+ 
 
   if (!selectedPlant) return res;
 
@@ -2423,7 +2438,7 @@ const bench_g_per_mj = Number.isFinite(bench_kg_per_mmbtu)
   : NaN;
 
 const maxRate = getNumber("maxRate");
-const slope = getNumber("slope");
+
 
 const discountRatePct = getNumber("discountRate");
 const discountRate = Number.isFinite(discountRatePct)
@@ -2606,22 +2621,21 @@ res.emissions_kg_per_mmbtu = Number.isFinite(ci)
   : NaN;
   }
 
-  // Rate
-  // Rate mapping should use 45Z units (kg/MMBtu)
+// Rate mapping should use 45Z units (kg/MMBtu)
+// Bucketed version: round emissions factor to nearest 0.1, then apply max rate
 if (
   Number.isFinite(res.emissions_kg_per_mmbtu) &&
   Number.isFinite(bench_kg_per_mmbtu) &&
-  Number.isFinite(slope) &&
   Number.isFinite(maxRate)
 ){
-  const dCI = (bench_kg_per_mmbtu - res.emissions_kg_per_mmbtu);  // kg/MMBtu
+  const rawFactor = (bench_kg_per_mmbtu - res.emissions_kg_per_mmbtu) / bench_kg_per_mmbtu;
+  const roundedFactor = round45zEmissionsFactor(res.emissions_kg_per_mmbtu, bench_kg_per_mmbtu);
 
-// Interpret "slope" as BASE SLOPE in $/MMBtu per (kg/MMBtu)
-const finalSlope = slope * MMBTU_PER_GAL_ETHANOL;              // $/gal per (kg/MMBtu)
+  res.emissions_factor_raw = Math.max(0, rawFactor);
+  res.emissions_factor_rounded = roundedFactor;
 
-const raw = dCI * finalSlope;                                 // $/gal
-res.rate = clamp(raw, 0, maxRate);
-
+  res.rate = clamp(roundedFactor * maxRate, 0, maxRate);
+  
 // ----------------------------
 // Discounted 45Z value through Dec 2029
 // ----------------------------
@@ -2657,10 +2671,10 @@ if (Number.isFinite(res.rate) && Number.isFinite(gallonsPerYear) && gallonsPerYe
 }
 
 
-res.rateDetail =
-
-  `Rate $/gal per CI unit  =  ${fmt(finalSlope,6)}`;
-
+ res.rateDetail =
+    `Raw factor = (${fmt(bench_kg_per_mmbtu,2)} − ${fmt(res.emissions_kg_per_mmbtu,2)}) ÷ ${fmt(bench_kg_per_mmbtu,2)} = ${fmt(res.emissions_factor_raw,3)}
+Rounded factor = ${fmt(res.emissions_factor_rounded,1)}
+Rate = ${fmt(res.emissions_factor_rounded,1)} × $${fmt(maxRate,2)} = $${fmt(res.rate,4)}/gal`;
 }
   return res;
 }
@@ -3017,12 +3031,12 @@ function wireEvents(){
  });
 
   // All other calc-driving inputs: recompute only
-  const calcIds = [
+const calcIds = [
   "caHub",
   "freightMultiplier","gPerMjPerMile",
   "subtractIluc","ilucValue",
   "applyMisc","ccsReduction",
-  "ciBenchmark","maxRate","slope",
+  "ciBenchmark","maxRate",
   "ch2_pipeline_apply","ch2_pipeline_score",
   "ccs_in_service_date","ccs_ci_effective_date",
   "fortyfiveqStorageType",
