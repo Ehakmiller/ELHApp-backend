@@ -1,1 +1,3 @@
 facility_id,ci_corn_g_per_mj,ci_fiber_g_per_mj,ci_sorghum_g_per_mj,ci_wheat_g_per_mj,ci_sugar_g_per_mj,ci_date,desc,source_table,dryer_used,dryer_confidence,dryer_conflict,dryer_tokens,ca_facility_id
+70299,72.14,32.75,,,,2026-02-11,,US_Ethanol_CI_ByFeedstock,,low,False,[],70299
+70721,72.36,32.54,,,,2026-02-11,,US_Ethanol_CI_ByFeedstock,,low,False,[],70721

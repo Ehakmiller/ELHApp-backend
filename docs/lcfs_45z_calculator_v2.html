@@ -795,7 +795,7 @@ header, main{ position:relative; z-index:1; }
 </div>
 
 <div class="pill warn">
-  V2 uses user inputs for freight / ILUC / CCS &amp; policy params
+  Model allows user inputs for freight / ILUC / MISC /AG Practises /CCS &amp; policy params
 </div>
 </header>
 
@@ -1046,9 +1046,10 @@ The credit applies to qualifying carbon capture projects located in the United S
   <li>Converts to the 45Z policy unit <span class="mono">kgCO2e/MMBtu</span> at the final step for rate mapping.</li>
   <li>Uses <span class="mono">Benchmark</span> and <span class="mono">Max Rate</span> to compute a raw emissions factor, rounds that factor to the nearest <span class="mono">0.1</span>, and maps the rounded factor to a $/gal credit rate.</li>
   <li>Calculates annual value as <span class="mono">rate × gallons</span> using ethanol capacity.</li>
-  <li><span class="mono">LCFS delivered CI</span> is treated as “delivered-to-CA” CI.</li>
-  <li>The tool estimates <span class="mono">FOB CI</span> by subtracting freight CI per mile × distance × multiplier.</li>
-  <li><span class="mono">45Z proxy CI</span> = FOB CI − ILUC (if checked) − CCS reduction (if checked) + other adjustment.</li>
+  <li><span class="mono">Starting CI rule</span>: use California LCFS CI when available; otherwise use Oregon CI if California is absent; otherwise use technology proxy.</li>
+  <li>If Oregon is used, the delivery hub is fixed to <span class="mono">Portland</span> for freight normalization.</li>
+  <li>The tool estimates <span class="mono">FOB CI</span> by subtracting freight CI per mile × distance × multiplier, less the 300-mile baseline.</li>
+  <li><span class="mono">45Z proxy CI</span> = starting CI − freight (if checked) − ILUC (if checked) − CCS reduction (if checked) − agricultural reduction (if checked) − misc reduction (if checked, by your chosen sign convention).</li>
   <li>$ /gal policy mapping is parameterized and editable in V1.</li>
 </ul>
 
@@ -1319,9 +1320,35 @@ The credit applies to qualifying carbon capture projects located in the United S
 
 <div class="hr"></div>
 
+<div class="note" id="programSummaryPanel" style="margin-top:10px; display:none;">
+  <div style="margin-bottom:6px;">Program summary</div>
+  <div style="font-size:12px; color:var(--muted); line-height:1.45;">
+    For <span class="mono">ethanol</span>, California’s LCFS assigns carbon intensity using full lifecycle analysis that
+    <b>includes ILUC</b>, significantly increasing CI scores for crop-based pathways like corn. Oregon’s Clean Fuels
+    Program follows a similar framework but <b>generally excludes ILUC</b>, resulting in lower CI scores for the same
+    ethanol plant and pathway. Both programs include transportation emissions, but California typically models longer,
+    destination-specific rail routes, while Oregon often reflects shorter delivery to Portland, further widening the CI
+    advantage.
+    <br><br>
+    Additionally, California allows highly customized, plant-specific pathways (for example fiber, CCS, and RNG tweaks),
+    while Oregon relies more on approved/default pathways, offering less flexibility to optimize CI.
+  </div>
+</div>
+
+<div class="hr"></div>
+
 <div class="note" id="lcfsDetailPanel" style="margin-top:10px; display:none;">
-  <div style="margin-bottom:6px;">LCFS pathway detail</div>
-  <div id="lcfsDetailRows"></div>
+  <div style="margin-bottom:10px;">LCFS pathway detail</div>
+
+  <div id="caDetailSection" style="display:none; margin-bottom:14px;">
+    <div style="margin-bottom:6px;"><span class="mono">California detail</span></div>
+    <div id="caDetailRows"></div>
+  </div>
+
+  <div id="orDetailSection" style="display:none;">
+    <div style="margin-bottom:6px;"><span class="mono">Oregon detail</span></div>
+    <div id="orDetailRows"></div>
+  </div>
 </div>
 
 <div class="hr"></div>
@@ -1337,12 +1364,12 @@ The credit applies to qualifying carbon capture projects located in the United S
   // ----------------------------
   const DATA_URL = "./static_data/LCFS/lcfs_dropdown_v2.json";
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-23 15:00:42");
+  console.log("✅ BUILD_STAMP:", "2026-03-28 12:10:00");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-23 15:00:42");
+  console.log("BUILD_STAMP:", "2026-03-28 12:10:00");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1357,6 +1384,15 @@ The credit applies to qualifying carbon capture projects located in the United S
     { id: "BNSF_KAISER",  name: "Kaiser Yard (Fontana)", railroad: "BNSF", lat: 34.10000, lon: -117.43400, role: "Inland Empire" },
     { id: "BNSF_CALWA",   name: "Calwa Yard (Fresno)",   railroad: "BNSF", lat: 36.72200, lon: -119.73200, role: "Central Valley" }
   ];
+
+const OR_PORTLAND_HUB = {
+  id: "OR_PORTLAND",
+  name: "Portland",
+  railroad: "OR",
+  lat: 45.5231,
+  lon: -122.6765,
+  role: "Oregon delivery hub"
+};
 
 // ----------------------------
 // BOOT / DIAGNOSTICS
@@ -1384,23 +1420,33 @@ console.log("SCRIPT LOADED OK");
 function computePipelineDefault(plant) {
   if (!plant) return { score: 0, applied: false };
 
-  const direct = normUpper(plant.co2_pipeline_direct);
-  const third  = normUpper(plant.co2_pipeline_3rd_party);
+  const direct  = normUpper(plant.co2_pipeline_direct);
+  const third   = normUpper(plant.co2_pipeline_3rd_party);
+  const sponsor = normUpper(plant.co2_sponsor);
 
-  // Optional: if you have an SCS flag in JSON, keep this; otherwise it just stays false
   const scs = !!plant.scs_positive;
-
-  // SCS: force score=0, checkbox default OFF, but keep input editable
   if (scs) return { score: 0, applied: false };
 
   // DIRECT pipeline -> default apply 30
   if (direct.includes("DIRECT")) return { score: 30, applied: true };
 
-  // Tallgrass 3rd party -> default apply 31
-  if (third.includes("TALL") && third.includes("GRASS")) return { score: 31, applied: true };
+  // Tallgrass / Trailblazer 3rd-party pipeline -> default apply 31
+  const tallgrassMatch =
+    (third.includes("TALL") && third.includes("GRASS")) ||
+    third.includes("TALLGRASS") ||
+    third.includes("TRAILBLAZER") ||
+    (sponsor.includes("TALL") && sponsor.includes("GRASS")) ||
+    sponsor.includes("TALLGRASS") ||
+    sponsor.includes("TRAILBLAZER");
+    
+    console.log("computePipelineDefault", plant?.plant_name, { direct, third, sponsor, tallgrassMatch, scs });
+
+  if (tallgrassMatch) return { score: 31, applied: true };
 
   return { score: 0, applied: false };
 }
+
+
 
 function syncChapter2PipelineUI(){
   const cb  = document.getElementById("ch2_pipeline_apply");
@@ -1419,6 +1465,8 @@ function syncChapter2PipelineUI(){
   const def = computePipelineDefault(selectedPlant);
   inp.value = String(def.score);
   cb.checked = !!def.applied;
+  
+  console.log("syncChapter2PipelineUI", selectedPlant?.plant_name, def, { checked: cb.checked, value: inp.value });
 
   // Always editable
   inp.disabled = false;
@@ -1630,10 +1678,19 @@ function getFeedstockCI(p){
   return out;
 }
 
-function bestDeliveredCI(p){
+function minCiFromDetailRows(rows){
+  if (!Array.isArray(rows) || !rows.length) return null;
+
+  const vals = rows
+    .map(r => Number(r?.ci_score))
+    .filter(v => Number.isFinite(v) && v > 0);
+
+  return vals.length ? Math.min(...vals) : null;
+}
+
+function bestCaliforniaCi(p){
   const fs = getFeedstockCI(p);
 
-  // prefer feedstock CI if present
   const fromFeedstocks =
     fs.corn ?? fs.fiber ?? fs.sorghum ?? fs.wheat ?? fs.sugar;
 
@@ -1641,73 +1698,164 @@ function bestDeliveredCI(p){
     return fromFeedstocks;
   }
 
-  const n = toFinitePositiveNumberOrNull(p?.ci_lcfs_delivered_g_per_mj);
-  return n; // either a positive number or null
+  const topLevel = toFinitePositiveNumberOrNull(p?.ci_lcfs_delivered_g_per_mj);
+  if (topLevel !== null) return topLevel;
+
+  return minCiFromDetailRows(p?.ca_detail);
+}
+
+function bestOregonCi(p){
+  return minCiFromDetailRows(p?.or_detail);
+}
+
+function hasCaliforniaCi(p){
+  return bestCaliforniaCi(p) !== null;
+}
+
+function hasOregonCiOnly(p){
+  return !hasCaliforniaCi(p) && (bestOregonCi(p) !== null);
 }
 
 function startingCI(p){
-  const lcfs = bestDeliveredCI(p);
-
-  // ✅ LCFS registrant: use LCFS CI
-  if (lcfs !== null){
+  const caCi = bestCaliforniaCi(p);
+  if (caCi !== null){
     return {
       mode: "lcfs",
-      value: lcfs,
-      note: "Using LCFS delivered CI.",
-      enhancements: [] // you can still show them if you want — see render block below
+      source: "ca",
+      value: caCi,
+      note: "Using California LCFS CI.",
+      enhancements: [],
+      ilucDefaultChecked: true,
+      ilucDefaultValue: 19.9
     };
   }
 
-  // ✅ Non-LCFS: start proxy at 70 and subtract enhancements
+  const orCi = bestOregonCi(p);
+  if (orCi !== null){
+    return {
+      mode: "lcfs",
+      source: "or",
+      value: orCi,
+      note: "Using Oregon CI fallback (Portland freight anchor).",
+      enhancements: [],
+      ilucDefaultChecked: false,
+      ilucDefaultValue: 0
+    };
+  }
+
   const enh = getEnhancements(p);
   const totalRed = enh.reduce((s, e) => s + (e.reduction || 0), 0);
   const v = DEFAULT_NO_LCFS_PROXY - totalRed;
 
   return {
-    mode: "proxy",
-    value: v,
-    note: `Proxy start ${DEFAULT_NO_LCFS_PROXY.toFixed(1)} − enhancements (${totalRed.toFixed(1)})`,
-    enhancements: enh,
-    proxyStart: DEFAULT_NO_LCFS_PROXY,
-    totalRed: totalRed
-  };
+      mode: "proxy",
+      source: "proxy",
+      value: v,
+      note: `Proxy start ${DEFAULT_NO_LCFS_PROXY.toFixed(1)} − enhancements (${totalRed.toFixed(1)})`,
+      enhancements: enh,
+      proxyStart: DEFAULT_NO_LCFS_PROXY,
+      totalRed: totalRed,
+      ilucDefaultChecked: true,
+      ilucDefaultValue: 19.9
+    };
+}
+
+
+
+
+function renderProgramSummary(){
+  const panel = document.getElementById("programSummaryPanel");
+  if (!panel) return;
+
+  if (!selectedPlant){
+    panel.style.display = "none";
+    return;
+  }
+
+  const hasCA = Array.isArray(selectedPlant?.ca_detail) && selectedPlant.ca_detail.length > 0;
+  const hasOR = Array.isArray(selectedPlant?.or_detail) && selectedPlant.or_detail.length > 0;
+
+  panel.style.display = (hasCA || hasOR) ? "block" : "none";
 }
 
 function renderLcfsDetail(){
   const panel = document.getElementById("lcfsDetailPanel");
-  const rowsEl = document.getElementById("lcfsDetailRows");
-  if (!panel || !rowsEl) return;
 
-  if (!selectedPlant || !Array.isArray(selectedPlant.lcfs_detail) || !selectedPlant.lcfs_detail.length){
+  const caSection = document.getElementById("caDetailSection");
+  const orSection = document.getElementById("orDetailSection");
+
+  const caRowsEl = document.getElementById("caDetailRows");
+  const orRowsEl = document.getElementById("orDetailRows");
+
+  if (!panel || !caSection || !orSection || !caRowsEl || !orRowsEl) return;
+
+  if (!selectedPlant){
     panel.style.display = "none";
-    rowsEl.innerHTML = "";
+    caSection.style.display = "none";
+    orSection.style.display = "none";
+    caRowsEl.innerHTML = "";
+    orRowsEl.innerHTML = "";
+    return;
+  }
+
+  const caRows = Array.isArray(selectedPlant.ca_detail) ? selectedPlant.ca_detail : [];
+  const orRows = Array.isArray(selectedPlant.or_detail) ? selectedPlant.or_detail : [];
+
+  const buildCards = (rows) => {
+    if (!rows.length) return "";
+
+    return (
+      `<div class="lcfsDetailGrid">` +
+      rows.map(d => {
+        const pathway = d?.pathway_type || "—";
+        const feedstock = d?.feedstock || "—";
+        const coproduct = d?.coproduct_type || "—";
+        const score = (d?.ci_score === null || d?.ci_score === undefined || Number.isNaN(Number(d?.ci_score)))
+          ? "—"
+          : Number(d.ci_score).toFixed(2);
+
+        return `
+          <div class="lcfsDetailCard">
+            <div><span class="mono">Pathway:</span> ${pathway}</div>
+            <div><span class="mono">Feedstock:</span> ${feedstock}</div>
+            <div><span class="mono">Co-product:</span> ${coproduct}</div>
+            <div><span class="mono">CI score:</span> ${score}</div>
+          </div>
+        `;
+      }).join("") +
+      `</div>`
+    );
+  };
+
+  const hasCA = caRows.length > 0;
+  const hasOR = orRows.length > 0;
+
+  if (!hasCA && !hasOR){
+    panel.style.display = "none";
+    caSection.style.display = "none";
+    orSection.style.display = "none";
+    caRowsEl.innerHTML = "";
+    orRowsEl.innerHTML = "";
     return;
   }
 
   panel.style.display = "block";
 
-  const rows = selectedPlant.lcfs_detail;
+  if (hasCA){
+    caSection.style.display = "block";
+    caRowsEl.innerHTML = buildCards(caRows);
+  } else {
+    caSection.style.display = "none";
+    caRowsEl.innerHTML = "";
+  }
 
-  rowsEl.innerHTML =
-    `<div class="lcfsDetailGrid">` +
-    rows.map(d => {
-      const pathway = d?.pathway_type || "—";
-      const feedstock = d?.feedstock || "—";
-      const coproduct = d?.coproduct_type || "—";
-      const score = (d?.ci_score === null || d?.ci_score === undefined || Number.isNaN(Number(d?.ci_score)))
-        ? "—"
-        : Number(d.ci_score).toFixed(2);
-
-      return `
-        <div class="lcfsDetailCard">
-          <div><span class="mono">Pathway:</span> ${pathway}</div>
-          <div><span class="mono">Feedstock:</span> ${feedstock}</div>
-          <div><span class="mono">Co-product:</span> ${coproduct}</div>
-          <div><span class="mono">CI score:</span> ${score}</div>
-        </div>
-      `;
-    }).join("") +
-    `</div>`;
+  if (hasOR){
+    orSection.style.display = "block";
+    orRowsEl.innerHTML = buildCards(orRows);
+  } else {
+    orSection.style.display = "none";
+    orRowsEl.innerHTML = "";
+  }
 }
 
 function renderEnhancedTechnology(){
@@ -1743,10 +1891,69 @@ function renderEnhancedTechnology(){
 
 
 
+function renderHubs(){
+  const sel = document.getElementById("caHub");
+  const lab = document.querySelector('label[for="caHub"]');
+
+  if (!sel) {
+    console.warn("renderHubs: #caHub not found");
+    return;
+  }
+
+  // Oregon fallback case: force Portland
+  if (selectedPlant && hasOregonCiOnly(selectedPlant)) {
+    sel.innerHTML = "";
+
+    const o = document.createElement("option");
+    o.value = OR_PORTLAND_HUB.id;
+    o.textContent = `${OR_PORTLAND_HUB.name} — ${OR_PORTLAND_HUB.role}`;
+    sel.appendChild(o);
+
+    sel.value = OR_PORTLAND_HUB.id;
+    sel.disabled = true;
+
+    if (lab) lab.textContent = "Oregon delivery hub";
+    return;
+  }
+
+  // Otherwise use California hub logic
+  let hubs = CA_HUBS;
+  try {
+    hubs = hubsForSelectedPlant();
+    if (!Array.isArray(hubs) || !hubs.length) {
+      hubs = CA_HUBS;
+    }
+  } catch (e) {
+    console.warn("renderHubs: hubsForSelectedPlant failed, using all hubs", e);
+    hubs = CA_HUBS;
+  }
+
+  const prev = sel.value;
+  sel.innerHTML = "";
+
+  for (const h of hubs) {
+    const o = document.createElement("option");
+    o.value = h.id;
+    o.textContent = `${h.name} — ${h.railroad} — ${h.role}`;
+    sel.appendChild(o);
+  }
+
+  if (hubs.some(h => h.id === prev)) {
+    sel.value = prev;
+  } else if (hubs.length) {
+    sel.value = hubs[0].id;
+  }
+
+  sel.disabled = false;
+  if (lab) lab.textContent = "California delivery hub";
+
+  console.log("CA hubs rendered:", hubs.length);
+}
+
 function renderStartingPanel(){
-  const vEl  = document.getElementById("startCiValue");
-  const nEl  = document.getElementById("startCiNote");
-  const boxEl = document.getElementById("startCiFeedstocks"); // we’ll reuse this area for either feedstocks or enhancements
+  const vEl = document.getElementById("startCiValue");
+  const nEl = document.getElementById("startCiNote");
+  const boxEl = document.getElementById("startCiFeedstocks");
   if (!vEl || !nEl || !boxEl) return;
 
   if (!selectedPlant){
@@ -1756,59 +1963,65 @@ function renderStartingPanel(){
     return;
   }
 
-
-
-
   const s = startingCI(selectedPlant);
   vEl.textContent = Number.isFinite(s.value) ? fmt(s.value, 2) : "—";
   nEl.textContent = s.note || "—";
 
   // Build the right-side detail content
   if (s.mode === "lcfs"){
-    // Show LCFS feedstock CIs (only those with values)
-    const fs = getFeedstockCI(selectedPlant);
-    const rows = [
-      ["Corn (starch)", fs.corn],
-      ["Fiber", fs.fiber],
-      ["Sorghum", fs.sorghum],
-      ["Wheat", fs.wheat],
-      ["Sugar", fs.sugar]
-    ].filter(([_, v]) => v !== null); // ✅ hide blanks
+    if (s.source === "ca"){
+      const fs = getFeedstockCI(selectedPlant);
+      const rows = [
+        ["Corn (starch)", fs.corn],
+        ["Fiber", fs.fiber],
+        ["Sorghum", fs.sorghum],
+        ["Wheat", fs.wheat],
+        ["Sugar", fs.sugar]
+      ].filter(([_, v]) => v !== null);
 
-    boxEl.innerHTML = rows.length
-  ? `<div class="threeColGrid">` +
-      rows.map(([k,v]) =>
-        `<div class="gridItem">• <span class="mono">${k}</span>: ${fmt(v,2)}</div>`
-      ).join("") +
-    `</div>
-    <div style="margin-top:8px; color:var(--muted);">• <span class="mono">CI Score</span>: lowest starch CI selected</div>
-    <div style="margin-top:4px; color:var(--muted);">• <span class="mono">LCFS detail</span>: at the bottom</div>`
-  : `<div class="muted">No feedstock CI values found in JSON.</div>`;
+      boxEl.innerHTML = rows.length
+        ? `<div class="threeColGrid">` +
+            rows.map(([k,v]) =>
+              `<div class="gridItem">• <span class="mono">${k}</span>: ${fmt(v,2)}</div>`
+            ).join("") +
+          `</div>
+          <div style="margin-top:8px; color:var(--muted);">• <span class="mono">Source</span>: California LCFS</div>
+          <div style="margin-top:4px; color:var(--muted);">• <span class="mono">Freight hub</span>: selected California hub</div>`
+        : `<div class="muted">California LCFS CI selected.</div>`;
+    } else if (s.source === "or"){
+      const orRows = Array.isArray(selectedPlant?.or_detail) ? selectedPlant.or_detail : [];
+      const shown = orRows
+        .map(r => [`${r.feedstock || "Feedstock"}`, Number(r.ci_score)])
+        .filter(([_, v]) => Number.isFinite(v));
 
-  } else {
-    // Show installed enhancements only (hide blanks)
-    const enh = s.enhancements || [];
-    if (!enh.length){
-      boxEl.innerHTML = `<div class="muted">No special enhancements flagged for this plant. Proxy = ${DEFAULT_NO_LCFS_PROXY.toFixed(1)}.</div>`;
-      return;
+      boxEl.innerHTML = shown.length
+        ? `<div class="threeColGrid">` +
+            shown.map(([k,v]) =>
+              `<div class="gridItem">• <span class="mono">${k}</span>: ${fmt(v,2)}</div>`
+            ).join("") +
+          `</div>
+          <div style="margin-top:8px; color:var(--muted);">• <span class="mono">Source</span>: Oregon fallback</div>
+          <div style="margin-top:4px; color:var(--muted);">• <span class="mono">Freight hub</span>: Portland</div>`
+        : `<div class="muted">Oregon fallback CI selected. Freight anchor = Portland.</div>`;
+    } else {
+      boxEl.innerHTML = `<div class="muted">LCFS CI selected.</div>`;
     }
-
-    // Sort by reduction, biggest first (optional)
-    enh.sort((a,b) => (b.reduction||0) - (a.reduction||0));
-
-    const lines = enh.map(e => {
-      const r = Number.isFinite(e.reduction) ? e.reduction : 0;
-      const suffix = (r > 0) ? `: −${fmt(r, 1)} g/MJ` : ""; // only show if it actually changes proxy
-      return `<div>• <span class="mono">${e.label}</span>${suffix}</div>`;
-    }).join("");
-
-    // Show the math line too
-    const math = `<div style="margin-bottom:6px;">Proxy math: <span class="mono">${s.proxyStart.toFixed(1)} − ${s.totalRed.toFixed(1)} = ${fmt(s.value, 2)}</span></div>`;
-
-    boxEl.innerHTML = math + lines;
+    return;
   }
-}
 
+  const enh = getEnhancements(selectedPlant) || [];
+  enh.sort((a,b) => (b.reduction||0) - (a.reduction||0));
+
+  const lines = enh.map(e => {
+    const r = Number.isFinite(e.reduction) ? e.reduction : 0;
+    const suffix = (r > 0) ? `: −${fmt(r, 1)} g/MJ` : "";
+    return `<div>• <span class="mono">${e.label}</span>${suffix}</div>`;
+  }).join("");
+
+  const math = `<div style="margin-bottom:6px;">Proxy math: <span class="mono">${s.proxyStart.toFixed(1)} − ${s.totalRed.toFixed(1)} = ${fmt(s.value, 2)}</span></div>`;
+
+  boxEl.innerHTML = math + lines;
+}
   // Great-circle distance (Haversine) in miles
   function haversineMiles(lat1, lon1, lat2, lon2){
     const R = 3958.7613; // miles
@@ -2104,18 +2317,38 @@ function syncFreightUI(){
     return CA_HUBS;
   }
 
-  function renderHubs(){
+function renderHubs(){
   const sel = document.getElementById("caHub");
+  const lab = document.querySelector('label[for="caHub"]');
+
   if (!sel) {
     console.warn("renderHubs: #caHub not found");
     return;
   }
 
-  // If selectedPlant isn't set yet, show all hubs
+  // Oregon fallback case: force Portland
+  if (selectedPlant && hasOregonCiOnly(selectedPlant)) {
+    sel.innerHTML = "";
+
+    const o = document.createElement("option");
+    o.value = OR_PORTLAND_HUB.id;
+    o.textContent = `${OR_PORTLAND_HUB.name} — ${OR_PORTLAND_HUB.role}`;
+    sel.appendChild(o);
+
+    sel.value = OR_PORTLAND_HUB.id;
+    sel.disabled = true;
+
+    if (lab) lab.textContent = "Oregon delivery hub";
+    return;
+  }
+
+  // Otherwise use California hub logic
   let hubs = CA_HUBS;
   try {
     hubs = hubsForSelectedPlant();
-    if (!Array.isArray(hubs) || !hubs.length) hubs = CA_HUBS;
+    if (!Array.isArray(hubs) || !hubs.length) {
+      hubs = CA_HUBS;
+    }
   } catch (e) {
     console.warn("renderHubs: hubsForSelectedPlant failed, using all hubs", e);
     hubs = CA_HUBS;
@@ -2124,42 +2357,51 @@ function syncFreightUI(){
   const prev = sel.value;
   sel.innerHTML = "";
 
-  for (const h of hubs){
+  for (const h of hubs) {
     const o = document.createElement("option");
     o.value = h.id;
     o.textContent = `${h.name} — ${h.railroad} — ${h.role}`;
     sel.appendChild(o);
   }
 
-  // keep previous selection if still valid
-  if (hubs.some(h => h.id === prev)) sel.value = prev;
-  else if (hubs.length) sel.value = hubs[0].id;
+  if (hubs.some(h => h.id === prev)) {
+    sel.value = prev;
+  } else if (hubs.length) {
+    sel.value = hubs[0].id;
+  }
+
+  sel.disabled = false;
+  if (lab) lab.textContent = "California delivery hub";
 
   console.log("CA hubs rendered:", hubs.length);
 }
 
-
-
-  function currentHub(){
-    const sel = document.getElementById("caHub");
-    const id = sel ? sel.value : "";
-    return CA_HUBS.find(h => h.id === id) || CA_HUBS[0];
+function currentHub(){
+  if (selectedPlant && hasOregonCiOnly(selectedPlant)) {
+    return OR_PORTLAND_HUB;
   }
 
-  // ----------------------------
-  // PLANT LIST FILTERING
-  // ----------------------------
-  function applyFilters(){
+  const sel = document.getElementById("caHub");
+  const id = sel ? sel.value : "";
+  return CA_HUBS.find(h => h.id === id) || CA_HUBS[0];
+}
+
+// ----------------------------
+// PLANT LIST FILTERING
+// ----------------------------
+function applyFilters(){
   const qEl = document.getElementById("searchBox");
   const q = (qEl ? qEl.value : "").toLowerCase().trim();
 
   filteredPlants = allPlants.filter(p => {
     if (!q) return true;
-    const hay = (plantLabel(p) + " " + (p.facility_id||"") + " " + (p.ca_facility_id||"")).toLowerCase();
+    const hay = (
+      plantLabel(p) + " " + (p.facility_id || "") + " " + (p.ca_facility_id || "")
+    ).toLowerCase();
     return hay.includes(q);
   });
 
-  filteredPlants.sort((a,b) => plantLabel(a).localeCompare(plantLabel(b)));
+  filteredPlants.sort((a, b) => plantLabel(a).localeCompare(plantLabel(b)));
   renderPlantSelect();
 }
 
@@ -2176,16 +2418,19 @@ function syncFreightUI(){
       sel.appendChild(o);
     
       selectedPlant = null;
+      
+      
     
       // ✅ deterministic freight reset when no plant
       const freightCb = document.getElementById("applyFreight");
       if (freightCb) freightCb.checked = false;
     
      renderHubs();
-      syncFreightUI();
-      renderLcfsDetail();
-      renderPlantDetails();
-      renderOutputs();
+     syncFreightUI();
+     renderProgramSummary();
+     renderLcfsDetail();
+     renderPlantDetails();
+     renderOutputs();
       return;
     }
 
@@ -2214,6 +2459,11 @@ function syncFreightUI(){
     selectedPlant = filteredPlants.find(p =>
       String(p.facility_id ?? p.ca_facility_id ?? p.__id ?? "").trim() === chosenId
     ) || null;
+    
+    syncChapter2PipelineUI();
+   
+    
+    
     // ✅ Force freight default + sync AFTER selectedPlant is finalized
     const freightCb = document.getElementById("applyFreight");
     if (freightCb){
@@ -2222,10 +2472,9 @@ function syncFreightUI(){
     }
     syncFreightUI();
     
-    syncCcsUI();
-    syncChapter2PipelineUI();
     renderHubs();
     renderStartingPanel();
+    renderProgramSummary();
     renderLcfsDetail();
     renderEnhancedTechnology();
     renderPlantDetails();
@@ -2250,19 +2499,55 @@ function syncFreightUI(){
       return;
     }
 
-    const hasCI = toFinitePositiveNumberOrNull(selectedPlant?.ci_lcfs_delivered_g_per_mj) !== null;
-    const pill = document.createElement("span");
-    pill.className = "pill warn";
-    pill.textContent = hasCI ? "LCFS CI: available" : "LCFS CI: missing";
-    badges.appendChild(pill);
-
-    const src = (selectedPlant.source_table || selectedPlant.score_source || "").trim();
-    if (src){
-      const p = document.createElement("span");
-      p.className = "pill";
-      p.textContent = `Source: ${src}`;
-      badges.appendChild(p);
+    
+    const s = startingCI(selectedPlant);
+    
+    const ilucCheckbox = document.getElementById("subtractIluc");
+    const ilucInput = document.getElementById("ilucValue");
+    
+    if (ilucCheckbox && ilucInput) {
+      ilucCheckbox.checked = !!s.ilucDefaultChecked;
+      ilucInput.value = String(s.ilucDefaultValue ?? 19.9);
     }
+    
+    
+    
+    
+    const pill = document.createElement("span");
+    
+    if (s.mode === "lcfs" && s.source === "ca") {
+      pill.className = "pill";
+      pill.style.color = "var(--accent)";
+      pill.style.borderColor = "var(--accent)";
+      pill.textContent = "CA LCFS CI: available";
+    } else if (s.mode === "lcfs" && s.source === "or") {
+      pill.className = "pill";
+      pill.style.color = "#b91c1c";
+      pill.style.borderColor = "#b91c1c";
+      pill.textContent = "OR LCFS CI: available";
+    } else {
+      pill.className = "pill warn";
+      pill.textContent = "LCFS CI: missing";
+    }
+
+badges.appendChild(pill);
+
+   let sourcePillText = "";
+if (s.mode === "lcfs" && s.source === "ca") {
+  sourcePillText = "Source: California LCFS";
+} else if (s.mode === "lcfs" && s.source === "or") {
+  sourcePillText = "Source: Oregon CFP";
+} else {
+  const src = (selectedPlant.source_table || selectedPlant.score_source || "").trim();
+  if (src) sourcePillText = `Source: ${src}`;
+}
+
+if (sourcePillText){
+  const p = document.createElement("span");
+  p.className = "pill";
+  p.textContent = sourcePillText;
+  badges.appendChild(p);
+}
 
   // --- Enhanced Technologies line (plant-level display) ---
 const enhList = getEnhancements(selectedPlant) || [];
@@ -2957,13 +3242,15 @@ function wireEvents(){
 
   // Helpers
   function onInput(id, fn){
-    const el = document.getElementById(id);
-    if (!el){
-      console.warn(`[wireEvents] Missing element id="${id}"`);
-      return;
-    }
-    el.addEventListener("input", fn);
+  const el = document.getElementById(id);
+  if (!el){
+    console.warn(`[wireEvents] Missing element id="${id}"`);
+    return;
   }
+
+  el.addEventListener("input", fn);
+  el.addEventListener("change", fn);
+}
 
   function resetMiscOverride(){
     const misc = document.getElementById("ccsReduction");
@@ -2992,6 +3279,7 @@ function wireEvents(){
 
     // Starting CI + feedstock/enhancement panel
     renderStartingPanel();
+    renderProgramSummary();
     renderLcfsDetail();
     
     // Freight: auto-on for LCFS plants, forced off for proxy plants
