@@ -1,0 +1,83 @@
+fiber_technology,facility_id,plant_name,ownership,state,city,rows,min_ci,max_ci,avg_ci
+BPX,20621,Poet Biorefining-Portland LLC,POET Biorefining,IN,Shelbyville,1,24.91,24.91,24.91
+BPX,70010,Poet Biorefinning-Hanlontown LLC,POET Biorefining,IA,Hanlontown,1,27.88,27.88,27.88
+BPX,70012,Poet Biorefining- Chancellor LLC,POET Biorefining,SD,Chancellor,1,23.48,23.48,23.48
+BPX,70013,Poet Biorefining- Groton LLC,POET Biorefining,SD,Groton,1,28.95,28.95,28.95
+BPX,70014,Poet Biorefinning-Jewell LLC,POET Biorefining,IA,Jewell,1,27.18,27.18,27.18
+BPX,70016,Poet Biorefining- Mitchell LLC,POET Biorefining,SD,Mitchell,1,26.48,26.48,26.48
+BPX,70017,Poet Biorefining-Macon LLC,POET Biorefining,MO,Macon,1,25.11,25.11,25.11
+BPX,70020,Poet Biorefining--Glenville LLC,POET Biorefining,MN,Albert Lea,1,30.39,30.39,30.39
+BPX,70021,Poet Biorefinning-Emmetsburg LLC,POET Biorefining,IA,Emmetsburg,1,27.51,27.51,27.51
+BPX,70022,Poet Biorefining- Hudson,POET Biorefining,SD,Hudson,1,26.85,26.85,26.85
+BPX,70023,Poet Biorefining-Laddonia LLC,POET Biorefining,MO,Laddonia,1,24.02,24.02,24.02
+BPX,70025,Poet Biorefining- Big Stone LLC,POET Biorefining,SD,Big Stone City,1,28.31,28.31,28.31
+BPX,70026,Poet Biorefining-Bingham Lake LLC,POET Biorefining,MN,Bingham Lake,1,30.0,30.0,30.0
+BPX,70028,Poet Biorefinning-Caro,POET Biorefining,MI,Caro,1,28.59,28.59,28.59
+BPX,70031,Poet Biorefinning-Coon Rapids,POET Biorefining,IA,Coon Rapids,1,26.63,26.63,26.63
+BPX,70032,Poet Biorefinning-Ashton LLC,POET Biorefining,IA,Ashton,1,25.42,25.42,25.42
+BPX,70033,Poet Biorefinning-Gowrie LLC,POET Biorefining,IA,Gowrie,1,24.96,24.96,24.96
+BPX,70056,Poet Biorefining--Preston LLC,POET Biorefining,MN,Preston,1,27.92,27.92,27.92
+BPX,70072,Poet Biorefining--Lake Crystal LLC,POET Biorefining,MN,Lake Crystal,1,28.01,28.01,28.01
+BPX,70108,Poet Biorefining-Portland LLC,POET Biorefining,IN,Portland,1,26.78,26.78,26.78
+BPX,70142,Valero Renewable Fuels LLC,Valero Renewables,IA,Albert City,1,25.01,25.01,25.01
+BPX,70143,Poet Biorefinning-Corning LLC,POET Biorefining,IA,Corning,1,26.96,26.96,26.96
+BPX,70265,Poet Biorefining-Leipsic LLC,POET Biorefining,OH,Leipsic,1,28.07,28.07,28.07
+BPX,70298,Poet Biorefining-Alexandria LLC,POET Biorefining,IN,Alexandria,1,26.95,26.95,26.95
+BPX,70322,Poet Biorefining-North Manchester,POET Biorefining,IN,North Manchester,1,25.32,25.32,25.32
+BPX,70323,Poet Biorefining-Fostoria LLC,POET Biorefining,OH,Fostoria,1,26.96,26.96,26.96
+BPX,70327,Poet Biorefining-Marion,POET Biorefining,OH,Marion,1,27.76,27.76,27.76
+BPX,71682,Poet Biorefinning-Arthur LLC,POET Biorefining,IA,Arthur,1,26.89,26.89,26.89
+EDENIQ,21601,Hereford Ethanol Partners LP,Hereford Ethanol Partners,TX,Hereford,1,27.0,27.0,27.0
+EDENIQ,70015,Little Sioux Corn Processors LLLP,Little Sioux Corn Processors,IA,Marcus,1,26.0,26.0,26.0
+EDENIQ,70030,Western Plains Energy LLC,Western Plains Energy,KS,Oakley,1,24.36,24.36,24.36
+EDENIQ,70039,Plainview Bioenergy LLC,White Energy,TX,Plainview,1,24.89,24.89,24.89
+EDENIQ,70053,Trenton Agri Products LLC,Trenton Agri Products,NE,Trenton,1,26.52,26.52,26.52
+EDENIQ,70064,Glacial Lakes Energy,Glacial Lakes Cooperative,SD,Watertown,1,34.31,34.31,34.31
+EDENIQ,70071,Granite Falls Energy LLC,Granite Falls Energy,MN,Granite Falls,1,23.22,23.22,23.22
+EDENIQ,70078,Chippewa Valley Ethanol Co LLLP,Chippewa Valley Ethanol Co.,MN,Benson,1,29.0,29.0,29.0
+EDENIQ,70087,Al-Corn Clean Fuel,Al–Corn Clean Fuel,MN,Claremont,1,26.86,26.86,26.86
+EDENIQ,70089,Heartland Corn Products,Heartland Corn Products,MN,Winthrop,1,24.0,24.0,24.0
+EDENIQ,70092,Lincolnway Energy LLC,Lincolnway Energy LLC,IA,Nevada,1,23.7,23.7,23.7
+EDENIQ,70093,E Energy Adams LLC,"E Energy Adams, LLC",NE,Adams,1,30.47,30.47,30.47
+EDENIQ,70097,Heron Lake Bioenergy LLC,Granite Falls Energy,MN,Heron Lake,1,24.83,24.83,24.83
+EDENIQ,70111,Redfield Energy LLC,Redfield Energy,SD,Redfield,1,29.06,29.06,29.06
+EDENIQ,70112,Siouxland Energy Cooperative,Sioux Center,IA,Sioux Center,1,22.23,22.23,22.23
+EDENIQ,70117,Bonanza Bioenergy LLC,Conestoga Energy,KS,Garden City,1,24.44,24.44,24.44
+EDENIQ,70130,Badger State Ethanol LLC,Badger State Ethanol,WI,Monroe,1,27.22,27.22,27.22
+EDENIQ,70134,Siouxland Ethnaol LLC,Siouxland Ethanol,NE,Jackson,1,25.0,25.0,25.0
+EDENIQ,70139,Louis Dreyfus Co,Louis Dreyfus,IA,Grand Junction,1,24.19,24.19,24.19
+EDENIQ,70141,Green Plains Central City LLC,Green Plains,NE,Central City,1,29.5,29.5,29.5
+EDENIQ,70144,Absolute Energy,Absolute Energy,IA,St. Ansgar,1,29.68,29.68,29.68
+EDENIQ,70150,Chief Ethanol Fuels Inc,Chief Industries,NE,Hastings,1,40.14,40.14,40.14
+EDENIQ,70151,Husker Ag LLC,Husker Ag,NE,Plainview,1,25.83,25.83,25.83
+EDENIQ,70158,Pratt Energy LLC,Pratt Energy (Scoular / Pratt JV),KS,Pratt,1,23.25,23.25,23.25
+EDENIQ,70188,Homeland Energy Solutions LLC,Homeland Energy Solutions,IA,Lawler,1,24.68,24.68,24.68
+EDENIQ,70241,Chief Ethanol Fuels Inc,Chief Industries,NE,Lexington,1,36.17,36.17,36.17
+EDENIQ,70247,Arkalon Ethanol LLC,Conestoga Energy,KS,Liberal,1,24.39,24.39,24.39
+EDENIQ,70249,Green Plains Wood River LLC,Green Plains,NE,Wood River,1,35.0,35.0,35.0
+EDENIQ,70279,Kansas Ethanol LLC,Kansas Ethanol,KS,Lyons,1,21.93,21.93,21.93
+EDENIQ,70326,Sothwest Iowa Renewable,SIRE,IA,Council Bluffs,1,23.33,23.33,23.33
+EDENIQ,70722,Huron Energy LLC,Glacial Lakes Cooperative,SD,Huron,1,29.31,29.31,29.31
+EDENIQ,70884,The Andersons Marathon Holdings LLC,The Andersons,IA,Denison,1,26.38,26.38,26.38
+EDENIQ,71287,Elite Octane LLC,Elite Octane,IA,Atlantic,1,28.35,28.35,28.35
+EDENIQ,72943,Kappa Partners Aurora LLC,"KAAPA Ethanol & Grain, LLC.",NE,Aurora,1,27.39,27.39,27.39
+EDENIQ,73561,Sandhills Renewable Energy LLC,Husker Ag,NE,Atkinson,1,26.66,26.66,26.66
+POET,71681,Poet Biorefining-Fairmont,POET Biorefining,NE,Fairmont,1,30.1,30.1,30.1
+POET,71684,Poet Biorefinning-Iowa Falls LLC,POET Biorefining,IA,Iowa Falls,1,25.25,25.25,25.25
+Proprietary Process,70485,Poet Biorefining-Cloverdale,POET Biorefining,IN,Cloverdale,1,31.05,31.05,31.05
+Proprietary Process,71683,Poet Biorefinning-Fairbank,POET Biorefining,IA,Fairbank,1,25.94,25.94,25.94
+Proprietary Process,71685,Poet Biorefinning-Menlo,POET Biorefining,IA,Menlo,1,26.6,26.6,26.6
+Proprietary Process,71686,Poet Biorefinning-Shell Rock LLC,POET Biorefining,IA,Shell Rock,1,28.31,28.31,28.31
+SOLITON,70042,Valero Renewable Fuels LLC,Valero Renewables,IA,Charles City,1,25.25,25.25,25.25
+SOLITON,70043,Valero Renewable Fuels LLC,Valero Renewables,IA,Ft. Dodge,1,26.8,26.8,26.8
+SOLITON,70079,Kappa Ethanol LLC,"KAAPA Ethanol & Grain, LLC.",NE,Minden,1,23.0,23.0,23.0
+SOLITON,70082,Denco II LLC,DENCO II,MN,Morris,1,30.3,30.3,30.3
+SOLITON,70098,Kappa Ethanol Ravenna LLC,"KAAPA Ethanol & Grain, LLC.",NE,Ravenna,1,25.15,25.15,25.15
+SOLITON,70153,Mid America Agri Products LLC,Standard Ethanol,NE,Madrid,1,27.99,27.99,27.99
+SOLITON,70196,Valero Renewable Fuels LLC,Valero Renewables,IN,Linden,1,26.35,26.35,26.35
+SOLITON,70235,Highwater Ethanol LLC,High Water Ethanol,MN,Lamberton,1,25.13,25.13,25.13
+SOLITON,70275,Valero Renewable Fuels LLC,Valero Renewables,IA,Hartley,1,25.15,25.15,25.15
+SOLITON,70276,Valero Renewable Fuels LLC,Valero Renewables,MN,Welcome,1,25.28,25.28,25.28
+SOLITON,70283,Valero Renewable Fuels,Valero Renewables,NE,Albion,1,25.29,25.29,25.29
+SOLITON,70288,Hankinson Renewable Energy LLC,"Guardian Energy, LLC",ND,Hankinson,1,26.0,26.0,26.0
+SOLITON,70289,Guardian Energy LLC,"Guardian Energy, LLC",MN,Janesville,1,24.5,24.5,24.5

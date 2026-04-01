@@ -1364,12 +1364,12 @@ The credit applies to qualifying carbon capture projects located in the United S
   // ----------------------------
   const DATA_URL = "./static_data/LCFS/lcfs_dropdown_v2.json";
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-03-28 12:10:00");
+  console.log("✅ BUILD_STAMP:", "2026-03-31 14:47:46");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-03-28 12:10:00");
+  console.log("BUILD_STAMP:", "2026-03-31 14:47:46");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1564,24 +1564,28 @@ const TECH_REDUCTION = {
   high_pro: -1,
   chp: 5,
   white_fox: 3,
-  low_ci_corn:      7,   // LowCICorn: -7
-  renewable_elec:   5,   // RenewableElectricity: -5
+  low_ci_corn: 7,
+  wind_turbine: 5,
   dco_enhancement: 2,
-  icm_p10: 8
+  icm_p10: 8,
+  waste_heat: 3,
+  rng: 6
 };
 
-// Map the plant JSON fields -> our tech keys.
-// Adjust the field names here if your JSON uses different column names.
 const TECH_FIELDS = [
   { key: "high_pro",        label: "High Pro",        fields: ["high_pro", "High Pro", "HIGH_PRO"] },
   { key: "chp",             label: "CHP",             fields: ["chp", "CHP"] },
   { key: "white_fox",       label: "White Fox",       fields: ["white_fox", "White Fox", "WHITE_FOX"] },
   { key: "dco_enhancement", label: "DCO Enhancement", fields: ["dco_enhancement", "DCO Enhancement", "DCO Enhancement\n(lb/bu)"] },
   { key: "icm_p10",         label: "ICM P10",         fields: ["icm_p10", "ICM\nP10", "ICM P10"] },
-  { key: "low_ci_corn",    label: "Low CI Corn",          fields: ["low_ci_corn", "LowCICorn", "Low CI Corn"] },
-  { key: "renewable_elec", label: "Renewable Electricity", fields: ["renewable_elec", "RenewableElectricity", "Renewable Electricity"] },
-  { key: "fiber_ethanol",  label: "Fiber Ethanol",         fields: ["fiber_ethanol", "FiberEthanol", "Fiber Ethanol"] },
+  { key: "low_ci_corn",     label: "Low CI Corn",     fields: ["low_ci_corn", "LowCICorn", "Low CI Corn"] },
+  { key: "wind_turbine",    label: "Wind Turbine",    fields: ["wind_turbine", "Wind Turbine", "WIND_TURBINE"] },
+  { key: "fiber_ethanol",   label: "Fiber Ethanol",   fields: ["fiber_ethanol", "FiberEthanol", "Fiber Ethanol"] },
+  { key: "waste_heat",      label: "DEER Waste Heat",      fields: ["waste_heat", "Waste Heat", "WASTE_HEAT"] },
+  { key: "rng",             label: "RNG",             fields: ["rng", "RNG", "Renewable Natural Gas"] },
 ];
+   
+   
 
 function asBool(v){
   if (v === null || v === undefined) return false;
@@ -1663,11 +1667,11 @@ function getFeedstockCI(p){
   const fs = (p && p.ci_by_feedstock) ? p.ci_by_feedstock : null;
 
   const out = {
-    corn:     fs?.ci_corn_g_per_mj ?? null,
-    fiber:    fs?.ci_fiber_g_per_mj ?? null,
-    sorghum:  fs?.ci_sorghum_g_per_mj ?? null,
-    wheat:    fs?.ci_wheat_g_per_mj ?? null,
-    sugar:    fs?.ci_sugar_g_per_mj ?? null
+    corn:    fs?.ci_corn_g_per_mj ?? null,
+    fiber:   fs?.ci_fiber_g_per_mj ?? null,
+    sorghum: fs?.ci_sorghum_g_per_mj ?? null,
+    wheat:   fs?.ci_wheat_g_per_mj ?? null,
+    sugar:   fs?.ci_sugar_g_per_mj ?? null
   };
 
   for (const k of Object.keys(out)){
@@ -2579,32 +2583,53 @@ const clean = (s) => {
 const regParts = [clean(d6), clean(d3), clean(ep)].filter(Boolean);
 const regText = regParts.length ? regParts.join(", ") : "";
 
-   const items = [
-    ["Ownership", selectedPlant.ownership],
-    ["Plant", selectedPlant.plant_name],
+const items = [
+  ["Ownership", selectedPlant.ownership],
+  ["Plant", selectedPlant.plant_name],
 
-    ["Location", [selectedPlant.city, selectedPlant.state].filter(Boolean).join(", ")],
-    ["Technology", selectedPlant.technology],
+  ["Location", [selectedPlant.city, selectedPlant.state].filter(Boolean).join(", ")],
+  ["Dryer type", selectedPlant.dryer_types],
+  ["Ethanol capacity",
+    Number.isFinite(Number(selectedPlant.ethanol_capacity_mgy))
+      ? `${fmt(Number(selectedPlant.ethanol_capacity_mgy), 1)} MGY`
+      : "—"
+  ],
+  ["Gas supply", selectedPlant.gas_supply],
+  ["Technology", selectedPlant.technology],
 
-    ["Gas supply", selectedPlant.gas_supply],
-    ["Electricity type", selectedPlant.electricity_type],
+  
 
-    ["Fiber technology", selectedPlant.fiber_technology],
-    ["Dryer type", selectedPlant.dryer_types],
+  ["Relative Dryer Efficiency",
+    selectedPlant.relative_dryer_efficiency_bucket
+      ? selectedPlant.relative_dryer_efficiency_bucket
+          .replace(/^relative_/, "")
+          .replace(/_/g, " ")
+          .replace(/\b\w/g, c => c.toUpperCase())
+      : "—"
+  ],
+  ["Rail lines", selectedPlant.rail_lines],
 
-    ["Ethanol capacity",
-      Number.isFinite(Number(selectedPlant.ethanol_capacity_mgy))
-        ? `${fmt(Number(selectedPlant.ethanol_capacity_mgy), 1)} MGY`
-        : "—"
-    ],
-    ["Rail lines", selectedPlant.rail_lines],
+  ["Implied Dryer BTU per Gal",
+    (() => {
+      const v = selectedPlant?.implied_dryer_btu_per_gal;
+      return (v === null || v === undefined || v === "")
+        ? "—"
+        : Number(v).toLocaleString("en-US", { maximumFractionDigits: 0 });
+    })()
+  ],
 
-    ["Enhanced Technologies", enhText],
-    ["Regulatory Pathways", regText],
+   ["Enhanced Technologies", enhText],
+  ["Electricity type", selectedPlant.electricity_type],
+  
 
-    ["CA Facility ID", selectedPlant.ca_facility_id || selectedPlant.facility_id || ""],
-    ["CI date", selectedPlant.ci_date]
-  ];
+  ["Fiber technology", selectedPlant.fiber_technology],
+  ["Electrical Grid Designation", selectedPlant.electrical_grid_designation],
+  
+ 
+  ["Regulatory Pathways", regText],
+  ["CA Facility ID", selectedPlant.ca_facility_id || selectedPlant.facility_id || ""],
+  ["CI date", selectedPlant.ci_date]
+];
 
 
         for (const [k,v] of items){
@@ -3419,22 +3444,111 @@ const calcIds = [
 
 
        // 3) Normalize rows
-    allPlants = rows.map((p, i) => {
-      const out = { ...p };
+allPlants = rows.map((p, i) => {
+  const fac   = p.fac_info || {};
+  const dryer = p.dryer_analysis || {};
+  const rin   = p.rin_info || {};
+  const ci    = p.ci_summary || {};
+  const detail= p.lcfs_detail || {};
+  const tech  = p.tech_flags || {};
+  const co2   = p.co2_info || {};
+  const meta  = p.meta || {};
+  
 
-      // ✅ Stable ID (helps plantSelect work)
-      out.__id = String(out.epm ?? out.EPM ?? out.facility_id ?? out.ca_facility_id ?? i).trim();
+  const out = {
+    ...p,
 
-      // ✅ Capacity (MMgy): simplest possible coercion
-      out.ethanol_capacity_mgy =
-        (out.ethanol_capacity_mgy === null || out.ethanol_capacity_mgy === "" || out.ethanol_capacity_mgy === undefined)
-          ? null
-          : Number(out.ethanol_capacity_mgy);
+    // ---- fac_info ----
+    facility_id: p.facility_id ?? fac.facility_id ?? null,
+    ca_facility_id: p.ca_facility_id ?? fac.facility_id ?? null,
+    plant_name: p.plant_name ?? fac.plant_name ?? null,
+    ownership: p.ownership ?? fac.ownership ?? null,
+    state: p.state ?? fac.state ?? null,
+    city: p.city ?? fac.city ?? null,
+    latitude: p.latitude ?? fac.latitude ?? null,
+    longitude: p.longitude ?? fac.longitude ?? null,
+    rail_lines: p.rail_lines ?? fac.rail_lines ?? null,
+    ethanol_capacity_mgy: p.ethanol_capacity_mgy ?? fac.ethanol_capacity_mgy ?? null,
+    year_build: p.year_build ?? fac.year_build ?? null,
 
-      if (!Number.isFinite(out.ethanol_capacity_mgy)) out.ethanol_capacity_mgy = null;
+    // ---- rin_info ----
+    d6_non_cellulosic: p.d6_non_cellulosic ?? rin.d6_non_cellulosic ?? null,
+    d3_cellulosic: p.d3_cellulosic ?? rin.d3_cellulosic ?? null,
 
-      return out;
-    });
+    // ---- ci_summary ----
+    ci_lcfs_delivered_g_per_mj: p.ci_lcfs_delivered_g_per_mj ?? ci.ci_lcfs_delivered_g_per_mj ?? null,
+    ci_date: p.ci_date ?? ci.ci_date ?? null,
+    ci_by_feedstock: p.ci_by_feedstock ?? ci.ci_by_feedstock ?? {},
+
+    // ---- lcfs_detail ----
+    ca_detail: p.ca_detail ?? detail.ca_detail ?? [],
+    or_detail: p.or_detail ?? detail.or_detail ?? [],
+
+    // ---- tech_flags ----
+    high_pro: p.high_pro ?? tech.high_pro ?? null,
+    chp: p.chp ?? tech.chp ?? null,
+    white_fox: p.white_fox ?? tech.white_fox ?? null,
+    icm_p10: p.icm_p10 ?? tech.icm_p10 ?? null,
+    special_tech: p.special_tech ?? tech.special_tech ?? null,
+    wind_turbine: p.wind_turbine ?? tech.wind_turbine ?? null,
+    waste_heat: p.waste_heat ?? tech.waste_heat ?? null,
+    dryer_types: p.dryer_types ?? tech.dryer_types ?? null,
+    technology: p.technology ?? tech.technology ?? null,
+    reg_pathway: p.reg_pathway ?? tech.reg_pathway ?? null,
+    gas_supply: p.gas_supply ?? tech.gas_supply ?? null,
+    electricity_type: p.electricity_type ?? tech.electricity_type ?? null,
+    
+    electrical_grid_designation: p.electrical_grid_designation ?? tech.electrical_grid_designation ?? null,
+    fiber_technology: p.fiber_technology ?? tech.fiber_technology ?? null,
+    
+     implied_dryer_btu_per_gal:
+      p.implied_dryer_btu_per_gal ?? dryer.implied_dryer_btu_per_gal ?? null,
+
+     relative_dryer_efficiency_bucket:
+      p.relative_dryer_efficiency_bucket ?? dryer.relative_dryer_efficiency_bucket ?? null,
+    
+    dryer_used: p.dryer_used ?? tech.dryer_used ?? null,
+    
+    
+    
+    dryer_confidence: p.dryer_confidence ?? tech.dryer_confidence ?? null,
+    dryer_conflict: p.dryer_conflict ?? tech.dryer_conflict ?? false,
+    dryer_tokens: p.dryer_tokens ?? tech.dryer_tokens ?? [],
+
+    // ---- co2_info ----
+    co2_pipeline_direct: p.co2_pipeline_direct ?? co2.co2_pipeline_direct ?? null,
+    co2_pipeline_3rd_party: p.co2_pipeline_3rd_party ?? co2.co2_pipeline_3rd_party ?? null,
+    co2_sponsor: p.co2_sponsor ?? co2.co2_sponsor ?? null,
+
+    // ---- meta ----
+    source_table: p.source_table ?? meta.source_table ?? null,
+    desc_raw: p.desc_raw ?? meta.desc_raw ?? ""
+  };
+
+  // Stable ID
+  out.__id = String(out.epm ?? out.EPM ?? out.facility_id ?? out.ca_facility_id ?? i).trim();
+
+  // Numeric cleanup
+  out.latitude = (out.latitude === null || out.latitude === "" || out.latitude === undefined) ? null : Number(out.latitude);
+  if (!Number.isFinite(out.latitude)) out.latitude = null;
+
+  out.longitude = (out.longitude === null || out.longitude === "" || out.longitude === undefined) ? null : Number(out.longitude);
+  if (!Number.isFinite(out.longitude)) out.longitude = null;
+
+  out.ethanol_capacity_mgy =
+    (out.ethanol_capacity_mgy === null || out.ethanol_capacity_mgy === "" || out.ethanol_capacity_mgy === undefined)
+      ? null
+      : Number(out.ethanol_capacity_mgy);
+  if (!Number.isFinite(out.ethanol_capacity_mgy)) out.ethanol_capacity_mgy = null;
+
+  out.year_build =
+    (out.year_build === null || out.year_build === "" || out.year_build === undefined)
+      ? null
+      : Number(out.year_build);
+  if (!Number.isFinite(out.year_build)) out.year_build = null;
+
+  return out;
+});
 
     // ✅ Diagnostics MUST be outside the map
     console.log("Loaded rows:", allPlants.length);

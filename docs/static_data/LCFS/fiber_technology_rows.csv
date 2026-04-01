@@ -1,0 +1,83 @@
+facility_id,plant_name,ownership,state,city,feedstock,pathway_type,fiber_technology_raw,fiber_technology,ci_score,coproduct_type,gas_supply,electricity_type,detail_date,program
+70144,Absolute Energy,Absolute Energy,IA,St. Ansgar,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,29.68,,Natural Gas,Grid Electricity,2026-02-11,CA
+70087,Al-Corn Clean Fuel,Al–Corn Clean Fuel,MN,Claremont,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,26.86,,Natural Gas,Grid Electricity,2026-02-11,CA
+70247,Arkalon Ethanol LLC,Conestoga Energy,KS,Liberal,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,24.39,,Natural Gas,Grid Electricity,2026-02-11,CA
+70130,Badger State Ethanol LLC,Badger State Ethanol,WI,Monroe,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,27.22,,Natural Gas,Grid Electricity,2026-02-11,CA
+70117,Bonanza Bioenergy LLC,Conestoga Energy,KS,Garden City,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,24.44,,Natural Gas,Grid Electricity,2026-02-11,CA
+70150,Chief Ethanol Fuels Inc,Chief Industries,NE,Hastings,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,40.14,,Natural Gas,Grid Electricity,2026-02-11,CA
+70241,Chief Ethanol Fuels Inc,Chief Industries,NE,Lexington,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,36.17,,Natural Gas,Grid Electricity,2026-02-11,CA
+70078,Chippewa Valley Ethanol Co LLLP,Chippewa Valley Ethanol Co.,MN,Benson,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,29.0,,Natural Gas,Grid Electricity,2026-02-11,CA
+70082,Denco II LLC,DENCO II,MN,Morris,Corn Fiber (012),Fiber,SOLITON,SOLITON,30.3,,Natural Gas,Grid Electricity,2026-02-11,CA
+70093,E Energy Adams LLC,"E Energy Adams, LLC",NE,Adams,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,30.47,,Natural Gas,Grid Electricity,2026-02-11,CA
+71287,Elite Octane LLC,Elite Octane,IA,Atlantic,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,28.35,,Natural Gas,Grid Electricity,2026-02-11,CA
+70722,Huron Energy LLC,Glacial Lakes Cooperative,SD,Huron,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,29.31,,Natural Gas,Grid Electricity,2026-02-11,CA
+70064,Glacial Lakes Energy,Glacial Lakes Cooperative,SD,Watertown,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,34.31,,Natural Gas,Grid Electricity,2026-02-11,CA
+70071,Granite Falls Energy LLC,Granite Falls Energy,MN,Granite Falls,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,23.22,,Natural Gas,Grid Electricity,2026-02-11,CA
+73561,Sandhills Renewable Energy LLC,Husker Ag,NE,Atkinson,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,26.66,,Natural Gas,Grid Electricity,2026-02-11,CA
+70141,Green Plains Central City LLC,Green Plains,NE,Central City,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,29.5,,Natural Gas,Grid Electricity,2026-02-11,CA
+70249,Green Plains Wood River LLC,Green Plains,NE,Wood River,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,35.0,,Natural Gas,Grid Electricity,2026-02-11,CA
+70289,Guardian Energy LLC,"Guardian Energy, LLC",MN,Janesville,Corn Fiber (012),Fiber,SOLITON,SOLITON,24.5,,Natural Gas,Grid Electricity,2026-02-11,CA
+70288,Hankinson Renewable Energy LLC,"Guardian Energy, LLC",ND,Hankinson,Corn Fiber (012),Fiber,SOLITON,SOLITON,26.0,,Natural Gas,Grid Electricity,2026-02-11,CA
+70089,Heartland Corn Products,Heartland Corn Products,MN,Winthrop,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,24.0,,Natural Gas,Grid Electricity,2026-02-11,CA
+21601,Hereford Ethanol Partners LP,Hereford Ethanol Partners,TX,Hereford,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,27.0,WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70097,Heron Lake Bioenergy LLC,Granite Falls Energy,MN,Heron Lake,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,24.83,,Natural Gas,Grid Electricity,2026-02-11,CA
+70235,Highwater Ethanol LLC,High Water Ethanol,MN,Lamberton,Corn Fiber (012),Fiber,SOLITON,SOLITON,25.13,,Natural Gas,Grid Electricity,2026-02-11,CA
+70188,Homeland Energy Solutions LLC,Homeland Energy Solutions,IA,Lawler,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,24.68,,Natural Gas,Grid Electricity,2026-02-11,CA
+70151,Husker Ag LLC,Husker Ag,NE,Plainview,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,25.83,,Natural Gas,Grid Electricity,2026-02-11,CA
+70079,Kappa Ethanol LLC,"KAAPA Ethanol & Grain, LLC.",NE,Minden,Corn Fiber (012),Fiber,SOLITON,SOLITON,23.0,,Natural Gas,Grid Electricity,2026-02-11,CA
+70098,Kappa Ethanol Ravenna LLC,"KAAPA Ethanol & Grain, LLC.",NE,Ravenna,Corn Fiber (012),Fiber,SOLITON,SOLITON,25.15,,Natural Gas,Grid Electricity,2026-02-11,CA
+72943,Kappa Partners Aurora LLC,"KAAPA Ethanol & Grain, LLC.",NE,Aurora,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,27.39,,Natural Gas,Grid Electricity,2026-02-11,CA
+70279,Kansas Ethanol LLC,Kansas Ethanol,KS,Lyons,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,21.93,,Natural Gas,Grid Electricity,2026-02-11,CA
+70092,Lincolnway Energy LLC,Lincolnway Energy LLC,IA,Nevada,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,23.7,,Natural Gas,Grid Electricity,2026-02-11,CA
+70015,Little Sioux Corn Processors LLLP,Little Sioux Corn Processors,IA,Marcus,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,26.0,,Natural Gas,Grid Electricity,2026-02-11,CA
+70139,Louis Dreyfus Co,Louis Dreyfus,IA,Grand Junction,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,24.19,,Natural Gas,Grid Electricity,2026-02-11,CA
+70153,Mid America Agri Products LLC,Standard Ethanol,NE,Madrid,Corn Fiber (012),Fiber,SOLITON,SOLITON,27.99,,Natural Gas,Grid Electricity,2026-02-11,CA
+70298,Poet Biorefining-Alexandria LLC,POET Biorefining,IN,Alexandria,Corn Fiber (012),Fiber,BPX,BPX,26.95,,Biogas,Grid Electricity,2026-02-11,CA
+71682,Poet Biorefinning-Arthur LLC,POET Biorefining,IA,Arthur,Corn Fiber (012),Fiber,BPX,BPX,26.89,,Natural Gas,Grid Electricity,2026-02-11,CA
+70032,Poet Biorefinning-Ashton LLC,POET Biorefining,IA,Ashton,Corn Fiber (012),Fiber,BPX,BPX,25.42,,Natural Gas,Grid Electricity,2026-02-11,CA
+70025,Poet Biorefining- Big Stone LLC,POET Biorefining,SD,Big Stone City,Corn Fiber (012),Fiber,BPX,BPX,28.31,,Natural Gas,Grid Electricity,2026-02-11,CA
+70026,Poet Biorefining-Bingham Lake LLC,POET Biorefining,MN,Bingham Lake,Corn Fiber (012),Fiber,BPX,BPX,30.0,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70028,Poet Biorefinning-Caro,POET Biorefining,MI,Caro,Corn Fiber (012),Fiber,BPX,BPX,28.59,,Natural Gas,Grid Electricity,2026-02-11,CA
+70012,Poet Biorefining- Chancellor LLC,POET Biorefining,SD,Chancellor,Corn Fiber (012),Fiber,BPX,BPX,23.48,,Biogas,Grid Electricity,2026-02-11,CA
+70485,Poet Biorefining-Cloverdale,POET Biorefining,IN,Cloverdale,Corn Fiber (012),Fiber,Proprietary Process,Proprietary Process,31.05,,Natural Gas,Grid Electricity,2026-02-11,CA
+70031,Poet Biorefinning-Coon Rapids,POET Biorefining,IA,Coon Rapids,Corn Fiber (012),Fiber,BPX,BPX,26.63,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70143,Poet Biorefinning-Corning LLC,POET Biorefining,IA,Corning,Corn Fiber (012),Fiber,BPX,BPX,26.96,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+71683,Poet Biorefinning-Fairbank,POET Biorefining,IA,Fairbank,Corn Fiber (012),Fiber,Proprietary Process,Proprietary Process,25.94,,Natural Gas,Grid Electricity,2026-02-11,CA
+71681,Poet Biorefining-Fairmont,POET Biorefining,NE,Fairmont,Corn Fiber (012),Fiber,POET,POET,30.1,,Natural Gas,Grid Electricity,2026-02-11,CA
+70323,Poet Biorefining-Fostoria LLC,POET Biorefining,OH,Fostoria,Corn Fiber (012),Fiber,BPX,BPX,26.96,,Natural Gas,Grid Electricity,2026-02-11,CA
+70020,Poet Biorefining--Glenville LLC,POET Biorefining,MN,Albert Lea,Corn Fiber (012),Fiber,BPX,BPX,30.39,WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70033,Poet Biorefinning-Gowrie LLC,POET Biorefining,IA,Gowrie,Corn Fiber (012),Fiber,BPX,BPX,24.96,DDGS + WDGS + MDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70013,Poet Biorefining- Groton LLC,POET Biorefining,SD,Groton,Corn Fiber (012),Fiber,BPX,BPX,28.95,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70010,Poet Biorefinning-Hanlontown LLC,POET Biorefining,IA,Hanlontown,Corn Fiber (012),Fiber,BPX,BPX,27.88,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70022,Poet Biorefining- Hudson,POET Biorefining,SD,Hudson,Corn Fiber (012),Fiber,BPX,BPX,26.85,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+71684,Poet Biorefinning-Iowa Falls LLC,POET Biorefining,IA,Iowa Falls,Corn Fiber (012),Fiber,POET,POET,25.25,,Natural Gas,Grid Electricity,2026-02-11,CA
+70014,Poet Biorefinning-Jewell LLC,POET Biorefining,IA,Jewell,Corn Fiber (012),Fiber,BPX,BPX,27.18,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70023,Poet Biorefining-Laddonia LLC,POET Biorefining,MO,Laddonia,Corn Fiber (012),Fiber,BPX,BPX,24.02,DDGS + WDGS,Natural Gas,Cogeneration,2026-02-11,CA
+70072,Poet Biorefining--Lake Crystal LLC,POET Biorefining,MN,Lake Crystal,Corn Fiber (012),Fiber,BPX,BPX,28.01,,Natural Gas,Grid Electricity,2026-02-11,CA
+70265,Poet Biorefining-Leipsic LLC,POET Biorefining,OH,Leipsic,Corn Fiber (012),Fiber,BPX,BPX,28.07,,Natural Gas,Grid Electricity,2026-02-11,CA
+70017,Poet Biorefining-Macon LLC,POET Biorefining,MO,Macon,Corn Fiber (012),Fiber,BPX,BPX,25.11,,Natural Gas,Grid Electricity,2026-02-11,CA
+70327,Poet Biorefining-Marion,POET Biorefining,OH,Marion,Corn Fiber (012),Fiber,BPX,BPX,27.76,,Natural Gas,Grid Electricity,2026-02-11,CA
+71685,Poet Biorefinning-Menlo,POET Biorefining,IA,Menlo,Corn Fiber (012),Fiber,Proprietary Process,Proprietary Process,26.6,,Natural Gas,Grid Electricity,2026-02-11,CA
+70016,Poet Biorefining- Mitchell LLC,POET Biorefining,SD,Mitchell,Corn Fiber (012),Fiber,BPX,BPX,26.48,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70322,Poet Biorefining-North Manchester,POET Biorefining,IN,North Manchester,Corn Fiber (012),Fiber,BPX,BPX,25.32,,Natural Gas,Grid Electricity,2026-02-11,CA
+70108,Poet Biorefining-Portland LLC,POET Biorefining,IN,Portland,Corn Fiber (012),Fiber,BPX,BPX,26.78,,Natural Gas,Grid Electricity,2026-02-11,CA
+70056,Poet Biorefining--Preston LLC,POET Biorefining,MN,Preston,Corn Fiber (012),Fiber,BPX,BPX,27.92,,Natural Gas,Grid Electricity,2026-02-11,CA
+20621,Poet Biorefining-Portland LLC,POET Biorefining,IN,Shelbyville,Corn Fiber (012),Fiber,BPX,BPX,24.91,,Natural Gas,Grid Electricity,2026-02-11,CA
+71686,Poet Biorefinning-Shell Rock LLC,POET Biorefining,IA,Shell Rock,Corn Fiber (012),Fiber,Proprietary Process,Proprietary Process,28.31,,Natural Gas,Grid Electricity,2026-02-11,CA
+70158,Pratt Energy LLC,Pratt Energy (Scoular / Pratt JV),KS,Pratt,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,23.25,,Natural Gas,Grid Electricity,2026-02-11,CA
+70111,Redfield Energy LLC,Redfield Energy,SD,Redfield,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,29.06,,Natural Gas,Grid Electricity,2026-02-11,CA
+70112,Siouxland Energy Cooperative,Sioux Center,IA,Sioux Center,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,22.23,,Natural Gas,Grid Electricity,2026-02-11,CA
+70134,Siouxland Ethnaol LLC,Siouxland Ethanol,NE,Jackson,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,25.0,,Biogas,Grid Electricity,2026-02-11,CA
+70326,Sothwest Iowa Renewable,SIRE,IA,Council Bluffs,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,23.33,,Natural Gas,Grid Electricity,2026-02-11,CA
+70884,The Andersons Marathon Holdings LLC,The Andersons,IA,Denison,Any Cellulosic Biomass (041),Fiber,EDENIQ,EDENIQ,26.38,,Natural Gas,Grid Electricity,2026-02-11,CA
+70053,Trenton Agri Products LLC,Trenton Agri Products,NE,Trenton,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,26.52,,Natural Gas,Grid Electricity,2026-02-11,CA
+70142,Valero Renewable Fuels LLC,Valero Renewables,IA,Albert City,Corn Fiber (012),Fiber,BPX,BPX,25.01,MDGS,Natural Gas,Grid Electricity,2026-02-11,CA
+70283,Valero Renewable Fuels,Valero Renewables,NE,Albion,Corn Fiber (012),Fiber,SOLITON,SOLITON,25.29,,Natural Gas,Grid Electricity,2026-02-11,CA
+70042,Valero Renewable Fuels LLC,Valero Renewables,IA,Charles City,Corn Fiber (012),Fiber,SOLITON,SOLITON,25.25,,Natural Gas,Grid Electricity,2026-02-11,CA
+70043,Valero Renewable Fuels LLC,Valero Renewables,IA,Ft. Dodge,Corn Fiber (012),Fiber,SOLITON,SOLITON,26.8,,Natural Gas,Grid Electricity,2026-02-11,CA
+70275,Valero Renewable Fuels LLC,Valero Renewables,IA,Hartley,Corn Fiber (012),Fiber,SOLITON,SOLITON,25.15,,Natural Gas,Grid Electricity,2026-02-11,CA
+70196,Valero Renewable Fuels LLC,Valero Renewables,IN,Linden,Corn Fiber (012),Fiber,SOLITON,SOLITON,26.35,,Natural Gas,Grid Electricity,2026-02-11,CA
+70276,Valero Renewable Fuels LLC,Valero Renewables,MN,Welcome,Corn Fiber (012),Fiber,SOLITON,SOLITON,25.28,,Natural Gas,Grid Electricity,2026-02-11,CA
+70030,Western Plains Energy LLC,Western Plains Energy,KS,Oakley,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,24.36,,Natural Gas,Grid Electricity,2026-02-11,CA
+70039,Plainview Bioenergy LLC,White Energy,TX,Plainview,Corn Fiber (012),Fiber,EDENIQ,EDENIQ,24.89,,Natural Gas,Grid Electricity,2026-02-11,CA
+70021,Poet Biorefinning-Emmetsburg LLC,POET Biorefining,IA,Emmetsburg,Corn Fiber (012),Fiber,BPX,BPX,27.51,DDGS + WDGS,Natural Gas,Grid Electricity,2026-02-11,CA
