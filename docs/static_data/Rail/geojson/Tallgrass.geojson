@@ -4,22 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Cheyenne Hub (approx)",
-        "kind": "junction"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -104.96,
-          40.76
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Beatrice / Gage Co. anchor",
-        "kind": "junction"
+        "category": "junction"
       },
       "geometry": {
         "type": "Point",
@@ -33,7 +19,7 @@
       "type": "Feature",
       "properties": {
         "name": "Sedgwick/Julesburg anchor",
-        "kind": "junction"
+        "category": "junction"
       },
       "geometry": {
         "type": "Point",
@@ -46,9 +32,358 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Tallgrass mainline (via Sedgwick)",
-        "kind": "pipeline",
-        "style": "solid"
+        "name": "Cheyenne Hub (updated)",
+        "category": "junction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.4443,
+          41.1013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ADM_COL",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2896,
+          41.419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AURORA_NE",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.101444,
+          40.877361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CENTRAL_CITY",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.977506,
+          41.111833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GP_York",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.5674,
+          40.6987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HASTINGS",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.3189,
+          40.585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KAAPA_Aurora",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.0364,
+          40.868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LEX",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.7679,
+          40.7461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "POET_Fair",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6015,
+          40.6113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WOOD_RIVER",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.6074,
+          40.8158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KAAPA_Minden",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0733,
+          40.4834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MADRID",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.54,
+          40.854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SIRE_IA",
+        "category": "plant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.82829,
+          41.16744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ADM_COL_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2896,
+          40.33700728541278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AURORA_NE_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.101444,
+          40.443297848344436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CENTRAL_CITY_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.977506,
+          40.427071282909914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GP_York_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.5674,
+          40.37337821182526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HASTINGS_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.3189,
+          40.47176824493893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KAAPA_Aurora_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.0364,
+          40.4347819716793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LEX_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.7679,
+          40.66147836866708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "POET_Fair_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.6015,
+          40.37784274958864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WOOD_RIVER_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.6074,
+          40.50954006736514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KAAPA_Minden_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.0733,
+          40.57053796014978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MADRID_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.54,
+          40.89349031501537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SIRE_IA_MAINLINE_TIE",
+        "category": "mainline_tie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.746691,
+          40.265927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tall Grass mainline: Beatrice/Gage -> Sedgwick/Julesburg",
+        "category": "mainline"
       },
       "geometry": {
         "type": "LineString",
@@ -60,10 +395,6 @@
           [
             -102.264352,
             40.988326
-          ],
-          [
-            -104.96,
-            40.76
           ]
         ]
       }
@@ -71,9 +402,123 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Hastings \u279c Tallgrass (Adams placeholder)",
-        "kind": "pipeline",
-        "dash": "6,6"
+        "name": "Tall Grass mainline: Sedgwick/Julesburg -> Wyoming end",
+        "category": "mainline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -102.264352,
+            40.988326
+          ],
+          [
+            -104.4443,
+            41.1013
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ADM_COL -> Tall Grass connection",
+        "category": "lateral",
+        "start": "ADM_COL",
+        "end": "ADM_COL_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.2896,
+            41.419
+          ],
+          [
+            -97.2896,
+            40.33700728541278
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AURORA_NE -> Tall Grass connection",
+        "category": "lateral",
+        "start": "AURORA_NE",
+        "end": "AURORA_NE_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.101444,
+            40.877361
+          ],
+          [
+            -98.101444,
+            40.443297848344436
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CENTRAL_CITY -> Tall Grass connection",
+        "category": "lateral",
+        "start": "CENTRAL_CITY",
+        "end": "CENTRAL_CITY_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.977506,
+            41.111833
+          ],
+          [
+            -97.977506,
+            40.427071282909914
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GP_York -> Tall Grass connection",
+        "category": "lateral",
+        "start": "GP_York",
+        "end": "GP_York_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.5674,
+            40.6987
+          ],
+          [
+            -97.5674,
+            40.37337821182526
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HASTINGS -> Tall Grass connection",
+        "category": "lateral",
+        "start": "HASTINGS",
+        "end": "HASTINGS_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
       },
       "geometry": {
         "type": "LineString",
@@ -83,8 +528,8 @@
             40.585
           ],
           [
-            -98.306764,
-            40.48
+            -98.3189,
+            40.47176824493893
           ]
         ]
       }
@@ -92,9 +537,34 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lexington \u279c Tallgrass (placeholder)",
-        "kind": "pipeline",
-        "dash": "6,6"
+        "name": "KAAPA_Aurora -> Tall Grass connection",
+        "category": "lateral",
+        "start": "KAAPA_Aurora",
+        "end": "KAAPA_Aurora_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -98.0364,
+            40.868
+          ],
+          [
+            -98.0364,
+            40.4347819716793
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LEX -> Tall Grass connection",
+        "category": "lateral",
+        "start": "LEX",
+        "end": "LEX_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
       },
       "geometry": {
         "type": "LineString",
@@ -104,8 +574,8 @@
             40.7461
           ],
           [
-            -99.73,
-            40.6461
+            -99.7679,
+            40.66147836866708
           ]
         ]
       }
@@ -113,9 +583,34 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Wood River lateral",
-        "kind": "pipeline",
-        "dash": "6,6"
+        "name": "POET_Fair -> Tall Grass connection",
+        "category": "lateral",
+        "start": "POET_Fair",
+        "end": "POET_Fair_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -97.6015,
+            40.6113
+          ],
+          [
+            -97.6015,
+            40.37784274958864
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WOOD_RIVER -> Tall Grass connection",
+        "category": "lateral",
+        "start": "WOOD_RIVER",
+        "end": "WOOD_RIVER_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
       },
       "geometry": {
         "type": "LineString",
@@ -126,7 +621,7 @@
           ],
           [
             -98.6074,
-            40.52
+            40.50954006736514
           ]
         ]
       }
@@ -134,114 +629,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "KAAPA Aurora \u279c tie",
-        "kind": "pipeline",
-        "dash": "6,6"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -98.0364,
-            40.868
-          ],
-          [
-            -98.3189,
-            40.585
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Central City \u279c Hastings",
-        "kind": "pipeline",
-        "dash": "6,6"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -97.977506,
-            41.111833
-          ],
-          [
-            -98.3189,
-            40.585
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "ADM Columbus \u279c tie",
-        "kind": "pipeline",
-        "dash": "6,6"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -97.2896,
-            41.419
-          ],
-          [
-            -97.288667,
-            40.331502
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "POET Fairbury \u279c tie",
-        "kind": "pipeline",
-        "dash": "6,6"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -97.6015,
-            40.6113
-          ],
-          [
-            -97.601,
-            40.38
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Green Plains York \u279c tie",
-        "kind": "pipeline",
-        "dash": "6,6"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -97.5674,
-            40.6987
-          ],
-          [
-            -97.567333,
-            40.38
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "KAAPA Minden \u279c tie",
-        "kind": "pipeline",
-        "dash": "6,6"
+        "name": "KAAPA_Minden -> Tall Grass connection",
+        "category": "lateral",
+        "start": "KAAPA_Minden",
+        "end": "KAAPA_Minden_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
       },
       "geometry": {
         "type": "LineString",
@@ -251,8 +643,8 @@
             40.4834
           ],
           [
-            -99.073,
-            40.5849
+            -99.0733,
+            40.57053796014978
           ]
         ]
       }
@@ -260,9 +652,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Madrid \u279c tie",
-        "kind": "pipeline",
-        "dash": "6,6"
+        "name": "MADRID -> Tall Grass connection",
+        "category": "lateral",
+        "start": "MADRID",
+        "end": "MADRID_MAINLINE_TIE",
+        "note": "intersects displayed mainline"
       },
       "geometry": {
         "type": "LineString",
@@ -273,7 +667,7 @@
           ],
           [
             -101.54,
-            40.8975
+            40.89349031501537
           ]
         ]
       }
@@ -281,9 +675,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "SIRE \u279c Tallgrass (approx)",
-        "kind": "pipeline",
-        "dash": "6,6"
+        "name": "SIRE_IA -> Tall Grass connection",
+        "category": "lateral",
+        "start": "SIRE_IA",
+        "end": "SIRE_IA_MAINLINE_TIE",
+        "note": "no direct longitude intersection with displayed mainline; tied to Beatrice/Gage anchor"
       },
       "geometry": {
         "type": "LineString",
