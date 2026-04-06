@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "name": "Frontier CO2 Storage",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweetwater Storage Hub",
+        "category": "storage_hub",
+        "operator": "Frontier",
+        "service_mode": "rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.0342,
+          41.5954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midwest Renewable Energy",
+        "category": "announced_origin",
+        "operator": "Midwest Renewable Energy LLC",
+        "service_mode": "rail",
+        "highlight": "ring"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.08893,
+          41.163123
+        ]
+      }
+    }
+  ]
+}
