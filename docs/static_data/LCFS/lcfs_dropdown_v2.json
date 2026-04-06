@@ -4586,14 +4586,18 @@
       "dryer_types": "Rotary Dryer",
       "technology": "ICM",
       "reg_pathway": "EP3",
-      "gas_supply": null,
+      "gas_supply": "Natural Gas",
       "electricity_type": null,
       "electrical_grid_designation": null,
       "fiber_technology": null,
       "dryer_used": null,
       "dryer_confidence": null,
       "dryer_conflict": false,
-      "dryer_tokens": []
+      "dryer_tokens": [],
+      "primary_process_fuel": "Natural Gas",
+      "boiler_fuel": "Natural Gas",
+      "dryer_fuel": "Natural Gas",
+      "thermal_oxidizer_fuel": "Natural Gas"
     },
     "co2_info": {
       "co2_pipeline_direct": null,
@@ -4602,7 +4606,10 @@
     },
     "meta": {
       "source_table": null,
-      "desc_raw": "nan"
+      "desc_raw": "nan",
+      "energy_source_notes": "Non-CA filer. Efficient Producer Petition.",
+      "energy_source_source": "manual_override",
+      "manual_override_applied": true
     }
   },
   {
