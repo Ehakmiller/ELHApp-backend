@@ -69,6 +69,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -169,6 +170,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -246,6 +248,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -323,6 +326,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -412,6 +416,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -512,6 +517,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -589,6 +595,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -666,6 +673,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -743,6 +751,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -820,6 +829,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -897,6 +907,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -974,6 +985,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -1051,6 +1063,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -1128,6 +1141,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -1205,6 +1219,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -1282,6 +1297,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -1359,6 +1375,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -1436,6 +1453,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -1513,6 +1531,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -1705,6 +1724,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -1816,6 +1836,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -1893,6 +1914,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -1970,6 +1992,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -2047,6 +2070,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -2108,7 +2132,7 @@
       "icm_p10": null,
       "special_tech": null,
       "wind_turbine": null,
-      "waste_heat": null,
+      "waste_heat": "Waste Heat Boiler",
       "dryer_types": "Rotary Dryer",
       "technology": "ICM",
       "reg_pathway": "EP3",
@@ -2124,6 +2148,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -2201,6 +2226,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -2278,6 +2304,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -2423,6 +2450,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -2523,8 +2551,9 @@
     },
     "co2_info": {
       "co2_pipeline_direct": null,
-      "co2_pipeline_3rd_party": null,
-      "co2_sponsor": null
+      "co2_pipeline_3rd_party": "Carbon America",
+      "co2_rail_connect": null,
+      "co2_sponsor": "Carbon America"
     },
     "meta": {
       "source_table": "US_Ethanol_CI_ByFeedstock",
@@ -2613,6 +2642,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -2702,6 +2732,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -2779,6 +2810,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -2856,6 +2888,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -2933,6 +2966,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3010,6 +3044,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3087,6 +3122,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3164,6 +3200,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3241,6 +3278,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3352,6 +3390,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -3452,6 +3491,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -3588,6 +3628,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3665,6 +3706,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3742,6 +3784,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3819,6 +3862,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -3896,6 +3940,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -4065,6 +4110,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -4142,6 +4188,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -4255,6 +4302,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -4332,6 +4380,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -4409,6 +4458,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -4521,6 +4571,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -4602,6 +4653,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -4705,6 +4757,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -4782,6 +4835,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -4857,9 +4911,10 @@
       "dryer_tokens": []
     },
     "co2_info": {
-      "co2_pipeline_direct": null,
+      "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
-      "co2_sponsor": null
+      "co2_rail_connect": null,
+      "co2_sponsor": "Carbon Storage Solutions"
     },
     "meta": {
       "source_table": null,
@@ -4936,6 +4991,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -5083,6 +5139,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -5160,6 +5217,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -5283,6 +5341,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -5344,7 +5403,7 @@
       "icm_p10": null,
       "special_tech": null,
       "wind_turbine": null,
-      "waste_heat": null,
+      "waste_heat": "Waste Heat Boiler",
       "dryer_types": "Rotary Dryer",
       "technology": "ICM",
       "reg_pathway": null,
@@ -5360,6 +5419,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -5437,6 +5497,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -5514,6 +5575,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -5625,6 +5687,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -5714,6 +5777,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -5814,6 +5878,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -5947,6 +6012,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -6024,6 +6090,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -6101,6 +6168,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -6178,6 +6246,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -6255,6 +6324,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -6344,6 +6414,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -6421,6 +6492,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -6510,6 +6582,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -6610,6 +6683,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -6687,6 +6761,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -6764,6 +6839,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -6864,6 +6940,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -7009,6 +7086,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -7086,6 +7164,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -7186,6 +7265,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -7297,6 +7377,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -7408,6 +7489,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -7519,6 +7601,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -7619,6 +7702,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -7743,7 +7827,7 @@
     },
     "tech_flags": {
       "high_pro": null,
-      "chp": null,
+      "chp": "CHP",
       "white_fox": null,
       "icm_p10": null,
       "special_tech": null,
@@ -7764,6 +7848,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -7841,6 +7926,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -7918,6 +8004,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -8041,6 +8128,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -8188,6 +8276,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -8301,6 +8390,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -8437,6 +8527,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -8514,6 +8605,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -8614,6 +8706,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -8738,6 +8831,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -8849,6 +8943,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -8926,6 +9021,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -9003,6 +9099,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -9080,6 +9177,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -9157,6 +9255,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -9280,6 +9379,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -9380,6 +9480,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -9469,6 +9570,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": "Frontier",
       "co2_sponsor": null
     },
     "meta": {
@@ -9558,6 +9660,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -9658,6 +9761,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -9735,6 +9839,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -9824,6 +9929,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -9901,6 +10007,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -9978,6 +10085,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -10055,6 +10163,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -10132,6 +10241,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -10193,7 +10303,7 @@
       "icm_p10": null,
       "special_tech": null,
       "wind_turbine": null,
-      "waste_heat": null,
+      "waste_heat": "Waste Heat Boiler",
       "dryer_types": "Ring Dryer",
       "technology": "Delta-T",
       "reg_pathway": "EP3",
@@ -10209,6 +10319,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -10298,6 +10409,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -10409,6 +10521,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -10533,6 +10646,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -10646,6 +10760,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -10826,6 +10941,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -10939,6 +11055,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -11052,6 +11169,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -11197,6 +11315,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -11310,6 +11429,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -11490,6 +11610,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -11670,6 +11791,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -11794,6 +11916,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -11918,6 +12041,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -12031,6 +12155,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -12142,6 +12267,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -12253,6 +12379,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -12433,6 +12560,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -12546,6 +12674,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -12726,6 +12855,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -12848,6 +12978,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -13028,6 +13159,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -13141,6 +13273,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -13254,6 +13387,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -13367,6 +13501,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -13480,6 +13615,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -13593,6 +13729,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -13717,6 +13854,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -13897,6 +14035,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -14010,6 +14149,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -14123,6 +14263,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -14236,6 +14377,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -14349,6 +14491,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -14473,6 +14616,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -14550,6 +14694,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -14686,6 +14831,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -14834,6 +14980,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -14911,6 +15058,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -14988,6 +15136,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -15065,6 +15214,7 @@
     "co2_info": {
       "co2_pipeline_direct": "Direct",
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": "Direct Inject"
     },
     "meta": {
@@ -15199,6 +15349,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -15276,6 +15427,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -15468,6 +15620,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -15545,6 +15698,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -15622,6 +15776,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -15745,6 +15900,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -15868,6 +16024,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -15945,6 +16102,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -16058,6 +16216,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "Tall Grass",
+      "co2_rail_connect": null,
       "co2_sponsor": "Tall Grass"
     },
     "meta": {
@@ -16158,8 +16317,9 @@
     },
     "co2_info": {
       "co2_pipeline_direct": null,
-      "co2_pipeline_3rd_party": null,
-      "co2_sponsor": null
+      "co2_pipeline_3rd_party": "Carbon America",
+      "co2_rail_connect": null,
+      "co2_sponsor": "Carbon America"
     },
     "meta": {
       "source_table": "US_Ethanol_CI_ByFeedstock",
@@ -16236,6 +16396,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -16313,6 +16474,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -16390,6 +16552,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -16467,6 +16630,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -16607,7 +16771,7 @@
       "icm_p10": null,
       "special_tech": null,
       "wind_turbine": null,
-      "waste_heat": null,
+      "waste_heat": "Waste Heat Boiler",
       "dryer_types": "Rotary Dryer",
       "technology": "ICM",
       "reg_pathway": "EP3",
@@ -16623,6 +16787,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -16700,6 +16865,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -16777,6 +16943,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -16924,6 +17091,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -17001,6 +17169,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -17078,6 +17247,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -17189,6 +17359,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -17300,6 +17471,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -17411,6 +17583,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -17488,6 +17661,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -17565,6 +17739,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -17660,7 +17835,7 @@
       "icm_p10": null,
       "special_tech": null,
       "wind_turbine": null,
-      "waste_heat": null,
+      "waste_heat": "Waste Heat Boiler",
       "dryer_types": "Rotary Dryer",
       "technology": "ICM",
       "reg_pathway": "EP3",
@@ -17676,6 +17851,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -17787,6 +17963,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -17882,7 +18059,7 @@
       "icm_p10": null,
       "special_tech": null,
       "wind_turbine": null,
-      "waste_heat": null,
+      "waste_heat": "Waste Heat Boiler",
       "dryer_types": "Rotary Dryer",
       "technology": "ICM",
       "reg_pathway": "EP3",
@@ -17898,6 +18075,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -17975,6 +18153,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "SCS",
+      "co2_rail_connect": null,
       "co2_sponsor": "Summit Carbon Solutions"
     },
     "meta": {
@@ -18086,6 +18265,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18163,6 +18343,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18240,6 +18421,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18351,6 +18533,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18428,6 +18611,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18505,6 +18689,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18639,6 +18824,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18750,6 +18936,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18886,6 +19073,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -18986,8 +19174,9 @@
     },
     "co2_info": {
       "co2_pipeline_direct": null,
-      "co2_pipeline_3rd_party": null,
-      "co2_sponsor": null
+      "co2_pipeline_3rd_party": "Carbon America",
+      "co2_rail_connect": null,
+      "co2_sponsor": "Carbon America"
     },
     "meta": {
       "source_table": "US_Ethanol_CI_ByFeedstock",
@@ -19100,6 +19289,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19177,6 +19367,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19279,6 +19470,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19356,6 +19548,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19433,6 +19626,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19510,6 +19704,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19587,6 +19782,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19664,6 +19860,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19741,6 +19938,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19818,6 +20016,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": "S",
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19895,6 +20094,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -19972,6 +20172,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
@@ -20049,6 +20250,7 @@
     "co2_info": {
       "co2_pipeline_direct": null,
       "co2_pipeline_3rd_party": null,
+      "co2_rail_connect": null,
       "co2_sponsor": null
     },
     "meta": {
