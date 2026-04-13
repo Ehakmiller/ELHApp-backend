@@ -1,0 +1,102 @@
+epm,facility_id,plant_name,state,dryer_types,technology,icm_p10,gas_supply_effective,thermal_btu_per_gal_est
+3660,70183,Plymouth Energy LLC,IA,Ring Dryer,Delta-T,FQPT P10,Natural Gas,13997.901028485272
+3638,72943,Kappa Partners Aurora LLC,NE,Ring Dryer,Delta-T,ICM P10,Natural Gas,17734.848633493228
+3622,70249,Green Plains Wood River LLC,NE,Ring Dryer,Delta-T,ICM P10,Natural Gas,17775.627938219695
+3651,70230,Nebraska Corn Processing LLC,NE,Ring Dryer,Delta-T,,Natural Gas,18137.749019279363
+3648,70153,Mid America Agri Products LLC,NE,Ring Dryer,Delta-T,,Natural Gas,18234.816434225406
+3621,70304,Green Plains Superior,IA,Ring Dryer,Delta-T,ICM P10,Natural Gas,20870.262283986453
+3613,73561,Sandhills Renewable Energy LLC,NE,Ring Dryer,Delta-T,ICM P10,Natural Gas,24582.661856299248
+3705,70112,Siouxland Energy Cooperative,IA,Ring Dryer,Delta-T,,Natural Gas,25373.734234103624
+3587,70078,Chippewa Valley Ethanol Co LLLP,MN,Ring Dryer,Delta-T,,Natural Gas,27789.0320392009
+3723,70041,Valero Renewable Fuels LLC,SD,Rotary Dryer,ICM,,Natural Gas,12946.439502450055
+3736,70030,Western Plains Energy LLC,KS,Rotary Dryer,ICM,,Natural Gas,14270.18469656992
+3574,70117,Bonanza Bioenergy LLC,KS,Rotary Dryer,ICM,,Natural Gas,14399.636914698029
+3738,70039,Plainview Bioenergy LLC,TX,Rotary Dryer,ICM,,Natural Gas,14482.403664936648
+3636,70079,Kappa Ethanol LLC,NE,Rotary Dryer,ICM,,Natural Gas,15898.532565605627
+3564,70247,Arkalon Ethanol LLC,KS,Rotary Dryer,ICM,,Natural Gas,16282.23093768788
+3717,70053,Trenton Agri Products LLC,NE,Rotary Dryer,ICM,,Natural Gas,16687.734640030154
+3602,70058,Front Range Energy LLC,CO,Rotary Dryer,ICM,,,16705.778527999475
+3575,70217,Bridgeport Ethanol LLC,NE,Rotary Dryer,ICM,,Natural Gas,16895.259454705367
+3739,70024,Yuma Ethanol LLC,CO,Rotary Dryer,ICM,,Natural Gas,17103.198894333458
+3709,70660,Sterling Ethanol LLC,CO,Rotary Dryer,ICM,,Natural Gas,17136.71441135821
+3633,70151,Husker Ag LLC,NE,Rotary Dryer,ICM,,Natural Gas,17272.59152698866
+3652,70195,Nugen Energy LLC,SD,Rotary Dryer,ICM,,Natural Gas,17462.35406458098
+3708,70326,Sothwest Iowa Renewable,IA,Rotary Dryer,ICM,,Natural Gas,18643.116379608757
+3600,71287,Elite Octane LLC,IA,Rotary Dryer,ICM,,Natural Gas,19142.316514996503
+3702,70361,Ringneck Energy & Feed LLC,SD,Rotary Dryer,ICM,,Natural Gas,19150.728986053524
+3584,70095,CIE Norfolk GNS LLC,NE,Rotary Dryer,ICM,,,19208.952129664525
+3605,70722,Huron Energy LLC,SD,Rotary Dryer,ICM,,Natural Gas,19459.422037944467
+3592,70083,Dakota Ethanol LLC,SD,Rotary Dryer,ICM,,Natural Gas,19465.41877120241
+3598,83483,East Kansas Agri-Energy LLC,KS,Rotary Dryer,ICM,,,19756.235079783888
+3700,70111,Redfield Energy LLC,SD,Rotary Dryer,ICM,,Natural Gas,19788.988952999505
+3591,70145,Corn LP,IA,Rotary Dryer,ICM,,,20529.700339238596
+3632,70188,Homeland Energy Solutions LLC,IA,Rotary Dryer,ICM,,Natural Gas,20914.973296113596
+3614,70141,Green Plains Central City LLC,NE,Rotary Dryer,ICM,,Natural Gas,20930.85898563471
+3604,70221,Hub City Energy LLC,SD,Rotary Dryer,ICM,,,21075.401432340743
+3641,70092,Lincolnway Energy LLC,IA,Steam Tube Dryer,ICM,,Natural Gas,21198.55258198266
+3625,70289,Guardian Energy LLC,MN,Rotary Dryer,ICM,,Natural Gas,21215.639910639587
+3630,70097,Heron Lake Bioenergy LLC,MN,Rotary Dryer,ICM,,Natural Gas,21326.140757094392
+3631,70235,Highwater Ethanol LLC,MN,Rotary Dryer,ICM,,Natural Gas,21362.16128491854
+3567,70130,Badger State Ethanol LLC,WI,Rotary Dryer,ICM,,Natural Gas,21634.88911599784
+3546,70144,Absolute Energy,IA,Rotary Dryer,ICM,,Natural Gas,21928.872973991703
+3597,70093,E Energy Adams LLC,NE,Rotary Dryer,ICM,,Natural Gas,22073.685310483554
+3714,70884,The Andersons Marathon Holdings LLC,IA,Rotary Dryer,ICM,,Natural Gas,22147.83507410965
+3642,70015,Little Sioux Corn Processors LLLP,IA,Rotary Dryer,ICM,,Natural Gas,22148.03367257193
+3626,70288,Hankinson Renewable Energy LLC,ND,Rotary Dryer,ICM,,Natural Gas,22387.69947569604
+3662,71682,Poet Biorefinning-Arthur LLC,IA,Rotary Dryer,ICM,,Natural Gas,22782.941552730474
+3608,70691,Golden Grain Energy LLC,IA,Rotary Dryer,ICM,,,22853.16622691293
+3606,70799,Glacial Lakes Energy,SD,Rotary Dryer,ICM,,,23026.390343100982
+3726,70042,Valero Renewable Fuels LLC,IA,Rotary Dryer,ICM,,Natural Gas,23065.944785206
+3649,70081,Mid-Missouri Energy LLC,MO,Rotary Dryer,ICM,,Natural Gas,23282.44525922626
+3607,70064,Glacial Lakes Energy,SD,Rotary Dryer,ICM,,Natural Gas,23323.692708916984
+3612,71641,Green America Biofuels Ord LLC,NE,Rotary Dryer,ICM,,Natural Gas,23348.35480366289
+3672,71681,Poet Biorefining-Fairmont,NE,Rotary Dryer,ICM,,Natural Gas,23485.720764229172
+3576,70109,Bushmills Ethanol Inc,MN,Rotary Dryer,ICM,,Natural Gas,23680.785693345057
+3733,70276,Valero Renewable Fuels LLC,MN,Rotary Dryer,ICM,,Natural Gas,23698.72345772082
+3679,71684,Poet Biorefinning-Iowa Falls LLC,IA,Rotary Dryer,ICM,,Natural Gas,23929.272117818102
+3611,70071,Granite Falls Energy LLC,MN,Rotary Dryer,ICM,,Natural Gas,23974.8197607979
+3645,70269,United Energy Necadah,WI,Rotary Dryer,ICM,,,24195.5330028661
+3728,70275,Valero Renewable Fuels LLC,IA,Rotary Dryer,ICM,,Natural Gas,24221.538384219122
+3727,70043,Valero Renewable Fuels LLC,IA,Rotary Dryer,ICM,,Natural Gas,24586.941072999118
+3594,70082,Denco II LLC,MN,Rotary Dryer,ICM,,Natural Gas,24866.189219751224
+3628,70089,Heartland Corn Products,MN,Rotary Dryer,ICM,,Natural Gas,24908.1070286543
+3643,70139,Louis Dreyfus Co,IA,Rotary Dryer,ICM,,Natural Gas,25377.59574563057
+3721,70142,Valero Renewable Fuels LLC,IA,Rotary Dryer,ICM,,Natural Gas,25530.765171503957
+3692,71686,Poet Biorefinning-Shell Rock LLC,IA,Rotary Dryer,ICM,,Natural Gas,25634.459220693552
+3686,71685,Poet Biorefinning-Menlo,IA,Rotary Dryer,ICM,,Natural Gas,25789.275148773824
+3639,70279,Kansas Ethanol LLC,KS,Rotary Dryer,ICM,,Natural Gas,26224.116094986803
+3690,70056,Poet Biorefining--Preston LLC,MN,Rotary Dryer,ICM,,Natural Gas,26618.444985094062
+3722,70283,Valero Renewable Fuels,NE,Rotary Dryer,ICM,,Natural Gas,27846.921544343328
+3671,71683,Poet Biorefinning-Fairbank,IA,Rotary Dryer,ICM,,Natural Gas,28005.076014574697
+3550,70087,Al-Corn Clean Fuel,MN,Rotary Dryer,ICM,,Natural Gas,28067.995592797703
+3730,70196,Valero Renewable Fuels LLC,IN,Rotary Dryer,ICM,,Natural Gas,28433.512465672284
+3629,21601,Hereford Ethanol Partners LP,TX,Rotary Dryer,Lurgi,,Natural Gas,14446.099384344767
+3694,70158,Pratt Energy LLC,KS,,Lurgi,,Natural Gas,22393.723743275194
+3681,70023,Poet Biorefining-Laddonia LLC,MO,Ring Dryer,Poet,,Natural Gas,15895.259140595554
+3684,70017,Poet Biorefining-Macon LLC,MO,Ring Dryer,Poet,,Natural Gas,16057.199054243909
+3685,70327,Poet Biorefining-Marion,OH,Ring Dryer,Poet,,Natural Gas,16168.8463560935
+3664,70025,Poet Biorefining- Big Stone LLC,SD,Ring Dryer,Poet,,Natural Gas,17331.239746558254
+3675,70033,Poet Biorefinning-Gowrie LLC,IA,Ring Dryer,Poet,,Natural Gas,22584.60945679943
+3682,70072,Poet Biorefining--Lake Crystal LLC,MN,Ring Dryer,Poet,,Natural Gas,22644.561650517724
+3670,70143,Poet Biorefinning-Corning LLC,IA,Ring Dryer,Poet,,Natural Gas,23041.574737194787
+3669,70031,Poet Biorefinning-Coon Rapids,IA,Ring Dryer,Poet,,Natural Gas,23063.237554002728
+3680,70014,Poet Biorefinning-Jewell LLC,IA,Ring Dryer,Poet,,Natural Gas,23426.31570130251
+3678,70022,Poet Biorefining- Hudson,SD,Ring Dryer,Poet,,Natural Gas,23497.178665661515
+3687,70016,Poet Biorefining- Mitchell LLC,SD,Ring Dryer,Poet,,Natural Gas,23612.571989586162
+3754,70021,Poet Biorefinning-Emmetsburg LLC,IA,Ring Dryer,Poet,,Natural Gas,23786.01305957739
+3677,70010,Poet Biorefinning-Hanlontown LLC,IA,Ring Dryer,Poet,,Natural Gas,24112.340746324913
+3689,70108,Poet Biorefining-Portland LLC,IN,Ring Dryer,Poet,,Natural Gas,24265.205427817564
+3676,70013,Poet Biorefining- Groton LLC,SD,Ring Dryer,Poet,,Natural Gas,24353.595263963103
+3666,70028,Poet Biorefinning-Caro,MI,Ring Dryer,Poet,,Natural Gas,24925.521108179415
+3673,70323,Poet Biorefining-Fostoria LLC,OH,Ring Dryer,Poet,,Natural Gas,25187.345143862294
+3663,70032,Poet Biorefinning-Ashton LLC,IA,Ring Dryer,Poet,,Natural Gas,26209.602891288443
+3688,70322,Poet Biorefining-North Manchester,IN,Ring Dryer,Poet,,Natural Gas,26343.44824041394
+3691,20621,Poet Biorefining-Portland LLC,IN,Ring Dryer,Poet,,Natural Gas,26374.63249151903
+3683,70265,Poet Biorefining-Leipsic LLC,OH,Ring Dryer,Poet,,Natural Gas,26800.86861833564
+3665,70026,Poet Biorefining-Bingham Lake LLC,MN,Ring Dryer,Poet,,Natural Gas,28677.723332076894
+3674,70020,Poet Biorefining--Glenville LLC,MN,Ring Dryer,Poet,,Natural Gas,30199.52255308456
+3737,70037,White Energy Hereford LLC,TX,,Vogelbusch,,Natural Gas,13334.8609701644
+3637,70098,Kappa Ethanol Ravenna LLC,NE,,Vogelbusch,,Natural Gas,25432.685993980016
+3586,70241,Chief Ethanol Fuels Inc,NE,,Vogelbusch,,Natural Gas,25928.33222186784
+3585,70150,Chief Ethanol Fuels Inc,NE,,Vogelbusch,,Natural Gas,32607.51817349631
+3695,70302,Purefield Ingredients LLC,KS,,Wheat,,Natural Gas,18410.837816537023

@@ -1,0 +1,4 @@
+epm,facility_id,plant_name,state,dryer_types,technology,icm_p10,gas_supply_effective,thermal_btu_per_gal_est
+3723,70041,Valero Renewable Fuels LLC,SD,Rotary Dryer,ICM,,Natural Gas,12946.439502450055
+3737,70037,White Energy Hereford LLC,TX,,Vogelbusch,,Natural Gas,13334.8609701644
+3660,70183,Plymouth Energy LLC,IA,Ring Dryer,Delta-T,FQPT P10,Natural Gas,13997.901028485272
