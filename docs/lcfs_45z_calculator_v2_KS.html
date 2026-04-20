@@ -1251,7 +1251,7 @@ The credit applies to qualifying carbon capture projects located in the United S
 
     </div>
 
-    <div class="s" style="margin-top:6px;">Uses auto-defaults by plant flags</div>
+    <div class="s" id="ccsAutoNote" style="margin-top:6px;">Uses auto-defaults by plant flags</div>
   </div>
 
     <div class="note scoreNotes">
@@ -1259,6 +1259,7 @@ The credit applies to qualifying carbon capture projects located in the United S
     <ul class="noteList">
       <li><span class="mono">Direct</span> = 30</li>
       <li><span class="mono">Trailblazer</span> = 31</li>
+      <li><span class="mono">Rail Connected CO2</span> = 28</li>
       <li><span class="mono">All else</span> = 0</li>
     </ul>
 
@@ -1369,12 +1370,12 @@ The credit applies to qualifying carbon capture projects located in the United S
   
   const DATA_URL = "./static_data/LCFS/lcfs_dropdown_v2_ks.json";
   console.log("✅ RUNNING CALC FILE:", window.location.href);
-  console.log("✅ BUILD_STAMP:", "2026-04-02 15:17:46");
+  console.log("✅ BUILD_STAMP:", "2026-04-15 16:44:37");
   console.log("✅ DATA_URL:", DATA_URL);
   
   console.log("DATA_URL:", DATA_URL);
   
-  console.log("BUILD_STAMP:", "2026-04-02 15:17:46");
+  console.log("BUILD_STAMP:", "2026-04-15 16:44:37");
 
   // CA hubs (UP + BNSF)
   const CA_HUBS = [
@@ -1423,17 +1424,27 @@ function bootRender(){
 console.log("SCRIPT LOADED OK");
 
 function computePipelineDefault(plant) {
-  if (!plant) return { score: 0, applied: false };
+  if (!plant) return { score: 0, applied: false, label: "All else" };
 
   const direct  = normUpper(plant.co2_pipeline_direct);
   const third   = normUpper(plant.co2_pipeline_3rd_party);
   const sponsor = normUpper(plant.co2_sponsor);
+  const railRaw = plant.co2_rail_connect;
+
+  const railNum =
+    railRaw === null || railRaw === undefined || railRaw === ""
+      ? null
+      : Number(String(railRaw).replace(/,/g, "").trim());
+
+  const hasRailConnect = Number.isFinite(railNum);
 
   const scs = !!plant.scs_positive;
-  if (scs) return { score: 0, applied: false };
+  if (scs) return { score: 0, applied: false, label: "All else" };
 
   // DIRECT pipeline -> default apply 30
-  if (direct.includes("DIRECT")) return { score: 30, applied: true };
+  if (direct.includes("DIRECT")) {
+    return { score: 30, applied: true, label: "Direct" };
+  }
 
   // Tallgrass / Trailblazer 3rd-party pipeline -> default apply 31
   const tallgrassMatch =
@@ -1443,12 +1454,17 @@ function computePipelineDefault(plant) {
     (sponsor.includes("TALL") && sponsor.includes("GRASS")) ||
     sponsor.includes("TALLGRASS") ||
     sponsor.includes("TRAILBLAZER");
-    
-    console.log("computePipelineDefault", plant?.plant_name, { direct, third, sponsor, tallgrassMatch, scs });
 
-  if (tallgrassMatch) return { score: 31, applied: true };
+  if (tallgrassMatch) {
+    return { score: 31, applied: true, label: "Trailblazer" };
+  }
 
-  return { score: 0, applied: false };
+  // Rail-connected CO2 -> default apply 28
+  if (hasRailConnect) {
+    return { score: 28, applied: true, label: "Rail Connected CO2" };
+  }
+
+  return { score: 0, applied: false, label: "All else" };
 }
 
 
@@ -1456,12 +1472,14 @@ function computePipelineDefault(plant) {
 function syncChapter2PipelineUI(){
   const cb  = document.getElementById("ch2_pipeline_apply");
   const inp = document.getElementById("ch2_pipeline_score");
+  const note = document.getElementById("ccsAutoNote");
   if (!cb || !inp) return;
 
-   if (!selectedPlant){
+  if (!selectedPlant){
     cb.checked = false;
     inp.value = "0";
     inp.disabled = false;
+    if (note) note.textContent = "Uses auto-defaults by plant flags";
     syncCcsDatesUI();
     sync45QValueSection();
     return;
@@ -1470,16 +1488,20 @@ function syncChapter2PipelineUI(){
   const def = computePipelineDefault(selectedPlant);
   inp.value = String(def.score);
   cb.checked = !!def.applied;
-  
-  console.log("syncChapter2PipelineUI", selectedPlant?.plant_name, def, { checked: cb.checked, value: inp.value });
 
-  // Always editable
+  if (note) {
+    note.textContent = def.label
+      ? `Uses auto-defaults by plant flags • ${def.label}`
+      : "Uses auto-defaults by plant flags";
+  }
+
   inp.disabled = false;
 
-  // Keep date fields synced with checkbox state
   syncCcsDatesUI();
   sync45QValueSection();
-  }
+}
+
+
 
 
   // ----------------------------
@@ -2492,13 +2514,56 @@ function applyFilters(){
         
         
         // <-- CLOSE renderPlantSelect()
-  // ----------------------------
-  // PLANT DETAILS
-  // ----------------------------
-  function renderPlantDetails(){
-    const badges = document.getElementById("plantBadges");
-    const kv = document.getElementById("plantKv");
-    if (!badges || !kv) return;
+        
+function getNumericDryerValues(){
+  return allPlants
+    .map(p => {
+      const v = p?.implied_dryer_btu_per_gal;
+      return (v === null || v === undefined || v === "") ? null : Number(v);
+    })
+    .filter(v => Number.isFinite(v))
+    .sort((a, b) => a - b);
+}
+
+function getTercileCutoffs(values){
+  if (!Array.isArray(values) || values.length === 0){
+    return { lowCut: null, highCut: null };
+  }
+
+  const n = values.length;
+
+  const lowIdx = Math.floor(n / 3) - 1;
+  const highIdx = Math.floor((2 * n) / 3) - 1;
+
+  return {
+    lowCut: values[Math.max(0, lowIdx)],
+    highCut: values[Math.max(0, highIdx)]
+  };
+}
+
+function classifyImpliedDryerFigure(v){
+  if (v === null || v === undefined || v === "") return "—";
+
+  const num = Number(v);
+  if (!Number.isFinite(num)) return "—";
+
+  const values = getNumericDryerValues();
+  const { lowCut, highCut } = getTercileCutoffs(values);
+
+  if (lowCut === null || highCut === null) return "—";
+
+  if (num <= lowCut) return "Low";
+  if (num >= highCut) return "High";
+  return "Medium";
+}
+
+// ----------------------------
+// PLANT DETAILS
+// ----------------------------
+function renderPlantDetails(){
+  const badges = document.getElementById("plantBadges");
+  const kv = document.getElementById("plantKv");
+  if (!badges || !kv) return;
 
     badges.innerHTML = "";
     kv.innerHTML = "";
@@ -2601,29 +2666,34 @@ const items = [
   ],
   ["Gas supply", selectedPlant.gas_supply],
   ["Technology", selectedPlant.technology],
-
-  
-
-  ["Relative Dryer Efficiency",
-    selectedPlant.relative_dryer_efficiency_bucket
-      ? selectedPlant.relative_dryer_efficiency_bucket
-          .replace(/^relative_/, "")
-          .replace(/_/g, " ")
-          .replace(/\b\w/g, c => c.toUpperCase())
-      : "—"
-  ],
-  ["Rail lines", selectedPlant.rail_lines],
-
-  ["Implied Dryer BTU per Gal",
+  ["Total BTU per Gal (2023)",
     (() => {
-      const v = selectedPlant?.implied_dryer_btu_per_gal;
+      const v = selectedPlant?.thermal_btu_per_gal_est;
       return (v === null || v === undefined || v === "")
         ? "—"
         : Number(v).toLocaleString("en-US", { maximumFractionDigits: 0 });
     })()
   ],
 
+  
+
+ 
+  
+  
+  ["Rail lines", selectedPlant.rail_lines],
+
+["Wet:Dry CI Spread",
+  (() => {
+    const v = selectedPlant?.implied_dryer_btu_per_gal;
+    return classifyImpliedDryerFigure(v);
+  })()
+],
+  
+
+
    ["Enhanced Technologies", enhText],
+   
+
   ["Electricity type", selectedPlant.electricity_type],
   
 
@@ -3321,6 +3391,8 @@ function wireEvents(){
     }
     syncFreightUI();
 
+
+
     renderPlantDetails();
     renderOutputs();
   }
@@ -3521,10 +3593,18 @@ allPlants = rows.map((p, i) => {
     dryer_conflict: p.dryer_conflict ?? tech.dryer_conflict ?? false,
     dryer_tokens: p.dryer_tokens ?? tech.dryer_tokens ?? [],
 
+
     // ---- co2_info ----
     co2_pipeline_direct: p.co2_pipeline_direct ?? co2.co2_pipeline_direct ?? null,
     co2_pipeline_3rd_party: p.co2_pipeline_3rd_party ?? co2.co2_pipeline_3rd_party ?? null,
+    co2_rail_connect: p.co2_rail_connect ?? co2.co2_rail_connect ?? null,
     co2_sponsor: p.co2_sponsor ?? co2.co2_sponsor ?? null,
+    
+    // ---- epa_ghg_derived ----
+    thermal_btu_per_gal_est:
+      p.thermal_btu_per_gal_est ??
+      p.epa_ghg_derived?.thermal_btu_per_gal_est ??
+      null,
 
     // ---- meta ----
     source_table: p.source_table ?? meta.source_table ?? null,
@@ -3546,6 +3626,12 @@ allPlants = rows.map((p, i) => {
       ? null
       : Number(out.ethanol_capacity_mgy);
   if (!Number.isFinite(out.ethanol_capacity_mgy)) out.ethanol_capacity_mgy = null;
+  
+  out.thermal_btu_per_gal_est =
+  (out.thermal_btu_per_gal_est === null || out.thermal_btu_per_gal_est === "" || out.thermal_btu_per_gal_est === undefined)
+    ? null
+    : Number(out.thermal_btu_per_gal_est);
+  if (!Number.isFinite(out.thermal_btu_per_gal_est)) out.thermal_btu_per_gal_est = null;
 
   out.year_build =
     (out.year_build === null || out.year_build === "" || out.year_build === undefined)
