@@ -6,14 +6,27 @@
       "properties": {
         "name": "Yuma Ethanol",
         "category": "ethanol_plant",
+        "operator": "Carbon America",
+        "system": "Denova",
         "description": "Approximate CO2 capture source"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -102.67,
-          40.12
-        ]
+        "coordinates": [-102.67, 40.12]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sterling Ethanol",
+        "category": "ethanol_plant",
+        "operator": "Carbon America",
+        "system": "Denova",
+        "description": "Approximate CO2 capture source"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-103.22, 40.62]
       }
     },
     {
@@ -21,38 +34,46 @@
       "properties": {
         "name": "Carbon America - Denova",
         "category": "storage_hub",
-        "description": "Approximate CO2 sequestration site (saline storage); not survey-grade",
         "operator": "Carbon America",
-        "system": "Denova"
+        "system": "Denova",
+        "description": "Approximate CO2 sequestration site; not survey-grade"
       },
       "geometry": {
         "type": "Point",
+        "coordinates": [-102.80, 40.01]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yuma to Carbon America - Denova",
+        "category": "co2_pipeline",
+        "operator": "Carbon America",
+        "system": "Denova",
+        "description": "Approximate dedicated CO2 pipeline route"
+      },
+      "geometry": {
+        "type": "LineString",
         "coordinates": [
-          -102.8,
-          40.01
+          [-102.67, 40.12],
+          [-102.80, 40.01]
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Carbon America - Denova CO2 Pipeline",
+        "name": "Sterling to Carbon America - Denova",
         "category": "co2_pipeline",
-        "description": "Approximate short-haul third-party CO2 pipeline",
         "operator": "Carbon America",
-        "system": "Denova"
+        "system": "Denova",
+        "description": "Approximate dedicated CO2 pipeline route"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [
-            -102.67,
-            40.12
-          ],
-          [
-            -102.8,
-            40.01
-          ]
+          [-103.22, 40.62],
+          [-102.80, 40.01]
         ]
       }
     }
