@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yuma Ethanol",
+        "category": "ethanol_plant",
+        "description": "Approximate CO2 capture source"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.67,
+          40.12
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Carbon America - Denova",
+        "category": "storage_hub",
+        "description": "Approximate CO2 sequestration site (saline storage); not survey-grade",
+        "operator": "Carbon America",
+        "system": "Denova"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.8,
+          40.01
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Carbon America - Denova CO2 Pipeline",
+        "category": "co2_pipeline",
+        "description": "Approximate short-haul third-party CO2 pipeline",
+        "operator": "Carbon America",
+        "system": "Denova"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -102.67,
+            40.12
+          ],
+          [
+            -102.8,
+            40.01
+          ]
+        ]
+      }
+    }
+  ]
+}
