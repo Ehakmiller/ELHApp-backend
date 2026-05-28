@@ -1,0 +1,41 @@
+Comparing report dates:
+  Newest: 2026-05-19
+  Prior : 2026-03-26
+
+Summary:
+            Metric  Value
+  Rows in new date    104
+  Rows in old date    104
+Rows in both dates    104
+  Facilities added      0
+Facilities removed      0
+
+Rows with value changes   : 2
+Rows with coverage changes: 3
+Facilities added/removed  : 0
+
+Rows with coverage changes          3
+
+Plants With Changes
+
+Plant 						Feedstock  	Value 	Direction
+Bridgeport Ethanol, Llc (Facility 70217)     	Corn   		1.13 	Increased
+Sterling Ethanol, Llc (Facility 70660)      	Corn   		0.25 	Increased
+
+Plants With Coverage Changes
+
+Plant 						Feedstock  Value Status
+Bridgeport Ethanol, Llc (Facility 70217)     	Fiber  	   24.96    New
+Sterling Ethanol, Llc (Facility 70660)     	Fiber      24.18    New
+
+Current File Summary By Feedstock (Newest Date):
+Feedstock  Entries  	Average    	Min    	Max
+     Corn      103  	67.6759  	59.18  	79.36
+    Fiber       90  	26.8683  	21.93  	40.14
+  Sorghum       11  	67.5409  	62.52  	76.07
+    Wheat        1  	50.5700  	50.57  	50.57
+    Sugar        1 1	26.3300 	126.33 	126.33
+
+
+Saved change report to:
+C:\Users\ehakm\OneDrive\Documents\Ethanol Industry Data\LCFS Pathway Data\LCFS_score_changes_latest_vs_prior.xlsx
