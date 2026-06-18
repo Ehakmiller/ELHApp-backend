@@ -1,0 +1,134 @@
+EPM Number: 3649
+Plant Name: Mid-Missouri Energy LLC
+Permit Facility Name: 
+Location: Malta Bend, MO
+Source Permit File: midmoenergy-maltabend2016opb.pdf
+Permit Number: OP2016-010B
+Permit Expiration Date: 
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Mid-Missouri Energy
+- CA Facility ID: 70081
+- Dropdown capacity: 66.0 MGY
+- Year built: 2,005
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 7,800.00 MGY
+- Ethanol capacity source: Ethanol Shipment and Denaturant Delivery (7,800 gallons per truck capacity) 8,674 trucks
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- Grain, DDGS (Dry Distiller's Grain With Solubles), Wetcake, Enzymes, Urea 34,980 trucks
+- 4. Special Condition 9: Stacks S 15 Grain Unloading and S30 Hammermill shall have a minimum height of
+- PIS Grain Unloading
+- Cl5 Sl5 Grain Unloading
+
+Dryers:
+- Dryer mentions parsed: 3
+- S70 DDGS Cooling Cyclone 0.1226
+- SlO DDGS Dryer/Thermal Oxidizer 0.657
+- S70 DDGS Cooling Cyclone 0.16
+- SlO DDGS Dryer/Thermal Oxidizer 0.48
+- Grain, DDGS (Dry Distiller's Grain With Solubles), Wetcake, Enzymes, Urea 34,980 trucks
+- PIO I Thermal Oxidizer/Heat Recovery Boiler/DOGS Dryers
+- DDGS Dryers (Device PIO) or distillation operations (P50) are in operation or any time that regulated VOC
+- P70 DDGS Cooler
+- P90 DDGS Loadout
+- C90 S90 DDGS Loading
+- C70 S70 DDGS Cooler
+- PIO Thermal Oxidizer/Heat Recovery Boiler/DOGS Dryers
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 4
+- PIO I Thermal Oxidizer/Heat Recovery Boiler/DOGS Dryers
+- PIO Thermal Oxidizer/Heat Recovery Boiler/DOGS Dryers
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 17
+- SlO DDGS Dryer/Thermal Oxidizer 0.657
+- SlO DDGS Dryer/Thermal Oxidizer 0.48
+- PIO I Thermal Oxidizer/Heat Recovery Boiler/DOGS Dryers
+- 1. Special Condition 5.A: The thermal oxidizer (Control Device ClO) must be in use at all times when the
+- or HAP emissions are being vented to the thermal oxidizer.
+- 2. Special Condition 5.B: The thermal oxidizer shall be operated and maintained in accordance with the
+- (see Permit Condition 029), to verify the thermal oxidizer is operating as assumed.
+- 2. Special Condition 5.D: The operating temperature of the thermal oxidizer shall be continuously monitored
+- and recorded during operation. The operating temperature of the thermal oxidizer shall be maintained on a
+- PIO Thermal Oxidizer/Heat Recovery Boiler/DOGS Dryers
+- fermentation scrubber outlet (S40), the thermal oxidizer outlet (S 10), and the DDGS cooler outlet (S70).
+- scrubber additive addition rate, scrubber type of additive, thermal oxidizer average temperature, pressure
+
+Tanks:
+- Storage tank mentions parsed: 0
+- Ethanol Shipment and Denaturant Delivery (7,800 gallons per truck capacity) 8,674 trucks
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- S70 DDGS Cooling Cyclone 0.1226
+- SlO DDGS Dryer/Thermal Oxidizer 0.657
+- S70 DDGS Cooling Cyclone 0.16
+- SlO DDGS Dryer/Thermal Oxidizer 0.48
+- Grain, DDGS (Dry Distiller's Grain With Solubles), Wetcake, Enzymes, Urea 34,980 trucks
+- DDGS Dryers (Device PIO) or distillation operations (P50) are in operation or any time that regulated VOC
+- P70 DDGS Cooler
+- P90 DDGS Loadout
+- C90 S90 DDGS Loading
+- C70 S70 DDGS Cooler
+- 1. Special Condition 7.B: The Biomethanator flare (EPI 1) must be in use at all times when the DDGS Dryers
+- (PIO) are not in operation to control the biomethanator off-gases. During times when the DDGS Dryers
+- (PIO) are in operation, the biomethanator off-gases shall be vented to either the DDGS Dryers (PIO) or the
+- P70 DDGS Cooler Cyclone
+- Corn oil source line: not identified
+- Not specifically identified in extracted permit text.
+
+Emissions / Permit Constraints:
+- production capacity of the facility from 60 million gallons per year to 66 million gallons per
+- Emission Limitations:
+- Ethanol Shipment and Denaturant Delivery (7,800 gallons per truck capacity) 8,674 trucks
+- 2. Special Condition 2.B: The permittee shall not exceed a production limit of 66,000,000 gallons of denatured
+- a) Monthly gallons of denatured ethanol produced;
+- e) The 12-month rolling total gallons of denatured ethanol produced;
+- Operational Limitations:
+- Operational Limitation:
+- DDGS Dryers (Device PIO) or distillation operations (P50) are in operation or any time that regulated VOC
+- or HAP emissions are being vented to the thermal oxidizer.
+- 1. Special Condition 5.C: Emission rates of VOC and HAPs shall be tested, as detailed in Special Condition 10
+- 2. Special Condition 8.B: The cooling water circulation rate shall not exceed 1,500,000 gallons per hour
+- (25,000 gallons per minute).
+- with the Operational Limitations.
+- the records indicate an exceedance of the emission limitation.
+- VOC, combined HAP, Acetaldehyde, Acrolein, Formaldehyde, and Methanol emission rates from the
+- outlet (S40) and the thermal oxidizer outlet (S 10) shall be indicated in terms of gallons of anhydrous
+- 4. Special Condition 11.D: The test report shall also include calculations to show that the potential VOC
+- individual HAP emissions of the entire installation remain below their respective SMAL (except for
+- acrolein), and that the combined HAP emissions of the entire installation remain below the major source
+- emissions of either HAPs or VOCs from the entire installation are greater than their respective SMAL or
+- (e) Current 12-month Total of Individual HAP Emissions in Tons: [(c) + (d)-(e)]
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

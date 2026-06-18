@@ -1,0 +1,155 @@
+EPM Number: 3679
+Plant Name: Poet Biorefinning-Iowa Falls LLC
+Permit Facility Name: POET Biorefining – Iowa Falls, LLC
+Location: Iowa Falls, IA
+Source Permit File: 19-TV-005R1.pdf
+Permit Number: 19-TV-005R1
+Permit Expiration Date: 11/25/2029
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: POET Biorefining
+- CA Facility ID: 71684
+- Dropdown capacity: 112.0 MGY
+- Year built: 2,004
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 112.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: not identified
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- EU 01 Grain Receiving Pit #1
+- EU 02 Grain Receiving Pit #2
+- EU P30 Clean Grain Day Bin
+- EU S120 Grain Receiving Pit #3
+- EP S130 EU 130 Grain Bin #3 16-A-330
+- EP S140 EU 140 Grain Bin #4 16-A-331
+- bu/hr…………………bushels per hour
+- DDGS .........................distillers dried grains with solubles
+- gr./dscf .......................grains per dry standard cubic foot
+- matter from any process shall not exceed an emission standard of 0.1 grain per dry standard
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- grain, fertilizer or limestone.
+
+Dryers:
+- Dryer mentions parsed: 4
+- EU P10A DDGS Dryer A
+- EU P10B DDGS Dryer B
+- EU P10C DDGS Dryer C
+- EU P10D DDGS Dryer D
+- EP S90 EU S90 DDGS Loading 03-A-1318-S1
+- EP S91 EU S91 DDGS Loading 06-A-647-S1
+- EP S70 EU P70 DDGS Cooler 03-A-1317-S5
+- EP S70B EU P70B DDGS Cooler 05-A-240-S4
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 5
+- EU B10A Heat Recovery Boiler A
+- EU B10B Heat Recovery Boiler B
+- EP S160 EU 160 Auxiliary Boiler 20-A-351
+- lb./MMBtu .................pounds per million British thermal units
+- EU P10A* DDGS Dryer A CE C10: Thermal 67.1 MMBtu/hr
+- EU P10B* DDGS Dryer B Oxidizer 1 67.1 MMBtu/hr
+- EU B10A* Heat Recovery Boiler A (TO/HRSG System 1) None 147.4 MMBtu/hr
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 0.1 lb/MMBtu(1)
+- Combined Emission Limit – TO/HRSGs and Auxiliary Boiler
+- combust only natural gas and/or process off-gases. The Waste Heat Recovery Boiler (EU
+- oxidizer/heat recovery boiler system during each day. In addition, the owner or
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 8
+- B. The owner or operator shall operate the Thermal Oxidizer 1 (CE C10) at all times that
+- C. During operation, the Thermal Oxidizer 1 (CE C10) shall maintain a temperature (3-hour
+- continuously monitor the temperature of the Thermal Oxidizer. The monitoring
+- the Thermal Oxidizer and record all periods (during actual operations) where the
+- on the days the Thermal Oxidizer, or the equipment the Thermal Oxidizer
+- D. The DDGS Dryers (EU P10A and EU P10B) and the Thermal Oxidizer 1 (CE C10) shall
+- F. The owner or operator shall inspect and maintain the Thermal Oxidizer 1 (CE C10)
+
+Tanks:
+- Storage tank mentions parsed: 16
+- EP T60A EU T60A Denatured Ethanol Storage Tank 06-A-357-S2
+- EP T60B EU T60B Denatured Ethanol Storage Tank 06-A-358-S2
+- EP T61 EU T61 Denatured Ethanol Storage Tank 03-A-1321-S3
+- EP T62 EU T62 Denatured Ethanol Storage Tank 03-A-1322-S3
+- EP T63 EU T63 200 Proof Ethanol Storage Tank 03-A-1323-S4
+- EP T65 EP T65 200 Proof Ethanol Storage Tank 03-A-1325-S4
+- EP T64 EU T64 Denaturant Storage Tank 03-A-1324-S3
+- EP T66 EU T66 190 Proof Ethanol Storage Tank 06-A-359-S2
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- EU P10A DDGS Dryer A
+- EU P10B DDGS Dryer B
+- EU P10C DDGS Dryer C
+- EU P10D DDGS Dryer D
+- EP S90 EU S90 DDGS Loading 03-A-1318-S1
+- EP S91 EU S91 DDGS Loading 06-A-647-S1
+- EP S70 EU P70 DDGS Cooler 03-A-1317-S5
+- EP S70B EU P70B DDGS Cooler 05-A-240-S4
+- EP F130 EU F130 WDGS Storage and Loadout 14-A-456-S1
+- DDGS .........................distillers dried grains with solubles
+- EU P10A* DDGS Dryer A CE C10: Thermal 67.1 MMBtu/hr
+- EU P10B* DDGS Dryer B Oxidizer 1 67.1 MMBtu/hr
+- D. The DDGS Dryers (EU P10A and EU P10B) and the Thermal Oxidizer 1 (CE C10) shall
+- E. The plant-wide total amount of dried distillers grain with solubles (DDGS) produced
+- Corn oil source line: not identified
+- TK-13500 Corn Oil Dump Tank
+- TK-13500 Corn Oil Reactor Tank
+- TR-13501 Corn Oil Agitator Tank
+- TK-2022 Corn Oil Extraction Feed Tank
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 24, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- bu/hr…………………bushels per hour
+- Mgals………………. million gallons
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- EP F90 EU F90 VOC Emissions from Equipment Leaks 06-A-360-S2
+- 567 IAC Chapter 22. During the period from May 15, 2024, to the date that 567 IAC as amended
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 567 – Chapter 24.
+- This facility is subject to Standards of Performance for Equipment Leaks of VOC in the Synthetic
+- Modification Commenced After November 7, 2006. The affected units are equipment in VOC
+- Reciprocating Internal Combustion Engines (RICE NESHAP). The affected unit is EP S100.
+- Slurry Tank #1 17,716 Gallons
+- Slurry Tank #2 16,000 Gallons
+- Yeast Tank #1 18,000 Gallons
+- Yeast Tank #2 17,000 Gallons
+- Reflux Tank #1 600 Gallons
+- Reflux Tank #2 600 Gallons
+- Regen Tank #1 600 Gallons
+- Regen Tank #2 600 Gallons
+- Acid Wash Tank 2,200 Gallons
+- Centrate Tank #1 990 Gallons
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

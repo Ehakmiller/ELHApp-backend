@@ -1,0 +1,141 @@
+EPM Number: 3620
+Plant Name: Green Plains Shenandoah LLC
+Permit Facility Name: Green Plains Ethanol Storage, LLC
+Location: Shenandoah, IA
+Source Permit File: 13-TV-004R2.pdf
+Permit Number: 13-TV-004R2
+Permit Expiration Date: 4/15/2029
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Green Plains
+- CA Facility ID: 
+- Dropdown capacity: 100.0 MGY
+- Year built: 2,007
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 100.00 MGY
+- Ethanol capacity source: EU-55 Fermenter #6 Ethanol 730,000 gallons
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: EU-54 Hammermill #3 Baghouse Corn 1,250 bushel/hr
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- EU-05 Grain Elevator #1
+- EU-06 Grain Elevator #2
+- EP-SV01 EU-08 Grain Bin #1 06-A-340-S4
+- EU-09 Grain Bin #2
+- EU-46 Grain Bin #3
+- EU-62 Protein Storage Silo #1
+- EP-SV15 EU-63 Protein Storage Silo #2 18-A-430-S4
+- EP-FS002 EU-FS002 Grain Receiving Uncaptured NA
+- Temporary Grain Storage Receiving Pit and 2 Temporary Grain
+- gr./dscf .......................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+
+Dryers:
+- Dryer mentions parsed: 4
+- EU-35 DDGS Dryer A
+- EU-36 DDGS Dryer B
+- EU-60 Protein Dryer
+- EP-SV05 EU-38 DDGS Cooling 06-A-344-S5
+- EU-39 DDGS Storage
+- EP-SV06 EU-40 DDGS Conveyor 06-A-345-S2
+- EU-41 DDGS Truck Loadout
+- Protein Dryer Start-Up Stack – NG Combustion
+- EP-FS003 EU-FS003 DDGS Loadout Uncaptured NA
+- EP-FS004 EU-FS004 DDGS Storage Uncaptured NA
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 1
+- EP-SV12 EU-52 Natural Gas Boiler #2 16-A-341
+- lb./MMBtu .................pounds per million British thermal units
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Tanks:
+- Storage tank mentions parsed: 16
+- Facility Name: Green Plains Ethanol Storage, LLC (GP Shenandoah)
+- EP-TK001 EU-TK001 190 Proof Ethanol Storage Tank 06-A-352-S1
+- EP-TK002 EU-TK002 200 Proof Ethanol Storage Tank 06-A-353-S1
+- EP-TK003 EU-TK003 Denaturant Storage Tank 06-A-354-S1
+- EP-TK004 EU-TK004 Denatured Ethanol Storage Tank 06-A-355-S1
+- EP-TK005 EU-TK005 Denatured Ethanol Storage Tank 06-A-356-S1
+- LI-8411 Corrosion Inhibitor Storage Tank (2,300 gallon)
+- TS-8901 Corn Oil Storage Tank (6,200 gallon)
+- TS-8902 Corn Oil Storage Tank (6,200 gallon)
+- SV18 HCl Storage Tank
+- SV20 CST Brinemaker Storage Tank
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- EU-35 DDGS Dryer A
+- EU-36 DDGS Dryer B
+- EP-SV05 EU-38 DDGS Cooling 06-A-344-S5
+- EU-39 DDGS Storage
+- EP-SV06 EU-40 DDGS Conveyor 06-A-345-S2
+- EU-41 DDGS Truck Loadout
+- EP-FS003 EU-FS003 DDGS Loadout Uncaptured NA
+- EP-FS004 EU-FS004 DDGS Storage Uncaptured NA
+- Corn oil source line: TS-8902 Corn Oil Storage Tank (6,200 gallon)
+- TS-6851 Corn Oil Syrup Feed Tank (1,690 gallon)
+- TS-8901 Corn Oil Storage Tank (6,200 gallon)
+- TS-8902 Corn Oil Storage Tank (6,200 gallon)
+- TS-6852 Corn Oil Syrup Receiver Tank (336 gallon)
+- TS-6853 Corn Oil Receiver Tank (200 gallon)
+- TS-6854 Corn Oil Receiver Tank (300 gallon)
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- NESHAP ....................National Emission Standards for Hazardous Air Pollutants
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- EP-FS006 EU-FS006 VOC Emissions from Equipment Leaks 06-A-350-S4
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- EU-08 Grain Bin #1 Corn 300,000 bushels 06-A-340-S4
+- EU-09 Grain Bin #2 Corn 300,000 bushels
+- EU-47 Fill Conveyor #2 Corn 30,000 Bushels/hr
+- EU-49 Reclaim Conveyor #2 Corn 10,000 Bushels/hr
+- EU-50 Reclaim Conveyor #3 Corn 10,000 Bushels/hr
+- EU-51 Transfer Conveyor #1 Corn 10,000 Bushels/hr
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 40% (1)
+- Emission Limit(s): 1.67 lb/hr
+- Emission Limit(s): 1.67 lb/hr; 0.1 gr/dscf
+- The owner/operator of this equipment shall comply with the operational limits and requirements
+- C. A maximum of 35.1 million bushels of corn per twelve month rolling period may be received
+- Emission Limit(s): 0.75 lb/hr
+- Emission Limit(s): 0.75 lb/hr; 0.1 gr/dscf
+- Operational Limits & Reporting/Record keeping Requirements
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

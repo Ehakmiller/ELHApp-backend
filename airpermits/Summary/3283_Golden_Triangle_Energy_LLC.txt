@@ -1,0 +1,139 @@
+EPM Number: 3283
+Plant Name: Golden Triangle Energy LLC
+Permit Facility Name: 
+Location: Craig, MO
+Source Permit File: goldentriangle-craig2020opf.pdf
+Permit Number: OP2020-009
+Permit Expiration Date: MAR 1 6 2025
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: GOLDEN TRIANGLE ENERGY LLC
+- CA Facility ID: 
+- Dropdown capacity: 21.0 MGY
+- Year built: 0
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 22.05 MGY
+- Ethanol capacity source: Denatured Ethanol 22,050,000 Gallons per Recordkeeping Special
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: EU007 SV001 Corn Bin #3 Broin, T-843 2000 Bushel
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- ATTACHMENT TRUCK AND RAIL GRAIN RECEIVING ................................................................................121
+- Grain Operations
+- EU029 FS003 Grain/DDGS Storage Building Broin 2000 N/A None
+- 36,000 Bushel Baghouse #1 (C001) Mfr:
+- EU006 SV001 Corn Bin #2 Broin, T-842 2000 Bushel
+- EU007 SV001 Corn Bin #3 Broin, T-843 2000 Bushel
+- FS003-1 FS003 Uncaptured Grains None 2000 None
+- Wet Distillers Grains with Syrup (WDGS) and Dried Distillers Grains with Syrup (DDGS) Operations
+
+Dryers:
+- Dryer mentions parsed: 0
+- ATTACHMENT TRUCK AND RAIL DDGS SHIPPING ...................................................................................122
+- EU029 FS003 Grain/DDGS Storage Building Broin 2000 N/A None
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 2
+- EU028 Boiler #1, Natural gas fired 2000 Low NOx Burners
+- PFTA 1500 MMBTU/hr
+- EU034 Boiler #2, Natural gas fired 2006 Low NOx Burners
+- MMBTU/hr
+- SV006 for DDGS Dryer, Natural gas MMBTU/hr RTO (C008, EU038) or RTO
+- EU038 SV012 Thermal Oxidizer, Natural 2005 8 MMBTU/hr Not Applicable
+- SV008 EU028 Boiler #1 2.01 Tons per AP42 SCC Special
+- SV011 EU034 Boiler #2 2.01
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 17
+- ATTACHMENT REGENERATIVE THERMAL OXIDIZER BYPASS ..................................................................116
+- SV006 for DDGS Dryer, Natural gas MMBTU/hr RTO (C008, EU038) or RTO
+- RTO fired 9 tons Bypass (SV006)
+- SV006 for Broin S605 A, 9 tons RTO (C008, EU038) or RTO
+- RTO B, C, D DDGS/hr Bypass (SV006)
+- SV006 for DDGS Cooling/Separating AirLanco, RC- September RTO (C008, EU038) or RTO
+- RTO Cyclone 78, #86101116 2013 Bypass (SV006)
+- EU038 SV012 Thermal Oxidizer, Natural 2005 8 MMBTU/hr Not Applicable
+- VRTO-C
+- Thermal Oxidizer Bypass
+- RTO Testing
+- SV012 EU038 RTO 3.4 lbs/hr Performance Special
+
+Tanks:
+- Storage tank mentions parsed: 4
+- ATTACHMENT DENATURANT USAGE RATE ..............................................................................................119
+- T830 Impurities Storage Tank 2000 Distillation Scrubber (C004)
+- Storage Tank
+- Grade Storage Tank
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- ATTACHMENT TRUCK AND RAIL DDGS SHIPPING ...................................................................................122
+- EU029 FS003 Grain/DDGS Storage Building Broin 2000 N/A None
+- Wet Distillers Grains with Syrup (WDGS) and Dried Distillers Grains with Syrup (DDGS) Operations
+- 4/454 DDGS gallons/hr
+- SV006 for DDGS Dryer, Natural gas MMBTU/hr RTO (C008, EU038) or RTO
+- bypass DDGS/hr
+- EU026 DDGS Multclones 2000
+- RTO B, C, D DDGS/hr Bypass (SV006)
+- SV006 for DDGS Cooling/Separating AirLanco, RC- September RTO (C008, EU038) or RTO
+- DDGS Dryer Regenerative
+- EU043 SV001 DDGS Pit Conveyor 2000 9 tons/hr
+- EU044 SV001 DDGS Loadout Conveyor 2000 185 tons/hr
+- DDGS Dump Augers: Screw C805, C806, Baghouse #1 (C001) Mfr:
+- DDGS Stockpile None
+- Corn oil source line: not identified
+- Not specifically identified in extracted permit text.
+
+Emissions / Permit Constraints:
+- ethanol production facility. Current permits limit production to 21 million gallons of ethanol
+- and denaturant of 1.05 million gallons, for a total denatured ethanol production limit of 22.05
+- million gallons per consecutive twelve month period. The installation has emission limitations
+- VOC, CO, SOx, and both individual and total HAPs.
+- VOC, CO, SO , and both individual and total HAPs.
+- II. EMISSION LIMITATIONS ................................................................................................................13
+- 40 CFR part 60 Subpart VV, Standards of Performance for Equipment Leaks of VOC in the Synthetic Organic Chemicals
+- 40 CFR part 60 Subpart VVa, Standards of Performance for Equipment Leaks of VOC in the Synthetic Organic Chemicals
+- ATTACHMENT VOC EMISSIONS ................................................................................................................139
+- ATTACHMENT TOTAL HAPS EMISSIONS ...................................................................................................151
+- ATTACHMENT INDIVIDUAL HAPS EMISSIONS ..........................................................................................162
+- specific emission limitations. All emission units at this installation are subject to plant wide conditions and some are also subject to unit specific
+- T231 Alpha Amylase Enzyme Tank Broin 2000 5,000 gallons None
+- gallons
+- T232 Gluco Amylase Enzyme Tank Broin 2000 5000 gallons None
+- P407-2 Heat Exchanger Pump Inomag 2012 600 gallons/hr None
+- T804 Advance 2000 gallons None
+- 1,500 gallons
+- Corrosion Inhibitor Storage 390 gallons
+- 2000 and gallons
+- Tertiary Butyl Alcohol gallons
+- 55 gallons
+- FS011 Triethoxysilane, CPTEO, Schutz totes NA gallons None
+- Isopropyl Alcohol Storage gallons
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

@@ -1,0 +1,126 @@
+EPM Number: 3641
+Plant Name: Lincolnway Energy LLC
+Permit Facility Name: Lincolnway Energy, LLC
+Location: Nevada, IA
+Source Permit File: 14-TV-002R2.pdf
+Permit Number: 14-TV-002R2
+Permit Expiration Date: 02/19/2029
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Lincolnway Energy LLC
+- CA Facility ID: 70092
+- Dropdown capacity: 90.0 MGY
+- Year built: 2,006
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 90.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: 36,982,759 bu/year
+- Throughput source line: 36,982,759 bushels of corn per twelve (12) month rolling period, rolled monthly. No other
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: not identified
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- S20 P20 Grain Unloading 05-A-072-S5
+- DDGS.........................dried distillers grains with solubles
+- gr./dscf .......................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- limited to grain, fertilizer or limestone.
+- Grain Storage Silo #1 260,700 bushels
+- Grain Storage Silo #2 260,700 bushels
+- Corn Unloading (Receiving Pits) 30,000 bushels/hr
+- Elevator Legs 15,000 bushels/hr
+- Storage Bin Fill Conveyor 15,000 bushels/hr
+- Storage Bin Emptying Conveyor 5,000 bushels/hr
+
+Dryers:
+- Dryer mentions parsed: 3
+- S70 P70 DDGS Cooler 05-A-087-S10
+- S90 P90 DDGS Loadout 05-A-088-S7
+- P170A DDGS Dryer #1
+- P170B DDGS Dryer #2
+- P170C DDGS Dryer #3
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 2
+- S180 P180 Natural Gas Boiler (238 MMBtu/hr) 14-A-179-S2
+- S190 P190 Natural Gas Boiler (71.5 MMBtu/hr) 22-A-055
+- lb./MMBtu .................pounds per million British thermal units
+- Commercial, And Institutional Boilers and Process Heaters. The affected unit is EU-P180.
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Tanks:
+- Storage tank mentions parsed: 7
+- S61 P61 Denatured Ethanol Storage 05-A-074-S5
+- S62 P62 Denatured Ethanol Storage 05-A-075-S5
+- S63 P63 200 Proof Ethanol Storage 05-A-076-S5
+- S64 P64 Denaturant Storage 05-A-077-S4
+- S65 P65 190 Proof Ethanol Storage 05-A-078-S5
+- S67 P67 Ethanol Storage Tank #3 12-A-547-S5
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- S70 P70 DDGS Cooler 05-A-087-S10
+- S90 P90 DDGS Loadout 05-A-088-S7
+- P170A DDGS Dryer #1
+- P170B DDGS Dryer #2
+- P170C DDGS Dryer #3
+- DDGS.........................dried distillers grains with solubles
+- Corn oil source line: not identified
+- Not specifically identified in extracted permit text.
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- NESHAP ....................National Emission Standards for Hazardous Air Pollutants
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- S82 P82 VOC Fugitive from Equipment Leaks 05-A-082-S4
+- EU1 Thin Stillage Tank Vent (146,000 gallons)
+- EU2 Syrup Tank (50,000 gallons)
+- EU3 Cook Water Tank (146,000 gallons)
+- EU4 Liquefaction Tank (64,700 gallons)
+- EU5 Whole Stillage Tank (146,000 gallons)
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- This facility is subject to Standards of Performance for Equipment Leaks of VOC in the
+- affected units are equipment in VOC service and any applicable devices and systems (as defined
+- Grain Storage Silo #1 260,700 bushels
+- Grain Storage Silo #2 260,700 bushels
+- Corn Unloading (Receiving Pits) 30,000 bushels/hr
+- Elevator Legs 15,000 bushels/hr
+- Storage Bin Fill Conveyor 15,000 bushels/hr
+- Storage Bin Emptying Conveyor 5,000 bushels/hr
+- Scalper Bin 20,000 bushels
+- Grind Bin 20,000 bushels
+
+Derived Metrics:
+- Ethanol yield: 2.434 gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: medium | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: 101,323 bu/day | Formula: permitted corn bu/year / 365 | Confidence: medium.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

@@ -1,0 +1,152 @@
+EPM Number: 3714
+Plant Name: The Andersons Marathon Holdings LLC
+Permit Facility Name: The Andersons Marathon Holdings,
+Location: Denison, IA
+Source Permit File: 14-TV-011R2.pdf
+Permit Number: 14-TV-011R2
+Permit Expiration Date: 9/18/2029
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: The Andersons
+- CA Facility ID: 70884
+- Dropdown capacity: 62.0 MGY
+- Year built: 2,005
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 62.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: bushels, processed by Grain Receiving (EU-P19A) on a rolling 12-month basis.
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- S19a S19a Grain Receiving 14-A-640-S2
+- S20a Tank A Grain Storage Tank A 06-A-318-S3
+- S20b Tank B Grain Storage Tank B 06-A-319-S3
+- S20c Tank C Grain Storage Tank C 06-A-320-S3
+- S20d Tank D Grain Storage Tank D 04-A-640-S4
+- S20e Tank E Grain Storage Tank E 04-A-641-S3
+- S20f Tank F Grain Storage Silo F 06-A-321-S4
+- S20g Tank G Grain Storage Silo G 06-A-322-S4
+- F15 F15 Grain Handling Fugitives 06-A-810-S1
+- GD2 GD2 Grain Dryer 06-A-809-S2
+- gr/dscf ........................grains per dry standard cubic foot
+- DDGS .........................Dried Distillers Grains with Solubles
+
+Dryers:
+- Dryer mentions parsed: 3
+- P10a DDGS Dryer #1
+- P10b DDGS Dryer #2
+- S70 P70 DDGS Cooler 04-A-645-S7
+- S90 P90 DDGS Loading 04-A-646-S2
+- GD2 GD2 Grain Dryer 06-A-809-S2
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 3
+- B10 Waste Heat Recovery Boiler
+- S11 B11 Rental Boiler 24-A-026
+- lb/MMBtu ..................pounds per million British thermal units
+- (125 MMBtu/hr)
+- P10a DDGS Dryer #1 37.6 tons/hr, 42 MMBtu/hr
+- P10b DDGS Dryer #2 37.6 tons/hr, 42 MMBtu/hr
+- B10(1) Water Heat Recovery Boiler --
+- (1) The Waste Heat Recovery Boiler (EU-B10) does not combust fuel or generate emissions. The emission stream
+- and associated heat from Thermal Oxidizer C10 is directed to the Waste Heat Recovery Boiler (EU-B10), which
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 0.1 lb/MMBtu(1)
+- required by 40 CFR §60.48b(b) and §60.13(h) shall be expressed in lb/MMBtu
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 12
+- Thermal Oxidizer
+- and associated heat from Thermal Oxidizer C10 is directed to the Waste Heat Recovery Boiler (EU-B10), which
+- then produces steam from the 125 million Btu per hour maximum heat rate provided by the thermal oxidizer.
+- A. The DDGS Dryers (EU-P10A and EU-P10B) and Thermal Oxidizer (CE-C10) shall
+- B. The Thermal Oxidizer (CE-C10) shall be operated at all times the dryers or the
+- C. The Thermal Oxidizer (CE-C10) shall maintain a temperature (measured as a 3-hour
+- Thermal Oxidizer (CE-C10) as follows:
+- temperature, in degrees Fahrenheit, of the Thermal Oxidizer (CE-C10).
+- operating temperature, in degrees Fahrenheit, of the Thermal Oxidizer (CE-C10).
+- the Thermal Oxidizer (CE-C10) malfunctions and shall estimate and record the emissions
+- E. The owner or operator shall inspect and maintain the Thermal Oxidizer (CE-C10)
+- activities performed on the thermal oxidizer. At a minimum, this log shall
+
+Tanks:
+- Storage tank mentions parsed: 13
+- S20a Tank A Grain Storage Tank A 06-A-318-S3
+- S20b Tank B Grain Storage Tank B 06-A-319-S3
+- S20c Tank C Grain Storage Tank C 06-A-320-S3
+- S20d Tank D Grain Storage Tank D 04-A-640-S4
+- S20e Tank E Grain Storage Tank E 04-A-641-S3
+- T61 T61 Denatured EtOH Storage Tank 04-A-649
+- T62 T62 Denatured EtOH Storage Tank 04-A-650
+- T63 T63 200 Proof Ethanol Storage Tank 04-A-651
+- T64 T64 Denaturant Storage Tank 04-A-652-S1
+- T65 T65 190 Proof Ethanol Storage Tank 04-A-653
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- P10a DDGS Dryer #1
+- P10b DDGS Dryer #2
+- S70 P70 DDGS Cooler 04-A-645-S7
+- S90 P90 DDGS Loading 04-A-646-S2
+- F20 F20 MWDGS Storage/Loadout 12-A-563
+- DDGS .........................Dried Distillers Grains with Solubles
+- MWDGS…………… Modified Wet Distillers Grains with Solubles
+- P10a DDGS Dryer #1 37.6 tons/hr, 42 MMBtu/hr
+- P10b DDGS Dryer #2 37.6 tons/hr, 42 MMBtu/hr
+- A. The DDGS Dryers (EU-P10A and EU-P10B) and Thermal Oxidizer (CE-C10) shall
+- Corn oil source line: not identified
+- Not specifically identified in extracted permit text.
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 24, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- VOC…………………volatile organic compound
+- HAP............................hazardous air pollutant
+- F110 F110 VOC Emissions 07-A-1541-S2
+- 567 IAC Chapter 22. During the period from May 15, 2024, to the date that 567 IAC as amended
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- NSPS and NESHAP Applicability
+- This facility is subject to Standards of Performance for Equipment Leaks of VOC in the Synthetic
+- Organic Chemicals Manufacturing Industry. The affected units are equipment in VOC service
+- Stationary Reciprocating Internal Combustion Engines (RICE NESHAP). The affected unit is
+- Slurry Tank 16,000 gallons
+- Liquefaction Tank #1 and #2 50,000 gallons (each)
+- Thin Stillage Tank 146,000 gallons
+- Syrup Tank 50,000 gallons
+- Process Condensate Tank 264 gallons
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 40% (1)
+- Emission Limit(s): 6.88 lb/hr
+- Emission Limit(s): 6.88 lb/hr; 0.1 gr/dscf
+- Emission Limit(s): 8.48 lb/hr; 500 ppm
+- Emission Limit(s): 0.1 lb/MMBtu(1)
+- Emission Limit(s): 25.00 lb/hr
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

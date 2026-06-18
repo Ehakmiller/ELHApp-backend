@@ -1,0 +1,96 @@
+EPM Number: 3681
+Plant Name: Poet Biorefining-Laddonia LLC
+Permit Facility Name: 
+Location: Laddonia, MO
+Source Permit File: poet-biorefining-laddonia-op-application-complete-01-30-2026.pdf
+Permit Number: poet-biorefining-laddonia-op-application-complete-01-30-2026
+Permit Expiration Date: 
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: POET Biorefining
+- CA Facility ID: 70023
+- Dropdown capacity: 80.0 MGY
+- Year built: 2,006
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 2,021.00 MGY
+- Ethanol capacity source: OP2021-012 Produce less than 90,000,000 gallons of 200 proof and 190 proof Ethanol in any consecutive 12-month period
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: not identified
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- Dried Distillers Grains with Solubles 20
+- Grain Milling, DDGS Production 20
+- Grain Receiving/Storage 42
+- X DD Grain Elevators
+
+Dryers:
+- Dryer mentions parsed: 1
+- Grain Milling, DDGS Production 20
+- X uuu Calciners and Dryers in Mineral Industries
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 0
+- 10 CSR 10-6.360 Generating Boilers 2
+- X AAA New Residential Wood Heaters
+- X DDDDD Industrial, Commercial and Institutional Boilers and Process Heaters (This subpart has
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Tanks:
+- Storage tank mentions parsed: 1
+- 2.0C Control Device Information 2.5L General Liquid Storage Tank Information
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- Dried Distillers Grains with Solubles 20
+- Grain Milling, DDGS Production 20
+- Corn oil source line: not identified
+- Not specifically identified in extracted permit text.
+
+Emissions / Permit Constraints:
+- National Emission Standards for HAPs (NESHAPs) 1 X $1,500 :: 1500
+- X 10 CSR 10-6.100 Alternate Emission Limits For Ozone Nonattainment Areas l
+- X 10 CSR 10-6.350 Emission Limitations and Emissions Trading of Oxides of Nitrogen 1
+- X Equipment Leaks of VOC in the Synthetic Organic Chemicals Manufacturing Industry
+- Equipment Leaks of VOC in the Synthetic Organic Chemicals Manufacturing Industry for
+- Equipment Leaks of VOC in Petroleum Refineries for which Construction, Reconstruction, or
+- X Ill VOC Emissions from SOCMI Air Oxidation Unit Processes
+- X QQQ VOC Emissions form Petroleum Refinery Wastewater Systems
+- INSIGNIFICANT ACTIVITY POTENTIAL ESTIMATED EMISSIONS (TONS/YR)
+- PM10 SOx NOx LEAD HAPS
+- Gasoline Tank (300 gallons)
+- Diesel Tank (500 gallons)
+- OP2021-012 Produce less than 90,000,000 gallons of 200 proof and 190 proof Ethanol in any consecutive 12-month period
+- OP2021-012 Receive less than 4,736,900 gallons of denaturant in any consecutive 12-month period
+- OP2021-012 Produce less than 4,800,000 tons of syrup gallons in any consecutive 12-month period
+- APPLICABLE REQUIREMENT AUTHORITY EMISSION LIMIT OR STANDARD
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

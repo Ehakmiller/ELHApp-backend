@@ -1,0 +1,157 @@
+EPM Number: 3632
+Plant Name: Homeland Energy Solutions LLC
+Permit Facility Name: Homeland Energy Solutions, LLC
+Location: Lawler, IA
+Source Permit File: 14-TV-001R2.pdf
+Permit Number: 14-TV-001R2
+Permit Expiration Date: 10/29/2028
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Homeland Energy Solutions
+- CA Facility ID: 70188
+- Dropdown capacity: 207.0 MGY
+- Year built: 2,007
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 207.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: not identified
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- EP-F01 EU-F01 Grain Handling Uncaptured Emissions N/A
+- DDGS.........................dried distiller's grains with solubles
+- gr./dscf .......................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- limited to grain, fertilizer or limestone.
+- S20 Grain Receiving, EU-21A, EU-21B, EU-21C, EU-21D, EU-21E, EU-21F, EU-22a, EU-22b,
+- This facility is subject to Standards of Performance for Grain Elevators. The affected units are
+- the emission units associated with EP-S20 Grain Receiving; and EU-21a, EU-21b, EU-21c, EU-
+
+Dryers:
+- Dryer mentions parsed: 6
+- EU-P10A DDGS Dryer A
+- EU-P10B DDGS Dryer B
+- EU-P70 DDGS Cooling Drum
+- EU-10c DDGS Dryer C
+- EU-10d DDGS Dryer D
+- 15a DDGS Dryer E
+- EP-S15 15b DDGS Dryer F 17-A-118-S2
+- EP-S75 EU-75 DDGS Cooling Tube 17-A-122-S2
+- EP-S90 EU-90 DDGS Loadout 07-A-980-P3
+- EP-F02 EU-F02 DDGS Loading Uncaptured Emissions N/A
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 6
+- EU-B10 Waste Heat Recovery Boiler (HRSG)
+- EU-B11 Waste Heat Recovery Boiler (HRSG)
+- EP-S120 EU-P120 Utility Boiler #1 17-A-121-S2
+- EP-S125 EU-125 Utility Boiler #2 20-A-227
+- lb./MMBtu .................pounds per million British thermal units
+- Industrial, Commercial, And Institutional Boilers And Process Heaters. The affected unit is EU-
+- EU-P10A DDGS Dryer A Biogas/ 50 MMBtu/hr
+- EU-P10B DDGS Dryer B 50 MMBtu/hr
+- EU-B101 Natural Gas 150 MMBtu/hr unit is located
+- Boiler
+- 1 In addition to the heat from the TO (C10), the waste heat recovery boiler also receives heat from DDGS
+- EU-P10c DDGS Dryer C 50 MMBtu/hr
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 28
+- Emissions Control Equipment Description: Multiclones and Thermal Oxidizers with Low NO
+- (5)The percent reduction limit applies across CE-C10 and CE-C11, the thermal oxidizers.
+- A. DDGS Dryer A (EU-P10A), DDGS Dryer B (EU-P10B), and the Thermal Oxidizer
+- B. DDGS Dryer A (EU-P10A), DDGS Dryer B (EU-P10B), and the Thermal Oxidizer
+- of the amounts of each fuel combusted in the Thermal Oxidizer/HRSG system
+- P10B), and the Thermal Oxidizer (C10)/HRSG (EU-B10) System on a monthly
+- (EU-P10B), and the Thermal Oxidizer (C10)/HRSG (EU-B10) System on a
+- C. When in operation, the Thermal Oxidizer (C10) shall maintain a temperature of no less
+- continuously monitor the temperature of the Thermal Oxidizer. The monitoring
+- the Thermal Oxidizer and record all periods (during actual operations) where the
+- requirement shall not apply on the days the Thermal Oxidizer, or the equipment
+- the Thermal Oxidizer controls, is not in operation.
+
+Tanks:
+- Storage tank mentions parsed: 9
+- EP-T61 EU-T61 Ethanol Storage Tank 07-A-972-P2
+- EP-T62 EU-T62 Ethanol Storage Tank 07-A-973-P2
+- EP-T64 EU-T64 Denaturant Tank 07-A-975-P1
+- EP-T67 EU-T67 Ethanol Storage Tank 14-A-674
+- SUE-T68 USP Storage Tank #1
+- SUE-T69 USP Storage Tank #2
+- SUE-T70 USP Denaturant Tank
+- EU003 500 Gallon Gasoline Storage Tank
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- EU-P10A DDGS Dryer A
+- EU-P10B DDGS Dryer B
+- EU-P70 DDGS Cooling Drum
+- EU-10c DDGS Dryer C
+- EU-10d DDGS Dryer D
+- 15a DDGS Dryer E
+- EP-S15 15b DDGS Dryer F 17-A-118-S2
+- EP-S75 EU-75 DDGS Cooling Tube 17-A-122-S2
+- EP-S90 EU-90 DDGS Loadout 07-A-980-P3
+- EP-F02 EU-F02 DDGS Loading Uncaptured Emissions N/A
+- DDGS.........................dried distiller's grains with solubles
+- Burners; DDGS Cooling Baghouses
+- EU-P10A DDGS Dryer A Biogas/ 50 MMBtu/hr
+- EU-P10B DDGS Dryer B 50 MMBtu/hr
+- Corn oil source line: not identified
+- SUE08 Corn Oil Retention Tank Vent
+- SUE01 Corn Oil Loading Operation
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- NESHAP ....................National Emission Standards for Hazardous Air Pollutants
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- EP-F60 EU-F60 VOC Emissions from Equipment Leaks 07-A-971-P2
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- This facility is subject to Standards of Performance for Equipment Leaks of VOC in the
+- satisfy the requirements of NSPS Subpart VV. The affected units are equipment in VOC service
+- Reciprocating Internal Combustion Engines (RICE NESHAP). The affected units are EU-P110,
+- EU-P55A Mixer Mash 13,500 gallons
+- EU-P55D Slurry Tank #1 Mash 25,000 gallons
+- EU-P55E Slurry Tank #2 Mash 25,000 gallons
+- EU-P55a Mixer Mash 13,500 gallons
+- EU-P55d Slurry Tank #1 Mash 25,000 gallons
+- EU-P55e Slurry Tank #2 Mash 25,000 gallons
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 0% (1)
+- Emission Limit(s): 0.0094 gr/dscf (2); 16.11 tons/yr (3)
+- Emission Limit(s): 0.02 lb/MMBtu (2); 21.90 tons/yr (3)
+- Emission Limit(s): 0.04 lb/MMBtu (4); 43.80 tons/yr (3)
+- Pollutant: Volatile Organic Compounds (VOC)
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

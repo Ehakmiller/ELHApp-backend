@@ -1,0 +1,160 @@
+EPM Number: 3726
+Plant Name: Valero Renewable Fuels LLC
+Permit Facility Name: Valero Renewable Fuels Company,
+Location: Charles City, IA
+Source Permit File: 15-TV-009R2.pdf
+Permit Number: 15-TV-009R2
+Permit Expiration Date: September 2, 2030
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Valero Renewables
+- CA Facility ID: 70042
+- Dropdown capacity: 165.0 MGY
+- Year built: 2,007
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 165.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- 10 Grain Silo #1
+- 16 Grain Silo #2
+- 61 Grain Silo #3
+- 62 Grain Silo #4
+- 63 Grain Silo #5
+- 72 DDGS Storage Silo #1
+- 73 DDGS Storage Silo #2
+- bu……………………bushels
+- gr./dscf .......................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- limited to grain, fertilizer or limestone.
+
+Dryers:
+- Dryer mentions parsed: 4
+- 01 DDGS Dryer A
+- 02 DDGS Dryer B
+- 04 DDGS Dryer C
+- 05 DDGS Dryer D
+- 58 DDGS Cooling Drum
+- DDGS Cooler (Thermal Oxidizer
+- 49 DDGS Inclined Drag
+- 50 DDGS Topfill Drag (Flat Storage)
+- 52 DDGS Flat Storage Floor Drag
+- 53 DDGS Recirc/Loadout Leg
+- 54 DDGS Topfill Drag (Silo Recirc)
+- 55 DDGS Loadout Drag
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 4
+- Heat Recovery Boiler/Thermal
+- lb./MMBtu .................pounds per million British thermal units
+- Associated Emission Unit ID Numbers: See Table: Dryers, Boilers and Distillation
+- Emissions Control Equipment ID Number: See Table: Dryers, Boilers and Distillation
+- Emissions Control Equipment Description: See Table: Dryers, Boilers and Distillation
+- Continuous Emissions Monitors ID Numbers: See Table: Dryers, Boilers and Distillation
+- Table: Dryers, Boilers and Distillation
+- MMBtu/hr(1) Multiclone (C60);
+- MMBtu/hr(1)
+- MMBtu/hr(1) located post control)
+- Boiler
+- MMBtu/hr(1) Multiclone (C61);
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 18
+- DDGS Cooler (Thermal Oxidizer
+- 45.0 Thermal Oxidizer (C10)
+- 45.0 Thermal Oxidizer (C11)
+- Distillation Thermal Oxidizer
+- (1) Rated capacity values for the DDGS Dryers (EU 01, EU 02, EU 04, and EU 05) and the Thermal Oxidizers (EU
+- The thermal oxidizer/heat recovery boiler system is subject to the New Source Performance
+- Oxidizer (C10) and Thermal Oxidizer (C11) are limited to firing natural gas or
+- the amounts of each fuel combusted in the Thermal Oxidizer/HRSG system during
+- C. Thermal Oxidizer (C10) shall be operated at all times the DDGS Dryer A and DDGS
+- Dryer B are in operation. Thermal Oxidizer (C11) shall be operated at all times the
+- D. Each of the thermal oxidizers, Thermal Oxidizer (C10) and Thermal Oxidizer
+- continuously monitor the temperature of each Thermal Oxidizer. The
+
+Tanks:
+- Storage tank mentions parsed: 10
+- TK001 TK001 190 Proof Ethanol Storage Tank 05-A-727-S3
+- TK002 TK002 200 Proof Ethanol Storage Tank 05-A-728-S3
+- TK003 TK003 Denaturant Tank 05-A-729-S2
+- TK004 TK004 Denatured Ethanol Storage Tank 05-A-730-S2
+- TK005 TK005 Denatured Ethanol Storage Tank 05-A-731-S2
+- TK006 TK006 Fuel Additive Storage Tank 05-A-732-S2
+- SSTANKS Miscellaneous Storage Tanks
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- 01 DDGS Dryer A
+- 02 DDGS Dryer B
+- 04 DDGS Dryer C
+- 05 DDGS Dryer D
+- 58 DDGS Cooling Drum
+- DDGS Cooler (Thermal Oxidizer
+- 49 DDGS Inclined Drag
+- 50 DDGS Topfill Drag (Flat Storage)
+- 52 DDGS Flat Storage Floor Drag
+- 53 DDGS Recirc/Loadout Leg
+- 54 DDGS Topfill Drag (Silo Recirc)
+- 55 DDGS Loadout Drag
+- 69 DDGS Transfer Drag
+- 70 DDGS Storage Leg
+- Corn oil source line: not identified
+- SS-CO1 Corn Oil Loadout
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 24, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- bu……………………bushels
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- 567 IAC Chapter 22. During the period from May 15, 2024, to the date that 567 IAC as amended
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 21. For
+- 23.4(455B) and 567 – Chapter 21.
+- This facility is subject to the Standards of Performance for Equipment leaks of VOC in the
+- NESHAP
+- Stationary Reciprocating Internal Combustion Engines (RICE NESHAP). The affected
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 40%(1)
+- Emission Limit(s): 14.10 lb/hr, 0.1 gr./dscf
+- Emission Limit(s): 14.10 lb/hr
+- Emission Limits: 22.60 lb/hr, 500 ppm
+- Emission Limits: 33.0 lb/hr; 99.0 tons/yr; 0.1 lb/MMBtu(2)
+- As specified in 40 CFR 60.44b(i), compliance with the emission limit is determined on a 30-day rolling average
+- Pollutant: Volatile Organic Compounds (VOC)
+- Emission Limit(s): 12.0 lb./hr
+- Emission Limit(s): 33.0 lb./hr; 99.0 tons/yr
+- Pollutant: Hazardous Air Pollutants, Single (SHAP) (except acetaldehyde)
+- Emission Limit(s): 0.70 lb/hr
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

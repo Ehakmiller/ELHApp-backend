@@ -1,0 +1,173 @@
+EPM Number: 3581
+Plant Name: Cargill Inc
+Permit Facility Name: Cargill, Inc. - Eddyville
+Location: Eddyville, IA
+Source Permit File: 06-TV-006R1.pdf
+Permit Number: 06-TV-006R1
+Permit Expiration Date: October 26, 2027
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Cargill
+- CA Facility ID: 
+- Dropdown capacity: 71.0 MGY
+- Year built: 0
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 71.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: not identified
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- 5.000 5.000 Corn Receiving 1 83-A-090-S2
+- 53.000 53.000 Corn Receiving 2 90-A-352-S7
+- 50.000 50.000 Lime/Precoat Storage Silo 89-A-150-S2
+- 126.000 126.000 Lime Storage Silo 97-A-1097-S2
+- gr./dscf ...................... grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- to grain, fertilizers or limestone.
+
+Dryers:
+- Dryer mentions parsed: 9
+- Dryer rated capacity: not available MMBtu/hr
+- Dryer rated capacity source: not identified
+- 104.000 Fiber Flash Dryer 3
+- 104.000 104.201 Germ Dryer 1 00-A-467-S4
+- 104.202 Germ Dryer 2
+- 105.103 105.103 Gluten Flash Dryer Conveying I 95-A-406-P5
+- 105.109 105.109 Gluten Flash Dryer Conveying II 95-A-407-P4
+- 106.062 Gluten Flash Dryer I
+- 106.901 Gluten Flash Dryer II
+- 1.000 1.052 Fiber Pre-Dryers 1 and 2 90-A-085-S6
+- 107.060 Germ Dryer/Cooler
+- 139.000 139.000 Germ Meal Dryer/Cooler 01-A-574-S1
+- 108.047.1 Fluid Bed Dryer/Cooler
+- 108.082.1 Fluid Bed Dryer/Cooler
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 6
+- 51.000 51.000 Boiler #4 89-A-210-S5
+- 84.000 Boiler #5 92-A-227-S3
+- 86.000 Boiler #6 92-A-228-S3
+- 232.000 232.000 High Pressure Steam Boiler 1 15-A-219-S1
+- 233.000 233.000 High Pressure Steam Boiler 2 15-A-220-S1
+- RD1 RD1 R&D Boiler NA
+- HEATERS Natural Gas Heaters
+- lb./MMBtu ................ pounds per million British thermal units
+- 1.000 Boiler #4 x x Natural Gas 230 MMBtu/hr. 89-A-210-S5
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 0.6 lb/MMBtu
+- Emission Limit(s): 0.10 lb/MMBtu
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Tanks:
+- Storage tank mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- Wetcake production rate: not available tons/hr
+- Wetcake production source: not identified
+- Wetcake limit: not available tons/year
+- Wetcake limit source: not identified
+- Syrup limit: not available tons/year
+- Syrup limit source: not identified
+- Engineering/Maintenance Bldgs Emergency
+- Corn oil source line: not identified
+- Corn oil centrifuge stack: not identified
+- Not specifically identified in extracted permit text.
+
+Missouri Structured Fields:
+- Grain receiving limit: not available tons/year
+- Grain receiving source: not identified
+- Grain receiving bushels equivalent: not available bu/year
+- Corn elevator capacity: not available tons/hr
+- Corn elevator source: not identified
+- Corn bin unloading conveyor capacity: not available tons/hr
+- Corn bin unloading conveyor source: not identified
+- Beer/distillation feed: not available gal/min
+- Beer/distillation feed source: not identified
+- Evaporator capacity: not available gal/hr
+- Evaporator source: not identified
+- Concentrate tank: not available gal
+- Concentrate tank source: not identified
+- Thin stillage recycle: not available percent
+- Thin stillage recycle source: not identified
+- Evaporation stages: not available
+- Evaporation stages source: not identified
+- Centrifuge count: not available
+- Centrifuge count source: not identified
+- Centrifuge flow each: not available gal/min
+- Centrifuge flow each source: not identified
+- Centrifuge total flow: not available gal/min
+- Centrifuge total flow source: not identified
+- Centrifuge total hourly flow: not available gal/hr
+- Centrifuge total hourly flow source: not identified
+- Centrifuge total annual flow: not available gal/year
+- Centrifuge total annual flow source: not identified
+- Distillation source lines:
+- 77.4 Molecular Sieve Unit
+- 78.2 Molecular Sieve Unit Evaporator
+- Evaporator source lines:
+- 78.1 Rectifying Column Evaporator
+- 78.2 Molecular Sieve Unit Evaporator
+- TK-71508 Thin Stillage Tank
+- Centrifuge source lines:
+- Not specifically identified in extracted permit text.
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- VOC ......................... volatile organic compound
+- HAP .......................... hazardous air pollutant
+- 182 West Gasoline Fueling Tank (560 gallons)
+- 183 West Diesel Fueling Tank (560 gallons)
+- 184 Fire Pump Diesel Tank (800 gallons)
+- 185 Generator Diesel Fuel Tank (800 gallons)
+- 238 East Gasoline Fuel Tank (3000 gallons)
+- 239 East Diesel Fuel Tank (3000 gallons)
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 40 %(1)
+- Emission Limit(s): 2.30 lb/hr
+- Emission Limit(s): 0.6 lb/MMBtu
+- Emission Limit(s): 500 ppmv
+- Emission Limit(s): 46.0 lb/hr
+- Emission Limit(s): 0.10 lb/MMBtu
+- Emission Limit(s): 0.06 lb/MMBtu
+- Operational Limits & Requirements
+- The owner/operator of this equipment shall comply with the operational limits and requirements
+- Process throughput:
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

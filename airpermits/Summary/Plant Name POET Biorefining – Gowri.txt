@@ -1,0 +1,70 @@
+EPM Number: 3675
+Plant Name: POET Biorefining – Gowrie
+Location: Gowrie, Iowa
+Ownership: POET Biorefining
+Year Built: 2004
+Nameplate Capacity: ~100 MGY
+
+Process Type:
+Dry Mill Corn Ethanol
+
+Fermentation:
+- 7 Fermenters
+- 730,000 gallons each
+- Total fermentation volume: 5.11 million gallons
+- Beer Well: 890,000 gallons
+- Mash feed rate: 1,300 GPM
+- Distillation system with 3 Molecular Sieves
+
+Grain Handling:
+- Truck and Rail Receiving
+- Corn Scalper
+- Elevator System
+- 6 Grain Storage Bins
+- Total Grain Storage Capacity: approximately 2.0 million bushels
+
+Grinding:
+- 5 Hammermills
+- 25 tons/hour each
+
+Ethanol Production:
+- Distillation and Molecular Sieve Dehydration
+- Denaturing System
+- Ethanol Storage and Loadout
+
+DDGS System:
+- 2 DDGS Dryers
+- Fluid Bed Cooler
+- Wet Cake Production System
+- DDGS Storage Silos
+- DDGS Truck and Rail Loadout
+
+Corn Oil Recovery:
+- Corn Oil Extraction System
+- 4 Centrifuges
+- Corn Oil Storage and Loadout
+
+Energy System:
+- Natural Gas Fired
+- 2 Boilers
+- Thermal Oxidizer (RTO)
+
+Environmental Controls:
+- Regenerative Thermal Oxidizer (RTO)
+- Wet Scrubber Systems
+- Multiple Baghouses
+- Cartridge Filters
+
+Transportation:
+- Rail Served
+- Truck Served
+
+Notable Characteristics:
+- Legacy POET design facility
+- Seven-fermenter configuration identical to Corning
+- Three molecular sieve dehydration units
+- Wet cake capability
+- Corn oil extraction system
+- RTO-controlled emissions system
+- Large-scale DDGS drying operation
+- Similar engineering configuration to Corning and other mid-2000s POET plants

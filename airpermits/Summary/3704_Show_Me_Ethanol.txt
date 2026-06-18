@@ -1,0 +1,157 @@
+EPM Number: 3704
+Plant Name: Show Me Ethanol
+Permit Facility Name: 
+Location: Carrollton, MO
+Source Permit File: show-me-ethanol-carrollton-op2022-019.pdf
+Permit Number: OP2022-019
+Permit Expiration Date: 06/13/2027
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Show Me Ethanol
+- CA Facility ID: 
+- Dropdown capacity: 65.5 MGY
+- Year built: 2,008
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 65.50 MGY
+- Ethanol capacity source: Show-Me Ethanol, LLC is a 73 million gallon per year ethanol manufacturing facility (fuel
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- Truck Grain Receiving
+- SME-20 Truck Grain Receiving; 420 tons/hr
+- SME-200 None Truck Grain Receiving fugitives
+- SME-200 None Grain handling/storage in 1 silo
+- SME-200 None Grain Scalping fugitives
+- Truck Grain Receiving Baghouse
+- Truck Grain Receiving fugitives None
+- Grain handling/storage in 1 silo None
+- Grain Scalping fugitives None
+- 3) 042008-004B, Special Condition 4A: The permittee shall not receive grain from truck or from Ray-
+- Carroll County Grain Growers, Inc. from 7PM to 7AM.
+- 4) 042008-004B, Special Condition 4B: The permittee shall not load out distillers dried grains with
+
+Dryers:
+- Dryer mentions parsed: 3
+- 2 DDGS Dryers: drum dryers fueled by natural gas and
+- DDGS/hr each
+- DDGS Cooler cyclone
+- SME-70 DDGS Cooling system, 22.5 tons/hr
+- DDGS loadout baghouse
+- SME-90 DDGS Loadout to trucks or railcars
+- None DDGS Storage/Loadout fugitives
+- 2 DDGS Dryers: drum dryers fueled by
+- MMBtu/hr and 22.5 tons DDGS/hr each
+- DDGS Cooler cyclone vented to
+- SME-90 DDGS Loadout to trucks or railcars DDGS loadout baghouse (C90)
+- DDGS Storage/Loadout fugitives None
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 1
+- process gas; MHDR 50 MMBtu/hr and 22.5 tons
+- MMBtu/hr natural gas and Process Vents
+- MMBtu/hr, natural gas Loadout of Ethanol to truck, 35 Mgal/hr
+- SME-300 None. Natural Gas Fired Boiler; 75 MMBtu/hr
+- MMBtu/hr and 22.5 tons DDGS/hr each
+- Thermal Oxidizer, 150 MMBtu/hr
+- Loading Flare, 6.4 MMBtu/hr, natural
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 17
+- Thermal Oxidizer, 150
+- The permittee shall operate and maintain the Thermal Oxidizer and Wet Scrubber for control of HAP
+- and as outlined in the CAM Monitoring Approach for the Thermal Oxidizer, included in Attachment G
+- 1) The permittee shall comply with monitoring and recordkeeping for the thermal oxidizer and wet
+- the Thermal Oxidizer, included in Attachment G and the CAM Monitoring Approach for the Wet
+- 1) The permittee shall comply with the reporting requirements for the thermal oxidizer and wet
+- Thermal Oxidizer, 150 MMBtu/hr
+- the thermal oxidizer at all times when the DDGS dryers, heat recovery steam generator (HRSG), and
+- possible. The thermal oxidizer shall be operated and maintained in accordance with the
+- CAM Plan for Thermal Oxidizer ................................................................................................................. 83
+- permittee shall continuously monitor and record the operating temperature of the thermal oxidizer
+- during operation. The operating temperature of the thermal oxidizer shall be maintained on a rolling
+
+Tanks:
+- Storage tank mentions parsed: 11
+- None Receiving of denaturant (gasoline) by truck
+- SME-T61 None Denatured Ethanol Storage Tank 1, 750,000 gallons
+- SME-T62 None Denatured Ethanol Storage Tank 2, 750,000 gallons
+- SME-T63 None 200-proof ethanol storage tank, 165,000 gallons
+- SME-T64 None Denaturant (gasoline) storage tank, 165,000 gallons
+- SME-T65 None 190 proof ethanol storage tank, 165,000 gallons
+- SME-T302 Refined HQE storage tank; 570,000 gallons; fixed roof
+- SME-T303 190-proof HQE storage tank; 110,000 gallons; fixed roof
+- Receiving of denaturant (gasoline) by truck None
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- 2 DDGS Dryers: drum dryers fueled by natural gas and
+- DDGS/hr each
+- DDGS Cooler cyclone
+- SME-70 DDGS Cooling system, 22.5 tons/hr
+- DDGS loadout baghouse
+- SME-90 DDGS Loadout to trucks or railcars
+- None DDGS Storage/Loadout fugitives
+- None WDGS storage and handling
+- 2 DDGS Dryers: drum dryers fueled by
+- MMBtu/hr and 22.5 tons DDGS/hr each
+- DDGS Cooler cyclone vented to
+- SME-90 DDGS Loadout to trucks or railcars DDGS loadout baghouse (C90)
+- DDGS Storage/Loadout fugitives None
+- 4) 042008-004B, Special Condition 4B: The permittee shall not load out distillers dried grains with
+- Corn oil source line: not identified
+- dried grains and solubles (DDGS), and corn oil for animal feed as a co-product of the alcohol
+
+Emissions / Permit Constraints:
+- that are identified as having unit-specific emission limitations.
+- SME-T61 None Denatured Ethanol Storage Tank 1, 750,000 gallons
+- SME-T62 None Denatured Ethanol Storage Tank 2, 750,000 gallons
+- SME-T63 None 200-proof ethanol storage tank, 165,000 gallons
+- SME-T64 None Denaturant (gasoline) storage tank, 165,000 gallons
+- SME-T65 None 190 proof ethanol storage tank, 165,000 gallons
+- the time of permit issuance. These units are subject to plant wide emission limitations.
+- SME-T302 Refined HQE storage tank; 570,000 gallons; fixed roof
+- SME-T303 190-proof HQE storage tank; 110,000 gallons; fixed roof
+- SME-T304 Four shift tanks (HQE); 33,000 gallons each; fixed roof
+- II. Plant Wide Emission Limitations
+- The installation shall comply with each of the following emission limitations. Consult the appropriate
+- Operational Limitation:
+- Special Condition 7.A: The permittee shall not produce greater than 73,000,000 gallons of denatured
+- which any record shows an exceedance of the emission limitation.
+- Emission Limitations:
+- Operational Limitations:
+- The permittee shall operate and maintain the Thermal Oxidizer and Wet Scrubber for control of HAP
+- with the emission limit.
+- during which any record shows an exceedance of the emission limitation.
+- III. Emission Unit Specific Emission Limitations
+- distillation process are in operation or any time that regulated PM , VOC, or HAP emissions are
+- rate of 25,000 gallons per minute.
+- gallons/minute and whether the rate is below the water recirculation rate limit of 25,000 gallons per
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

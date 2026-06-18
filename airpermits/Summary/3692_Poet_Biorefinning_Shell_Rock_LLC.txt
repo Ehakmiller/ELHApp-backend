@@ -1,0 +1,142 @@
+EPM Number: 3692
+Plant Name: Poet Biorefinning-Shell Rock LLC
+Permit Facility Name: Flint Hills Resources Shell Rock, LLC
+Location: Shell Rock, IA
+Source Permit File: 15-TV-003R1.pdf
+Permit Number: 15-TV-003R1
+Permit Expiration Date: March 1, 2025
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: POET Biorefining
+- CA Facility ID: 71686
+- Dropdown capacity: 128.0 MGY
+- Year built: 2,008
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 128.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: Receiving Transfer Grain 20,000 bushels/hr
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: 510,000 bu
+- EU P25a Steel Grain Bin
+- EU P25b Steel Grain Bin
+- S204 Ground Corn Pile (2.5 million bushels)
+- bu/hr…………………bushels per hour
+- DDGS .........................distillers dried grains with solubles
+- gr./dscf .......................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- grain, fertilizer or limestone.
+- Table: Grain Receiving, Storage and Handling System
+- EU 01 Truck Receiving #1 20,000 bushels/hr
+- EU 02 Truck Receiving #2 20,000 bushels/hr
+
+Dryers:
+- Dryer mentions parsed: 6
+- EU 62 DDGS Dryer A
+- EU 63 DDGS Dryer B
+- EU 64 DDGS Dryer C
+- EU 65 DDGS Dryer D
+- EU 115 Protein Dryer A
+- EU 116 Protein Dryer B
+- EP S70 EU P70 DDGS Cooler 07-A-172-S3
+- EP S90 EU P90 DDGS Loadout Truck and Rail 07-A-173-S4
+- S111 EU 115 Protein Dryer A (start-up stack) 18-A-610
+- S112 EU 116 Protein Dryer B (start-up stack) 18-A-611
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 5
+- EU B10a Heat Recovery Boiler A
+- EU B10b Heat Recovery Boiler B
+- S160 EU S160 Natural Gas Boiler #1 19-A-100
+- lb./MMBtu .................pounds per million British thermal units
+- Industrial, Commercial, Institutional Boilers and Process Heaters. The affected unit is EP S160.
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Tanks:
+- Storage tank mentions parsed: 10
+- EP T61 EU T61 Denatured Ethanol Storage Tank 07-A-177-S1
+- EP T62 EU T62 Denatured Ethanol Storage Tank 07-A-178-S1
+- EP T63 EU T63 200 Proof Ethanol Storage Tank 07-A-179-S1
+- EP T64 EU T64 Denaturant Storage Tank 07-A-180-S1
+- EP T65 EU T65 190 Proof Ethanol Storage Tank 07-A-181-S1
+- TK-13800 Corn Oil Tank (20,000 gal)
+- TK-13801 Corn Oil Tank (20,000 gal)
+- TK-13802 Corn Oil Tank (20,000 gal)
+- TK-13803 Corn Oil Tank (20,000 gal)
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- EU 62 DDGS Dryer A
+- EU 63 DDGS Dryer B
+- EU 64 DDGS Dryer C
+- EU 65 DDGS Dryer D
+- EP S70 EU P70 DDGS Cooler 07-A-172-S3
+- EP S90 EU P90 DDGS Loadout Truck and Rail 07-A-173-S4
+- EP F130 EU F130 WDGS Storage and Loadout 07-A-185-S1
+- DDGS .........................distillers dried grains with solubles
+- Corn oil source line: not identified
+- TK-13800 Corn Oil Tank (20,000 gal)
+- TK-13801 Corn Oil Tank (20,000 gal)
+- TK-13802 Corn Oil Tank (20,000 gal)
+- TK-13803 Corn Oil Tank (20,000 gal)
+- S201 Corn Oil Loadout (0.16 psi)
+- S202 Corn Oil Vent (0.16 psi)
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- bu/hr…………………bushels per hour
+- Mgals………………. million gallons
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- EP F110 EU F110 VOC Emissions from Equipment Leaks 07-A-183-S1
+- S203 Parts Washer (30 gallons each)
+- S204 Ground Corn Pile (2.5 million bushels)
+- S205 Fire Pump Diesel Tank (300 gallons)
+- S206 Gasoline Tank (500 gallons)
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- This facility is subject to Standards of Performance for Equipment Leaks of VOC in the Synthetic
+- Modification Commenced After November 7, 2006. The affected units are equipment in VOC
+- Stationary Reciprocating Internal Combustion Engines (RICE NESHAP). The affected unit is
+- EU 01 Truck Receiving #1 20,000 bushels/hr
+- EU 02 Truck Receiving #2 20,000 bushels/hr
+- EU 03 Rail Receiving 20,000 bushels/hr
+- Receiving Transfer 20,000 bushels/hr
+- Receiving Transfer Grain 20,000 bushels/hr
+- EU 06 Bucket Elevator #1 20,000 bushels/hr
+- EU 07 Bucket Elevator #2 20,000 bushels/hr
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

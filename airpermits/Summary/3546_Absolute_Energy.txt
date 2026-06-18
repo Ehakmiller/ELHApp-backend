@@ -1,0 +1,159 @@
+EPM Number: 3546
+Plant Name: Absolute Energy
+Permit Facility Name: Absolute Energy LLC
+Location: St. Ansgar, IA
+Source Permit File: 13-TV-007R2.pdf
+Permit Number: 13-TV-007R2
+Permit Expiration Date: 01/15/2029
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Absolute Energy
+- CA Facility ID: 70144
+- Dropdown capacity: 130.0 MGY
+- Year built: 2,007
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 1,240.00 MGY
+- Ethanol capacity source: Reflux Tank Ethanol 1,240 gallons
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: EP-F120A EU-P120A 1.3 Million Bushel Grain Storage Pile 09-A-646-S2
+
+Fermentation Equipment:
+- Fermentation line: Ethanol Production/Fermentation
+- Fermenter count parsed: not available
+- Beer well present: not identified
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- EP-S20 Grain Receiving, Storage, Handling &Loadout 06-A-595-S5
+- EP-F120A EU-P120A 1.3 Million Bushel Grain Storage Pile 09-A-646-S2
+- GRFUG Grain Fugitives (Unloading and Loading)
+- CPV3 Baghouse #1 for the 1.1 MM Bushel Storage Bin & Associated
+- CPV3Baghouse #2 for the 1.1 MM Bushel Storage Bin & Associated
+- gr./dscf .......................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- limited to grain, fertilizer or limestone.
+- P20D Grain Storage Bin #1
+- P20E Grain Storage Bin #2
+
+Dryers:
+- Dryer mentions parsed: 4
+- EU-P10A Dryer A
+- EU-P10B Dryer B
+- EP-S10 EU-P10C Dryer C 06-A-594-S10
+- EU-P10D Dryer D
+- EP-S70 EU-P70 DDGS Cooling 06-A-598-S7
+- EP-S90 EU-P90 DDGS Loadout 06-A-599-S5
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 2
+- EP-B10 EU-B10 New Package Boiler 1 17-A-526-S1
+- EP-B11 EU-B11 New Package Boiler 2 17-A-527-S1
+- lb./MMBtu .................pounds per million British thermal units
+- EU-P10A Dryer A CE 10a: Regenerative Natural Gas 45 MMBtu/hr
+- EU-P10B Dryer B Thermal Oxidizer Natural Gas 45 MMBtu/hr
+- EU-P10C Dryer C CE 10b: Regenerative Natural Gas 45 MMBtu/hr
+- EU-P10D Dryer D Thermal Oxidizer Natural Gas 45 MMBtu/hr
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- MMBtu/hr, using natural gas and process waste gases from the
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 29
+- EU-P10B Dryer B Thermal Oxidizer Natural Gas 45 MMBtu/hr
+- EU-P10D Dryer D Thermal Oxidizer Natural Gas 45 MMBtu/hr
+- 190 Proof Condenser Thermal Oxidizer OR Ethanol 408 gal/min
+- EU-S10 Regen Tank Thermal Oxidizer Ethanol 1,240 gallons
+- B. Each dryer and thermal oxidizer shall combust only natural gas and/or process off-gases.
+- thermal oxidizers.
+- C. Each of the thermal oxidizers shall maintain a temperature (3 hour average) during
+- thermal oxidizer, and record all three-hour periods (during actual operations) during
+- which the average temperature of either (regenerative) thermal oxidizer is within minus
+- E. The owner or operator shall operate and maintain the (regenerative) thermal oxidizers
+- (regenerative) thermal oxidizers. This log shall include, but is not necessarily limited to:
+- S10 Regenerative Thermal Oxidizers for Control of VOC and HAPs
+
+Tanks:
+- Storage tank mentions parsed: 11
+- T61 T61 Denatured Ethanol Storage Tank #1 06-A-604-S3
+- T62 T62 Denatured Ethanol Storage Tank #2 06-A-605-S3
+- T63 T63 200 Proof Ethanol Storage Tank 06-A-606-S3
+- T64 T64 Denaturant Storage Tank 06-A-607-S4
+- T64B T64B Fuel-Grade Gasoline Storage Tank 13-A-340-S1
+- T65 T65 190 Proof Ethanol Storage Tank 06-A-608-S3
+- T4 Corn Oil Tank
+- T5 Corn Oil Tank
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- EP-S70 EU-P70 DDGS Cooling 06-A-598-S7
+- EP-S90 EU-P90 DDGS Loadout 06-A-599-S5
+- Centrifuge #1 DDGS 400 gal/min
+- Centrifuge #2 DDGS 400 gal/min
+- Centrifuge #3 DDGS 400 gal/min
+- Centrifuge #4 DDGS 400 gal/min
+- Centrifuge #5 DDGS 400 gal/min
+- Centrifuge #6 DDGS 400 gal/min
+- A. The facility-wide DDGS production shall not exceed 487,500 tons per rolling 12-month
+- i. Record the amount of DDGS produced, in tons, at this facility in the past month;
+- ii. Calculate and record the rolling 12-month total amount of DDGS produced, in
+- DDGS dryers as fuels, and exhausting to stack S10.
+- DDGS Dryers 1-4 are controlled by Regenerative Thermal Oxidizer 1 and Regenerative Thermal
+- Corn oil source line: Corn Oil Tank #2 Corn Oil 20,000 gallons
+- NA Corn Oil Loading
+- T4 Corn Oil Tank
+- T5 Corn Oil Tank
+- S10-COS1 Corn Oil Skid #1 Corn Oil 12 gal/min
+- S10-COS2 Corn Oil Skid #2 Corn Oil 12 gal/min
+- S10-COS3 Corn Oil Skid #3 Corn Oil 12 gal/min
+- Corn Oil Tank #1 Corn Oil 20,000 gallons
+- Corn Oil Tank #2 Corn Oil 20,000 gallons
+- * As of the date of permit issuance, construction has not yet commenced on the Corn Oil and Yeast Tanks. The
+- construction permit was obtained in 2021 to include the corn oil skid, AHR system, and clarified
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- V. Appendix: Links to NSPS and NESHAP Regulations .......................................................124
+- NESHAP ....................National Emission Standards for Hazardous Air Pollutants
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- EP-F60 EU-F60 VOC Equipment Leaks 06-A-602-S4
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- This facility is subject to Standards of Performance for Equipment Leaks of VOC in the
+- Equipment VOC leaks have been accounted for in emission point EP-F60 for the facility.
+- Corn Oil Tank #1 Corn Oil 20,000 gallons
+- Corn Oil Tank #2 Corn Oil 20,000 gallons
+- Flash Tank Mash 4,500 gallons
+- Slurry Tank #1 Mash 25,000 gallons
+- Slurry Tank #2 Mash 25,000 gallons
+- EU-S10 Regen Tank Thermal Oxidizer Ethanol 1,240 gallons
+- Centrate Tank #1 Mash 1,690 gallons
+- Centrate Tank #2 Mash 1,690 gallons
+- Reflux Tank Ethanol 1,240 gallons
+- Yeast Tank #1 Mash 25,000 gallons
+- Yeast Tank #2 Mash 25,000 gallons
+- Yeast Tank #3 Mash 25,000 gallons
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

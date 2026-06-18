@@ -1,0 +1,134 @@
+EPM Number: 3671
+Plant Name: Poet Biorefinning-Fairbank
+Permit Facility Name: POET Biorefining - Fairbank, LLC
+Location: Fairbank, IA
+Source Permit File: 15-TV-010R2.pdf
+Permit Number: 15-TV-010R2
+Permit Expiration Date: 08/20/2030
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: POET Biorefining
+- CA Facility ID: 71683
+- Dropdown capacity: 132.0 MGY
+- Year built: 2,006
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 132.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- EU P20 Grain Receiving/Handling System
+- EP S20 EU P20a Grain Bin 05-A-007-S3
+- EU P20b Grain Bin
+- EU P25a Grain Storage Bin
+- EU P25b Grain Storage Bin
+- gr/dscf ........................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- grain per standard cubic foot of exhaust gas or established from standards provided in
+- limited to grain, fertilizer or limestone.
+- Table: Grain Receiving and Storage
+- Grain Receiving/
+- EU P20 Grain 40,000 bu/hr
+
+Dryers:
+- Dryer mentions parsed: 4
+- EU 62 Dryer A
+- EU 63 Dryer B
+- EU 64 Dryer C
+- EU 65 Dryer D
+- EP S70 EU P70 DDGS Cooler 05-A-011-S6
+- EP S90 EU P90 Rail and Truck DDGS Loadout 05-A-009-S3
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 5
+- EU B10a Heat Recovery Boiler A
+- EU B10b Heat Recovery Boiler B
+- EP S160 EU S160 Boiler #1 19-A-097
+- lb/MMBtu ..................pounds per million British thermal units
+- Major Sources: Industrial, Commercial, and Institutional Boilers and Process Heaters.
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Tanks:
+- Storage tank mentions parsed: 10
+- EP F61 EU T61 Denatured Ethanol Storage Tank 05-A-014
+- EP F62 EU T62 Denatured Ethanol Storage Tank 05-A-015
+- EP F63 EU T63 200 Proof Ethanol Storage Tank 05-A-016
+- EP F65 EU T65 190 Proof Ethanol Storage Tank 05-A-018
+- EP T64 EU T64 Denaturant Storage Tank 05-A-017-S1
+- TK-13800 Corn Oil Tank #1 (20,000 gal)
+- TK-13801 Corn Oil Tank #2 (20,000 gal)
+- TK-13802 Corn Oil Tank #3 (20,000 gal)
+- TK-13803 Corn Oil Tank #4 (20,000 gal)
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- EP S70 EU P70 DDGS Cooler 05-A-011-S6
+- EP S90 EU P90 Rail and Truck DDGS Loadout 05-A-009-S3
+- EP F130 EU F130 WDGS Storage & Loadout 07-A-272-S2
+- II. DDGS Cooler Baghouse Monitoring Approach
+- Corn oil source line: not identified
+- S204 Corn Oil Loadout (0.16 psi)
+- S206 Corn Oil Vent (0.16 psi)
+- TK-13800 Corn Oil Tank #1 (20,000 gal)
+- TK-13801 Corn Oil Tank #2 (20,000 gal)
+- TK-13802 Corn Oil Tank #3 (20,000 gal)
+- TK-13803 Corn Oil Tank #4 (20,000 gal)
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 24, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- EP F110 EU F110 VOC Emissions from Equipment Leaks 05-A-019-S1
+- 567 IAC Chapter 22. During the period from May 15, 2024, to the date that 567 IAC as amended
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- NESHAP and NSPS Applicability
+- This facility is subject to the Standards of Performance for Equipment leaks of VOC in the
+- This facility is subject to National Emission Standards for Hazardous Air Pollutants (NESHAP)
+- Stationary Reciprocating Internal Combustion Engines (RICE NESHAP). The affected EP is FP.
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 40%(1)
+- Emission Limit(s): 1.59 lb/hr, 0.1 gr/dscf
+- Operational Limits & Reporting/Record keeping Requirements
+- The owner/operator of this equipment shall comply with the operational limits and requirements
+- B. Applicable Regulation, Emission Limit, and Monitoring Requirements
+- PM Emission Limit or Standard: 1.59 lb/hr; 0.1 gr/dscf
+- PM Emission Limit or Standard: N/A
+- Emission Limit(s): 1.28 lb/hr; 0.1 gr/dscf
+- Emission Limit(s): 1.28 lb/hr
+- PM Emission Limit or Standard: 1.28 lb/hr; 0.1 gr/dscf
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

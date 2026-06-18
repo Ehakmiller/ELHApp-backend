@@ -1,0 +1,7 @@
+name = "flat-silence-a8a3"
+main = "cloudflare_worker_public_guard.js"
+compatibility_date = "2026-06-06"
+
+[[kv_namespaces]]
+binding = "CALCULATOR_DATA"
+id = "9b43a6cd7f124bf3b917fee069e63058"

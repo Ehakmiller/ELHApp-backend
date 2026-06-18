@@ -1,0 +1,35 @@
+file_name,permit_number,facility_name,company_name,city,state,plant_number,matched_epm,matched_dropdown_name,match_score,match_reason
+03-TV-029R2.pdf,03-TV-029R2,Grain Processing Corporation,Grain Processing Corporation,Muscatine,IA,70-01-004,3609,Grain Processing Corp,1.000,manual_filename_epm_override
+06-TV-006R1.pdf,06-TV-006R1,"Cargill, Inc. - Eddyville","Cargill, Inc. - Eddyville",Eddyville,IA,68-09-001,3581,Cargill Inc,1.000,manual_filename_epm_override
+07-TV-001R3.pdf,07-TV-001R3,POET Biorefining - Coon Rapids,POET Biorefining - Coon Rapids,Coon Rapids,IA,39-11-001,3669,Poet Biorefinning-Coon Rapids,1.000,manual_filename_epm_override
+08-TV-004R2.pdf,08-TV-004R2,ADM Corn Processing,ADM Corn Processing,Cedar Rapids,IA,57-01-080,3558,ADM Cedar Rapids IA Wet Mill,1.000,manual_filename_epm_override
+09-TV-002R2.pdf,09-TV-002R2,"Golden Grain Energy, LLC","Golden Grain Energy, LLC",Mason City,IA,17-01-100,3608,Golden Grain Energy LLC,1.000,manual_filename_epm_override
+09-TV-005R2-M001.pdf,09-TV-005R2-M001,Big River Resources West Burlington LLC,Big River Resources West Burlington LLC,West Burlington,IA,29-02-012,3570,Big River Resources West Burlington LLC,1.000,manual_filename_epm_override
+10-TV-001R2.pdf,10-TV-001R2,"Valero Renewable Fuels Company, LLC d/b/a Valero Lakota Plant","Valero Renewable Fuels Company, LLC d/b/a Valero Lakota Plant",Lakota,IA,55-09-003,3729,Valero Renewable Fuels LLC,1.000,manual_filename_epm_override
+10-TV-005R2.pdf,10-TV-005R2,"Little Sioux Corn Processors, LLC","Little Sioux Corn Processors, LLC",Marcus,IA,18-02-006,3642,Little Sioux Corn Processors LLLP,1.000,manual_filename_epm_override
+10-TV-008R2.pdf,10-TV-008R2,"POET Biorefining - Arthur, LLC","POET Biorefining - Arthur, LLC",Arthur,IA,47-04-001,3662,Poet Biorefinning-Arthur LLC,1.000,manual_filename_epm_override
+13-TV-004R2.pdf,13-TV-004R2,"Green Plains Ethanol Storage, LLC","Green Plains Ethanol Storage, LLC",Shenandoah,IA,36-10-001,3620,Green Plains Shenandoah LLC,1.000,manual_filename_epm_override
+13-TV-005R2.pdf,13-TV-005R2,"Green Plains Superior, LLC","Green Plains Superior, LLC",Superior,IA,30-08-002,3621,Green Plains Superior,1.000,manual_filename_epm_override
+13-TV-007R2.pdf,13-TV-007R2,Absolute Energy LLC,Absolute Energy LLC,St. Ansgar,IA,66-10-001,3546,Absolute Energy,1.000,manual_filename_epm_override
+14-TV-001R2.pdf,14-TV-001R2,"Homeland Energy Solutions, LLC","Homeland Energy Solutions, LLC",Lawler,IA,19-04-002,3632,Homeland Energy Solutions LLC,1.000,manual_filename_epm_override
+14-TV-002R2.pdf,14-TV-002R2,"Lincolnway Energy, LLC","Lincolnway Energy, LLC",Nevada,IA,85-02-017,3641,Lincolnway Energy LLC,1.000,manual_filename_epm_override
+14-TV-003R1-M001.pdf,14-TV-003R1-M001,"POET Biorefining – Emmetsburg, LLC","POET Biorefining – Emmetsburg, LLC",Emmetsburg,IA,74-01-022,3754,Poet Biorefinning-Emmetsburg LLC,1.000,manual_filename_epm_override
+14-TV-006.pdf,14-TV-006,POET Biorefining - Ashton,POET Biorefining - Ashton,Ashton,IA,72-03-002,3663,Poet Biorefinning-Ashton LLC,1.000,manual_filename_epm_override
+14-TV-010R2.pdf,14-TV-010R2,"Big River United Energy, LLC -","Big River United Energy, LLC -",Dyersville,IA,28-12-001,3571,Big River United Energy LLC,1.000,manual_filename_epm_override
+14-TV-011R2.pdf,14-TV-011R2,"The Andersons Marathon Holdings, LLC","The Andersons Marathon Holdings, LLC",Denison,IA,24-01-007,3714,The Andersons Marathon Holdings LLC,1.000,manual_filename_epm_override
+15-TV-003R1.pdf,15-TV-003R1,"Flint Hills Resources Shell Rock, LLC","Flint Hills Resources Shell Rock, LLC",Shell Rock,IA,12-04-007,3692,Poet Biorefinning-Shell Rock LLC,1.000,manual_filename_epm_override
+15-TV-006R1.pdf,15-TV-006R1,"Flint Hills Resources Menlo, LLC","Flint Hills Resources Menlo, LLC",Menlo,IA,39-06-002,3686,Poet Biorefinning-Menlo,1.000,manual_filename_epm_override
+15-TV-009R2.pdf,15-TV-009R2,"Valero Renewable Fuels Company, LLC dba Valero Charles City Plant","Valero Renewable Fuels Company, LLC dba Valero Charles City Plant",Charles City,IA,34-01-040,3726,Valero Renewable Fuels LLC,1.000,manual_filename_epm_override
+15-TV-010R2.pdf,15-TV-010R2,"POET Biorefining - Fairbank, LLC","POET Biorefining - Fairbank, LLC",Fairbank,IA,10-04-007,3671,Poet Biorefinning-Fairbank,1.000,manual_filename_epm_override
+16-TV-004R1.pdf,16-TV-004R1,"Valero Renewable Fuels Company, LLC dba Valero Hartley Plant","Valero Renewable Fuels Company, LLC dba Valero Hartley Plant",Hartley,IA,71-02-010,3728,Valero Renewable Fuels LLC,1.000,manual_filename_epm_override
+16-TV-005R1.pdf,16-TV-005R1,"Valero Renewable Fuels Company, LLC dba Valero Fort Dodge Plant","Valero Renewable Fuels Company, LLC dba Valero Fort Dodge Plant",Ft. Dodge,IA,94-01-073,3727,Valero Renewable Fuels LLC,1.000,manual_filename_epm_override
+16-TV-006R1.pdf,16-TV-006R1,"Valero Renewable Fuels Company, LLC dba Valero Albert City Plant","Valero Renewable Fuels Company, LLC dba Valero Albert City Plant",Albert City,IA,11-05-004,3721,Valero Renewable Fuels LLC,1.000,manual_filename_epm_override
+17-TV-002R1.pdf,17-TV-002R1,ADM Clinton Bioprocessing,ADM Clinton Bioprocessing,Clinton,IA,23-01-006,3559,ADM Clinton IA,1.000,manual_filename_epm_override
+17-TV-003R1.pdf,17-TV-003-R1,"Cargill, Inc. – Fort Dodge","Cargill, Inc. – Fort Dodge",Fort Dodge,IA,94-01-080,3582,Cargill Inc,1.000,manual_filename_epm_override
+18-TV-004-M001.pdf,18-TV-004-M001,"POET Biorefining – Jewell, LLC","POET Biorefining – Jewell, LLC",Jewell,IA,40-02-002,3680,Poet Biorefinning-Jewell LLC,1.000,manual_filename_epm_override
+19-TV-001R1.pdf,19-TV-001R1,"PLCP, L.P.","PLCP, L.P.",Steamboat Rock,IA,42-08-001,3659,Pine Lake Corn Processors,1.000,manual_filename_epm_override
+19-TV-005R1.pdf,19-TV-005R1,"POET Biorefining – Iowa Falls, LLC","POET Biorefining – Iowa Falls, LLC",Iowa Falls,IA,42-01-019,3679,Poet Biorefinning-Iowa Falls LLC,1.000,manual_filename_epm_override
+20-TV-004.pdf,20-TV-004,"Elite Octane, LLC","Elite Octane, LLC",Atlantic,IA,15-01-042,3600,Elite Octane LLC,1.000,manual_filename_epm_override
+21-TV-001R1.pdf,21-TV-001R1,"POET Biorefining – Hanlontown, LLC","POET Biorefining – Hanlontown, LLC",Hanlontown,IA,98-07-004,3677,Poet Biorefinning-Hanlontown LLC,1.000,manual_filename_epm_override
+25-TV-001.pdf,25-TV-001,"Gevo NW Iowa RNG, LLC","Gevo NW Iowa RNG, LLC",Doon,IA,60-06-006,,,1.000,manual_non_ethanol_unmatched
+9080_08-TV-007R2.pdf,08-TV-007R2,"Vantage Corn Processors, LLC","Vantage Corn Processors, LLC",Cedar Rapids,IA,57-01-246,3557,VCP Corn Processing,1.000,manual_filename_epm_override

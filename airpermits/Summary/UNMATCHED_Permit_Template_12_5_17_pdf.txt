@@ -1,0 +1,97 @@
+EPM Number: UNMATCHED
+Plant Name: 
+Permit Facility Name: 
+Location: , IA
+Source Permit File: Permit Template 12-5-17.pdf
+Permit Number: 13-A-187-S3
+Permit Expiration Date: 
+Match Confidence: 0.11 (name=0.00; city=0.00; bonus=0.11)
+
+Facility Identity:
+- Ownership: not matched
+- CA Facility ID: not matched
+- Dropdown capacity: not matched MGY
+- Year built: not matched
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: not available MGY
+- Ethanol capacity source: not found in permit; dropdown capacity used if available
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: not identified
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- Not specifically identified in extracted permit text.
+
+Dryers:
+- Dryer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Tanks:
+- Storage tank mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- Not specifically identified in extracted permit text.
+- Corn oil source line: not identified
+- Not specifically identified in extracted permit text.
+
+Emissions / Permit Constraints:
+- EU16 Batch Mash Fermenter No. 1 762,550 gallons, 112.5 gallons mash/min
+- EU17 Batch Mash Fermenter No. 2 762,550 gallons, 112.5 gallons mash/min CO Scrubber (CE C07),
+- EU18 Batch Mash Fermenter No. 3 762,550 gallons, 112.5 gallons mash/min and Polishing Scrubber
+- EU19 Beer Well 990,007 gallons (CE C14)
+- EU42 Batch Mash Fermenter No. 4 762,550 gallons, 112.5 gallons mash/min
+- 1. Emission Limits
+- emission limit has been established in this permit. The following emission limits shall not be exceeded:
+- Table 3 – Emission Limits
+- Pollutant lb/hr1 tons/yr2 Other Limits Reference/Basis
+- Volatile Organic Compounds (VOC) 11.213 NA NA Title V Synthetic Minor
+- (Single HAP) 1.327 NA NA NESHAP Area Source
+- (Total HAP) 2.077 NA NA NESHAP Area Source
+- 1 The emission limit is expressed as the average of three runs.
+- 2 The emission limit is based on a 12-month rolling total.
+- 3 The emission limits were established in Project Numbers 23-293 and 13-041 to reduce potential emissions of Plymouth
+- 5 The emission limit is based on a six minute average.
+- 7 HAP emission limits established in Project Number 23-293 to reduce potential emissions of Plymouth Energy, LLC
+- below "major source" threshold for the purposes of Title V Operating Program and NESHAP applicability as defined
+- authorized agent shall demonstrate compliance with the emission limitations contained in Condition 1 (Emission
+- with the emission limitations contained in Condition 1 (Emission Limits) as specified in the "Compliance
+- VOC Stack Test1, 2 Annually3 1 hour
+- HAP Stack Test2, 4 Annually3 1 hour
+- 1 VOC compliance testing may be determined using the sum of the Method 320 or Method 18 results.
+- 2 Testing of this stack shall be conducted in a manner to verify compliance with all emission limits with all equipment
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

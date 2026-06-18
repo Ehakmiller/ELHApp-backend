@@ -1,0 +1,128 @@
+EPM Number: 3677
+Plant Name: Poet Biorefinning-Hanlontown LLC
+Permit Facility Name: POET Biorefining – Hanlontown, LLC
+Location: Hanlontown, IA
+Source Permit File: 21-TV-001R1.pdf
+Permit Number: 21-TV-001R1
+Permit Expiration Date: April 8, 2031
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: POET Biorefining
+- CA Facility ID: 70010
+- Dropdown capacity: 80.0 MGY
+- Year built: 2,004
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 80.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: exceed 37.45 million bushels of grain per rolling 12-month period. The facility is limited
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- SV1 EU1 3 – Grain Receiving Pits (Truck and Rail) 03-A-382-S9
+- EU3 6 – Grain Bins
+- SV2 EU4 Grain Scalper, Conveyor, Surge Bin 03-A-383-S3
+- gr./dscf .......................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- limited to grain, fertilizer or limestone.
+- Emission units at this facility are subject to Standards of Performance for Grain Elevators. The
+- 3 – Grain Receiving Pits
+- EU2 Baghouse Grain
+- bushels/hour
+- for Grain Elevators as specified in 40 CFR Part 60 §60.300.
+
+Dryers:
+- Dryer mentions parsed: 1
+- EU34 DDGS Loadout
+- SV7 EU11 DDGS Fluid Bed Cooler 03-A-388-S7
+- SV8 EU12 DDGS Silo 03-A-389-S3
+- SV9 EU13 DDGS Silo Bypass 03-A-390-S3
+- SV25 Various Fermentation/Distillation/Dryers 03-A-387-S16
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 2
+- SV20 EU21 Boiler #1 04-A-024-S1
+- SV26 EU29 Boiler #2 06-A-397
+- lb./MMBtu .................pounds per million British thermal units
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 2
+- testing on the RTO (SV25) if the grain processed by the hammermills exceeds, by
+- complete a stack test on the RTO (SV25) within 90 days after exceeding the grain content
+
+Tanks:
+- Storage tank mentions parsed: 13
+- SV11 TK001 190 Proof Ethanol Storage Tank 03-A-392
+- SV12 TK002 Denaturant Storage Tank 03-A-393
+- SV13 TK003 200 Proof Ethanol Storage Tank #1 03-A-394-S1
+- SV14 TK004 200 Proof Ethanol Storage Tank #1 03-A-395-S1
+- SV16 TK006 Denaturant Storage Tank 03-A-396-S1
+- SV33 TK012 Gasoline Storage Tank NA
+- TK013 Diesel Storage Tank
+- TK014 Diesel Storage Tank
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- EU34 DDGS Loadout
+- SV7 EU11 DDGS Fluid Bed Cooler 03-A-388-S7
+- SV8 EU12 DDGS Silo 03-A-389-S3
+- SV9 EU13 DDGS Silo Bypass 03-A-390-S3
+- EU34 DDGS Loadout DDGS 160 tons/hr
+- Corn oil source line: not identified
+- SV31 EU37 Corn Oil Separation 19-A-038
+- TK016/TK017 Corn Oil System
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 24, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- VOC ...........................volatile organic compound
+- HAP............................hazardous air pollutant
+- F004 F004 Fugitive VOC Emissions from Equipment Leaks 05-A-644-S3
+- 567 IAC Chapter 22. During the period from May 15, 2024, to the date that 567 IAC as amended
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- VOC in the Synthetic Organic Chemicals Manufacturing Industry for Which Construction,
+- bushels/hour
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 0%
+- Emission Limit(s): 0.36 lb/hr
+- Emission Limit(s): 0.36 lb/hr, 0.1 gr/dscf
+- Emission Limit(s): 0.01 gr/dscf
+- Operational Limits & Reporting/Record keeping Requirements
+- The owner/operator of this equipment shall comply with the operational limits and requirements
+- exceed 37.45 million bushels of grain per rolling 12-month period. The facility is limited
+- received in bushels.
+- amount of grain received, in bushels.
+- Emission Limit(s): 40 % (1)
+- Emission Limit(s): 0.06 lb/hr
+- Emission Limit(s): 0.06 lb/hr, 0.1gr/dscf
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

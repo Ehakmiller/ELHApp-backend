@@ -1,0 +1,186 @@
+EPM Number: 3609
+Plant Name: Grain Processing Corp
+Permit Facility Name: Grain Processing Corporation
+Location: Muscatine, IA
+Source Permit File: 03-TV-029R2.pdf
+Permit Number: 03-TV-029R2
+Permit Expiration Date: 5/2/2028
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: Grain Processing Corp
+- CA Facility ID: 
+- Dropdown capacity: 82.5 MGY
+- Year built: 0
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 82.50 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: 6347.0 S Corn Storage Bin – 3700-bushel capacity
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- Facility Name: Grain Processing Corporation
+- Grain Receiving
+- 288.0 6008.0 Grain Storage Corn Bin #1 17-A-288
+- 289.0 6009.0 Grain Storage Corn Bin #2 17-A-290
+- 6346.0 N Corn Storage Bin – 3700-bushel capacity
+- 6347.0 S Corn Storage Bin – 3700-bushel capacity
+- Name of Permitted Facility: Grain Processing Corporation
+- gr./dscf .......................grains per dry standard cubic foot
+- matter from any process shall not exceed an emission standard of 0.1 grain per dry standard
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- limited to grain, fertilizer or limestone.
+
+Dryers:
+- Dryer mentions parsed: 19
+- Dryer rated capacity: not available MMBtu/hr
+- Dryer rated capacity source: not identified
+- 2874.0 #5 Wet Mill Germ Dryer
+- 296.0 2802.0 #1 Germ Dryer (North Top) 17-A-298
+- 2802.1 #2 Germ Dryer (North Bottom)
+- 297.0 2804.0 #3 Germ Dryer (South Top) 17-A-299-S1
+- 2807.0 #4 Germ Dryer (South Bottom)
+- 195.0 1262.0 Dryer House 4, Spent Germ Receiving 09-A-482-S2
+- 546.0 1264.0 #1 Alpha Laval Centrifuge in Dryer House 4 11-A-338-S1
+- DH4 and DH5 Rotary Dryers’ Product Receiver
+- 1236.0 DH4 Rotary Dryer #5
+- 1238.0 DH4 Rotary Dryer #6
+- 1241.0 DH4 Rotary Dryer #7
+- Dryer House 5 (DH5) Spent Germ Pneumatic
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 10
+- 1.0 5201.0 Power House Boiler #1 95-A-374-S4
+- 5202.0 Power House Boiler #2
+- 5203.0 Power House Boiler #3
+- 1.0 5204.0 Power House Boiler #4 95-A-374-S4
+- 5206.0 Power House Boiler #6
+- 5207.0 Power House Boiler #7
+- 142.0 5210.0 Boiler #10 85-A-038-P1
+- 153.0 5211.0 Boiler #11 85-A-135-P1
+- 177.0 5212.0 Power House Boiler #12 93-A-110-P1
+- 317.0 R&D 50HP Boiler
+- lb./MMBtu .................pounds per million British thermal units
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Tanks:
+- Storage tank mentions parsed: 14
+- 1059.0 Tank 4C, Fixed roof storage tank
+- 1060.0 Tank 5C, Fixed roof storage tank
+- 1048.0 "B" Tank Farm Ethanol Storage Tank 1H
+- 1049.0 "B" Tank Farm Ethanol Storage Tank 2H
+- 476.0 1069.0 Ethanol Denaturant Storage Tank – Tank #1
+- 477.0 1070.0 Ethanol Denaturant Storage Tank – Tank #2
+- Ethanol Denaturant Storage Tank – Unleaded
+- Ethanol Denaturant Storage Tank – #2 Unleaded
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- Wetcake production rate: not available tons/hr
+- Wetcake production source: not identified
+- Wetcake limit: not available tons/year
+- Wetcake limit source: not identified
+- Syrup limit: not available tons/year
+- Syrup limit source: not identified
+- Not specifically identified in extracted permit text.
+- Corn oil source line: not identified
+- Corn oil centrifuge stack: not identified
+- Not specifically identified in extracted permit text.
+
+Missouri Structured Fields:
+- Grain receiving limit: not available tons/year
+- Grain receiving source: not identified
+- Grain receiving bushels equivalent: not available bu/year
+- Corn elevator capacity: not available tons/hr
+- Corn elevator source: not identified
+- Corn bin unloading conveyor capacity: not available tons/hr
+- Corn bin unloading conveyor source: not identified
+- Beer/distillation feed: not available gal/min
+- Beer/distillation feed source: not identified
+- Evaporator capacity: not available gal/hr
+- Evaporator source: not identified
+- Concentrate tank: not available gal
+- Concentrate tank source: not identified
+- Thin stillage recycle: not available percent
+- Thin stillage recycle source: not identified
+- Evaporation stages: not available
+- Evaporation stages source: not identified
+- Centrifuge count: not available
+- Centrifuge count source: not identified
+- Centrifuge flow each: not available gal/min
+- Centrifuge flow each source: not identified
+- Centrifuge total flow: not available gal/min
+- Centrifuge total flow source: not identified
+- Centrifuge total hourly flow: not available gal/hr
+- Centrifuge total hourly flow source: not identified
+- Centrifuge total annual flow: not available gal/year
+- Centrifuge total annual flow source: not identified
+- Distillation source lines:
+- 517.0 1091.0 #3 Extractive Distillation Column -Vents None
+- 518.0 1092.0 #4 Extractive Distillation Column -Vents
+- 475.0 1066.0 Demethylization Feed Tank
+- 484.0 1076.0 Demethylization System Vent Condenser #1
+- Evaporator source lines:
+- 1285.0 East Thin Stillage Tank Vent
+- 1285.1 West Thin Stillage Tank
+- 605.0 Thin Stillage Tank, Fiber Press Water Tank, 14-A-552-S2
+- Water Heat Evaporator Product Tank
+- 267.0 MR3 Evaporator
+- Centrifuge source lines:
+- 546.0 1264.0 #1 Alpha Laval Centrifuge in Dryer House 4 11-A-338-S1
+- 551.0 1264.8 DH4, #6 Sharples Centrifuge 15-A-354-S1
+- 1264.9 DH4, #7 Sharples Centrifuge
+- 1265.5 DH4, #5 C-400 Centrifuge
+- 551.0 1265.6 DH4, #6 C-400 Centrifuge 15-A-354-S1
+- 1265.7 DH4, #7 C-400 Centrifuge
+- 1265.8 DH4, #8 C-400 Centrifuge
+- 311.0 1264.0 #1 Alfa-Laval Decanter Centrifuge 15-A-213-S3
+- 1264.8 ME-1204-R2662-#6 Sharples Decanter Centrifuge
+- 1264.9 ME-1204-R2663-#7 Sharples Decanter Centrifuge
+- 1278.0 #1 - #5 Alfa Laval Centrifuges
+- Decanter Discharge Screw Conveyor, Fiber Press
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- gal/hr………………. gallons per hour
+- VOC………………...volatile organic compound
+- HAP............................hazardous air pollutant
+- Emission (Equipment Leaks of VOC)
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 567 – Chapter 24.
+- NSPS and NESHAP Requirements
+- The facility is subject to Standards of Performance for Equipment Leaks of VOC in the Synthetic
+- 60.480 through 40 CFR 60.489). The affected units are equipment in VOC service and any
+- The affected units are equipment in VOC service and any applicable devices and systems (as
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

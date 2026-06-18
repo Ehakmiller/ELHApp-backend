@@ -1,0 +1,245 @@
+EPM,Plant,City,State,file_name,page,stream_class,flow_gpm,dropdown_capacity_mgy,implied_mgy_14pct_beer,implied_mgy_15pct_beer,implied_mgy_16pct_beer,pct_diff_vs_capacity_at_15pct,source_line
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,beer,2000.0,130.0,147.16799999999998,157.67999999999998,168.19199999999998,21.292307692307677,"Beer Column Ethanol 2,000 gal/min"
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,ethanol_or_process,700.0,130.0,,,,,Rectifier Column CE 10a: Regenerative Ethanol 700 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,ethanol_or_process,408.0,130.0,,,,,190 Proof Condenser Thermal Oxidizer OR Ethanol 408 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,ethanol_or_process,400.0,130.0,,,,,Side Stripper Ethanol 400 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,ethanol_or_process,372.0,130.0,,,,,Molecular Sieves 1-6 CE 10b: Regenerative Ethanol 372 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,400.0,130.0,,,,,Centrifuge #1 DDGS 400 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,400.0,130.0,,,,,Centrifuge #2 DDGS 400 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,400.0,130.0,,,,,Centrifuge #3 DDGS 400 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,400.0,130.0,,,,,Centrifuge #4 DDGS 400 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,400.0,130.0,,,,,Centrifuge #5 DDGS 400 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,400.0,130.0,,,,,Centrifuge #6 DDGS 400 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,12.0,130.0,,,,,S10-COS1 Corn Oil Skid #1 Corn Oil 12 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,12.0,130.0,,,,,S10-COS2 Corn Oil Skid #2 Corn Oil 12 gal/min
+3546,Absolute Energy,St. Ansgar,IA,13-TV-007R2.pdf,10,unknown,12.0,130.0,,,,,S10-COS3 Corn Oil Skid #3 Corn Oil 12 gal/min
+3571,Big River United Energy LLC,Dyersville,IA,14-TV-010R2.pdf,28,ethanol_or_process,1500.0,140.0,,,,,"Rail Ethanol Product Loadout – 1,500 gal/min"
+3571,Big River United Energy LLC,Dyersville,IA,14-TV-010R2.pdf,28,ethanol_or_process,600.0,140.0,,,,,Rated Capacity: Truck Ethanol Product Loadout – 600 gal/min
+3571,Big River United Energy LLC,Dyersville,IA,14-TV-010R2.pdf,9,unknown,2500.0,140.0,,,,,"EU 27-32 Centrifuges #1 - #6 2,500 gal/min, total"
+3571,Big River United Energy LLC,Dyersville,IA,14-TV-010R2.pdf,9,unknown,866.6666666666666,140.0,,,,,"EU 19 190 Proof Condenser 52,000 gal/hr"
+3571,Big River United Energy LLC,Dyersville,IA,14-TV-010R2.pdf,9,unknown,250.0,140.0,,,,,"EU 20-25 Molecular Sieves (6 Total) 250 gal/min, total"
+3571,Big River United Energy LLC,Dyersville,IA,14-TV-010R2.pdf,9,unknown,216.66666666666666,140.0,,,,,"EU 26 200 Proof Condenser 13,000 gal/hr"
+3571,Big River United Energy LLC,Dyersville,IA,14-TV-010R2.pdf,9,unknown,180.0,140.0,,,,,"EU 33-40 Evaporators #1 - #8 180 gal/min, total"
+3582,Cargill Inc,Fort Dodge,IA,17-TV-003R1.pdf,9,unknown,261.0,130.0,,,,,SUE2015-8 Heavy Steepwater Loadout 261 gal/min)
+3581,Cargill Inc,Eddyville,IA,06-TV-006R1.pdf,30,unknown,5.0,71.0,,,,,25.000 Chemical Tank Aspiration CE 25.000: Scrubber 300 gal/hr 83-A-110-S2
+3600,Elite Octane LLC,Atlantic,IA,20-TV-004.pdf,30,unknown,1200.0,175.0,,,,,"Fuel Loading E96 1,200 gal/min"
+3600,Elite Octane LLC,Atlantic,IA,20-TV-004.pdf,30,unknown,1200.0,175.0,,,,,"Fuel Loading E97 1,200 gal/min"
+3600,Elite Octane LLC,Atlantic,IA,20-TV-004.pdf,30,unknown,600.0,175.0,,,,,"Fuel Loading E95 600 gal/min Enclosed Flare,"
+3620,Green Plains Shenandoah LLC,Shenandoah,IA,13-TV-004R2.pdf,21,unknown,600.0,100.0,,,,,2500 bu/hr with 600 gpm of
+3620,Green Plains Shenandoah LLC,Shenandoah,IA,13-TV-004R2.pdf,21,unknown,350.0,100.0,,,,,EU-33 Centrifuges Other 300-350 gpm
+3620,Green Plains Shenandoah LLC,Shenandoah,IA,13-TV-004R2.pdf,21,unknown,300.0,100.0,,,,,EU-73 Protein Decanters #1-#4 Feed Material Each: 300 gpm
+3620,Green Plains Shenandoah LLC,Shenandoah,IA,13-TV-004R2.pdf,21,unknown,300.0,100.0,,,,,EU-77 Fiber Decanters #1-#4 Feed Material Each: 300 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,beer,706.0,68.5,51.950303999999996,55.66103999999999,59.37177599999999,-18.743007299270083,EU-21 Beer Stripper 706 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,ethanol_or_process,2619.0,68.5,,,,,"EU-52 Evaporator #2 Ethanol 2,619 gpm"
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,ethanol_or_process,2619.0,68.5,,,,,"EU-53 Evaporator #3 Ethanol 2,619 gpm"
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,ethanol_or_process,2619.0,68.5,,,,,"EU-54 Evaporator #4 Ethanol 2,619 gpm"
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,ethanol_or_process,240.0,68.5,,,,,EU-23 Rectifier Column Ethanol 240 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,ethanol_or_process,116.0,68.5,,,,,EU-38 200 Proof Condenser Ethanol 116 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,ethanol_or_process,94.0,68.5,,,,,EU-24 Molecular Sieves 1 & 2 Ethanol 94 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,unknown,2619.0,68.5,,,,,"EU-25 Evaporator Stillage 2,619 gpm"
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,unknown,165.0,68.5,,,,,EU-22 Side Stripper 165 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,unknown,135.0,68.5,,,,,EU-28 Centrifuge #1 Stillage 135 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,unknown,135.0,68.5,,,,,EU-29 Centrifuge #2 Stillage 135 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,unknown,135.0,68.5,,,,,EU-30 Centrifuge #3 Stillage 135 gpm
+3621,Green Plains Superior,Superior,IA,13-TV-005R2.pdf,22,unknown,135.0,68.5,,,,,EU-31 Centrifuge #4 Stillage 135 gpm
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,beer,3000.0,207.0,220.752,236.51999999999998,252.288,14.260869565217382,"EU-P55F Beer Column Beer 3,000 gal/min"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,beer,3000.0,207.0,220.752,236.51999999999998,252.288,14.260869565217382,"EU-P55G Side Stripper Beer 3,000 gal/min"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,beer,3000.0,207.0,220.752,236.51999999999998,252.288,14.260869565217382,"EU-P55H Rectifier Column Beer 3,000 gal/min"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,beer,3000.0,207.0,220.752,236.51999999999998,252.288,14.260869565217382,"EU-P55I 190 Proof Condenser Beer 3,000 gal/min"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,13,beer,3000.0,207.0,220.752,236.51999999999998,252.288,14.260869565217382,"EU-P55f Beer Column Beer 3,000 gal/min DDGS Dryer C"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,13,beer,3000.0,207.0,220.752,236.51999999999998,252.288,14.260869565217382,"EU-P55g Side Stripper Beer 3,000 gal/min (EU P10c) of"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,13,beer,3000.0,207.0,220.752,236.51999999999998,252.288,14.260869565217382,"EU-P55h Rectifier Column Beer 3,000 gal/min DDGS Dryer D"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,13,beer,3000.0,207.0,220.752,236.51999999999998,252.288,14.260869565217382,"EU-P55i 190 Proof Condenser Beer 3,000 gal/min (EU P10d) and"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,ethanol_or_process,550.0,207.0,,,,,EU-P55J Molecular Sieve 190 Proof Ethanol 550 gal/min
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,ethanol_or_process,550.0,207.0,,,,,EU-P55K 200 Proof Condenser Ethanol 550 gal/min
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,13,ethanol_or_process,550.0,207.0,,,,,EU-P55j Molecular Sieve 190 Proof Ethanol 550 gal/min TO (C11)
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,13,ethanol_or_process,550.0,207.0,,,,,EU-P55k 200 Proof Condenser Ethanol 550 gal/min
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,thin_stillage,3000.0,207.0,,,,,"EU-P55N Evaporators Thin Stillage 3,000 gal/min"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,13,thin_stillage,3000.0,207.0,,,,,"EU-P55n Evaporators Thin Stillage 3,000 gal/min"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,unknown,1500.0,207.0,,,,,"EU-P55L Centrate Tank #1 Centrifuge Feed 1,500 gal/min"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,12,unknown,1500.0,207.0,,,,,"EU-P55M Centrate Tank #2 Centrifuge Feed 1,500 gal/min"
+3632,Homeland Energy Solutions LLC,Lawler,IA,14-TV-001R2.pdf,13,unknown,1500.0,207.0,,,,,"EU-P55m Centrate Tank #2 Centrifuge Feed 1,500 gal/min"
+3641,Lincolnway Energy LLC,Nevada,IA,14-TV-002R2.pdf,17,beer,1300.0,90.0,95.6592,102.49199999999999,109.3248,13.87999999999999,"Beer Feed Pump Beer 1,300 gal/min"
+3642,Little Sioux Corn Processors LLLP,Marcus,IA,10-TV-005R2.pdf,13,whole_stillage,175.0,165.0,,,,,"Whole Stillage 175 gal/min, each"
+3642,Little Sioux Corn Processors LLLP,Marcus,IA,10-TV-005R2.pdf,18,whole_stillage,175.0,165.0,,,,,"Whole Stillage 175 gal/min, each"
+3659,Pine Lake Corn Processors,Steamboat Rock,IA,19-TV-001R1.pdf,33,unknown,500.0,87.12,,,,,EU79 Centrifuge #5 500 gallons/minute
+3659,Pine Lake Corn Processors,Steamboat Rock,IA,19-TV-001R1.pdf,33,unknown,500.0,87.12,,,,,EU80 Centrifuge #6 500 gallons/minute
+3659,Pine Lake Corn Processors,Steamboat Rock,IA,19-TV-001R1.pdf,33,unknown,500.0,87.12,,,,,(bypass) EU79 Centrifuge #5 500 gallons/minute
+3659,Pine Lake Corn Processors,Steamboat Rock,IA,19-TV-001R1.pdf,33,unknown,500.0,87.12,,,,,EU80 Centrifuge #6 500 gallons/minute
+3659,Pine Lake Corn Processors,Steamboat Rock,IA,19-TV-001R1.pdf,33,unknown,255.0,87.12,,,,,EU77 Centrifuge #3 255 gallons/minute
+3659,Pine Lake Corn Processors,Steamboat Rock,IA,19-TV-001R1.pdf,33,unknown,255.0,87.12,,,,,EU78 Centrifuge #4 255 gallons/minute
+3659,Pine Lake Corn Processors,Steamboat Rock,IA,19-TV-001R1.pdf,33,unknown,255.0,87.12,,,,,EU77 Centrifuge #3 255 gallons/minute
+3659,Pine Lake Corn Processors,Steamboat Rock,IA,19-TV-001R1.pdf,33,unknown,255.0,87.12,,,,,*S79 EU78 Centrifuge #4 255 gallons/minute
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,beer,3000.0,132.0,220.752,236.51999999999998,252.288,79.18181818181816,EU 16 Beer Column 3000 gal/min
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,unknown,1967.0,132.0,,,,,EU 19 190 Proof Condenser 1967 gal/min
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,unknown,1600.0,132.0,,,,,EU 33 1600 gal/min
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,unknown,982.0,132.0,,,,,EU 17 Side Stripper 982 gal/min
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,unknown,785.0,132.0,,,,,"E52, E106, 785 gal/min (each)"
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,unknown,785.0,132.0,,,,,EU 20 Molecular Sieve Vaporizer 785 gal/min
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,unknown,700.0,132.0,,,,,EU 18 Rectifier Column 700 gal/min
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,unknown,637.0,132.0,,,,,EU 26 200 Proof Flash Receiver 637 gal/min
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,11,unknown,500.0,132.0,,,,,Centrifuges (#1 - #6) 500 gal/min (each)
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,12,unknown,250.0,132.0,,,,,EU 68 Methanator #1 250 gal/min Biomethanator Flare (CE-
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,12,unknown,250.0,132.0,,,,,EU 69 Methanator #2 250 gal/min C60) or Dryer A (EU-01) and
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,12,unknown,250.0,132.0,,,,,EU 70 Methanator #3 250 gal/min Thermal Oxidizer 1
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,12,unknown,250.0,132.0,,,,,EU 71 Methanator #4 250 gal/min (CE-C10a) - See Footnote (1)
+3662,Poet Biorefinning-Arthur LLC,Arthur,IA,10-TV-008R2.pdf,12,unknown,200.0,132.0,,,,,EU 134 Oil Separator 200 gal/min
+3663,Poet Biorefinning-Ashton LLC,Ashton,IA,14-TV-006.pdf,23,beer,833.3333333333334,68.0,61.32000000000001,65.7,70.08,-3.382352941176466,"EU-7 Evaporator, strippers, 3 Beer 50,000 gal/hr (Feed Rate)"
+3663,Poet Biorefinning-Ashton LLC,Ashton,IA,14-TV-006.pdf,28,beer,833.3333333333334,68.0,61.32000000000001,65.7,70.08,-3.382352941176466,"EU-7 Evaporator, Strippers, Beer 50,000 gals/hr (Feed rate)"
+3663,Poet Biorefinning-Ashton LLC,Ashton,IA,14-TV-006.pdf,28,syrup,140.0,68.0,,,,,EU-30 Corn Oil Separation Syrup 140 gal/min
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,16,unknown,833.3333333333334,65.0,,,,,"EU-7 Distillation 50,000 gal/hr NA"
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,16,unknown,833.3333333333334,65.0,,,,,"EU-7 Distillation 50,000 gal/hr NA"
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,16,unknown,833.0,65.0,,,,,"300,000 833 gal/min"
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,16,unknown,833.0,65.0,,,,,"300,000 833 gal/min"
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,23,unknown,220.0,65.0,,,,,Centrifuge #1 EU-15 220 gal/min - NA Regenerative
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,23,unknown,220.0,65.0,,,,,Centrifuge #2 EU-16 220 gal/min - NA Thermal Oxidizer
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,23,unknown,220.0,65.0,,,,,Centrifuge #3 EU-17 220 gal/min - NA
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,23,unknown,220.0,65.0,,,,,Centrifuge #4 EU-18 220 gal/min - NA
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,23,unknown,220.0,65.0,,,,,Centrifuge #5 EU-30 220 gal/min - NA
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,23,unknown,140.0,65.0,,,,,Separation EU-35 140 gal/min -
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,16,unknown,0.11666666666666667,65.0,,,,,"EU-4.4 Fermenter #4 all 7 gal/hr,"
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,16,unknown,0.05,65.0,,,,,"EU-4.3 Fermenter #3 gal/hr, 300,000"
+3669,Poet Biorefinning-Coon Rapids,Coon Rapids,IA,07-TV-001R3.pdf,16,unknown,0.05,65.0,,,,,"EU-4.3 Fermenter #3 gal/hr, gal/hr,"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,beer,2350.0,132.0,172.92239999999998,185.27399999999997,197.6256,40.35909090909089,"EU 46 Beer Column Beer 2,350 gal/min"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,thin_stillage,1650.0,132.0,,,,,"EU 57 Evaporators Thin Stillage 1,650 gal/min"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,3500.0,132.0,,,,,"EU 21 Cook Tube #1 3,500 gal/min"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,3500.0,132.0,,,,,"EU 22 Cook Tube #2 Mash 3,500 gal/min"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,1650.0,132.0,,,,,"EU 48 Side Stripper 1,650 gal/min"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,1025.0,132.0,,,,,"EU 33 Molecular Sieve Vaporizer 1,025 gal/min"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,1025.0,132.0,,,,,"1,025 gal/min"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,1025.0,132.0,,,,,"EU 41 200 Proof Flash Vessel 1,025 gal/min"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,1025.0,132.0,,,,,"EU 42 200 Proof Flash Receiver 1,025 gal/min Thermal Oxidizer"
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,680.0,132.0,,,,,EU 49 Rectifier Column 680 gal/min
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,unknown,665.0,132.0,,,,,EU 40 200 Proof Condenser 665 gal/min
+3671,Poet Biorefinning-Fairbank,Fairbank,IA,15-TV-010R2.pdf,26,whole_stillage,3100.0,132.0,,,,,"EU 56 Centrifuges Whole Stillage 3,100 gal/min"
+3677,Poet Biorefinning-Hanlontown LLC,Hanlontown,IA,21-TV-001R1.pdf,21,unknown,1100.0,80.0,,,,,"Evaporators, 2 1,100 gallons/minute"
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,beer,800.0,112.0,58.8672,63.07199999999999,67.2768,-43.6857142857143,Beer Column #1 800 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,beer,800.0,112.0,58.8672,63.07199999999999,67.2768,-43.6857142857143,Beer Column #2 800 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,beer,800.0,112.0,58.8672,63.07199999999999,67.2768,-43.6857142857143,Beer Column #1 800 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,beer,800.0,112.0,58.8672,63.07199999999999,67.2768,-43.6857142857143,Beer Column #2 800 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,1600.0,112.0,,,,,"Centrifuges 1,600 gpm"
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,1600.0,112.0,,,,,"Centrifuges 1,600 gpm"
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,1200.0,112.0,,,,,"CIP Screen 1,200 gpm"
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,1200.0,112.0,,,,,"CIP Screen 1,200 gpm"
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,750.0,112.0,,,,,Cook Tube #1 750 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,750.0,112.0,,,,,Cook Tube #2 750 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,750.0,112.0,,,,,Cook Flash Vessel #1 750 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,750.0,112.0,,,,,Cook Flash Vessel #2 750 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,750.0,112.0,,,,,Cook Tube #1 750 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,750.0,112.0,,,,,Cook Tube #2 750 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,750.0,112.0,,,,,Cook Flash Vessel #1 750 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,750.0,112.0,,,,,Cook Flash Vessel #2 750 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,500.0,112.0,,,,,190 Proof Condenser #1 500 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,500.0,112.0,,,,,190 Proof Condenser #2 500 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,500.0,112.0,,,,,190 Proof Condenser #1 500 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,500.0,112.0,,,,,190 Proof Condenser #2 500 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,400.0,112.0,,,,,Evaporators 400 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,400.0,112.0,,,,,Evaporators 400 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,270.0,112.0,,,,,Molecular Sieve Bottles #1 through #3 CE C10: Thermal 270 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,270.0,112.0,,,,,Molecular Sieve Bottles #4 through #6 Oxidizer 1 270 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,270.0,112.0,,,,,270 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,270.0,112.0,,,,,270 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,175.0,112.0,,,,,Molecular Sieve Vaporizer #1 175 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,175.0,112.0,,,,,Molecular Sieve Vaporizer #2 175 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,175.0,112.0,,,,,Molecular Sieve Vaporizer #1 175 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,175.0,112.0,,,,,Molecular Sieve Vaporizer #2 175 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,160.0,112.0,,,,,Rectifier Column #1 160 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,160.0,112.0,,,,,Rectifier Column #2 160 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,160.0,112.0,,,,,Rectifier Column #1 160 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,160.0,112.0,,,,,Rectifier Column #2 160 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,150.0,112.0,,,,,200 Proof Flash Vessel #1 150 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,150.0,112.0,,,,,200 Proof Flash Vessel #2 150 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,150.0,112.0,,,,,200 Proof Flash Vessel #1 150 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,150.0,112.0,,,,,200 Proof Flash Vessel #2 150 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,135.0,112.0,,,,,Side Stripper #1 135 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,135.0,112.0,,,,,Side Stripper #2 135 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,135.0,112.0,,,,,200 Proof Condenser #1 135 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,11,unknown,135.0,112.0,,,,,200 Proof Condenser #2 135 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,135.0,112.0,,,,,Side Stripper #1 135 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,135.0,112.0,,,,,Side Stripper #2 135 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,135.0,112.0,,,,,200 Proof Condenser #1 135 gpm
+3679,Poet Biorefinning-Iowa Falls LLC,Iowa Falls,IA,19-TV-005R1.pdf,23,unknown,135.0,112.0,,,,,200 Proof Condenser #2 135 gpm
+3680,Poet Biorefinning-Jewell LLC,Jewell,IA,18-TV-004-M001.pdf,20,beer,1100.0,90.0,80.9424,86.72399999999999,92.5056,-3.6400000000000112,"EU10 Beer 1,100 gal/min"
+3680,Poet Biorefinning-Jewell LLC,Jewell,IA,18-TV-004-M001.pdf,25,beer,1100.0,90.0,80.9424,86.72399999999999,92.5056,-3.6400000000000112,"EU10 Evaporator, (2) Strippers, 1,100 gal/min beer"
+3680,Poet Biorefinning-Jewell LLC,Jewell,IA,18-TV-004-M001.pdf,20,unknown,1150.0,90.0,,,,,"69,000 gal/hr mash"
+3680,Poet Biorefinning-Jewell LLC,Jewell,IA,18-TV-004-M001.pdf,25,unknown,1150.0,90.0,,,,,"69,000 gal/hr mash, Packed Bed"
+3680,Poet Biorefinning-Jewell LLC,Jewell,IA,18-TV-004-M001.pdf,25,unknown,300.0,90.0,,,,,"EU15 Centrifuge #2 300 gal/min whole Oxidizer, 30"
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,beer,3773.0,132.0,277.632432,297.46331999999995,317.29420799999997,125.35099999999997,"EU46 Beer Column Beer 3,773 gal/min"
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,ethanol_or_process,1967.0,132.0,,,,,"EU 50 190 Proof Condenser Ethanol 1,967 gal/min"
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,ethanol_or_process,400.0,132.0,,,,,EU40 200 Proof Condenser Ethanol 400 gal/min Thermal Oxidizer 2
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,3007.0,132.0,,,,,"EU 56 Centrifuges 3,007 gal/min (CE C10b)"
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,2821.0,132.0,,,,,"EU23 Cook Flash Vessel 2,821 gal/min"
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,2623.0,132.0,,,,,"EU21 Cook Tube #1 2,623 gal/min"
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,2623.0,132.0,,,,,"EU22 Cook Tube #2 Mash 2,623 gal/min"
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,1966.0,132.0,,,,,"EU 57 Evaporators 1,966 gal/min"
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,982.0,132.0,,,,,EU48 Side Stripper 982 gal/min
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,828.0,132.0,,,,,EU49 Rectifier Column 828 gal/min
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,400.0,132.0,,,,,EU33 Molecular Sieve Vaporizer 400 gal/min (CE C10a)
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,400.0,132.0,,,,,EU34-EU39 Molecular Sieve Bottles #1-#6 400 gal/min or
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,400.0,132.0,,,,,EU41 200 Proof Flash Vessel 400 gal/min (CE C10b)
+3686,Poet Biorefinning-Menlo,Menlo,IA,15-TV-006R1.pdf,26,unknown,400.0,132.0,,,,,EU42 200 Proof Flash Receiver 400 gal/min
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,beer,3773.0,128.0,277.632432,297.46331999999995,317.29420799999997,132.39321874999996,"EU46 Beer Column Beer 3,773 gal/min"
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,ethanol_or_process,1967.0,128.0,,,,,"EU 50 190 Proof Condenser Ethanol 1,967 gal/min"
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,ethanol_or_process,982.0,128.0,,,,,EU48 Side Stripper Ethanol 982 gal/min
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,ethanol_or_process,828.0,128.0,,,,,EU49 Rectifier Column Ethanol 828 gal/min
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,ethanol_or_process,400.0,128.0,,,,,EU33 Ethanol 400 gal/min
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,ethanol_or_process,400.0,128.0,,,,,Ethanol 400 gal/min
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,ethanol_or_process,400.0,128.0,,,,,EU40 200 Proof Condenser Ethanol 400 gal/min
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,ethanol_or_process,400.0,128.0,,,,,EU41 200 Proof Flash Vessel Ethanol 400 gal/min
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,ethanol_or_process,400.0,128.0,,,,,EU42 200 Proof Flash Receiver Ethanol 400 gal/min
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,29,thin_stillage,1966.0,128.0,,,,,"EU 57 Evaporators Thin Stillage 1,966 gal/min"
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,29,unknown,3007.0,128.0,,,,,"EU 56 Centrifuges 3,007 gal/min"
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,unknown,2821.0,128.0,,,,,"EU23 Cook Flash Vessel Mash 2,821 gal/min"
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,unknown,2623.0,128.0,,,,,"EU21 Cook Tube #1 Mash 2,623 gal/min"
+3692,Poet Biorefinning-Shell Rock LLC,Shell Rock,IA,15-TV-003R1.pdf,28,unknown,2623.0,128.0,,,,,"EU22 Cook Tube #2 Mash 2,623 gal/min"
+3714,The Andersons Marathon Holdings LLC,Denison,IA,14-TV-011R2.pdf,9,beer,750.0,62.0,55.188,59.129999999999995,63.072,-4.629032258064523,Beer Column 750 gal/min
+3714,The Andersons Marathon Holdings LLC,Denison,IA,14-TV-011R2.pdf,26,beer,740.0,62.0,54.45216,58.34159999999999,62.23103999999999,-5.900645161290335,EU40h Beer Degas 740 gallons/minute
+3714,The Andersons Marathon Holdings LLC,Denison,IA,14-TV-011R2.pdf,26,unknown,1140.0,62.0,,,,,"EU40g Undistilled 1,140 gallons/minute"
+3714,The Andersons Marathon Holdings LLC,Denison,IA,14-TV-011R2.pdf,9,unknown,160.0,62.0,,,,,Rectifier 9600 gal/hr
+3714,The Andersons Marathon Holdings LLC,Denison,IA,14-TV-011R2.pdf,9,unknown,130.0,62.0,,,,,"P50a Molecular Sieve #1, #2, #3 and #4 130 gal/min (each)"
+3714,The Andersons Marathon Holdings LLC,Denison,IA,14-TV-011R2.pdf,9,unknown,65.0,62.0,,,,,Stripper 65 gal/min
+3714,The Andersons Marathon Holdings LLC,Denison,IA,14-TV-011R2.pdf,9,whole_stillage,500.0,62.0,,,,,Whole Stillage Tank 500 gal/min
+3557,VCP Corn Processing,Cedar Rapids,IA,9080_08-TV-007R2.pdf,23,unknown,3000.0,300.0,,,,,"410 410 Equalization Tank Wastewater 3,000 gpm None None"
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,beer,3000.0,140.0,220.752,236.51999999999998,252.288,68.94285714285712,"Beer Column Beer 3,000 gal/min"
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,beer,3000.0,140.0,220.752,236.51999999999998,252.288,68.94285714285712,"Side Stripper Beer 3,000 gal/min"
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,beer,3000.0,140.0,220.752,236.51999999999998,252.288,68.94285714285712,"Rectifier Column Beer 3,000 gal/min"
+3726,Valero Renewable Fuels LLC,Charles City,IA,15-TV-009R2.pdf,33,beer,1900.0,165.0,139.8096,149.79599999999996,159.7824,-9.214545454545476,(3) The production throughput to be used for stack testing purposes shall be the greater of 1900 gallons/minute beer
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,beer,725.0,110.0,53.3484,57.15899999999999,60.96959999999999,-48.037272727272736,Beer Column Beer 725 gpm
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,beer,100.0,110.0,7.3584,7.883999999999999,8.4096,-92.83272727272728,Side Stripper Beer 100 gpm
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,ethanol_or_process,550.0,140.0,,,,,Molecular Sieve Ethanol 550 gal/min C11 Thermal Oxidizer
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,ethanol_or_process,313.0,110.0,,,,,190 Proof Condenser Ethanol 313 gpm
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,ethanol_or_process,160.0,110.0,,,,,Rectifier Column Ethanol 160 gpm
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,ethanol_or_process,120.0,110.0,,,,,Ethanol 120 gpm From Train 1 Centrate Blower
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,ethanol_or_process,105.0,110.0,,,,,Ethanol 105 gpm
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,ethanol_or_process,5.0,110.0,,,,,200 Proof Condenser Ethanol 5 gpm
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,thin_stillage,3000.0,140.0,,,,,"Evaporators Thin Stillage 3,000 gal/min"
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,thin_stillage,250.0,110.0,,,,,Evaporators Thin Stillage 250 gpm
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,3000.0,150.0,,,,,"3,000 gal/min from C10 Thermal Oxidizer"
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,3000.0,150.0,,,,,"3,000 gal/min from C11 Thermal Oxidizer"
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,3000.0,150.0,,,,,"3,000 gal/min from"
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,3000.0,150.0,,,,,"3,000 gal/min from"
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,3000.0,150.0,,,,,"3,000 gal/min from"
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,3000.0,150.0,,,,,"3,000 gal/min"
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,3000.0,150.0,,,,,"42 3,000 gal/min or Thermal Oxidizer"
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,3000.0,150.0,,,,,"3,000 gal/min"
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,3000.0,150.0,,,,,"190 Proof 3,000 gal/min"
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,3000.0,150.0,,,,,"3,000 gal/min"
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,unknown,3000.0,140.0,,,,,"190 Proof 3,000 gal/min"
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,2000.0,150.0,,,,,Mixer 2000 gal/min
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,2000.0,150.0,,,,,"Cook Tubes 2,000 gal/min"
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,2000.0,150.0,,,,,"Mixer 2,000 gal/min"
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,2000.0,150.0,,,,,"Cook Tubes 2,000 gal/min"
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,11,unknown,2000.0,140.0,,,,,"Mixer Slurry 2,000 gal/min"
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,unknown,2000.0,140.0,,,,,"Cook Tubes Mash 2,000 gal/min."
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,unknown,1890.0,140.0,,,,,"Centrate Tanks Centrate 1,890 gal/min"
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,1500.0,150.0,,,,,"1,500 gal/min from"
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,1500.0,150.0,,,,,"1,500 gal/min"
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,unknown,730.0,110.0,,,,,Centrate Tank #2 (secondary) Centrifuge Feed 730 gpm From Train 2 Centrate Blower
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,unknown,730.0,110.0,,,,,Centrifuge Drag Conveyor Train #2 Centrifuge Feed 730 gpm Thermal Oxidizer (C10c)
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,unknown,725.0,110.0,,,,,Cook Tube Mash 725 gpm
+3729,Valero Renewable Fuels LLC,Lakota,IA,10-TV-001R2.pdf,11,unknown,700.0,110.0,,,,,Centrifuges Centrifuge Feed 700 gpm
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,550.0,150.0,,,,,550 gal/min from
+3728,Valero Renewable Fuels LLC,Hartley,IA,16-TV-004R1.pdf,12,unknown,550.0,150.0,,,,,550 gal/min from
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,550.0,150.0,,,,,550 gal/min
+3727,Valero Renewable Fuels LLC,Ft. Dodge,IA,16-TV-005R1.pdf,11,unknown,550.0,150.0,,,,,200 Proof 550 gal/min
+3721,Valero Renewable Fuels LLC,Albert City,IA,16-TV-006R1.pdf,12,unknown,550.0,140.0,,,,,200 Proof 550 gal/min

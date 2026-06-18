@@ -1,0 +1,110 @@
+EPM Number: UNMATCHED
+Plant Name: Gevo NW Iowa RNG, LLC
+Permit Facility Name: Gevo NW Iowa RNG, LLC
+Location: , IA
+Source Permit File: 25-TV-001.pdf
+Permit Number: 25-TV-001
+Permit Expiration Date: February 10, 2030
+Match Confidence: 1.00 (manual_non_ethanol_unmatched)
+
+Facility Identity:
+- Ownership: not matched
+- CA Facility ID: not matched
+- Dropdown capacity: not matched MGY
+- Year built: not matched
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: not available MGY
+- Ethanol capacity source: not found in permit; dropdown capacity used if available
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: not identified
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: not identified
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- gr./dscf .......................grains per dry standard cubic foot
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- grain per standard cubic foot of exhaust gas or established from standards provided in
+- limited to grain, fertilizer or limestone.
+
+Dryers:
+- Dryer mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 0
+- lb./MMBtu .................pounds per million British thermal units
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 10
+- Pollutant: Sulfur Dioxide (SO ) – flare and thermal oxidizer operating
+- hour average) of raw biogas when the thermal oxidizer and flare are operating
+- i. The permittee shall record the date and time the thermal oxidizer and flare,
+- simultaneous operations of the flare and thermal oxidizer, for each day of
+- thermal oxidizer.
+- Emissions Control Equipment Description: Thermal Oxidizer, Iron Sponge
+- A. Thermal Oxidizer (TO):
+- 1. The thermal oxidizer shall maintain a minimum operating temperature greater
+- continuously monitor the temperature of the thermal oxidizer, TO. The
+- the thermal oxidizer, and record all instances during which the operating
+
+Tanks:
+- Storage tank mentions parsed: 0
+- Not specifically identified in extracted permit text.
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- Not specifically identified in extracted permit text.
+- Corn oil source line: not identified
+- Not specifically identified in extracted permit text.
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 24, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- V. Appendix A: NSPS & NESHAP ......................................................................................28
+- VOC………………... volatile organic compound
+- HAP............................hazardous air pollutant
+- 567 IAC Chapter 22. During the period from May 15, 2024, to the date that 567 IAC as amended
+- Emission Limits
+- 1 This is a State limit. The emission limit of 500 ppm does not apply to the emission points in this permit. The
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 40% (1)
+- Emission Limit(s): 0.75 lb/hr
+- Emission Limit(s): 0.1 gr/dscf
+- Emission Limit(s): 108.11 lb/hr
+- Emission Limit(s): 5.89 lb/hr
+- Emission Limit(s): 0.03 lb/hr
+- Emission Limit(s): 38.0 lb/hr
+- citations in this Title V permit were found and cited in 567 IAC Chapter 22. During the period
+- permit termination, revocation and reissuance, or modification; or for denial of a permit renewal
+- 8. Failure to pay the appropriate Title V fee represents cause for revocation of the Title V permit
+- pursuant to 567 Chapter 24;
+- b. Compliance test methods specified in 567 Chapter 21; or
+- pursuant to 567 Chapter 22.
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

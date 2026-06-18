@@ -1,0 +1,26 @@
+program,pathway_class,flag,n_total,n_flag_true,n_flag_false,avg_ci_flag_true,avg_ci_flag_false,avg_ci_true_minus_false,correlation_binary_flag_to_ci,interpretation
+WA,fiber/cellulosic,chp,4,2,2,27.08,23.985,3.094999999999999,0.6598310990284584,higher CI associated with flag
+OR,fiber/cellulosic,chp,4,2,2,26.08,29.865000000000002,-3.7850000000000037,-0.8852917163314109,lower CI associated with flag
+OR,corn starch,chp,5,2,3,54.27,55.05,-0.779999999999994,-0.2849157845686152,lower CI associated with flag
+OR,corn starch,edeniq,5,2,3,54.585,54.84,-0.25500000000000256,-0.09314554495512473,lower CI associated with flag
+CFA,corn starch,high_protein,10,2,8,42.0,39.25,2.75,0.4230769230769232,higher CI associated with flag
+CFA,corn starch,fluid_quip,10,2,8,42.0,39.25,2.75,0.4230769230769232,higher CI associated with flag
+CFA,corn starch,fiber_to_ethanol,10,7,3,40.285714285714285,38.666666666666664,1.6190476190476204,0.2853618564624516,higher CI associated with flag
+CFA,corn starch,waste_heat_recovery,10,8,2,39.875,39.5,0.375,0.05769230769230769,higher CI associated with flag
+CA,fiber/cellulosic,corn_oil_extraction,25,23,2,26.254782608695653,23.21,3.0447826086956518,0.4909910191009448,higher CI associated with flag
+CA,fiber/cellulosic,white_fox_membrane,25,3,22,24.47,26.221363636363638,-1.7513636363636387,-0.3382880355940198,lower CI associated with flag
+CA,fiber/cellulosic,high_protein,25,2,23,27.155,25.911739130434782,1.2432608695652192,0.20048390962718135,higher CI associated with flag
+CA,fiber/cellulosic,fluid_quip,25,2,23,27.155,25.911739130434782,1.2432608695652192,0.20048390962718135,higher CI associated with flag
+CA,fiber/cellulosic,edeniq,25,9,16,25.393333333333334,26.35875,-0.9654166666666661,-0.2754446746590819,lower CI associated with flag
+CA,fiber/cellulosic,chp,25,5,20,26.48,25.894,0.5860000000000021,0.13932721566700218,higher CI associated with flag
+CA,fiber/cellulosic,molecular_sieve_only,25,3,22,25.643333333333334,26.061363636363637,-0.418030303030303,-0.08074545291148867,lower CI associated with flag
+CA,fiber/cellulosic,waste_heat_recovery,25,13,12,25.814615384615383,26.22416666666667,-0.4095512820512859,-0.12162110114093051,lower CI associated with flag
+CA,corn starch,corn_oil_extraction,27,25,2,67.7568,63.945,3.811799999999998,0.34424210830069435,higher CI associated with flag
+CA,corn starch,chp,27,5,22,66.078,67.79181818181819,-1.7138181818181835,-0.22956727204947266,lower CI associated with flag
+CA,corn starch,waste_heat_recovery,27,13,14,67.96538461538462,67.01857142857142,0.9468131868132019,0.16313564973161185,higher CI associated with flag
+CA,corn starch,fiber_to_ethanol,27,25,2,67.4204,68.15,-0.7296000000000049,-0.0658898793788201,lower CI associated with flag
+CA,corn starch,high_protein,27,2,25,67.015,67.5112,-0.49620000000000175,-0.04481162026832575,lower CI associated with flag
+CA,corn starch,fluid_quip,27,2,25,67.015,67.5112,-0.49620000000000175,-0.04481162026832575,lower CI associated with flag
+CA,corn starch,edeniq,27,9,18,67.38333333333333,67.52,-0.13666666666667027,-0.022216159987924564,lower CI associated with flag
+CA,corn starch,white_fox_membrane,27,3,24,67.40333333333334,67.48333333333333,-0.0799999999999983,-0.008669720970897493,lower CI associated with flag
+CA,corn starch,molecular_sieve_only,27,3,24,67.46,67.47625,-0.01624999999999943,-0.001761037072213594,lower CI associated with flag

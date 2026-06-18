@@ -1,0 +1,128 @@
+EPM Number: 3754
+Plant Name: Poet Biorefinning-Emmetsburg LLC
+Permit Facility Name: POET Biorefining – Emmetsburg,
+Location: Emmetsburg, IA
+Source Permit File: 14-TV-003R1-M001.pdf
+Permit Number: 14-TV-003R1-M001
+Permit Expiration Date: March 31, 2024
+Match Confidence: 1.00 (manual_pdf_epm_override)
+
+Facility Identity:
+- Ownership: POET Biorefining
+- CA Facility ID: 70021
+- Dropdown capacity: 68.0 MGY
+- Year built: 2,002
+
+Capacity / Throughput Limits:
+- Ethanol capacity used: 68.00 MGY
+- Ethanol capacity source: dropdown facility capacity
+- Permitted corn/grain throughput: not available bu/year
+- Throughput source line: shall not exceed 40.08 million bushels of corn per rolling 12-month period.
+
+Fermentation Equipment:
+- Fermentation line: not specifically identified
+- Fermenter count parsed: not available
+- Beer well present: yes
+
+Grain Handling / Storage:
+- Grain storage parsed: not available bu
+- EP SV1 EU1, EU2, EU3 Grain Receiving, Handling and Storage 04-A-219-S6
+- Distiller's Dried Grains with
+- EP SV11 EU20 DDGS Storage Silo 04-A-229
+- EP SV12 EU21 DDGS Storage Silo Bypass 04-A-230-S1
+- gr./dscf .......................grains per dry standard cubic foot
+- gr./100 cf ....................grains per one hundred cubic feet
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- limited to grain, fertilizer or limestone.
+- This facility is subject to Standards of Performance for Grain Elevators. The affected unit is EP
+- 3 Corn Receiving
+- 2,862,000 bushels
+
+Dryers:
+- Dryer mentions parsed: 0
+- Solubles (DDGS) Fluid Bed Cooler
+- EP SV11 EU20 DDGS Storage Silo 04-A-229
+- EP SV12 EU21 DDGS Storage Silo Bypass 04-A-230-S1
+
+Boilers / Process Heaters:
+- Boiler/heater mentions parsed: 3
+- EP SV13 EU22 Boiler 1 04-A-231-S3
+- EP SV19 EU23 Boiler 2 04-A-1067-S2
+- EP SV058 EU069 Solid Fuel Boiler 13-A-135-S6
+- Heater #1 Space Heater 5.9616 MMBtu/hr
+- Heater #2 Space Heater 5.9616 MMBtu/hr
+- lb./MMBtu .................pounds per million British thermal units
+- The solid fuel boiler, SV058 is subject to NSPS 40 CFR Part 60 Subpart Db – Standards of
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+
+Thermal Oxidizers / RTO:
+- RTO/thermal oxidizer mentions parsed: 3
+- RTO Bypass Stack: Fermenters, Beer Wells,
+- EP SV09 EU15, EU16, RTO Stack, 6 Fermenters, Centrifuges 04-A-227-S7
+- EP SV022 EU014-EU018 5 Centrifuge Units (RTO Bypass) 17-A-439-S1
+
+Tanks:
+- Storage tank mentions parsed: 14
+- EP SV14 EUTK-001 Denaturant Storage Tank 04-A-232-S1
+- EP SV15 EUTK-002 190 Proof Ethanol Storage Tank 04-A-233
+- EP SV16 EUTK-003 200 Proof Ethanol Storage Tank 04-A-234-S2
+- EP SV17 EUTK-004 200 Proof Ethanol Storage Tank 04-A-235-S1
+- EP SV18 EUTK-005 200 Proof Ethanol Storage Tank 04-A-236-S1
+- EP SV041 EUTK007 Liberty 190 Proof Ethanol Storage Tank 10-A-347-S2
+- EP SV050 EU063, EU076 Bed Additive Storage Tank/Bin Vent 13-A-127-S3
+- EP SV062 EU073 Bed Additive Storage Tank #2 16-A-014-S1
+
+DDGS / Corn Oil Systems:
+- DDGS limit parsed: not available tons/year
+- DDGS source line: not identified
+- Solubles (DDGS) Fluid Bed Cooler
+- EP SV11 EU20 DDGS Storage Silo 04-A-229
+- EP SV12 EU21 DDGS Storage Silo Bypass 04-A-230-S1
+- C. The facility shall only load or unload trucks with grain and DDGS with, at a minimum, the
+- Corn oil source line: not identified
+- CORNOIL Corn Oil Separation
+
+Emissions / Permit Constraints:
+- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- VOC…………………volatile organic compound
+- HAP............................hazardous air pollutant
+- Emission Limits
+- the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- 23.4(455B) and 567 – Chapter 24.
+- This facility is subject to Standards of Performance for Equipment Leaks of VOC in the Synthetic
+- 2,862,000 bushels
+- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Emission Limit(s): 0% (1)
+- Emission Limit(s): 1.0 lb/hr
+- Emission Limit(s): 1 lb/hr, 0.01 gr/dscf
+- Operational Limits & Requirements
+- The owner/operator of this equipment shall comply with the operational limits and requirements
+- shall not exceed 40.08 million bushels of corn per rolling 12-month period.
+- POET Biorefining-Emmetsburg in bushels. Calculate and record rolling 12-month totals.
+- NSPS and NESHAP Applicability
+- Emission Limit(s): 40% (1)
+- Emission Limit(s): 0.11 lb/hr
+- Emission Limit(s): 0.11 lb/hr, 0.1 gr/dscf
+- Emission Limit(s): 0.39 lb/hr
+- Emission Limit(s): 0.39 lb/hr; 0.1 gr/dscf
+
+Derived Metrics:
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
+- Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
+- Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
+- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+
+Confidence Notes / Assumptions:
+- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
+- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
+- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
+- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

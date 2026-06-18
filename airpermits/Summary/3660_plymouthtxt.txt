@@ -1,0 +1,157 @@
+EPM Number: 3660
+
+Plant Name: Plymouth Energy LLC
+
+Permit Facility Name: Plymouth Energy, LLC
+
+Location: Merrill, Iowa
+
+Source Permit Files:
+
+* 13-A-187-S3.pdf
+* 06-A-1155-S3.pdf
+
+Permit Numbers:
+
+* 13-A-187-S3
+* 06-A-1155-S3
+
+Facility Identity:
+
+* Ownership: Plymouth Energy LLC
+* Location: Merrill, Iowa
+* Plant Number: 75-05-005
+* Operating Status: Active Dry Mill Ethanol Facility
+
+Equipment
+
+Fermentation:
+
+* 4 Batch Mash Fermenters
+* Fermenter Volume: 762,550 gallons each
+* Total Fermenter Volume: 3,050,200 gallons
+* Beer Well Volume: 990,007 gallons
+* Mash Feed Rate: 112.5 gallons/minute per fermenter
+
+Emission Controls:
+
+* CO₂ Scrubber (C07)
+* Polishing Scrubber (C14)
+
+Grain Handling and Storage:
+
+* Corn Storage Bin No. 1
+
+  * Capacity: 517,000 bushels
+  * Loading Rate: 20,000 bu/hr
+  * Unloading Rate: 2,800 bu/hr
+* Grain Bin Controlled by Baghouse C13
+
+Distillation and Evaporation:
+
+* Beer Column
+* Side Stripper
+* Evaporator
+
+Dryers:
+
+* Not identified in reviewed permits
+
+Boilers:
+
+* Not identified in reviewed permits
+
+Centrifuges:
+
+* Historical permit references indicate centrifuges were removed from this emission point in Permit 13-A-187-S2.
+* Current centrifuge count not identified.
+
+Special Equipment:
+
+* CO₂ Scrubbing System
+* Polishing Scrubber System
+
+Limits
+
+Fermentation System:
+
+* Four fermenters permitted at 762,550 gallons each.
+* Beer well permitted at 990,007 gallons.
+
+Grain Storage:
+
+* Corn Storage Bin No. 1 permitted for 517,000 bushels.
+
+Air Emissions:
+
+* VOC emissions controlled through CO₂ Scrubber and Polishing Scrubber.
+* Annual compliance testing required for VOC and HAP emissions from fermentation processes.
+
+Corn Throughput Limit:
+
+* Not identified in reviewed permits.
+
+Ethanol Production Limit:
+
+* Not identified in reviewed permits.
+
+DDGS Production Limit:
+
+* Not identified in reviewed permits.
+
+Boiler Heat Input Limit:
+
+* Not identified in reviewed permits.
+
+Derived Metrics
+
+Fermenter Count:
+
+* 4
+
+Total Fermenter Volume:
+
+* 3,050,200 gallons
+
+Beer Well Volume:
+
+* 990,007 gallons
+
+Beer Well / Fermenter Ratio:
+
+* 32.5%
+
+Estimated Fermentation Time:
+
+* Approximately 50–60 hours
+* Confidence: Medium
+* Based on fermenter volume and typical dry mill operating rates.
+
+Grain Storage:
+
+* 517,000 bushels identified from reviewed permit.
+* Grain storage days cannot be calculated without a documented corn grind rate.
+
+Ethanol Yield:
+
+* Not available from reviewed permits.
+
+DDGS Yield:
+
+* Not available from reviewed permits.
+
+Corn Oil Yield:
+
+* Not available from reviewed permits.
+
+Thermal Energy Consumption:
+
+* Not available from reviewed permits.
+
+Confidence Notes
+
+* Fermenter volumes and beer well volume are directly identified in Permit 13-A-187-S3.
+* Corn storage capacity is directly identified in Permit 06-A-1155-S3.
+* Distillation equipment additions are documented in permit history.
+* Dryer, boiler, ethanol production, DDGS production, and corn throughput information were not identified in the reviewed permits and may exist in additional operating or construction permits.
+* This summary is based on reviewed construction permit documents and should be supplemented if a complete Title V operating permit becomes available.
