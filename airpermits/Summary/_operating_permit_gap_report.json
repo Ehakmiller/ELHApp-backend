@@ -340,8 +340,7 @@
       "epm": "3600",
       "plant": "Elite Octane LLC",
       "missing": [
-        "corn_grind_limit",
-        "dryer_ddgs_limit"
+        "corn_grind_limit"
       ]
     },
     {

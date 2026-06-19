@@ -1,46 +1,74 @@
 EPM Number: 3600
 Plant Name: Elite Octane LLC
 Permit Facility Name: Elite Octane, LLC
-Location: Atlantic, IA
+Location: Atlantic, Iowa
 Source Permit File: 20-TV-004.pdf
 Permit Number: 20-TV-004
 Permit Expiration Date: September 10, 2025
-Match Confidence: 1.00 (manual_pdf_epm_override)
+Match Confidence: manual update from permit page 34 limits and existing permit extraction
 
 Facility Identity:
-- Ownership: Elite Octane
+- Ownership: Elite Octane LLC
 - CA Facility ID: 71287
 - Dropdown capacity: 175.0 MGY
-- Year built: 2,019
+- Year built: 2019
+- Process type: Dry mill corn ethanol
 
 Capacity / Throughput Limits:
-- Ethanol capacity used: 0.02 MGY
-- Ethanol capacity source: 18,000 gallons of ethanol per
+- Ethanol capacity used: 175 MGY
+- Ethanol capacity source: 175 million gallons per rolling 12-month period
+- Permitted Ethanol Capacity: 175 MGY
+- Ethanol Production Limit: 175 million gallons per rolling 12-month period
 - Permitted corn/grain throughput: not available bu/year
-- Throughput source line: not identified
-
-Fermentation Equipment:
-- Fermentation line: not specifically identified
-- Fermenter count parsed: not available
-- Beer well present: yes
+- Throughput source line: Corn throughput not explicitly identified in permit
+- Grain Storage Limit: not explicitly identified in permit
+- DDGS limit parsed: 487,500 tons/year
+- DDGS source line: DDGS production shall not exceed 487,500 tons per rolling 12-month period.
+- Truck Loadout Limit: 25 million gallons per rolling 12-month period
 
 Grain Handling / Storage:
-- Grain storage parsed: not available bu
-- S20 E5-E6 Grain Unloading Conveyors #1-2 15-A-088-S3
-- E8-E9 Grain Elevators #1-2
-- S25 E16 Grain Storage Bin #1 17-A-070-S2
-- S26 E17 Grain Storage Bin #2 17-A-069-S2
-- E18 Grain Day Bin #1
-- gr./dscf ....................... grains per dry standard cubic foot
-- of particulate matter from any process shall not exceed an emission standard of 0.1 grain
-- or amount specified in a permit if based on an emission standard of 0.1 grain per standard
-- not limited to grain, fertilizer or limestone.
-- This facility is subject to Standards of Performance for Grain Elevators. The affect
-- Emission Point ID Number: S20 – Grain Receiving and Handling
+- Grain Receiving and Handling System
+- Truck Dump Capacity: 30,000 bu/hr
 - Truck Dump 30,000 bushels/hour, each
+- 2 Grain Elevators
+- Multiple Grain Storage Bins
+- Grain Day Bin
+- Storage bin system present
+- Day bin system present
+- Grain storage parsed: not available bu
+- Grain storage capacity not clearly identified in permit
 
-Dryers:
-- Dryer mentions parsed: 1
+Fermentation Equipment:
+- Fermentation System
+- Distillation System
+- Molecular Sieve Dehydration
+- Beer well present: yes
+- Mash Tank #1: 128,400 gallons
+- Mash Tank #2: 128,400 gallons
+- Slurry/Mash Tanks: 25,000 gallons each
+- Mixer: 19,800 gallons
+- Fermenter count parsed: not available
+- Individual fermenter volume not clearly identified
+- Beer Well: not available gallons
+- Beer well total volume not clearly identified
+
+Ethanol Storage and Loadout:
+- 190 Proof Ethanol Storage Tank
+- 200 Proof Ethanol Storage Tank
+- Three Ethanol Fuel Product Storage Tanks
+- Denaturant Storage Tank
+- Truck Loadout
+- Rail Loadout
+- Product Loadout Capacity: 18,000 gallons/hour ethanol transfer system identified
+- Dedicated ethanol railcar loading required
+
+DDGS System:
+- DDGS Dryers A-D
+- DDGS Cooling Drum
+- DDGS Conveyor System
+- DDGS Elevator
+- DDGS Loadout System
+- DDGS Production Limit: 487,500 tons per rolling 12-month period
 - E83-E86 DDGS Dryer A-D
 - E87 DDGS Cooling Drum
 - E88 DDGS Conveyor
@@ -48,32 +76,41 @@ Dryers:
 - S90 E92 DDGS Loadout Conveyor 15-A-095-S1
 - E93 DDGS Loadout #1
 - E94 DDGS Loadout #2
-- S100 E87 DDGS Cooling Drum 17-A-071-S1
+
+Corn Oil Recovery:
+- Corn Oil System
+- Corn Oil Loadout System
+- Corn Oil Recovery Present
+- Corn oil storage capacity not clearly identified
+- E110 Corn Oil Loadout
+
+Dryers:
+- Dryer mentions parsed: 4
+- DDGS Dryers A-D
+- Dryer rated capacity: 55 MMBtu/hr
+- Dryer rated capacity source: DDGS Dryer System: 55 MMBtu/hr
+- DDGS Dryer System: 55 MMBtu/hr
+- DDGS Dryers and RTOs must combust natural gas and/or approved process off-gases only
 
 Boilers / Process Heaters:
 - Boiler/heater mentions parsed: 2
+- Boiler #1 (Natural Gas)
+- Boiler #2 (Natural Gas)
 - S71 E98 Natural Gas Boiler #1 15-A-093-S2
 - S72 E99 Natural Gas Boiler #2 15-A-094-S2
-- lb./MMBtu ................. pounds per million British thermal units
-- E44 12 MMBtu/hr Beer
-- 12 MMBtu/hr
-- Dryers A - D E86 55 MMBtu/hour
-- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- Beer Heater: 12 MMBtu/hr
+- Boiler Fuel Restriction: Natural Gas Only
+- Boilers must combust natural gas only
 
 Thermal Oxidizers / RTO:
-- RTO/thermal oxidizer mentions parsed: 14
-- Thermal Oxidizer,
-- A. The owner or operator shall operate RTO C10 and/or RTO C11 at all times any of the
-- B. DDGS Dryers A through D and RTOs C10 and C11 shall combust only natural gas
-- C. Each RTO operating temperature, measured as a 3-hour rolling average, shall be
-- this permit and the RTOs are not in operation.
-- ii. The owner or operator shall document the average temperature for each RTO
-- necessary to continuously monitor the temperature of each RTO. This
-- iv. The owner or operator shall continuously collect and record each RTO
-- each RTO. The 3-hour rolling average temperature for each RTO shall be
-- v. If any of the RTO operating temperature 3-hour rolling averages falls below
-- and actions taken to correct the situation and shall record when the RTO 3-
-- that each RTO malfunctions and shall estimate and record the emissions emitted
+- RTO/thermal oxidizer mentions parsed: 2
+- RTO C10
+- RTO C11
+- RTOs required during dryer operation
+- Continuous temperature monitoring required
+- Minimum operating temperatures established through stack testing
+- A. The owner or operator shall operate RTO C10 and/or RTO C11 at all times any of the DDGS dryers are operating
+- B. DDGS Dryers A through D and RTOs C10 and C11 shall combust only natural gas and/or approved process off-gases
 
 Tanks:
 - Storage tank mentions parsed: 10
@@ -83,69 +120,45 @@ Tanks:
 - T4 E58 Ethanol Fuel Product Storage Tank #2 15-A-101-S2
 - T5 E59 Ethanol Fuel Product Storage Tank #3 15-A-102-S2
 - T6 E60 Denaturant Storage Tank 15-A-103-S2
-- T7 E61 Corrosion Inhibitor Storage Tank 15-A-104-S1
 
-DDGS / Corn Oil Systems:
-- DDGS limit parsed: not available tons/year
-- DDGS source line: not identified
-- E83-E86 DDGS Dryer A-D
-- E87 DDGS Cooling Drum
-- E88 DDGS Conveyor
-- E89 DDGS Elevator
-- S90 E92 DDGS Loadout Conveyor 15-A-095-S1
-- E93 DDGS Loadout #1
-- E94 DDGS Loadout #2
-- S100 E87 DDGS Cooling Drum 17-A-071-S1
-- Emission Point ID Number: S10 - Fermentation, Distillation and DDGS
-- DDGS E83 - 15 tons DDGS/hour,
-- DDGS
-- Drum / E87 55.65 tons/hour DDGS
-- B. DDGS Dryers A through D and RTOs C10 and C11 shall combust only natural gas
-- E. DDGS production shall not exceed 487,500 tons per rolling 12-month period.
-- Corn oil source line: not identified
-- E110 Corn Oil Loadout
+Transportation:
+- Truck Loadout
+- Rail Loadout
+- Dedicated ethanol railcar loading required
 
 Emissions / Permit Constraints:
-- This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is
-- G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
-- VOC volatile organic compound
-- HAP ........................... hazardous air pollutant
-- Emission Limits
-- of the emission standards specified in this chapter, except as provided in 567 – Chapter 24.
-- 23.1(455B), 23.4(455B) and 567 – Chapter 24.
-- NSPS and NESHAP Applicability
-- This facility is subject to Standards of Performance for Equipment Leaks of VOC in the
-- Mixer E26 19,800 gallons
-- 25,000 gallons (each) Slurry/Mash
-- E29 128,400 gallons Mash
-- E30 128,400 gallons Mash
-- 2,000 gallons of beer
-- Rectifier 2,000 gallons of beer
-- 190 Proof 2,000 gallons of beer
-- E46 - 2,000 gallons of beer
-- 200 Proof 2,000 gallons of beer
-- 18,000 gallons of ethanol per
-- E103 3,000 gallons Centrate
-- Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
-- Emission Limit(s): 25.19 lb/hr, 500 ppmv
-- Emission Limit(s): 19.50 lb/hr
-- Pollutant: Volatile Organic Compounds (VOC)
+- Emission monitoring and recordkeeping requirements
+- VOC control system
+- Thermal oxidizer operation required during dryer operation
+- Continuous RTO temperature monitoring required
+- Boiler fuel restriction: natural gas only
+- Dryer/RTO fuel restriction: natural gas and/or approved process off-gases only
+
+Permit Limitations:
+- Ethanol Production / Loadout: 175 million gallons per rolling 12-month period
+- Truck Loadout: 25 million gallons per rolling 12-month period
+- DDGS Production: 487,500 tons per rolling 12-month period
+- Boiler Restrictions: Boilers must combust natural gas only
+- Dryer/RTO Restrictions: DDGS Dryers and RTOs must combust natural gas and/or approved process off-gases only
+- Rail Restrictions: Dedicated ethanol railcar loading required
+- Corn Throughput: Not explicitly identified in permit
+- Grain Storage Limit: Not explicitly identified in permit
 
 Derived Metrics:
-- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
-- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
-- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
-- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
-- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: corn throughput limit not identified.
+- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input | Note: corn throughput limit not identified.
+- Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: corn oil production not identified.
+- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input | Note: corn throughput limit not identified.
+- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input | Note: grain storage and corn throughput limits not identified.
 - Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
 - Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
 - Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
-- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
-- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+- DDGS tons/day: 1,335.6 tons/day | Formula: 487,500 tons/year / 365 | Confidence: medium.
+- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input | Note: corn throughput limit not identified.
 
 Confidence Notes / Assumptions:
-- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
-- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
-- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
-- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.
+- Manual correction added because the earlier batch extraction read only the first 18 permit pages and missed limitations located later in the permit, including page 34.
+- Ethanol production limit and DDGS production limit are taken from the user-reviewed permit limitation text.
+- Corn throughput limit, grain storage capacity, fermenter count, fermenter volume, beer well volume, and corn oil production are not clearly identified in the reviewed summary.
+- Existing facility metadata, technology flags, and equipment mentions are retained from the prior permit extraction and LCFS dropdown record.
+- Derived metrics requiring corn throughput remain unavailable.
