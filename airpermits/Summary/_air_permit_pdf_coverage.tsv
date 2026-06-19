@@ -27,6 +27,7 @@ pdf	summary	epm	facility	city	match_score	match_note
 17-TV-002R1.pdf	3559_ADM_Clinton_IA.txt	3559	ADM Clinton IA	Clinton	1.000	manual_pdf_epm_override
 17-TV-003R1.pdf	3582_Cargill_Inc.txt	3582	Cargill Inc	Fort Dodge	1.000	manual_pdf_epm_override
 18-TV-004-M001.pdf	3680_Poet_Biorefinning_Jewell_LLC.txt	3680	Poet Biorefinning-Jewell LLC	Jewell	1.000	manual_pdf_epm_override
+18-TV-008R1.pdf	3675_Poet_Biorefinning_Gowrie_LLC.txt	3675	Poet Biorefinning-Gowrie LLC	Gowrie	1.060	name=1.00; city=1.00; bonus=0.11
 19-TV-001R1.pdf	3659_Pine_Lake_Corn_Processors.txt	3659	Pine Lake Corn Processors	Steamboat Rock	1.000	manual_pdf_epm_override
 19-TV-005R1.pdf	3679_Poet_Biorefinning_Iowa_Falls_LLC.txt	3679	Poet Biorefinning-Iowa Falls LLC	Iowa Falls	1.000	manual_pdf_epm_override
 20-TV-004.pdf	3600_Elite_Octane_LLC.txt	3600	Elite Octane LLC	Atlantic	1.000	manual_pdf_epm_override

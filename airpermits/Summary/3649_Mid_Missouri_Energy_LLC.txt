@@ -14,10 +14,15 @@ Facility Identity:
 - Year built: 2,005
 
 Capacity / Throughput Limits:
-- Ethanol capacity used: 7,800.00 MGY
-- Ethanol capacity source: Ethanol Shipment and Denaturant Delivery (7,800 gallons per truck capacity) 8,674 trucks
+- Ethanol capacity used: 66.00 MGY
+- Ethanol capacity source: CO shipment (20 tons per truck capacity) 5,475 trucks 2 2. Special Condition 2.B: The permittee shall not exceed a production limit of 66,000,000 gallons of denatured
 - Permitted corn/grain throughput: not available bu/year
 - Throughput source line: not identified
+
+Operational Limits / Design Capacities:
+- Ethanol Production: 66.00 MGY | Type: Permit Limit | Source: CO shipment (20 tons per truck capacity) 5,475 trucks 2 2. Special Condition 2.B: The permittee shall not exceed a production limit of 66,000,000 gallons of denatured
+- Ethanol Production: 66,000,000.00 gal | Type: Permit Limit | Period: rolling 12-month | Source: 2. Special Condition 2.B: The permittee shall not exceed a production limit of 66,000,000 gallons of denatured ethanol per 12-month rolling period. 3. Special Condition 12.B: The permittee shall only load ethanol to rail (F55) between the hours of 7 am to 7
+- Ethanol Production: 12.00 gal | Type: Permit Limit | Period: rolling 12-month | Source: e) The 12-month rolling total gallons of denatured ethanol produced;
 
 Fermentation Equipment:
 - Fermentation line: not specifically identified
@@ -33,6 +38,8 @@ Grain Handling / Storage:
 
 Dryers:
 - Dryer mentions parsed: 3
+- Dryer rated capacity: not available MMBtu/hr
+- Dryer rated capacity source: not identified
 - S70 DDGS Cooling Cyclone 0.1226
 - SlO DDGS Dryer/Thermal Oxidizer 0.657
 - S70 DDGS Cooling Cyclone 0.16
@@ -73,6 +80,12 @@ Tanks:
 DDGS / Corn Oil Systems:
 - DDGS limit parsed: not available tons/year
 - DDGS source line: not identified
+- Wetcake production rate: not available tons/hr
+- Wetcake production source: not identified
+- Wetcake limit: not available tons/year
+- Wetcake limit source: not identified
+- Syrup limit: not available tons/year
+- Syrup limit source: not identified
 - S70 DDGS Cooling Cyclone 0.1226
 - SlO DDGS Dryer/Thermal Oxidizer 0.657
 - S70 DDGS Cooling Cyclone 0.16
@@ -88,31 +101,91 @@ DDGS / Corn Oil Systems:
 - (PIO) are in operation, the biomethanator off-gases shall be vented to either the DDGS Dryers (PIO) or the
 - P70 DDGS Cooler Cyclone
 - Corn oil source line: not identified
+- Corn oil centrifuge stack: not identified
 - Not specifically identified in extracted permit text.
 
-Emissions / Permit Constraints:
-- production capacity of the facility from 60 million gallons per year to 66 million gallons per
+Missouri Structured Fields:
+- Grain receiving limit: not available tons/year
+- Grain receiving source: not identified
+- Grain receiving bushels equivalent: not available bu/year
+- Corn elevator capacity: not available tons/hr
+- Corn elevator source: not identified
+- Corn bin unloading conveyor capacity: not available tons/hr
+- Corn bin unloading conveyor source: not identified
+- Beer/distillation feed: not available gal/min
+- Beer/distillation feed source: not identified
+- Evaporator capacity: not available gal/hr
+- Evaporator source: not identified
+- Concentrate tank: not available gal
+- Concentrate tank source: not identified
+- Thin stillage recycle: not available percent
+- Thin stillage recycle source: not identified
+- Evaporation stages: not available
+- Evaporation stages source: not identified
+- Centrifuge count: not available
+- Centrifuge count source: not identified
+- Centrifuge flow each: not available gal/min
+- Centrifuge flow each source: not identified
+- Centrifuge total flow: not available gal/min
+- Centrifuge total flow source: not identified
+- Centrifuge total hourly flow: not available gal/hr
+- Centrifuge total hourly flow source: not identified
+- Centrifuge total annual flow: not available gal/year
+- Centrifuge total annual flow source: not identified
+- Distillation source lines:
+- Not specifically identified in extracted permit text.
+- Evaporator source lines:
+- Not specifically identified in extracted permit text.
+- Centrifuge source lines:
+- Not specifically identified in extracted permit text.
+
+Emissions / Environmental Constraints:
 - Emission Limitations:
-- Ethanol Shipment and Denaturant Delivery (7,800 gallons per truck capacity) 8,674 trucks
-- 2. Special Condition 2.B: The permittee shall not exceed a production limit of 66,000,000 gallons of denatured
-- a) Monthly gallons of denatured ethanol produced;
-- e) The 12-month rolling total gallons of denatured ethanol produced;
-- Operational Limitations:
-- Operational Limitation:
-- DDGS Dryers (Device PIO) or distillation operations (P50) are in operation or any time that regulated VOC
+- 1. Special Condition 3 .A: the permittee shall not discharge acrolein emissions into the atmosphere from the
+- period. This shall include emissions from startup, shutdown, and malfunction as reported to the Air
+- Emission Point Description Limit (tny)
+- 2. Special Condition 3.B: The permittee shall not discharge acrolein emissions into the atmosphere in excess of
+- Emission Point Description Limit (lb/hr)
+- 3 .A. by recording the monthly and the 12-month rolling total of acrolein emissions from this installation.
+- Emission Unit I Description
+- 1. Special Condition 4.A: Emissions from the four ( 4) fermentation tanks and the beer well shall be controlled
+- control acetaldehyde emissions according to the rate specified by the most recent stack testing data. The
+- rate shall be determined by the first stack test conducted after the issuance of this permit.
+- a) Incidents of malfunction, with impact on emissions, duration of event, probable cause, and corrective
 - or HAP emissions are being vented to the thermal oxidizer.
 - 1. Special Condition 5.C: Emission rates of VOC and HAPs shall be tested, as detailed in Special Condition 10
-- 2. Special Condition 8.B: The cooling water circulation rate shall not exceed 1,500,000 gallons per hour
-- (25,000 gallons per minute).
-- with the Operational Limitations.
+- range may be reestablished by performing a new set of emission tests.
+- Emission Unit Description
+- Control ID No. Emission Point Emission Unit controlled
 - the records indicate an exceedance of the emission limitation.
-- VOC, combined HAP, Acetaldehyde, Acrolein, Formaldehyde, and Methanol emission rates from the
-- outlet (S40) and the thermal oxidizer outlet (S 10) shall be indicated in terms of gallons of anhydrous
+- (FDCP) that will control emissions from haul roads. The FDCP shall, at a minimum, include control and/or
+- drop across the control device, etc.) at which the stack tests are conducted shall be used to set the
+- b) During period(s) of representative emissions, the permittee shall submit, in the proposed test plant
+- required in Special Condition 11.A. sufficient data to determine the point( s) of representative emissions.
+- The representative emissions are the average of 3 points identified as highest airflow, lowest airflow,
+- supporting these representative emission points, the permittee shall conduct testing for the time period
+- 6. Special Condition 10.F: If the performance testing indicates that any of the emission rates specified in
+- must demonstrate how the permittee will reduce the emission rates below those stated in Permit Condition
+- the purpose of notification and must be approved by the Director prior to conducting the required emission
+- 3. Special Condition 11.C: The test report is to fully account for all operational and emission parameters
 - 4. Special Condition 11.D: The test report shall also include calculations to show that the potential VOC
+- emissions of the entire installation remain below the major source threshold of 100.0 tons per year, that the
 - individual HAP emissions of the entire installation remain below their respective SMAL (except for
 - acrolein), and that the combined HAP emissions of the entire installation remain below the major source
 - emissions of either HAPs or VOCs from the entire installation are greater than their respective SMAL or
+- after the submittal of the stack test report to account for the increase emission rates.
+- Emission point
+- Amount (a) Acrolein Emission
+- Emission (b) Acrolein
+- Point(s) Emissions (tons)
+- (d) Acrolein Emissions from Startup, Shutdown, and Malfunctions (tons):
 - (e) Current 12-month Total of Individual HAP Emissions in Tons: [(c) + (d)-(e)]
+- (S 10) shall be taken from the most recent stack tests. EF from 2017 stack tests included in table.
+- (c) Sum the acrolein emissions (tons) from the previous eleven (11) months.
+- ( d) Input the acrolein emissions from startup, shutdown, and malfunction for this month and the previous eleven
+- (e) Calculate the new 12-month rolling acrolein emissions total by adding the acrolein emissions of this month,
+- emissions from startup, shutdown, and malfunction, and the emissions of the previous eleven (11) months.
+- A 12-Month acrolein emissions rolling total (d) of less than the following indicates compliance:
 
 Derived Metrics:
 - Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
@@ -128,7 +201,7 @@ Derived Metrics:
 
 Confidence Notes / Assumptions:
 - Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.
 - Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
 - Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
 - Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

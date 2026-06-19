@@ -14,10 +14,37 @@ Facility Identity:
 - Year built: 2,009
 
 Capacity / Throughput Limits:
-- Ethanol capacity used: 150.00 MGY
-- Ethanol capacity source: dropdown facility capacity
+- Ethanol capacity used: 165.00 MGY
+- Ethanol capacity source: JWJ 40 Permit# 16-TV-005R1, 12/15/2021 A. Owner or operator is limited to a maximum production/loadout (loadout by truck or rail) of 165 million gallons of ethanol or denatured ethanol per twelve month rolling period at Valero
 - Permitted corn/grain throughput: not available bu/year
-- Throughput source line: not identified
+- Throughput source line: JWJ 22 Permit# 16-TV-005R1, 12/15/2021 A. Valero Renewable Fuels (Plant No. 94-01-073) is limited to receiving and processing 59.60 million bushels of corn per rolling 12-month period. Calculate and record on a monthly basis,
+
+Operational Limits / Design Capacities:
+- Corn Throughput: not available bu/year | Type: Permit Limit | Period: rolling 12-month | Source: JWJ 22 Permit# 16-TV-005R1, 12/15/2021 A. Valero Renewable Fuels (Plant No. 94-01-073) is limited to receiving and processing 59.60 million bushels of corn per rolling 12-month period. Calculate and record on a monthly basis,
+- DDGS Production / Loadout: 536,400.00 tons/year | Type: Permit Limit | Period: rolling 12-month | Source: A. Valero Renewable Fuels (Plant No. 94-01-073) is limited to loading/shipping a maximum of 536,400 tons of DDGS per rolling 12-month period. B. Valero is limited to shipping/loading a maximum of 480,000 tons of DDGS, of the total
+- DDGS Production / Loadout: 546,000.00 tons/year | Type: Permit Limit | Period: rolling 12-month | Source: 546,000 tons of DDGS, by trucks on a rolling 12-month basis.
+- Distillation / Beer Feed: not available | Type: Permit Limit | Source: be in operation when the Distillation Process is in operation. This requirement shall not
+- Ethanol Production: 8,250,000.00 gal | Type: Permit Limit | Source: B. Owner or operator is limited to blending a maximum of 8.25 million gallons of denaturant (gasoline) with ethanol per twelve month rolling period at Valero Renewable Fuels (Plant No. 94-01-073).
+- Ethanol Production: 165.00 MGY | Type: Permit Limit | Source: JWJ 40 Permit# 16-TV-005R1, 12/15/2021 A. Owner or operator is limited to a maximum production/loadout (loadout by truck or rail) of 165 million gallons of ethanol or denatured ethanol per twelve month rolling period at Valero
+- Ethanol Production: 165,000,000.00 gal/year | Type: Permit Limit | Period: rolling 12-month | Source: rail) of 165,000,000 gallons of ethanol or denatured ethanol per rolling 12-month period at
+- Truck Loadout: 165,000,000.00 gal | Type: Permit Limit | Source: A. Owner or operator is limited to a maximum production/loadout (loadout by truck or rail) of 165 million gallons of ethanol or denatured ethanol per twelve month rolling period at Valero Renewable Fuels (Plant No. 94-01-073).
+- Truck Loadout: 546,000.00 tons/year | Type: Permit Limit | Period: rolling 12-month | Source: B. Valero is limited to shipping/loading a maximum of 480,000 tons of DDGS, of the total 546,000 tons of DDGS, by trucks on a rolling 12-month basis. C. The facility shall conduct visible emissions observation (opacity) on EP S75 once per calendar
+- Truck Loadout: 99.00 MGY | Type: Permit Limit | Period: rolling 12-month | Source: C. Owner or operator is limited to loading non-dedicated trucks with ethanol for a maximum of 99.0 million gallons per rolling 12-month period at Valero Renewable Fuels (Plant No. 94-01 073).
+- Truck Loadout: 165,000,000.00 gal/year | Type: Permit Limit | Period: rolling 12-month | Source: F. The owner or operator is limited to a maximum production/loadout (loadout by truck or rail) of 165,000,000 gallons of ethanol or denatured ethanol per rolling 12-month period at Valero Renewable Fuels Co, LLC (Facility ID: 94-01-073). On a monthly basis, the owner
+- Boiler / Natural Gas: 3.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 03 Natural Gas 165 MMBtu/hr
+- Boiler / Natural Gas: 6.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 06 Natural Gas 165 MMBtu/hr
+- DDGS Production / Loadout: 1.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 01 DDGS Dryer A Natural Gas 45 MMBtu/hr
+- DDGS Production / Loadout: 2.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 02 DDGS Dryer B Natural Gas 45 MMBtu/hr
+- DDGS Production / Loadout: 4.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 04 DDGS Dryer C Natural Gas 45 MMBtu/hr Mulitclone
+- DDGS Production / Loadout: 5.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 05 DDGS Dryer D Natural Gas 45 MMBtu/hr
+- DDGS Production / Loadout: 69.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 69 DDGS 120 tons/hr None
+- DDGS Production / Loadout: 49.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 49 DDGS Inclined Drag 67 tons/hr
+- DDGS Production / Loadout: 55.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 55 DDGS Load-out Drag 200 tons/hr
+- DDGS Production / Loadout: 200.00 tons/hr | Type: Design Capacity | Period: hourly | Source: DDGS Truck and Rail 200 tons/hr
+- Dryer Heat Input: 45.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 01 DDGS Dryer A Natural Gas 45 MMBtu/hr
+- Ethanol Production: 12.40 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Ethanol Truck and Rail (12.4 MMBtu/hr;
+- Ethanol Production: 59.00 gal/min | Type: Design Capacity | Period: minute | Source: 59 Ethanol 2,000 gal/min (Rail)
+- Grain Handling: 53.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 53 Conveyors & Load-out 200 tons/hr
 
 Fermentation Equipment:
 - Fermentation line: not specifically identified
@@ -37,6 +64,8 @@ Grain Handling / Storage:
 
 Dryers:
 - Dryer mentions parsed: 4
+- Dryer rated capacity: 45.00 MMBtu/hr
+- Dryer rated capacity source: 01 DDGS Dryer A Natural Gas 45 MMBtu/hr
 - 01 DDGS Dryer A
 - 02 DDGS Dryer B
 - 04 DDGS Dryer C
@@ -90,6 +119,12 @@ Tanks:
 DDGS / Corn Oil Systems:
 - DDGS limit parsed: not available tons/year
 - DDGS source line: not identified
+- Wetcake production rate: not available tons/hr
+- Wetcake production source: not identified
+- Wetcake limit: not available tons/year
+- Wetcake limit source: not identified
+- Syrup limit: not available tons/year
+- Syrup limit source: not identified
 - 01 DDGS Dryer A
 - 02 DDGS Dryer B
 - 04 DDGS Dryer C
@@ -105,34 +140,130 @@ DDGS / Corn Oil Systems:
 - 55 DDGS Load-out Drag
 - 56 DDGS Truck and Rail Load-out Spout
 - Corn oil source line: not identified
+- Corn oil centrifuge stack: not identified
 - 89 Corn Oil Loadout
 - SS-CO3 Paved Road Emissions from Corn Oil Production
 
-Emissions / Permit Constraints:
+Missouri Structured Fields:
+- Grain receiving limit: not available tons/year
+- Grain receiving source: not identified
+- Grain receiving bushels equivalent: not available bu/year
+- Corn elevator capacity: not available tons/hr
+- Corn elevator source: not identified
+- Corn bin unloading conveyor capacity: not available tons/hr
+- Corn bin unloading conveyor source: not identified
+- Beer/distillation feed: not available gal/min
+- Beer/distillation feed source: not identified
+- Evaporator capacity: not available gal/hr
+- Evaporator source: not identified
+- Concentrate tank: not available gal
+- Concentrate tank source: not identified
+- Thin stillage recycle: not available percent
+- Thin stillage recycle source: not identified
+- Evaporation stages: not available
+- Evaporation stages source: not identified
+- Centrifuge count: not available
+- Centrifuge count source: not identified
+- Centrifuge flow each: not available gal/min
+- Centrifuge flow each source: not identified
+- Centrifuge total flow: not available gal/min
+- Centrifuge total flow source: not identified
+- Centrifuge total hourly flow: not available gal/hr
+- Centrifuge total hourly flow source: not identified
+- Centrifuge total annual flow: not available gal/year
+- Centrifuge total annual flow source: not identified
+- Distillation source lines:
+- Side Stripper
+- Rectifier Column
+- Molecular Sieve
+- Evaporator source lines:
+- Evaporators
+- 65 Thin Stillage None
+- Evaporators Thin Stillage from Thin
+- Centrifuge source lines:
+- Centrifuges 1,
+
+Emissions / Environmental Constraints:
 - This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- III. Emission Point Specific Conditions ..............................................................................10
+- G14. Excess Emissions and Excess Emissions Reporting Requirements
 - G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
-- bu……………………bushels
+- G17. Requirements for Making Changes to Emission Sources That Do Not Require Title V
+- G22. Acid Rain (Title IV) Emissions Allowances
+- G30. Notification and Reporting Requirements for Stack Tests or Monitor Certification
+- V. Appendix A: Web Link to New Source Performance Standards and National Emissions
+- CEM ...........................continuous emission monitor
+- EIQ .............................emissions inventory questionnaire
+- EP ...............................emission point
+- EU ..............................emission unit
+- lb./hr ...........................pounds per hour
+- PM ..............................particulate matter
+- PM ...........................particulate matter ten microns or less in diameter
 - VOC ...........................volatile organic compound
+- CO ..............................carbon monoxide
 - HAP............................hazardous air pollutant
+- Emission Emission DNR
+- Point Unit Emission Unit Description Construction
+- 59C Combustion Emissions from Ethanol Load-out
+- FS10 FS10 Fugitive Dust Emissions from Truck Traffic 04-A-453-S6
+- FS40 FS40 Fugitive Emissions from Equipment Leaks 04-A-455-S2
+- Insignificant Emission
+- Insignificant Emission Unit Description
+- SS-CO3 Paved Road Emissions from Corn Oil Production
 - Emission Limits
+- supporting regulations apply to all emission points at this plant:
+- Opacity (visible emissions): 40% opacity
+- Particulate Matter:
+- No person shall cause or allow the emission of particulate matter from any source in excess of
 - the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- sources constructed, modified or reconstructed on or after July 21, 1999, the emission of
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry standard cubic foot of exhaust gas, except as provided in 567 – 21.2(455B), 23.1(455B), 23.4(455B) and 567 – Chapter 24.
 - 23.4(455B) and 567 – Chapter 24.
+- For sources constructed, modified or reconstructed prior to July 21, 1999, the emission of
+- particulate matter from any process shall not exceed the amount determined from Table I, or amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic foot of exhaust gas or established from standards provided in 23.1(455B) and 23.4(455B).
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- prevent particulate matter from becoming airborne in quantities sufficient to cause a nuisance as
+- the discharge of visible emissions of fugitive dusts beyond the lot line of the property on which
+- the emissions originate. The public highway authority shall be responsible for taking corrective
+- emissions resulting from the handling and transfer of dusty materials, such as but not
 - NESHAP and NSPS Requirements
 - This facility is subject to the Standards of Performance for Equipment leaks of VOC in the
+- This facility is subject to National Emission Standards for Hazardous Air Pollutants for
 - Stationary Reciprocating Internal Combustion Engines (RICE NESHAP).
-- Screw bushels/hr
+- III. Emission Point-Specific Conditions
+- Emission Point ID Number: S10
+- Emission Emissions Unit Raw Rated
+- Oxidizer/ Waste None (Emission unit is
 - Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- The emissions from this emission point shall not exceed the levels specified below. Authority for Pollutant lb/hr tons/yr Other Limits
 - Pollutant lb/hr tons/yr Other Limits
+- Opacity NA NA 40%(1) 567 IAC 23.3(2)"d"
+- Particulate Matter (PM) – State
 - (VOC)
+- Carbon Monoxide (CO) 33.0(4) 99.0(3) NA 04-A-438-S9
 - Single HAP except 0.90 NA NA 04-A-438-S9
 - (Total HAP, formaldehyde, 1.92 NA NA 04-A-438-S9
 - (Total HAP, including NA 10.971 NA 04-A-438-S9
 - combustion HAPs)
+- (1) An exceedance of the indicator opacity of no visible emissions will require the owner or operator to promptly
+- investigate the emission unit and make corrections to operations or equipment associated with the exceedance.
+- compliance (e.g., stack testing).
 - malfunction. As specified in 40 CFR 60.44b(i), compliance with the emission limit is determined on a 30-day
+- The following subparts apply to the emission unit(s) in this permit:
 - Equipment Leaks of VOC in the Synthetic Organic Chemicals Manufacturing Industry,
-- VOC Performance Annual(1) 40 CFR 63, Appendix A, Method 320
-- Single HAP Performance Annual(1) According to DNR Approved Method
-- Total HAP Performance Annual(1) According to DNR Approved Method
+- H. The facility is required to monitor annual NOx and CO emission monthly and on a 365
+- 1. The owner or operator shall demonstrate compliance with the NOx and CO pound per
+- hour and TPY emissions limits, as specified in Section 1, in the following manner:
+- a. NOX and CO emissions shall be calculated using CEMS concentration readings
+- Step 2 shall be used to calculate NOx and CO emission rate.
+- Where E = pollutant emission rate in lb/MMBtu
+- For NOx Cd = (ppmv x 1.194 x 10^-7)
+- Where Er is emission rate calculated in lb/hr
+- i. After each BAT, the facility shall adjust the calculated Er values for NOx and CO,
+- adjusted Er value, in lb/hr, for NOx and CO, as specified in 5.H.c steps 1 and 2,
+- d. The facility shall calculate daily emissions in Pounds Per Day, using the adjusted Er
+- f. The department shall evaluate compliance with TPY emissions limits in Section 1
+- using the pound per day and annual TPY results submitted by the facility for NOx
 
 Derived Metrics:
 - Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
@@ -148,7 +279,7 @@ Derived Metrics:
 
 Confidence Notes / Assumptions:
 - Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.
 - Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
 - Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
 - Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

@@ -19,6 +19,10 @@ Capacity / Throughput Limits:
 - Permitted corn/grain throughput: not available bu/year
 - Throughput source line: not identified
 
+Operational Limits / Design Capacities:
+- Ethanol Production: 237.00 MGY | Type: Operational Constraint | Source: dropdown facility capacity
+- Boiler / Natural Gas: 7.90 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Natural Gas, 7.9 MMBtu/hr.
+
 Fermentation Equipment:
 - Fermentation line: not specifically identified
 - Fermenter count parsed: not available
@@ -33,6 +37,8 @@ Grain Handling / Storage:
 
 Dryers:
 - Dryer mentions parsed: 3
+- Dryer rated capacity: not available MMBtu/hr
+- Dryer rated capacity source: not identified
 - 272-3100 272-2100 3 Dryers System 13-A-203-S5
 - 235-2300 235-2300 10 Dryer System Feed Tank 15-A-445
 - EU265-2000 Dryer Feed Tank
@@ -64,35 +70,138 @@ Tanks:
 DDGS / Corn Oil Systems:
 - DDGS limit parsed: not available tons/year
 - DDGS source line: not identified
+- Wetcake production rate: not available tons/hr
+- Wetcake production source: not identified
+- Wetcake limit: not available tons/year
+- Wetcake limit source: not identified
+- Syrup limit: not available tons/year
+- Syrup limit source: not identified
 - Not specifically identified in extracted permit text.
 - Corn oil source line: not identified
+- Corn oil centrifuge stack: not identified
 - Not specifically identified in extracted permit text.
 
-Emissions / Permit Constraints:
+Missouri Structured Fields:
+- Grain receiving limit: not available tons/year
+- Grain receiving source: not identified
+- Grain receiving bushels equivalent: not available bu/year
+- Corn elevator capacity: not available tons/hr
+- Corn elevator source: not identified
+- Corn bin unloading conveyor capacity: not available tons/hr
+- Corn bin unloading conveyor source: not identified
+- Beer/distillation feed: not available gal/min
+- Beer/distillation feed source: not identified
+- Evaporator capacity: not available gal/hr
+- Evaporator source: not identified
+- Concentrate tank: not available gal
+- Concentrate tank source: not identified
+- Thin stillage recycle: not available percent
+- Thin stillage recycle source: not identified
+- Evaporation stages: not available
+- Evaporation stages source: not identified
+- Centrifuge count: not available
+- Centrifuge count source: not identified
+- Centrifuge flow each: not available gal/min
+- Centrifuge flow each source: not identified
+- Centrifuge total flow: not available gal/min
+- Centrifuge total flow source: not identified
+- Centrifuge total hourly flow: not available gal/hr
+- Centrifuge total hourly flow source: not identified
+- Centrifuge total annual flow: not available gal/year
+- Centrifuge total annual flow source: not identified
+- Distillation source lines:
+- Not specifically identified in extracted permit text.
+- Evaporator source lines:
+- 235-1400 235-1400 Evaporator 15-A-442
+- EU265-1000 Evaporator Feed Tank
+- EU265-1100 Evaporator
+- 235-1400 Evaporator Fermentation Broth 25 gallons/min. 15-A-442
+- Centrifuge source lines:
+- 235-7200 235-5100 Centrifuge 15-A-448-S1
+- 235-6521 Centrifuge
+- 235-6521 Centrifuge Dried
+
+Emissions / Environmental Constraints:
 - This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- III. Emission Point Specific Conditions…………………………………………………8
+- G14. Excess Emissions and Excess Emissions Reporting Requirements
 - G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- G17. Requirements for Making Changes to Emission Sources That Do Not Require Title
+- G22. Acid Rain (Title IV) Emissions Allowances
+- G30. Notification and Reporting Requirements for Stack Tests or Monitor Certification
+- CEM ...........................continuous emission monitor
+- EIQ .............................emissions inventory questionnaire
+- EP ...............................emission point
+- EU ..............................emission unit
+- lb./hr ...........................pounds per hour
+- PM ..............................particulate matter
+- PM ...........................particulate matter ten microns or less in diameter
 - VOC ...........................volatile organic compound
+- CO ..............................carbon monoxide
 - HAP............................hazardous air pollutant
-- EU-Gas Gasoline Storage Tank (500 gallons)
-- EU-Diesel Diesel Storage Tank (500 gallons)
+- Emission Emission
+- Point Unit Emission Unit Description
+- Insignificant Emission
+- Insignificant Emission Unit Description
 - Emission Limits
+- supporting regulations apply to all emission points at this plant:
+- Opacity (visible emissions): 40% opacity
+- Particulate Matter:
+- No person shall cause or allow the emission of particulate matter from any source in excess of
 - the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- sources constructed, modified or reconstructed on or after July 21, 1999, the emission of
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry standard cubic foot of exhaust gas, except as provided in 567 – 21.2(455B), 23.1(455B), 23.4(455B) and 567 – Chapter 24.
 - 23.4(455B) and 567 – Chapter 24.
+- For sources constructed, modified or reconstructed prior to July 21, 1999, the emission of
+- particulate matter from any process shall not exceed the amount determined from Table I, or amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic foot of exhaust gas or established from standards provided in 23.1(455B) and 23.4(455B).
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- prevent particulate matter from becoming airborne in quantities sufficient to cause a nuisance as
+- the discharge of visible emissions of fugitive dusts beyond the lot line of the property on which
+- the emissions originate. The public highway authority shall be responsible for taking corrective
+- emissions resulting from the handling and transfer of dusty materials, such as but not
+- III. Emission Point-Specific Conditions
+- Emission Point ID Number: 272-3100
+- Emission Emission Unit Control Raw Rated Construction
 - Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- The emissions from this emission point shall not exceed the levels specified below. Pollutant: Opacity Emission Limit(s): 40%(1)
+- Pollutant: Opacity
 - Emission Limit(s): 40%(1)
+- (1) An exceedance of the indicator opacity of "No Visible Emissions" will require the owner or operator to promptly
+- investigate the emission unit and make corrections to operations or equipment associated with the exceedance. If
+- (e.g., stack testing).
 - Emission Limit(s): 1.40 lb./hr.
+- Pollutant: Particulate Matter (PM)
 - Emission Limit(s): 1.40 lb./hr., 0.1 gr/dscf
 - Emission Limit(s): 0.30 lb./hr., 500 ppmv
 - Emission Limit(s): 1.58 lb./hr.
 - Pollutant: Volatile Organic Compounds (VOC's)
 - Emission Limit(s): 4.80 lb./hr.
+- Pollutant: Carbon monoxide (CO)
 - Emission Limit(s): 0.73 lb./hr.
-- Operational Limits & Requirements
-- The owner/operator of this equipment shall comply with the operational limits and requirements
 - compliance test which demonstrated compliance with the emission limits.
 - the last compliance test which demonstrated compliance with the emission limits.
 - the emission limits.
 - emission limits.
+- during the last compliance test which demonstrated compliance with the emission limits.
+- during the last compliance test which demonstrated compliance with the emission
+- Emission Point Characteristics
+- The emission point shall conform to the specifications listed below.
+- the permitted emission point. The Department recognizes that the temperature and flow rate may
+- Emission Point ID Number: 235-2300
+- Emission Emission Unit Raw Rated Construction
+- There are no applicable emission limits for this emission unit at this time.
+- Emission Point ID Number: 115-0000
+- Emission Limit(s): 0%(1)
+- (1) There shall be no visible emissions beyond the lot line.
+- Emission Limit(s): 1.45 tons/yr.
+- Pollutant: Particulate Matter
+- Emission Limit(s): 7.42 tons/yr.
+- 2. Determine the annual PM emissions on a rolling-12-month basis for each month of
+- 3. Determine the annual PM10 emissions on a rolling-12-month basis for each month of
+- Emission Point ID Numbers: 235-0100, 235-0200, 235-0300, 235-0400, 235-0500
+- Emission Emission Emission Unit Raw Rated Construction
+- The emissions from these emission points shall not exceed the levels specified below. There are no applicable emission limits for these emission units at this time. The emission points shall conform to the specifications listed below.
+- There are no applicable emission limits for these emission units at this time.
 
 Derived Metrics:
 - Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
@@ -108,7 +217,7 @@ Derived Metrics:
 
 Confidence Notes / Assumptions:
 - Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.
 - Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
 - Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
 - Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

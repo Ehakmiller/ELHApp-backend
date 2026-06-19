@@ -14,10 +14,30 @@ Facility Identity:
 - Year built: 2,008
 
 Capacity / Throughput Limits:
-- Ethanol capacity used: 65.50 MGY
-- Ethanol capacity source: Show-Me Ethanol, LLC is a 73 million gallon per year ethanol manufacturing facility (fuel
-- Permitted corn/grain throughput: not available bu/year
-- Throughput source line: not identified
+- Ethanol capacity used: 73.00 MGY
+- Ethanol capacity source: Carroll County Installation Description: Show-Me Ethanol, LLC is a 73 million gallon per year ethanol manufacturing facility (fuel
+- Permitted corn/grain throughput: 180,000 bu/year
+- Throughput source line: million bushels storage capacity. During events when the grain elevator is down, grain is received at the plant in onsite dump pits. From grain receiving, grain is stored in a day storage bin with a capacity of 180,000 bushels prior to being conveyed to 4 hammermills where it is dry milled into process powder
+
+Operational Limits / Design Capacities:
+- Corn Oil System: 73,000,000.00 gal/year | Type: Permit Limit | Period: annual | Source: Show-Me Ethanol, LLC is a 73 million gallon per year ethanol manufacturing facility (fuel grade and various industrial grades). In addition to ethanol, the plant will produce distiller’s dried grains and solubles (DDGS), and corn oil for animal feed as a co-product of the alcohol
+- DDGS Production: 73,000,000.00 tons/year | Type: Permit Limit | Period: annual | Source: permitting purposes and 100 tons/year for operating permit purposes. Show-Me Ethanol, LLC is a 73 million gallon per year fuel grade and HQE ethanol manufacturing facility. In addition to ethanol, the plant produces distiller’s dried grains and solubles (DDGS) for
+- Ethanol Production: 73,000,000.00 gal/year | Type: Permit Limit | Period: annual | Source: Show-Me Ethanol, LLC is a 73 million gallon per year ethanol manufacturing facility (fuel
+- Ethanol Production: 73.00 MGY | Type: Permit Limit | Period: annual | Source: Carroll County Installation Description: Show-Me Ethanol, LLC is a 73 million gallon per year ethanol manufacturing facility (fuel
+- Corn Throughput: 180,000.00 bu/year | Type: Operational Constraint | Source: million bushels storage capacity. During events when the grain elevator is down, grain is received at the plant in onsite dump pits. From grain receiving, grain is stored in a day storage bin with a capacity of 180,000 bushels prior to being conveyed to 4 hammermills where it is dry milled into process powder
+- Grain Storage: 180,000.00 bu | Type: Operational Constraint | Source: million bushels storage capacity. During events when the grain elevator is down, grain is received at the plant in onsite dump pits. From grain receiving, grain is stored in a day storage bin with a capacity of 180,000 bushels prior to being conveyed to 4 hammermills where it is dry milled into process powder
+- Boiler / Natural Gas: not available MMBtu/hr | Type: Design Capacity | Period: hourly | Source: MMBtu/hr natural gas and Process Vents
+- Boiler / Natural Gas: 300.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: SME-300 None. Natural Gas Fired Boiler; 75 MMBtu/hr
+- Boiler / Natural Gas: 150.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Thermal Oxidizer, 150 MMBtu/hr natural gas and methane, with heat routed to
+- DDGS Production / Loadout: 70.00 tons/hr | Type: Design Capacity | Period: hourly | Source: SME-70 DDGS Cooling system, 22.5 tons/hr
+- DDGS Production / Loadout: 22.50 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: MMBtu/hr and 22.5 tons DDGS/hr each
+- DDGS Production / Loadout: not available MMBtu/hr | Type: Design Capacity | Period: hourly | Source: DDGS/hr each MMBtu/hr natural gas and
+- Ethanol Production: 300.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: MMBtu/hr boiler (SME-300), a refined ethanol bulk storage tank (SEM-T302), a 190 proof ethanol
+- Fermentation: 5.00 gal/hr | Type: Design Capacity | Period: hourly | Source: Fermentation scrubber 5 Fermentation tanks; 6.561 Mgal/hr
+- Fermentation: 40.00 gal/hr | Type: Design Capacity | Period: hourly | Source: SME-40 5 Fermentation tanks; 6.561 Mgal/hr
+- Grain Receiving: 20.00 tons/hr | Type: Design Capacity | Period: hourly | Source: SME-20 Truck Grain Receiving; 420 tons/hr
+- Truck Loadout: 35.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: MMBtu/hr, natural gas Loadout of Ethanol to truck, 35 Mgal/hr
+- Truck Loadout: 35.00 gal/hr | Type: Design Capacity | Period: hourly | Source: Loadout of Ethanol to truck, 35 Mgal/hr
 
 Fermentation Equipment:
 - Fermentation line: not specifically identified
@@ -25,7 +45,7 @@ Fermentation Equipment:
 - Beer well present: yes
 
 Grain Handling / Storage:
-- Grain storage parsed: not available bu
+- Grain storage parsed: 180,000 bu
 - Truck Grain Receiving
 - SME-20 Truck Grain Receiving; 420 tons/hr
 - SME-200 None Truck Grain Receiving fugitives
@@ -41,6 +61,8 @@ Grain Handling / Storage:
 
 Dryers:
 - Dryer mentions parsed: 3
+- Dryer rated capacity: not available MMBtu/hr
+- Dryer rated capacity source: not identified
 - 2 DDGS Dryers: drum dryers fueled by natural gas and
 - DDGS/hr each
 - DDGS Cooler cyclone
@@ -65,7 +87,7 @@ Boilers / Process Heaters:
 - Loading Flare, 6.4 MMBtu/hr, natural
 
 Thermal Oxidizers / RTO:
-- RTO/thermal oxidizer mentions parsed: 17
+- RTO/thermal oxidizer mentions parsed: 38
 - Thermal Oxidizer, 150
 - The permittee shall operate and maintain the Thermal Oxidizer and Wet Scrubber for control of HAP
 - and as outlined in the CAM Monitoring Approach for the Thermal Oxidizer, included in Attachment G
@@ -92,8 +114,14 @@ Tanks:
 - Receiving of denaturant (gasoline) by truck None
 
 DDGS / Corn Oil Systems:
-- DDGS limit parsed: not available tons/year
-- DDGS source line: not identified
+- DDGS limit parsed: 73,000,000 tons/year
+- DDGS source line: permitting purposes and 100 tons/year for operating permit purposes. Show-Me Ethanol, LLC is a 73 million gallon per year fuel grade and HQE ethanol manufacturing facility. In addition to ethanol, the plant produces distiller’s dried grains and solubles (DDGS) for
+- Wetcake production rate: not available tons/hr
+- Wetcake production source: not identified
+- Wetcake limit: not available tons/year
+- Wetcake limit source: not identified
+- Syrup limit: not available tons/year
+- Syrup limit source: not identified
 - 2 DDGS Dryers: drum dryers fueled by natural gas and
 - DDGS/hr each
 - DDGS Cooler cyclone
@@ -108,50 +136,156 @@ DDGS / Corn Oil Systems:
 - SME-90 DDGS Loadout to trucks or railcars DDGS loadout baghouse (C90)
 - DDGS Storage/Loadout fugitives None
 - 4) 042008-004B, Special Condition 4B: The permittee shall not load out distillers dried grains with
-- Corn oil source line: not identified
+- Corn oil source line: Show-Me Ethanol, LLC is a 73 million gallon per year ethanol manufacturing facility (fuel grade and various industrial grades). In addition to ethanol, the plant will produce distiller’s dried grains and solubles (DDGS), and corn oil for animal feed as a co-product of the alcohol
+- Corn oil centrifuge stack: not identified
 - dried grains and solubles (DDGS), and corn oil for animal feed as a co-product of the alcohol
 
-Emissions / Permit Constraints:
+Missouri Structured Fields:
+- Grain receiving limit: not available tons/year
+- Grain receiving source: not identified
+- Grain receiving bushels equivalent: not available bu/year
+- Corn elevator capacity: not available tons/hr
+- Corn elevator source: not identified
+- Corn bin unloading conveyor capacity: not available tons/hr
+- Corn bin unloading conveyor source: not identified
+- Beer/distillation feed: not available gal/min
+- Beer/distillation feed source: not identified
+- Evaporator capacity: not available gal/hr
+- Evaporator source: not identified
+- Concentrate tank: not available gal
+- Concentrate tank source: not identified
+- Thin stillage recycle: not available percent
+- Thin stillage recycle source: not identified
+- Evaporation stages: not available
+- Evaporation stages source: not identified
+- Centrifuge count: not available
+- Centrifuge count source: not identified
+- Centrifuge flow each: not available gal/min
+- Centrifuge flow each source: not identified
+- Centrifuge total flow: not available gal/min
+- Centrifuge total flow source: not identified
+- Centrifuge total hourly flow: not available gal/hr
+- Centrifuge total hourly flow source: not identified
+- Centrifuge total annual flow: not available gal/year
+- Centrifuge total annual flow source: not identified
+- Distillation source lines:
+- to HRSG 6 Distillation columns
+- 6 Distillation columns
+- continuous flow of beer slurry to the distillation column. The carbon dioxide from the fermenters and
+- water. It passes through a molecular sieve in order to remove any remaining water, thereby producing
+- residual mash (whole stillage) leaving distillation is transferred from the base of the distillation column
+- new loadout station (SME-T306), three new distillation columns and various valves, connectors,
+- SME-10 Process vents, distillation columns, centrifuges Not expected to emit PM
+- Evaporator source lines:
+- 8 evaporators
+- The overflow from the centrifuge, called thin stillage, enters the evaporator system to reduce the water
+- content. The concentrated stream from the evaporator is mixed with the centrifuge underflow stream
+- and evaporators
+- Centrifuge source lines:
+- 5 centrifuges
+- to the stillage processing area. The whole stillage then passes through a centrifuge process to remove
+- the majority of the water. The underflow from the centrifuge is called wet distillers grains (WDGS).
+- The overflow from the centrifuge, called thin stillage, enters the evaporator system to reduce the water
+- content. The concentrated stream from the evaporator is mixed with the centrifuge underflow stream
+- SME-10 Process vents, distillation columns, centrifuges Not expected to emit PM
+
+Emissions / Environmental Constraints:
+- Permit is issued for each plant. The installation is a major source of Carbon Monoxide (CO).
+- 10 CSR 10-6.220 Restriction of Emission of Visible Air Contaminants .................................................... 61
+- Fugitive Emission Observations .................................................................................................................. 78
+- Method 22 Visible Emissions Observations ................................................................................................ 79
+- Method 9 Opacity Observations .................................................................................................................. 80
+- EMISSION UNITS WITH LIMITATIONS
 - that are identified as having unit-specific emission limitations.
-- SME-T61 None Denatured Ethanol Storage Tank 1, 750,000 gallons
-- SME-T62 None Denatured Ethanol Storage Tank 2, 750,000 gallons
-- SME-T63 None 200-proof ethanol storage tank, 165,000 gallons
-- SME-T64 None Denaturant (gasoline) storage tank, 165,000 gallons
-- SME-T65 None 190 proof ethanol storage tank, 165,000 gallons
+- EIQ Point Control device Emission Units
+- SME-110 None Haul Road Emissions
+- SME-F301 None. Fugitive emissions from Various HQE equipment
+- EMISSION UNITS WITHOUT SPECIFIC LIMITATIONS
 - the time of permit issuance. These units are subject to plant wide emission limitations.
-- SME-T302 Refined HQE storage tank; 570,000 gallons; fixed roof
-- SME-T303 190-proof HQE storage tank; 110,000 gallons; fixed roof
-- SME-T304 Four shift tanks (HQE); 33,000 gallons each; fixed roof
+- EIQ Point Emission Units
 - II. Plant Wide Emission Limitations
 - The installation shall comply with each of the following emission limitations. Consult the appropriate
-- Operational Limitation:
-- Special Condition 7.A: The permittee shall not produce greater than 73,000,000 gallons of denatured
+- the date that this permit is issued. The plant wide conditions apply to all emission units at this
+- installation. All emission units are listed in Section I under Emission Units with Limitations and
+- Emission Units without Specific Limitations.
 - which any record shows an exceedance of the emission limitation.
 - Emission Limitations:
-- Operational Limitations:
+- 12-month period from the entire installation. The permittee shall include all actual emissions in the limit
+- including SSM emissions as well as any excess SSM emissions as reported to the Air Pollution Control
 - The permittee shall operate and maintain the Thermal Oxidizer and Wet Scrubber for control of HAP
+- emissions from Emission Units SMW-10 and SME-40, respectively as required by Permit Condition 001
 - with the emission limit.
 - during which any record shows an exceedance of the emission limitation.
 - III. Emission Unit Specific Emission Limitations
-- distillation process are in operation or any time that regulated PM , VOC, or HAP emissions are
-- rate of 25,000 gallons per minute.
-- gallons/minute and whether the rate is below the water recirculation rate limit of 25,000 gallons per
+- Emission
+- Emission Units Control Device
+- SME-110 Haul Road Emissions None
+- fugitive emissions from these areas.
+- clean all of the paved portions of the haul road as necessary to achieve control of fugitive emissions
+- EIQ # Emission unit description Control device
+- pavement is adequate to achieve control of fugitive emissions from these areas. The permittee shall
+- perform a visual indicator check for each emission point under negative pressure at least once every
+- not the emission point(s) are in compliance.
+- a) Incidents of malfunction, with impact on emissions, duration of event, probable cause, and
+- established by performing a new set of emission tests. The permittee shall maintain records of the
+- days after the end of the month during which any record shows an exceedance of the emission
+- Emission Units
+- Note: The permittee has opted to comply with the NOx standards by the installation of a CEMS.
+- 3) Compliance with the emission limits is determined on a 30-day rolling average basis. [§60.44b(i)]
+- 1) Compliance with the NO emission standards under §60.44b shall be determined through
+- 2) To determine compliance with the emission limits for NO required under §60.44b, the permittee
+- During periods when performance tests are not requested, NO emissions data collected pursuant
+- to §60.48b(g)(1) or §60.48b(g)(2) are used to calculate a 30-day rolling average emission rate on
+- a daily basis and used to prepare excess emission reports, but will not be used to determine
+- compliance with the NO emission standards. A new 30-day rolling average emission rate is
+- emission data for the preceding 30 steam generating unit operating days. [§60.46b(e)(4)]
+- a) Install, calibrate, maintain, and operate CEMS for measuring NO and O (or CO ) emissions
+- c) The 1-hour average NO emission rates measured by the continuous NO monitor required by
+- shall be used to calculate the average emission rates under §60.44b. The 1-hour averages shall be
+- ppm NOx: [§60.48b(e)(2)(i)]
+- 75 of chapter 40. [§60.48b(e)(2)(ii)]
+- in appendix A to part 75 of chapter 40. [§60.48b(e)(3)]
+- e) When NO emission data are not obtained because of CEMS breakdowns, repairs, calibration
+- checks and zero and span adjustments, emission data will be obtained by using standby
+- other approved reference methods to provide emission data for a minimum of 75 percent of the
+- b) The average hourly NO emission rates (expressed as NO ) (ng/J or lb/MMBtu heat input)
+- c) The 30-day average NO emission rates (ng/J or lb/MMBtu heat input) calculated at the end of
+- emission rates for the preceding 30 steam generating unit operating days; [§60.49b(g)(3)]
+- NO emission rates are in excess of the NO emissions standards under §60.44b, with the
+- reasons for such excess emissions as well as a description of corrective actions taken;
+- f) Identification of the times when emission data have been excluded from the calculation of
+- average emission rates and the reasons for excluding data; [§60.49b(g)(6)]
+- 4) The permittee is required to submit excess emission reports for any excess emissions that occurred
+- a) For purposes of §60.48b(g)(1), excess emissions are defined as any calculated 30-day rolling
+- average NO emission rate, as determined under §60.46b(e), that exceeds the applicable
+- emission limits in §60.44b. [§60.49b(h)(4)]
+- the owner or operator, indicating whether compliance with the applicable emission standards and
+- 40 CFR Part 60 Subpart VV, Standards of Performance for Equipment Leaks of VOC in the
+- 2) The permittee may request a determination of equivalence of a means of emission limitation to the
+- 3) If the Director makes a determination that a means of emission limitation is at least equivalent to the
+- 5) Equipment that a permittee designates as being in VOC service less than 300 hours/yr is excluded
+- a) The equipment is in VOC service only during startup and shutdown, excluding startup and
+- b) The equipment is in VOC service only during process malfunctions or other emergencies.
+- c) The equipment is backup equipment that is in VOC service only when the primary equipment is
+- Equivalence of means of emission limitation
+- 1) The permittee may apply to the Director for determination of equivalence for any means of emission
+- limitation that achieves a reduction in emissions of VOC at least equivalent to the reduction in
 
 Derived Metrics:
-- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
-- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Ethanol yield: 405.556 gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: medium | Note: requires both capacity and corn throughput.
+- DDGS yield: 405.55556 tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: medium.
 - Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
-- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
-- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Grain throughput: 493 bu/day | Formula: permitted corn bu/year / 365 | Confidence: medium.
+- Grain storage days: 365.00 days | Formula: grain storage bu / grain throughput bu/day | Confidence: medium.
 - Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
 - Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
 - Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
-- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
-- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+- DDGS tons/day: 200,000.00 tons/day | Formula: DDGS tons/year / 365 | Confidence: medium.
+- DDGS lb/bu: 811,111.11 lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: medium.
 
 Confidence Notes / Assumptions:
 - Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.
 - Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
 - Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
 - Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

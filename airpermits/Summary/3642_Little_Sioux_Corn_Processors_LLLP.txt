@@ -14,10 +14,26 @@ Facility Identity:
 - Year built: 2,003
 
 Capacity / Throughput Limits:
-- Ethanol capacity used: 165.00 MGY
-- Ethanol capacity source: dropdown facility capacity
-- Permitted corn/grain throughput: not available bu/year
-- Throughput source line: not identified
+- Ethanol capacity used: 185.00 MGY
+- Ethanol capacity source: Production Limits Requirements A. The total amount of product loaded, including any volumes from third party suppliers, at Plant Number 18-02-006 shall not exceed 185 million gallons per rolling twelve-month period.
+- Permitted corn/grain throughput: 737,392 bu/year
+- Throughput source line: EU-Sb 1184 Grain Storage Silo Grain 737,392 bushels Baghouse CE-C20 EU-Sb 1185 Grain Storage Silo 737,392 bushels Emission Limit(s): 0% (1)
+
+Operational Limits / Design Capacities:
+- Corn Throughput: 737,392.00 bu/year | Type: Permit Limit | Source: EU-Sb 1184 Grain Storage Silo Grain 737,392 bushels Baghouse CE-C20 EU-Sb 1185 Grain Storage Silo 737,392 bushels Emission Limit(s): 0% (1)
+- DDGS Production: not available tons/year | Type: Permit Limit | Period: annual | Source: EP-S90 DDGS Loading EU-S90 Pollutant: Single HAP Emission Limit(s): 7.15 tons/yr (1)
+- Ethanol Production: 185.00 MGY | Type: Permit Limit | Source: Production Limits Requirements A. The total amount of product loaded, including any volumes from third party suppliers, at Plant Number 18-02-006 shall not exceed 185 million gallons per rolling twelve-month period.
+- Grain Processing: 1,817,200.00 tons/year | Type: Permit Limit | Period: rolling 12-month | Source: A. The maximum amount of corn received and/or processed at this facility shall not exceed 1,817,200 tons of corn per rolling 12-month period. i. The facility shall record on a monthly basis the amount of corn received, in tons.
+- Grain Storage: 737,392.00 bu | Type: Permit Limit | Source: EU-Sb 1184 Grain Storage Silo Grain 737,392 bushels Baghouse CE-C20 EU-Sb 1185 Grain Storage Silo 737,392 bushels Emission Limit(s): 0% (1)
+- Rail Loadout: not available | Type: Permit Limit | Source: E. The owner or operator shall not perform switch-loading at the rail loadout.
+- Beer Well: 1,900.00 gal/min | Type: Design Capacity | Period: minute | Source: Beer Well Beer 1,900 gal/min
+- Boiler / Natural Gas: 53.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: EU-P53 MSC Dryer Natural Gas 55 MMBtu/hr None
+- DDGS Production / Loadout: 40.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: DDGS Dryer A 40 MMBtu/hr
+- DDGS Production / Loadout: 45.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: DDGS Dryer C 45 MMBtu/hr
+- Dryer Heat Input: 40.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: DDGS Dryer A 40 MMBtu/hr
+- Grain Receiving: 645.00 tons/hr | Type: Design Capacity | Period: hourly | Source: Grain Receiving Pit 645 tons/hr
+- Grain Receiving: 20.00 bu/hr | Type: Design Capacity | Period: hourly | Source: EU-S20 Grain Receiving Pit 20,000 bushels/hr
+- Storage: 2.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Slurry Tank #2 Mash 16,000 gal 122 MMBtu/hr
 
 Fermentation Equipment:
 - Fermentation line: 12 Fermentation Process Vessels and Beer Well
@@ -25,7 +41,7 @@ Fermentation Equipment:
 - Beer well present: yes
 
 Grain Handling / Storage:
-- Grain storage parsed: not available bu
+- Grain storage parsed: 737,392 bu
 - EP S15 EU-P15 Grain Receiving Pit and Grain Storage Silos (4) 01-A-546-S8
 - EU-S20 Grain Receiving Pit
 - EP-S20 EU-Sb 1184 Grain Storage Silo 14-A-410-S4
@@ -66,7 +82,7 @@ Boilers / Process Heaters:
 - Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
 
 Thermal Oxidizers / RTO:
-- RTO/thermal oxidizer mentions parsed: 29
+- RTO/thermal oxidizer mentions parsed: 43
 - Thermal Oxidizer
 - B. The DDGS Dryers (EU-P10), MSC Dryer (EU-P53) and Regenerative Thermal Oxidizer (CE-
 - C. The owner or operator shall operate the Regenerative Thermal Oxidizer (CE-C10) when the
@@ -93,7 +109,7 @@ Tanks:
 
 DDGS / Corn Oil Systems:
 - DDGS limit parsed: not available tons/year
-- DDGS source line: not identified
+- DDGS source line: EP-S90 DDGS Loading EU-S90 Pollutant: Single HAP Emission Limit(s): 7.15 tons/yr (1)
 - Wetcake production rate: not available tons/hr
 - Wetcake production source: not identified
 - Wetcake limit: not available tons/year
@@ -157,20 +173,51 @@ Missouri Structured Fields:
 - Centrate Tank Centrifuge Feed 1,000 gal
 - EU-P50B Centrifuges #7
 
-Emissions / Permit Constraints:
+Emissions / Environmental Constraints:
 - This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- III. Emission Point Specific Conditions ..............................................................................13
+- G14. Excess Emissions and Excess Emissions Reporting Requirements
 - G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- G17. Requirements for Making Changes to Emission Sources That Do Not Require Title V
+- G22. Acid Rain (Title IV) Emissions Allowances
+- G30. Notification and Reporting Requirements for Stack Tests or Monitor Certification
+- CEM ...........................continuous emissions monitor
+- EIQ .............................emissions inventory questionnaire
+- EP ...............................emission point
+- EU ..............................emission unit
 - NESHAP……………national emission standard for hazardous air pollutants
+- lb./hr ...........................pounds per hour
+- PM ..............................particulate matter
+- PM ...........................particulate matter ten microns or less in diameter
 - VOC………………...volatile organic compound
+- CO ..............................carbon monoxide
 - HAP............................hazardous air pollutant
+- Emission Emission
+- Point Unit Emission Unit Description
+- EP-S58 EU-F58 Protein Fugitive Emissions 20-A-155
 - EP-F95 EU-F95 VOC Emissions from Equipment Leaks 05-A-752-S3
+- EP-F100 EU-F100 Fugitive Dust Emissions from Truck Traffic 06-A-808-S2
+- Emission Unit Insignificant Emission Unit Description
 - Emission Limits
+- supporting regulations apply to all emission points at this plant:
 - Single Hazardous Air Pollutant (Single HAP): 2.14 lb/hr
 - Total Hazardous Air Pollutant (Total HAP): 5.57 lb/hr
+- Opacity (visible emissions): 40% opacity
+- Particulate Matter:
+- No person shall cause or allow the emission of particulate matter from any source in excess of
 - the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- sources constructed, modified or reconstructed on or after July 21, 1999, the emission of
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry standard cubic foot of exhaust gas, except as provided in 567 – 21.2(455B), 23.1(455B), 23.4(455B) and 567 – Chapter 24.
 - 23.4(455B) and 567 – Chapter 24.
+- For sources constructed, modified or reconstructed prior to July 21, 1999, the emission of
+- particulate matter from any process shall not exceed the amount determined from Table I, or amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic foot of exhaust gas or established from standards provided in 23.1(455B) and 23.4(455B).
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- particulate matter from becoming airborne in quantities sufficient to cause a nuisance as defined
+- of visible emissions of fugitive dusts beyond the lot line of the property on which the emissions
+- emissions resulting from the handling and transfer of dusty materials, such as but not
 - HAP Emission CAP Requirements:
 - The emission points listed below shall collectively be referred to as the ''HAP Affected Emission
+- Emission Point ID Emission Unit Name Emission Unit ID
 - Pollutant: Single HAP
 - Emission Limit(s): 7.15 tons/yr (1)
 - Pollutant: Total HAP
@@ -178,17 +225,42 @@ Emissions / Permit Constraints:
 - (1) Limit on the combined emissions from “HAP Affected Emission Points”.
 - ''HAP Affected Emission Points'' shall be:
 - emission points in the ''HAP Affected Emission Points'' that demonstrated compliance with the
-- HAP (Single and Total) emission limits for each of these emission points. The average pound-
+- HAP (Single and Total) emission limits for each of these emission points. The average pound
 - per- hour emission rate determined from each test shall be used to calculate HAP (Single and
+- Total) emissions as indicated in Permit Conditions E through H.
 - B. The owner or operator shall record the number of hours that the ''HAP Affected Emission
 - C. The owner or operator shall record the number of hours that the ''HAP Affected Emission
+- D. The owner or operator shall record the total amount of each Single HAP, in tons, emitted from
+- the ''HAP Affected Emission Points'' on a monthly basis.
+- i. Monthly emissions for each Single HAP shall be determined as follows:
+- a. Monthly Single HAP Emissions (tons/month) = [(Average pound-per-hour
+- emission rate determined from the most recent Single HAP stack test) * (Total
+- E. The owner or operator shall calculate and record the total amount of each Single HAP, in tons,
+- emitted from the ''HAP Affected Emission Points'' on a rolling 12-month basis.
+- total of any Single HAP emitted from the ''HAP Affected Emission Points'' exceeds
+- a. The owner or operator shall record the total amount of each Single HAP, in tons,
+- emitted from the ''HAP Affected Emission Points'' on a daily basis.
+- b. Daily emissions for each Single HAP shall be determined as follows:
+- 1) Daily Single HAP Emissions (tons/day) = [(Average pound-per-hour emission
+- rate determined from the most recent Single HAP stack test) * (Total hours
+- HAP, in tons, emitted from the ''HAP Affected Emission Points'' on a 365-day basis.
+- d. Calculation and recordkeeping of emissions of each Single HAP shall not be
+- required when emissions do not occur.
+- e. Daily calculations and recordkeeping of emissions of each Single HAP as specified
+- of emissions of each Single HAP shall cease.
+- F. The owner or operator shall record the total amount of Total HAP, in tons, emitted from the
+- ''HAP Affected Emission Points'' on a monthly basis.
+- i. Monthly Total HAP emissions shall be determined as follows:
+- a. Monthly Total HAP Emissions (tons/month) = [(Average pound-per-hour emission
+- rate determined from the most recent Total HAP stack test) * (Total hours operation
+- G. The owner or operator shall calculate and record the total amount of Total HAP, in tons,
 
 Derived Metrics:
-- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
+- Ethanol yield: 250.884 gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: medium | Note: requires both capacity and corn throughput.
 - DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
 - Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
-- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
-- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Grain throughput: 2,020 bu/day | Formula: permitted corn bu/year / 365 | Confidence: medium.
+- Grain storage days: 365.00 days | Formula: grain storage bu / grain throughput bu/day | Confidence: medium.
 - Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
 - Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
 - Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
@@ -197,7 +269,7 @@ Derived Metrics:
 
 Confidence Notes / Assumptions:
 - Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.
 - Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
 - Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
 - Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

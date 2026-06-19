@@ -14,10 +14,43 @@ Facility Identity:
 - Year built: 0
 
 Capacity / Throughput Limits:
-- Ethanol capacity used: 71.00 MGY
-- Ethanol capacity source: dropdown facility capacity
+- Ethanol capacity used: 70.10 MGY
+- Ethanol capacity source: CFR Part 63, Subpart FFFF, Table 1, for Group 2 continuous process vents at an existing source 1. This process is a member of the Ethanol Group. The production capacity of this group shall be limited to 70.1 million gallons of undenatured ethanol per 12-month rolling
 - Permitted corn/grain throughput: not available bu/year
 - Throughput source line: not identified
+
+Operational Limits / Design Capacities:
+- Boiler / Natural Gas: 1.00 MMBtu/hr | Type: Permit Limit | Period: hourly | Source: 1. Natural Gas boiler capacity of each boiler shall not exceed 182.1 MMBtu/hr. 2. Each boiler shall only operate on natural gas. Control equipment parameters:
+- Dryer: not available | Type: Permit Limit | Source: Dryer I. This log shall include, but not necessarily be limited to the date of any inspection or maintenance activities performed, identification of staff performing the inspection or maintenance, any issues identified during an inspection, and explanation of any
+- Ethanol Production: 70,100,000.00 gal | Type: Permit Limit | Period: rolling 12-month | Source: shall be limited to 70.1 million gallons of undenatured ethanol per 12-month rolling period. 2. The owner or operator shall record monthly:
+- Ethanol Production: 70.10 MGY | Type: Permit Limit | Period: rolling 12-month | Source: CFR Part 63, Subpart FFFF, Table 1, for Group 2 continuous process vents at an existing source 1. This process is a member of the Ethanol Group. The production capacity of this group shall be limited to 70.1 million gallons of undenatured ethanol per 12-month rolling
+- Grain Processing: 14,000.00 tons | Type: Permit Limit | Period: daily | Source: 1. The receiving capacity rate of this process unit shall be limited to 14,000 tons of corn per day with compliance demonstrated on a 30-day rolling average basis. 1. Fabric filter should be maintained according to manufacturer's specifications and
+- Grain Processing: 10,100.00 tons | Type: Permit Limit | Period: daily | Source: group shall be limited to 10,100 tons of corn per day with compliance demonstrated on a 30-day rolling average basis. 8. At the end of each day, record the amount (in tons) of corn steeped in Process Group during
+- Grain Processing: 10,100.00 tons/day | Type: Permit Limit | Period: daily | Source: steeping capacity of this process group shall be limited to 10,100 tons of corn per day with compliance demonstrated on a 30-day rolling average basis. The owner or operator a. Estimate and record the steeping rate of corn, in tons per day, during each day of
+- Boiler / Natural Gas: 1.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 1.000 Boiler #4 x x Natural Gas 230 MMBtu/hr. 89-A-210-S5
+- Boiler / Natural Gas: 84.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 84.000 Boiler #5 x Natural Gas 182.1 MMBtu/hr. 92-A-227-S3
+- Boiler / Natural Gas: 86.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 86.000 Boiler #6 x Natural Gas 182.1 MMBtu/hr. 92-A-228-S3
+- Boiler / Natural Gas: 2.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Gas Boiler 2 NO Gas MMBtu/hr
+- Boiler / Natural Gas: 15.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Scrubber Natural Gas 15 MMBtu/hr
+- Boiler / Natural Gas: 4.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 4. The oxidizer capacity is 15.0 mmbtu/hr burning natural gas.
+- Boiler / Natural Gas: 5.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 5. Record the average amount of natural gas consumed (mmbtu/hr) every day of operation.
+- Boiler / Natural Gas: 3.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Pre-Dryer #3 Entoleter Scrubber Natural Gas 80 MMBtu/hr
+- Boiler / Natural Gas: 40.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Dryer I Scrubber Natural Gas 40 MMBtu/hr
+- Dryer: 104.20 tons/hr | Type: Design Capacity | Period: hourly | Source: 104.201 Germ Dryer #1 Germ 12.33 tons/hr 00-A-467-S4
+- Dryer: 104.20 tons/hr | Type: Design Capacity | Period: hourly | Source: 104.202 Germ Dryer #2 Germ 12.33 tons/hr
+- Dryer: 105.10 tons/hr | Type: Design Capacity | Period: hourly | Source: Gluten Flash Dryer CE 105.103A: 9 tons/hr @
+- Dryer: 5.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 5. The heat input of Gluten Flash Dryer I shall be 40.0 mmBTU/hr.
+- Dryer: 8.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 8. The heat input of Gluten Flash Dryer II shall be 40.0 mmBTU/hr.
+- Dryer Heat Input: 80.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Pre-Dryer #3 Entoleter Scrubber Natural Gas 80 MMBtu/hr
+- Ethanol Loadout: 79.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 79.000 Ethanol Loadout Ethanol 85 tons/hr 91-A-236-P5
+- Grain Storage: 28.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 28.000 Precoat Storage Bin Precoat 6.7 tons/hr 83-A-113-S2
+- Grain Storage: 126.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 126.000 Lime Storage Silo Lime 9 tons/hr 97-A-1097-S2
+- Rail Loadout: 105.02 tons/hr | Type: Design Capacity | Period: hourly | Source: 105.019 Rail Loadout Feed 120 tons/hr 83-A-104-P5
+- Rail Loadout: 140.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 140.000 Sweet Feed Rail Loadout Sweet Feed 147 tons/hr 01-A-1162-S2
+- Storage: not available | Type: Design Capacity | Source: (a) The owner or operator of each storage vessel either with a design capacity greater than or
+- Storage: 25.00 gal/hr | Type: Design Capacity | Period: hourly | Source: 25.000 Chemical Tank Aspiration CE 25.000: Scrubber 300 gal/hr 83-A-110-S2
+- Storage: 125.00 tons/hr | Type: Design Capacity | Period: hourly | Source: 125.000 Lime Dissolve Tank Lime 9 tons/hr 97-A-1096-S2
+- Truck Loadout: 105.04 tons/hr | Type: Design Capacity | Period: hourly | Source: 105.040 Feed Loadout to Truck Feed 72 tons/hr 88-A-061-P6
 
 Fermentation Equipment:
 - Fermentation line: not specifically identified
@@ -37,8 +70,8 @@ Grain Handling / Storage:
 
 Dryers:
 - Dryer mentions parsed: 9
-- Dryer rated capacity: not available MMBtu/hr
-- Dryer rated capacity source: not identified
+- Dryer rated capacity: 80.00 MMBtu/hr
+- Dryer rated capacity source: Pre-Dryer #3 Entoleter Scrubber Natural Gas 80 MMBtu/hr
 - 104.000 Fiber Flash Dryer 3
 - 104.000 104.201 Germ Dryer 1 00-A-467-S4
 - 104.202 Germ Dryer 2
@@ -68,7 +101,7 @@ Boilers / Process Heaters:
 - Emission Limit(s): 0.10 lb/MMBtu
 
 Thermal Oxidizers / RTO:
-- RTO/thermal oxidizer mentions parsed: 0
+- RTO/thermal oxidizer mentions parsed: 7
 - Not specifically identified in extracted permit text.
 
 Tanks:
@@ -120,38 +153,97 @@ Missouri Structured Fields:
 - Distillation source lines:
 - 77.4 Molecular Sieve Unit
 - 78.2 Molecular Sieve Unit Evaporator
+- Molecular Sieve 13,000
 - Evaporator source lines:
 - 78.1 Rectifying Column Evaporator
 - 78.2 Molecular Sieve Unit Evaporator
 - TK-71508 Thin Stillage Tank
+- Evaporator gallons
+- Unit Evaporator gallons
 - Centrifuge source lines:
 - Not specifically identified in extracted permit text.
 
-Emissions / Permit Constraints:
+Emissions / Environmental Constraints:
 - This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- III. Emission Point Specific Conditions ........................................................................... 11
+- G14. Excess Emissions and Excess Emissions Reporting Requirements
 - G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- G17. Requirements for Making Changes to Emission Sources That Do Not Require Title V
+- G22. Acid Rain (Title IV) Emissions Allowances
+- G30. Notification and Reporting Requirements for Stack Tests or Monitor Certification
+- V. Appendix A Federal Emission Standards Links: .................................................... 227
+- CEM ......................... continuous emission monitor
+- EIQ ........................... emissions inventory questionnaire
+- EP ............................. emission point
+- EU ............................ emission unit
+- lb./hr ......................... pounds per hour
+- PM ............................ particulate matter
+- PM ......................... particulate matter ten microns or less in diameter
+- PM ......................... particulate matter 2.5 microns or less in diameter
 - VOC ......................... volatile organic compound
+- CO ............................ carbon monoxide
 - HAP .......................... hazardous air pollutant
-- 182 West Gasoline Fueling Tank (560 gallons)
-- 183 West Diesel Fueling Tank (560 gallons)
-- 184 Fire Pump Diesel Tank (800 gallons)
-- 185 Generator Diesel Fuel Tank (800 gallons)
-- 238 East Gasoline Fuel Tank (3000 gallons)
-- 239 East Diesel Fuel Tank (3000 gallons)
+- Emission Emission Emission Unit Description IDNR
+- Insignificant Emission Insignificant Emission Unit Description
 - Emission Limits
+- supporting regulations apply to all emission points at this plant:
+- Opacity (visible emissions): 40% opacity
+- Particulate Matter:
+- No person shall cause or allow the emission of particulate matter from any source in excess of
 - the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- sources constructed, modified or reconstructed on or after July 21, 1999, the emission of
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry standard cubic foot of exhaust gas, except as provided in 567 – 21.2(455B), 23.1(455B), 23.4(455B) and 567 – Chapter 24.
 - 23.4(455B) and 567 – Chapter 24.
+- For sources constructed, modified or reconstructed prior to July 21, 1999, the emission of
+- particulate matter from any process shall not exceed the amount determined from Table I, or amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic foot of exhaust gas or established from standards provided in 23.1(455B) and 23.4(455B).
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- reasonable precautions to prevent particulate matter in quantities sufficient to create a nuisance,
+- exceptions, shall take reasonable precautions to prevent the discharge of visible emissions of
+- fugitive dusts beyond the lot line of the property on which the emissions originate. The highway
+- emissions resulting from the handling and transfer of dusty materials, such as but not limited
+- III. Emission Point-Specific Conditions
+- Emission Point ID Number: 51.000
+- Emission Emission Unit Control Monitoring Raw Rated Construction
 - Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- The emissions from this emission point shall not exceed the levels specified below. Pollutant: Opacity Emission Limit(s): 40 %(1)
+- Pollutant: Opacity
 - Emission Limit(s): 40 %(1)
+- (1) An exceedance of the indicator opacity of "no visible emissions" will require the owner/operator to promptly
+- investigate the emission unit and make corrections to operations or equipment associated with the exceedance. If
+- stack testing).
 - Emission Limit(s): 2.30 lb/hr
+- Pollutant: Particulate Matter
 - Emission Limit(s): 0.6 lb/MMBtu
 - Emission Limit(s): 500 ppmv
 - Emission Limit(s): 46.0 lb/hr
 - Emission Limit(s): 0.10 lb/MMBtu
 - Emission Limit(s): 0.06 lb/MMBtu
-- Operational Limits & Requirements
-- The owner/operator of this equipment shall comply with the operational limits and requirements
-- Process throughput:
+- Emissions Standard for Hazardous Air Pollutants (NESHAP) as outlined in 40 CFR 63.7555.
+- NESHAP:
+- This emission unit is subject to 40 CFR 63 Subpart DDDDD – National Emissions Standards for
+- Emission Point Characteristics
+- The emission point shall conform to the specifications listed below.
+- the permitted emission point. The Department recognizes that the temperature and flow rate may
+- Continuous Emissions Monitoring:
+- system, and record the output of the system, for measuring Nitrogen Oxide (NO ) emissions
+- Emission Point ID Number: 84.000
+- Emission Limit(s): 40 %
+- Emission Limit(s): 1.82 lb/hr (each boiler)
+- Emission Limit(s): 18.20 lb/hr (each boiler)(1)
+- (1) Total NO emissions from boilers 5 & 6 shall not exceed 212.1 lb/hr, based on a 30-day rolling average of CEMS data. JDA 14 06-TV-006R1, 10/27/2022
+- Exhaust Flow Rate (acfm): 106,000 total (53,000 per emission unit)
+- Continuous monitoring of NOx emissions is required. This will require the monitoring of NOx
+- Emission Point ID Numbers: 122.000 & 123.000
+- Emission Emission Emission Unit Raw Rated Construction
+- The emissions from each emission point shall not exceed the levels specified below. Emission Limit(s): 40% Emission Limit(s): 0.1 gr/dscf
+- Emission Limit(s): 40%
+- Emission Limit(s): 0.1 gr/dscf
+- These emergency engines are subject to 40 CFR 63 Subpart ZZZZ - National Emission
+- according to the manufacturer's emission related written instructions or develop your own
+- minimizing emissions.
+- Emission Point ID Numbers: 232.000 & 233.000
+- Emission Emission Emission Unit Control Monitoring Raw Rated Construction
+- Emission Limit(s): 40%(1)
 
 Derived Metrics:
 - Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
@@ -167,7 +259,7 @@ Derived Metrics:
 
 Confidence Notes / Assumptions:
 - Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.
 - Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
 - Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
 - Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

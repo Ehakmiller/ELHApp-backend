@@ -14,10 +14,34 @@ Facility Identity:
 - Year built: 2,000
 
 Capacity / Throughput Limits:
-- Ethanol capacity used: 0.04 MGY
+- Ethanol capacity used: 58.00 MGY
 - Ethanol capacity source: 042017-011 Produce less than 58,000,000 gallons of denatured ethanol in any consecutive 12-month period
 - Permitted corn/grain throughput: not available bu/year
-- Throughput source line: not identified
+- Throughput source line: other PtodueUon O.ta Cunan1 Otfference Pounctt or Grain Oil Prcxtuced ?M" Bushel ot Gni'.in \ ' Annual COfn 01 Prcdudion 10,300 10,300
+
+Operational Limits / Design Capacities:
+- Centrifuge / Decanter: 105,120,000.00 gal | Type: Permit Limit | Period: annual | Source: 105,120,000 gallons liquid per year through all centrifuges
+- Centrifuge Annual Flow: 105,120,000.00 gal/year | Type: Permit Limit | Period: annual | Source: 105,120,000 gallons liquid per year through all centrifuges
+- Corn Throughput: not available bu/year | Type: Permit Limit | Period: annual | Source: other PtodueUon O.ta Cunan1 Otfference Pounctt or Grain Oil Prcxtuced ?M" Bushel ot Gni'.in \ ' Annual COfn 01 Prcdudion 10,300 10,300
+- DDGS Production: 200,000.00 tons/year | Type: Permit Limit | Period: annual | Source: Eu = Uncontrolled Emission rate in ton/yr Ef = AP-42 Emission Factor Qddgs = 200,000 tons/year
+- DDGS Production / Loadout: 200,000.00 tons/year | Type: Permit Limit | Source: Qddgs = 200,000 tons/year
+- Ethanol Production: 58,000,000.00 gal | Type: Permit Limit | Source: 042017-011 Produce less than 58,000,000 gallons of denatured ethanol in any consecutive 12-month period
+- Ethanol Production: 55,000,000.00 gal | Type: Permit Limit | Source: 042017-011 Produce less than 55,000,000 gallons of anhydrous ethanol in any consecutive 12-month period
+- Ethanol Production: 58.00 MGY | Type: Permit Limit | Source: 042017-011 Produce less than 58,000,000 gallons of denatured ethanol in any consecutive 12-month period
+- Syrup: 42,017.00 tons | Type: Permit Limit | Source: 042017-011 Produce and loadout less than 20,000 tons of syrup in any consecutive 12-month period
+- Syrup Limit: 42,017.00 tons/year | Type: Permit Limit | Source: 042017-011 Produce and loadout less than 20,000 tons of syrup in any consecutive 12-month period
+- Wetcake: 80,000.00 tons | Type: Permit Limit | Source: 042017-011 Produce less than 80,000 tons of wet cake in any consecutive 12-month period
+- Wetcake: not available | Type: Permit Limit | Source: are assumed to be emitted, This operating scenario will be limited based on production per calendar year. Wetcake will be produced
+- Wetcake Limit: 80,000.00 tons/year | Type: Permit Limit | Source: 042017-011 Produce less than 80,000 tons of wet cake in any consecutive 12-month period
+- Centrifuge Total Flow: 800.00 gal/min | Type: Operational Constraint | Period: minute | Source: 800 gallons liquid per minute through all centrifuges
+- Wetcake Production Rate: 60.00 tons/hr | Type: Operational Constraint | Source: ·"'1Ut> Wet Cake Production 60 tonAlr TSP PM10 PM2.5 iNOne
+- Boiler / Natural Gas: not available | Type: Design Capacity | Source: The potential emissions for the boiler is cak:ulated by multiplying an emission factor by the rated capacity of the
+- Centrifuge / Decanter: 200.00 gal/min | Type: Design Capacity | Period: minute | Source: 200 gpm (each centrifuge)
+- Centrifuge Flow Each: 200.00 gal/min | Type: Design Capacity | Period: minute | Source: 200 gpm (each centrifuge)
+- DDGS Production / Loadout: 1,999.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: 1999, 2002, and 2009 68.5 MMBtu/hr, 22.83 DDGS tph
+- Storage: 28.00 tons/hr | Type: Design Capacity | Period: hourly | Source: EP-28 C010 DOGS Storage SIio #1 22.83 ton/hr
+- Truck Loadout: 31.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: EP-31 EP-31 Flare for Truck Loadout 0.0567 MMBtu/Hr NOx SOx. VOC, CO Flare
+- Wetcake: 60.00 tons/hr | Type: Design Capacity | Period: hourly | Source: Capacity= 60 tons/hr maximum wetcake production rate
 
 Fermentation Equipment:
 - Fermentation line: not specifically identified
@@ -33,6 +57,8 @@ Grain Handling / Storage:
 
 Dryers:
 - Dryer mentions parsed: 1
+- Dryer rated capacity: not available MMBtu/hr
+- Dryer rated capacity source: not identified
 - Grain Milling, DDGS Production 20
 - X uuu Calciners and Dryers in Mineral Industries
 
@@ -43,7 +69,7 @@ Boilers / Process Heaters:
 - Industrial, Commercial and Institutional Boilers and Process Heaters (This subpart has
 
 Thermal Oxidizers / RTO:
-- RTO/thermal oxidizer mentions parsed: 0
+- RTO/thermal oxidizer mentions parsed: 54
 - Not specifically identified in extracted permit text.
 
 Tanks:
@@ -51,28 +77,161 @@ Tanks:
 - - . 2.0C Control Device Information 2.SL General Liquid Storage Tank Information
 
 DDGS / Corn Oil Systems:
-- DDGS limit parsed: not available tons/year
-- DDGS source line: not identified
+- DDGS limit parsed: 200,000 tons/year
+- DDGS source line: Eu = Uncontrolled Emission rate in ton/yr Ef = AP-42 Emission Factor Qddgs = 200,000 tons/year
+- Wetcake production rate: 60.00 tons/hr
+- Wetcake production source: ·"'1Ut> Wet Cake Production 60 tonAlr TSP PM10 PM2.5 iNOne
+- Wetcake limit: 80,000 tons/year
+- Wetcake limit source: 042017-011 Produce less than 80,000 tons of wet cake in any consecutive 12-month period
+- Syrup limit: 42,017 tons/year
+- Syrup limit source: 042017-011 Produce and loadout less than 20,000 tons of syrup in any consecutive 12-month period
 - Dried Distillers Grains with Solubles 20
 - Grain Milling, DDGS Production 20
 - Corn oil source line: not identified
+- Corn oil centrifuge stack: yes
 - Not specifically identified in extracted permit text.
 
-Emissions / Permit Constraints:
+Missouri Structured Fields:
+- Grain receiving limit: not available tons/year
+- Grain receiving source: not identified
+- Grain receiving bushels equivalent: not available bu/year
+- Corn elevator capacity: not available tons/hr
+- Corn elevator source: not identified
+- Corn bin unloading conveyor capacity: not available tons/hr
+- Corn bin unloading conveyor source: not identified
+- Beer/distillation feed: not available gal/min
+- Beer/distillation feed source: not identified
+- Evaporator capacity: not available gal/hr
+- Evaporator source: not identified
+- Concentrate tank: not available gal
+- Concentrate tank source: not identified
+- Thin stillage recycle: not available percent
+- Thin stillage recycle source: not identified
+- Evaporation stages: not available
+- Evaporation stages source: not identified
+- Centrifuge count: 4
+- Centrifuge count source: Centrifuges #1 through #4 Bypass Stack
+- Centrifuge flow each: 200.00 gal/min
+- Centrifuge flow each source: 200 gpm (each centrifuge)
+- Centrifuge total flow: 800.00 gal/min
+- Centrifuge total flow source: 800 gallons liquid per minute through all centrifuges
+- Centrifuge total hourly flow: 12,000 gal/hr
+- Centrifuge total hourly flow source: 12,000 gallons liquid per hour through all centrifuges
+- Centrifuge total annual flow: 105,120,000 gal/year
+- Centrifuge total annual flow source: 105,120,000 gallons liquid per year through all centrifuges
+- Distillation source lines:
+- ~ EP-5 C004 Stripper, Beer Stripper, Rectlffer, Surge Tank Side voe, HAP Wet Scrubber
+- Stripper, Product Rundown Tank, 6 Molecular Sieves)
+- Rectifier Column gal/hr
+- One C1l Set of Six C6l Molecular Sieves rate)
+- Side Stripper, Beer Stripper, Recti!ier, SUl\lO
+- Rectifier, SL.H'UC Ta:nlc Sid
+- Evaporator source lines:
+- Distillation Bypass Staci<: Distillation (Evaporator, Side
+- Di•tillation Bypass Stacie OistiUaUon (Evaporator,
+- stillage, thin stillage, or wet cake (solids left after centrifuging). These materials are maintained at 175-180 •F while held in tanks and
+- The March 2017 Acrolein test was completed on thin stillage. Per the tes~ng in June 2016, wetcake is 36% dry solids by weight. PTE
+- calculaUons assume wetcake is 64% thin stillage by weight
+- (thin stillage). A fraction of the residual voe and HAP contained in the whole stillage is emitted from
+- Centrifuge source lines:
+- Centrifuges #1 through #4 Bypass Stack
+- 200 gpm (each centrifuge)
+- ~ EP-24 Centrifuges during RTO bypass 200 centrifuge) VOC,HAP
+- EP-22, EP-23. EP-24, Centrifuge Bypass stlleks.: Emissions from (4)
+- EP-25 Centrifuges durlna RTO t,wass 0.10 0.08 0.0 0.1
+- Wetcake is the grain solids from the whole stlllage centrifuges, before being conveyed to the DOGS dryers. If it is not dried to
+- while centrifuged. 11 any acrolein. acetaldehyde, or formaldehyde did remain In the stillage from distillation, it would be emitted from
+- tne centrifuges as temperatures within the centrifuges remain greater than 127 "F.
+- Acrolein, acetaldehyde, or fonmaldehyde would only be emitted in the scrubber or centrifuges (RTO). Historical analytical results have
+- dryers will be shut down, however. the fermentation tanks, distillation systems, and centrifuges will continue to be operated in normal mode.
+- for the v.tiole stillage centrifuges and one stack will be for the corn oil centrifuges. The emissions for the distillation and fermentation stacks
+- be shut down, however, the fermentation tanks, dis1illation systems, and centrifuges will continue to be operated in normal mode. This operating
+- stack will be for the fermentation scrubbers. one stack will be the dis1illation scrubber, four stacks will be for the whole sUllage centrifuges and one stack
+- will be for the com oil centrifuges. The emissions for the distillation and fermentation stacks will be controlled by wet scrubbers. The and HAP
+- EP-22, 23, 24, 25 Centrifuges - Bypass of RTO
+- Whole stillage is pumped to the centrifuges where the solids (wet cake) is separated from the liquid
+
+Emissions / Environmental Constraints:
+- 3. HAS THE INSTALLATION SUBMITTED AN EMISSION INVENTORY QUESTIONNAIRE, OR EIQ IN THE PAST FIVE YEARS?
+- 1.2 Summary of Emission Points 2.4 Petroleum Loading Worksheet
+- 2.0S Stack Information 2.7 Haul Road Fugitive Emissions Worksheet
+- Stack Test/Continuous Emission Monitoring
+- D03.00 General Emission Unit D05.00 Compliance Determination
+- 10 CSR 10-6.110 Submission of Emission Data, Emission Fees and Process Information '
+- 10 CSR 10-6.140 Restrictions of Emissions Credit for Reduced Pollutant Concentrations from the use of Dispersion Technioues'
+- 10 CSR 10-6.170 Restriction of Particulate Matter to the Ambient Air Bevond the Premises of Origin
+- 10 CSR 10-6.180 Measurement of Emissions of Air Contaminants '
+- Emission Standards for Hazardous Air Pollutants (NOTE: if yes, check specific
+- X 10 CSR 10-6.090 Restriction of Emission of Fluorides From Primary Aluminum Reduction Installations '
 - X 10 CSR 10-6.100 Alternate Emission Limits For Ozone Nonattainment Areas ~
+- X 10 CSR 10-6.120 Restriction of Emissions of Lead From Specific Lead Smelter-Refinery Installations '
+- X 10 CSR 10-6.220 Restriction of Emission of Visible Air Contaminants '
+- X 1O CSR 10-6.260 Restriction of Emission of Sulfur Compounds '
+- X 10 CSR 10-6.310 Restriction of Emissions From Municipal Solid Waste Landfills 1
+- X 10 CSR 10-6.330 Restriction of Emissions From Batch-Type Charcoal Kilns '
 - X 10 CSR 10-6.350 Emission limitations and Emissions Trading of Oxides of Nitrogen 1
+- Control of NOx Emissions From Electric Generating Units and Non-Electric
+- X 10 CSR 10-6.380 Control of NOx Emissions From Portland Cement Kilns
+- X 10 CSR 10-6.390 Control of NOx Emissions From Large Stationary Internal Combustion Engines
+- X 10 CSR 10-6.400 Restriction of Emission of Particulate Matter From Industrial Processes 1
+- X Restriction of Particulate Matter Emissions From Fuel Burning Equipment Used for
+- X 10 CSR 10-6.410 Emissions Banking and Trading
+- X C Emission Guidelines and Compliance Times
+- Emission Guidelines and Compliance Times for Municipal Waste Combusters that are
+- X Cc Emission Guidelines and Compliance Times for Municipal Solid Waste Landfills
+- X Ce Emission Guidelines and Compliance Times for Hospital/Medical/Infectious Waste Incinerators
+- X N Primary Emissions from Basic Oxygen Process Furnaces(construclion after 6/11/73
+- Secondary Emissions from Basic Oxygen Process Steelmaking Facilities (Construction started
 - X Ill VOC Emissions from SOCMI Air Oxidation Unit Processes
-- X KKK Equipment Leaks of VOC from Onshore Natural Gas Processing
+- X NNN voe Emissions from SOCMI Distillation Operations
 - X QQQ VOC Emissions form Petroleum Refinery Wastewater Systems
+- Emission Guidelines and Compliance Times for Small Municipal Waste Combustion Units
+- Emission Guidelines and Compliance Times for Commercial and Industrial Solid Waste
+- Emission Guidelines and Compliance Times for Other Solid Waste Incineration Units that
+- X HHHH Emission Guidelines and Compliance Times for Coal-Fired Electric Steam Generating Units
+- X MMMM Emission Guidelines and Compliance Times for Existing Sewage Sludge Incineration Units
+- (40 CFR PART 63 NATIONAL EMISSION STANDARDS FOR
+- X M Perchloroethylene Air Emission for Dry Cleaning
+- Chromium Emissions from Hard and Decorative Chromium Electroplating and from
+- X 0 Ethylene Oxide Emission for Sterilization Facilities
+- X y National Emission Standards for Marine Vessel Loading and Unloading Operations
+- X GG National Emissions Standards for Aerospace Manufacturing and Rework Facilities
+- X II National Emission Standards for Shipbuilding & Ship Repair (Surface Coating)
+- X JJ National Emission Standards for Wood Furniture Manufacturing Operations
+- X KK National Emission Standard for the Printing and Publishing Industry
+- APPLICABILITY (40 CFR PART 63 NATIONAL EMISSION STANDARDS FOR
+- X JJJ Hazardous Air Pollutant Emissions: Group IV Polymers and Resins
+- X 11111 Mercury Emissions from Mercury Cell Chlor-Alkali Plants
+- 10 CSR 10-3.090 Restrictions of Emission of Odors ~
+- X 10 CSR 10-3.010 Auto Exhaust Emission Controls 1
+- Restriction of Emission of Fluorides From Diammonium Phosphate Fertilizer
 - INSIGNIFICANT ACTIVITY POTENTIAL ESTIMATED EMISSIONS (TONS/YR)
+- EMISSION UNIT IC
 - PM10 SOx NOx LEAD HAPS
+- EMISSION UNIT ID
 - PM10 SOx NOx voe co LEAD HAPS
-- 042017-011 Produce less than 58,000,000 gallons of denatured ethanol in any consecutive 12-month period
-- 042017-011 Receive less than 3,000,000 gallons of denaturant in any consecutive 12-month period
-- 042017-011 Produce less than 55,000,000 gallons of anhydrous ethanol in any consecutive 12-month period
-- 042017-011 Receive less than 1,600,000 gallons of chemicals (urea, enzymes, etc.) in any consecutive 12-month period
+- is limited to 10,000 units per 12 month rolling average, or a limit on the installation's hours of operation) PERMIT NO. APPLICABLE PERMIT CONDITION 042017-011 Emit less than 92.74 tons of total NOx in any consecutive 12-month period
+- 042017-011 Emit less than 92.74 tons of total NOx in any consecutive 12-month period
+- EMISSION UNIT ID EIQ REFERENCE NUMBER (ID) SOURCE CLASSIFICATION CODE (SCC)
+- EMISSION UNIT ID EIQ REFERENCE NUMBER {ID) SOURCE CLASSIF!CATION CODE (SCC)
 - EMISSION LIMITATION OR STANDARD
 - NOTE: The installation shall comply with each of the following emission limitations. Consult the appropriate sections in the code of
+- (a) In the event of a malfunction, which results in excess emissions that exceed one hour, the permittee shall submit to the director
+- (4) Identity of the equipment causing the excess emissions.
+- (5) Time and duration of the period of excess emissions.
+- (6) Cause of the excess emissions.
+- (8) Best estimate of the magnitude of the excess emissions expressed in the units of the applicable requirement and the
+- (9) Measures taken to mitigate the extent and duration of the excess emissions.
+- (10) Measures taken to remedy the situation that caused the excess emissions and the measures taken or planned to prevent
+- start-up or shutdown, which is expected to cause an excessive release of emissions that exceed one hour. If notice of the event
+- unplanned excess release of emissions exceeding one hour occurs during maintenance, start-up or shutdown, the director shall
+- ( c) Upon receipt of a notice of excess emissions issued by an agency holding a certificate of authority under section 643.140,
+- RSMo, the permittee may provide information showing that the excess emissions were the consequence of a malfunction, start
+- after receipt of the notice of excess emissions. Based upon information submitted by the permittee or any other pertinent
+- information available, the director or the commission shall make a determination whether the excess emissions constitute a
+- malfunction, start-up or shutdown and whether the nature, extent and duration of the excess emissions warrant enforcement
+- (e) Compliance with this rule does not automatically absolve the perrnittee of liability for the excess emissions reported.
+- 10 CSR 10-6.080 Emission Standards for Hazardous Air Pollutants
 
 Derived Metrics:
 - Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
@@ -83,12 +242,12 @@ Derived Metrics:
 - Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
 - Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
 - Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
-- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
+- DDGS tons/day: 547.95 tons/day | Formula: DDGS tons/year / 365 | Confidence: medium.
 - DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
 
 Confidence Notes / Assumptions:
 - Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.
 - Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
 - Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
 - Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.

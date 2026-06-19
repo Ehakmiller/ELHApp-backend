@@ -117,10 +117,11 @@ def lines_with(text: str, terms: list[str], limit: int = 14) -> list[str]:
     return out
 
 
-def extract_pdf_text(path: Path, max_pages: int = 18) -> str:
+def extract_pdf_text(path: Path, max_pages: int | None = None) -> str:
     parts = []
     with pdfplumber.open(path) as pdf:
-        for page in pdf.pages[:max_pages]:
+        pages = pdf.pages if max_pages is None else pdf.pages[:max_pages]
+        for page in pages:
             parts.append(page.extract_text() or "")
     return "\n".join(parts)
 
@@ -241,17 +242,25 @@ def count_pattern(text: str, patterns: list[str]) -> int:
 
 def best_limit_value(text: str, unit_terms: list[str], context_terms: list[str]) -> tuple[float | None, str]:
     candidates = []
-    for line in text.splitlines():
-        low = line.lower()
+    lines = normalized_lines(text)
+    for idx, line in enumerate(lines):
+        window = " ".join(lines[idx:idx + 3])
+        low = window.lower()
         if any(term in low for term in unit_terms) and any(term in low for term in context_terms):
-            value = num(line)
+            units = infer_units(window)
+            value = infer_constraint_value(window, units)
             if value is not None:
-                candidates.append((value, re.sub(r"\s+", " ", line).strip()))
+                annual_score = value
+                if units == "MGY":
+                    annual_score = value * 1_000_000
+                elif units in {"gal/hr", "gal/min", "bu/hr", "tons/hr"} and "rolling" not in low and "per year" not in low:
+                    annual_score = value * 0.001
+                candidates.append((annual_score, value, re.sub(r"\s+", " ", window).strip()))
     if not candidates:
         return None, ""
     # Prefer large annual limits over page numbers and lb/hr rates.
     candidates = sorted(candidates, reverse=True, key=lambda item: item[0])
-    return candidates[0]
+    return candidates[0][1], candidates[0][2]
 
 
 def all_numbers(line: str) -> list[float]:
@@ -262,6 +271,293 @@ def all_numbers(line: str) -> list[float]:
         except ValueError:
             continue
     return values
+
+
+OPERATIONAL_CONTEXT_TERMS = [
+    "ethanol", "alcohol", "corn", "grain", "bushel", "receiving", "loadout", "loading", "throughput",
+    "production", "process", "processing", "feed rate", "feedrate", "feed", "storage", "tank", "silo",
+    "bin", "ddgs", "dgs", "distillers", "wet cake", "wetcake", "syrup", "dryer", "boiler", "heater",
+    "natural gas", "distillation", "beer", "centrifuge", "decanter", "tricanter", "evaporator",
+    "corn oil", "fermenter", "fermentation", "hammermill", "elevator", "conveyor", "capacity",
+]
+
+OPERATIONAL_LIMIT_TERMS = [
+    "limit", "limited", "shall not", "shall be less than", "less than", "not exceed", "no more than",
+    "per rolling", "rolling 12", "12-month", "12 month", "annual", "per year", "tons/yr", "ton/yr",
+    "tons/year", "gallons/year", "gallons per year", "bushels/year", "bushels per year",
+]
+
+DESIGN_CAPACITY_TERMS = [
+    "rated capacity", "design rate", "design capacity", "maximum hourly design", "capacity=",
+    "capacity =", "tons/hr", "ton/hr", "gal/min", "gpm", "gal/hr", "mmbtu/hr", "bu/hr",
+    "bushels/hr", "gallons/hour", "gallons per hour",
+]
+
+EMISSION_TERMS = [
+    "emission", "emissions", "voc", "hap", "nox", "so2", "pm10", "pm2.5", "particulate", "lb/hr",
+    "lbs/hr", "pounds per hour", "opacity", "stack test",
+]
+
+
+def normalized_lines(text: str) -> list[str]:
+    lines = []
+    seen = set()
+    for raw in text.splitlines():
+        line = re.sub(r"\s+", " ", raw).strip(" -\t")
+        if not line:
+            continue
+        key = line.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        lines.append(line)
+    return lines
+
+
+def is_emissions_only_line(line: str) -> bool:
+    low = line.lower()
+    if any(term in low for term in ["emission standard", "particulate matter", "emissions from", "shall not exceed the levels specified"]):
+        return True
+    if not any(term in low for term in EMISSION_TERMS):
+        return False
+    operational_hits = [term for term in OPERATIONAL_CONTEXT_TERMS if term in low]
+    return len(operational_hits) <= 1 and not any(term in low for term in ["throughput", "production", "loadout", "storage", "capacity"])
+
+
+def classify_constraint_category(line: str) -> str:
+    low = line.lower()
+    if "storage tank" in low and "material throughput" in low:
+        return "Storage"
+    if "truck" in low and any(term in low for term in ["loadout", "loading"]):
+        return "Truck Loadout"
+    if "rail" in low and any(term in low for term in ["loadout", "loading"]):
+        return "Rail Loadout"
+    if "ethanol" in low and any(term in low for term in ["loadout", "loading", "transfer"]):
+        return "Ethanol Loadout"
+    if "ethanol" in low or "alcohol" in low:
+        return "Ethanol Production"
+    if "grain" in low and "receiv" in low:
+        return "Grain Receiving"
+    if any(term in low for term in ["corn", "grain", "hammermill"]) and any(term in low for term in ["throughput", "process", "grind"]):
+        return "Grain Processing"
+    if any(term in low for term in ["corn elevator", "grain elevator", "conveyor"]):
+        return "Grain Handling"
+    if any(term in low for term in ["grain", "corn", "silo", "bin"]) and "stor" in low:
+        return "Grain Storage"
+    if any(term in low for term in ["ddgs", "dgs", "distillers"]):
+        return "DDGS Production / Loadout"
+    if "wet cake" in low or "wetcake" in low:
+        return "Wetcake"
+    if "syrup" in low or "cds" in low:
+        return "Syrup"
+    if "corn oil" in low:
+        return "Corn Oil System"
+    if "boiler" in low or "natural gas" in low or "heater" in low:
+        return "Boiler / Natural Gas"
+    if "dryer" in low:
+        return "Dryer"
+    if "distillation" in low or "beer feed" in low or "beer stripper" in low:
+        return "Distillation / Beer Feed"
+    if "beer well" in low:
+        return "Beer Well"
+    if any(term in low for term in ["centrifuge", "decanter", "tricanter"]):
+        return "Centrifuge / Decanter"
+    if "evaporator" in low:
+        return "Evaporator"
+    if "ferment" in low:
+        return "Fermentation"
+    if "stor" in low or "tank" in low:
+        return "Storage"
+    if "rto" in low or "thermal oxidizer" in low:
+        return "RTO / Control Device"
+    return "Operational Constraint"
+
+
+def classify_limit_type(line: str) -> str:
+    low = line.lower()
+    if any(term in low for term in OPERATIONAL_LIMIT_TERMS):
+        return "Permit Limit"
+    if any(term in low for term in DESIGN_CAPACITY_TERMS):
+        return "Design Capacity"
+    return "Operational Constraint"
+
+
+def infer_period(line: str) -> str:
+    low = line.lower()
+    if "rolling" in low and ("12-month" in low or "12 month" in low):
+        return "rolling 12-month"
+    if any(term in low for term in ["per year", "/yr", "annual", "yearly"]):
+        return "annual"
+    if any(term in low for term in ["per day", "/day", "daily"]):
+        return "daily"
+    if any(term in low for term in ["per hour", "/hr", "hourly", "gal/hr", "tons/hr", "mmbtu/hr"]):
+        return "hourly"
+    if any(term in low for term in ["per minute", "/min", "gpm", "gal/min"]):
+        return "minute"
+    return ""
+
+
+def infer_units(line: str) -> str:
+    low = line.lower()
+    unit_patterns = [
+        (r"mmbtu\s*/?\s*hr|mmbtu\s+per\s+hour", "MMBtu/hr"),
+        (r"bushels?\s*/?\s*hr|bu\s*/?\s*hr|bushels?\s+per\s+hour", "bu/hr"),
+        (r"bushels?\s*/?\s*year|bu\s*/?\s*year|bushels?\s+per\s+year|bushels?.*rolling\s+12", "bu/year"),
+        (r"gallons?\s*/?\s*hour|gal\s*/?\s*hr|gallons?\s+per\s+hour", "gal/hr"),
+        (r"gallons?\s*/?\s*min|gal\s*/?\s*min|gpm|gallons?\s+per\s+minute", "gal/min"),
+        (r"\bmgy\b|million gallons.*rolling\s+12|million gallons per year|million gallons/year", "MGY"),
+        (r"gallons?\s*/?\s*year|gal\s*/?\s*year|gallons?\s+per\s+year|gallons?.*rolling\s+12", "gal/year"),
+        (r"tons?\s*/?\s*hr|tons?\s+per\s+hour", "tons/hr"),
+        (r"tons?\s*/?\s*day|tons?\s+per\s+day", "tons/day"),
+        (r"tons?\s*/?\s*yr|tons?\s*/?\s*year|tons?\s+per\s+year|tons?.*rolling\s+12", "tons/year"),
+        (r"\bgallons?\b", "gal"),
+        (r"\bbushels?\b|\bbu\b", "bu"),
+        (r"\btons?\b", "tons"),
+    ]
+    for pattern, units in unit_patterns:
+        if re.search(pattern, low):
+            return units
+    return ""
+
+
+def infer_constraint_value(line: str, units: str) -> float | None:
+    million_gal = re.search(r"([0-9][0-9,]*(?:\.\d+)?)\s+million\s+gallons?", line, flags=re.I)
+    if million_gal:
+        value = float(million_gal.group(1).replace(",", ""))
+        return value if units == "MGY" else value * 1_000_000
+    values = all_numbers(line)
+    if not values:
+        return None
+    if units in {"gal/year", "bu/year", "tons/year", "gal", "bu", "tons"}:
+        large = [value for value in values if value >= 1000]
+        if large:
+            return max(large)
+    return values[0]
+
+
+def should_capture_operational_constraint(line: str) -> bool:
+    low = line.lower()
+    noisy_terms = [
+        "not limited to grain",
+        "record the total amount",
+        "calculate and record",
+        "equipment operation and throughput",
+        "performance tests with measured",
+        "owner may submit",
+        "annual capacity factor",
+        "these measures may include",
+    ]
+    if any(term in low for term in noisy_terms):
+        return False
+    if is_emissions_only_line(line):
+        return False
+    has_context = any(term in low for term in OPERATIONAL_CONTEXT_TERMS)
+    has_limit_or_capacity = any(term in low for term in OPERATIONAL_LIMIT_TERMS + DESIGN_CAPACITY_TERMS)
+    has_rate_unit = bool(re.search(r"\b(?:mgy|gpm|gal/min|gal/hr|tons/hr|tons/yr|tons/year|bu/hr|bu/year|mmbtu/hr)\b", low))
+    return has_context and (has_limit_or_capacity or has_rate_unit)
+
+
+def add_constraint(
+    constraints: list[dict],
+    seen: set[tuple[str, str, str]],
+    label: str,
+    value: float | None,
+    units: str,
+    source_line: str,
+    limit_type: str,
+    period: str = "",
+) -> None:
+    if value is None and not source_line:
+        return
+    if label == "Operational Constraint":
+        return
+    if value is not None and not units:
+        return
+    if value is not None and units in {"gal/year", "bu/year", "tons/year"} and value < 1000:
+        return
+    dedupe_value = "" if value is None else f"{float(value):.6g}"
+    key = (label.lower(), dedupe_value, units.lower(), (period or infer_period(source_line)).lower(), limit_type.lower())
+    if key in seen:
+        return
+    seen.add(key)
+    constraints.append(
+        {
+            "label": label,
+            "value": value,
+            "units": units,
+            "period": period or infer_period(source_line),
+            "limit_type": limit_type,
+            "source_line": source_line,
+        }
+    )
+
+
+def extract_operational_constraints(text: str, facts: dict | None = None) -> tuple[list[dict], list[str]]:
+    constraints: list[dict] = []
+    emission_lines: list[str] = []
+    seen: set[tuple[str, str, str]] = set()
+    seen_emissions = set()
+
+    lines = normalized_lines(text)
+    for idx, base_line in enumerate(lines):
+        low_base = base_line.lower()
+        line = " ".join(lines[idx:idx + 3]) if any(term in low_base for term in ["shall not exceed", "not exceed", "maximum amount", "limited to"]) else base_line
+        if is_emissions_only_line(line):
+            low = line.lower()
+            if low not in seen_emissions and any(term in low for term in EMISSION_TERMS):
+                seen_emissions.add(low)
+                emission_lines.append(line)
+            continue
+        if not should_capture_operational_constraint(line):
+            continue
+        units = infer_units(line)
+        add_constraint(
+            constraints,
+            seen,
+            classify_constraint_category(line),
+            infer_constraint_value(line, units),
+            units,
+            line,
+            classify_limit_type(line),
+            infer_period(line),
+        )
+
+    if facts:
+        known_fields = [
+            ("Ethanol Production", "ethanol_capacity_mgy", "MGY", "ethanol_capacity_source", "Permit Limit"),
+            ("Corn Throughput", "permitted_corn_throughput_bu_per_year", "bu/year", "permitted_corn_throughput_source", "Permit Limit"),
+            ("Grain Storage", "grain_storage_bu", "bu", "grain_storage_source", "Design Capacity"),
+            ("Grain Receiving", "grain_receiving_limit_bushels_per_year", "bu/year", "grain_receiving_limit_source", "Permit Limit"),
+            ("Corn Elevator Capacity", "corn_elevator_tons_per_hour", "tons/hr", "corn_elevator_source", "Design Capacity"),
+            ("Corn Bin Unloading Conveyor", "corn_bin_unloading_conveyor_tons_per_hour", "tons/hr", "corn_bin_unloading_conveyor_source", "Design Capacity"),
+            ("Beer / Distillation Feed", "beer_feed_gpm", "gal/min", "beer_feed_source", "Design Capacity"),
+            ("Evaporator Capacity", "evaporator_gal_per_hour", "gal/hr", "evaporator_gal_per_hour_source", "Design Capacity"),
+            ("Centrifuge Flow Each", "centrifuge_gpm_each", "gal/min", "centrifuge_gpm_each_source", "Design Capacity"),
+            ("Centrifuge Total Flow", "centrifuge_gpm_total", "gal/min", "centrifuge_gpm_total_source", "Design Capacity"),
+            ("Centrifuge Annual Flow", "centrifuge_gpy_total", "gal/year", "centrifuge_gpy_total_source", "Design Capacity"),
+            ("Wetcake Limit", "wetcake_limit_tons_per_year", "tons/year", "wetcake_limit_source", "Permit Limit"),
+            ("Wetcake Production Rate", "wetcake_tons_per_hour", "tons/hr", "wetcake_tons_per_hour_source", "Design Capacity"),
+            ("Syrup Limit", "syrup_limit_tons_per_year", "tons/year", "syrup_limit_source", "Permit Limit"),
+            ("DDGS Production", "ddgs_limit_tons_per_year", "tons/year", "ddgs_limit_source", "Permit Limit"),
+            ("Dryer Heat Input", "dryer_heat_mmbtu_hr", "MMBtu/hr", "dryer_heat_source", "Design Capacity"),
+            ("Corn Oil System", "corn_oil_limit_value", "", "corn_oil_limit_source", "Operational Constraint"),
+        ]
+        for label, value_key, units, source_key, default_type in known_fields:
+            source = clean(facts.get(source_key))
+            add_constraint(
+                constraints,
+                seen,
+                label,
+                facts.get(value_key),
+                units or infer_units(source),
+                source,
+                classify_limit_type(source) if source else default_type,
+                infer_period(source),
+            )
+
+    priority = {"Permit Limit": 0, "Operational Constraint": 1, "Design Capacity": 2}
+    constraints.sort(key=lambda item: (priority.get(item.get("limit_type"), 9), item.get("label", ""), item.get("period", "")))
+    return constraints[:140], emission_lines[:80]
 
 
 def best_large_line_value(text: str, include_terms: list[str], min_value: float = 1000) -> tuple[float | None, str]:
@@ -412,7 +708,7 @@ def parse_facts(text: str, identity: dict, facility: Facility | None) -> dict:
     if storage_value and storage_value < 100000:
         storage_value = None
 
-    return {
+    facts = {
         "ethanol_capacity_mgy": ethanol_mgy,
         "ethanol_capacity_source": ethanol_line or ("dropdown facility capacity" if facility and facility.capacity_mgy else ""),
         "permitted_corn_throughput_bu_per_year": corn_bpy,
@@ -481,6 +777,10 @@ def parse_facts(text: str, identity: dict, facility: Facility | None) -> dict:
         "centrifuge_lines": lines_with_any(text, ["centrifuge", "tricanter", "decanter"], 16),
         "permit_constraint_lines": lines_with(text, ["emission limit", "operational limit", "throughput", "tons/yr", "gallons", "bushels", "hap", "voc"], 24),
     }
+    operational_limits, emission_limit_lines = extract_operational_constraints(text, facts)
+    facts["operational_limits"] = operational_limits
+    facts["emission_limit_lines"] = emission_limit_lines
+    return facts
 
 
 def derived_metrics(facts: dict) -> dict:
@@ -543,6 +843,18 @@ def write_summary(path: Path, identity: dict, facility: Facility | None, match_s
     out.append(f"- Ethanol capacity source: {facts.get('ethanol_capacity_source') or 'not found in permit; dropdown capacity used if available'}")
     out.append(f"- Permitted corn/grain throughput: {fmt_num(facts.get('permitted_corn_throughput_bu_per_year'), 0)} bu/year")
     out.append(f"- Throughput source line: {facts.get('permitted_corn_throughput_source') or 'not identified'}")
+    out.append("")
+    out.append("Operational Limits / Design Capacities:")
+    operational_limits = facts.get("operational_limits") or []
+    if operational_limits:
+        for item in operational_limits:
+            value = fmt_num(item.get("value"), 2) if item.get("value") is not None else "not available"
+            units = f" {item.get('units')}" if item.get("units") else ""
+            period = f" | Period: {item.get('period')}" if item.get("period") else ""
+            source = f" | Source: {item.get('source_line')}" if item.get("source_line") else ""
+            out.append(f"- {item.get('label')}: {value}{units} | Type: {item.get('limit_type')}{period}{source}")
+    else:
+        out.append("- Not specifically identified in extracted permit text.")
     out.append("")
     out.append("Fermentation Equipment:")
     out.append(f"- Fermentation line: {facts.get('fermentation_equipment') or 'not specifically identified'}")
@@ -620,8 +932,8 @@ def write_summary(path: Path, identity: dict, facility: Facility | None, match_s
     out.append("- Centrifuge source lines:")
     out.append(bullet_lines(facts.get("centrifuge_lines", [])))
     out.append("")
-    out.append("Emissions / Permit Constraints:")
-    out.append(bullet_lines(facts.get("permit_constraint_lines", [])))
+    out.append("Emissions / Environmental Constraints:")
+    out.append(bullet_lines(facts.get("emission_limit_lines", []) or facts.get("permit_constraint_lines", [])))
     out.append("")
     out.append("Derived Metrics:")
     out.append(f"- Ethanol yield: {fmt_num(metrics.get('ethanol_yield_gal_per_bu'), 3)} gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: {confidence_for(metrics.get('ethanol_yield_gal_per_bu'))} | Note: requires both capacity and corn throughput.")
@@ -637,7 +949,7 @@ def write_summary(path: Path, identity: dict, facility: Facility | None, match_s
     out.append("")
     out.append("Confidence Notes / Assumptions:")
     out.append("- Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.")
-    out.append("- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.")
+    out.append("- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.")
     out.append("- Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.")
     out.append("- Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.")
     out.append("- Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.")

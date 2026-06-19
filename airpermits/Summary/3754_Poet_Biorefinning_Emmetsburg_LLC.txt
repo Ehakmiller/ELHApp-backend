@@ -14,10 +14,33 @@ Facility Identity:
 - Year built: 2,002
 
 Capacity / Throughput Limits:
-- Ethanol capacity used: 68.00 MGY
-- Ethanol capacity source: dropdown facility capacity
-- Permitted corn/grain throughput: not available bu/year
-- Throughput source line: shall not exceed 40.08 million bushels of corn per rolling 12-month period.
+- Ethanol capacity used: 110.00 MGY
+- Ethanol capacity source: A. The total amount of ethanol product (i.e., denatured ethanol, undenatured ethanol, industrial purified ethanol, and E-85) transported through the truck loading and rail loading shall not exceed 110,000,000 gallons per twelve-month rolling period. The total amount of
+- Permitted corn/grain throughput: 2,862,000 bu/year
+- Throughput source line: DDG 2,862,000 bushels EU3 6 Grain Bins
+
+Operational Limits / Design Capacities:
+- DDGS Production: 50,000.00 tons/year | Type: Permit Limit | Period: annual | Source: Emission Limit(s): 0.25 Tons/yr Emission Limit(s): 1.12 Tons/yr A. The WDGS production at the facility shall not exceed 50,000 tons per rolling twelve (12)
+- DDGS Production / Loadout: 50,000.00 tons | Type: Permit Limit | Source: A. The WDGS production at the facility shall not exceed 50,000 tons per rolling twelve (12) month period. i. The owner or operator shall record the amount of WDGS produced each month, in tons.
+- Ethanol Production: not available | Type: Permit Limit | Source: C. The amount of tert-butyl alcohol (TBA) added to industrial purified ethanol shall not
+- Ethanol Production: 110.00 MGY | Type: Permit Limit | Source: A. The total amount of ethanol product (i.e., denatured ethanol, undenatured ethanol, industrial purified ethanol, and E-85) transported through the truck loading and rail loading shall not exceed 110,000,000 gallons per twelve-month rolling period. The total amount of
+- Grain Receiving: 11,000.00 tons | Type: Permit Limit | Period: daily | Source: B. The maximum amount of corn received at POET Biorefining-Emmetsburg shall not exceed 11,000 tons of corn per day. C. The facility shall only load or unload trucks with grain and DDGS with, at a minimum, the
+- Truck Loadout: 110,000,000.00 gal | Type: Permit Limit | Source: shall not exceed 110,000,000 gallons per twelve-month rolling period. The total amount of E-85 transported through the truck loading and rail loading shall not exceed 11,000,000 gallons (out of the 110,000,000 gallon total) per twelve-month rolling period. The total
+- Corn Throughput: 2,862,000.00 bu/year | Type: Operational Constraint | Source: DDG 2,862,000 bushels EU3 6 Grain Bins
+- Grain Storage: 2,862,000.00 bu | Type: Operational Constraint | Source: DDG 2,862,000 bushels EU3 6 Grain Bins
+- Boiler / Natural Gas: 1.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Heater #1 Space Heater 5.9616 MMBtu/hr
+- Boiler / Natural Gas: 2.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: Heater #2 Space Heater 5.9616 MMBtu/hr
+- Boiler / Natural Gas: 13.00 MMBtu/hr | Type: Design Capacity | Period: hourly | Source: EP SV13 EU22 Boiler #1 Natural Gas 100 MMBtu/hr
+- Centrifuge / Decanter: 14.00 tons/hr | Type: Design Capacity | Period: hourly | Source: EU-014 Centrifuge #1 Whole Stillage 50 tons/hr
+- Centrifuge / Decanter: 15.00 tons/hr | Type: Design Capacity | Period: hourly | Source: EU-015 Centrifuge #2 Whole Stillage 50 tons/hr
+- Centrifuge / Decanter: 16.00 tons/hr | Type: Design Capacity | Period: hourly | Source: EU-016 Centrifuge #3 Whole Stillage 50 tons/hr
+- Centrifuge / Decanter: 17.00 tons/hr | Type: Design Capacity | Period: hourly | Source: EU-017 Centrifuge #4 Whole Stillage 50 tons/hr
+- Centrifuge / Decanter: 18.00 tons/hr | Type: Design Capacity | Period: hourly | Source: EU-018 Centrifuge #5 Whole Stillage 50 tons/hr
+- Centrifuge / Decanter: 50.00 tons | Type: Design Capacity | Period: hourly | Source: Rated Capacity: 50 tons of whole stillage/hr (per centrifuge)
+- Ethanol Production: 2,800.00 gal/hr | Type: Design Capacity | Source: Rated Capacity: 2800 gallons/hour (200-proof ethanol)
+- Rail Loadout: 2,400.00 gal/min | Type: Design Capacity | Period: minute | Source: Ethanol Loadout (rail loading) 2,400 gal/min (rail) None
+- Storage: 20,000.00 tons/hr | Type: Design Capacity | Period: hourly | Source: Rated Capacity: 20,000 ft3 (tank capacity), 30 tons/hr (grinding)
+- Truck Loadout: 1,200.00 gal/min | Type: Design Capacity | Period: minute | Source: Ethanol Loadout (truck loading) 1,200 gal/min (truck) Flare (CE Flare)
 
 Fermentation Equipment:
 - Fermentation line: not specifically identified
@@ -25,7 +48,7 @@ Fermentation Equipment:
 - Beer well present: yes
 
 Grain Handling / Storage:
-- Grain storage parsed: not available bu
+- Grain storage parsed: 2,862,000 bu
 - EP SV1 EU1, EU2, EU3 Grain Receiving, Handling and Storage 04-A-219-S6
 - Distiller's Dried Grains with
 - EP SV11 EU20 DDGS Storage Silo 04-A-229
@@ -41,6 +64,8 @@ Grain Handling / Storage:
 
 Dryers:
 - Dryer mentions parsed: 0
+- Dryer rated capacity: not available MMBtu/hr
+- Dryer rated capacity source: not identified
 - Solubles (DDGS) Fluid Bed Cooler
 - EP SV11 EU20 DDGS Storage Silo 04-A-229
 - EP SV12 EU21 DDGS Storage Silo Bypass 04-A-230-S1
@@ -57,7 +82,7 @@ Boilers / Process Heaters:
 - Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
 
 Thermal Oxidizers / RTO:
-- RTO/thermal oxidizer mentions parsed: 3
+- RTO/thermal oxidizer mentions parsed: 46
 - RTO Bypass Stack: Fermenters, Beer Wells,
 - EP SV09 EU15, EU16, RTO Stack, 6 Fermenters, Centrifuges 04-A-227-S7
 - EP SV022 EU014-EU018 5 Centrifuge Units (RTO Bypass) 17-A-439-S1
@@ -74,55 +99,175 @@ Tanks:
 - EP SV062 EU073 Bed Additive Storage Tank #2 16-A-014-S1
 
 DDGS / Corn Oil Systems:
-- DDGS limit parsed: not available tons/year
-- DDGS source line: not identified
+- DDGS limit parsed: 50,000 tons/year
+- DDGS source line: Emission Limit(s): 0.25 Tons/yr Emission Limit(s): 1.12 Tons/yr A. The WDGS production at the facility shall not exceed 50,000 tons per rolling twelve (12)
+- Wetcake production rate: not available tons/hr
+- Wetcake production source: not identified
+- Wetcake limit: not available tons/year
+- Wetcake limit source: not identified
+- Syrup limit: not available tons/year
+- Syrup limit source: not identified
 - Solubles (DDGS) Fluid Bed Cooler
 - EP SV11 EU20 DDGS Storage Silo 04-A-229
 - EP SV12 EU21 DDGS Storage Silo Bypass 04-A-230-S1
 - C. The facility shall only load or unload trucks with grain and DDGS with, at a minimum, the
 - Corn oil source line: not identified
+- Corn oil centrifuge stack: not identified
 - CORNOIL Corn Oil Separation
 
-Emissions / Permit Constraints:
+Missouri Structured Fields:
+- Grain receiving limit: not available tons/year
+- Grain receiving source: not identified
+- Grain receiving bushels equivalent: not available bu/year
+- Corn elevator capacity: not available tons/hr
+- Corn elevator source: not identified
+- Corn bin unloading conveyor capacity: not available tons/hr
+- Corn bin unloading conveyor source: not identified
+- Beer/distillation feed: not available gal/min
+- Beer/distillation feed source: not identified
+- Evaporator capacity: not available gal/hr
+- Evaporator source: not identified
+- Concentrate tank: not available gal
+- Concentrate tank source: not identified
+- Thin stillage recycle: not available percent
+- Thin stillage recycle source: not identified
+- Evaporation stages: not available
+- Evaporation stages source: not identified
+- Centrifuge count: not available
+- Centrifuge count source: not identified
+- Centrifuge flow each: not available gal/min
+- Centrifuge flow each source: not identified
+- Centrifuge total flow: not available gal/min
+- Centrifuge total flow source: not identified
+- Centrifuge total hourly flow: not available gal/hr
+- Centrifuge total hourly flow source: not identified
+- Centrifuge total annual flow: not available gal/year
+- Centrifuge total annual flow source: not identified
+- Distillation source lines:
+- (Evaporator, Stripper, Rectifier, Surge
+- Tank Side Stripper, & 3 Molecular
+- 3 Molecular Sieves 4,000 gallons/hr (each)
+- 3 Molecular Sieves(1) 4,000 gallons/hr (each)
+- Evaporator source lines:
+- (Evaporator, Stripper, Rectifier, Surge
+- 12 Evaporators (2) 10,000 gallons/hr (each)
+- out of the twelve (12) Evaporators will be used for this process.
+- 12 Evaporators(1) 10,000 gallons/hr (each)
+- Centrifuge source lines:
+- EP SV09 EU15, EU16, RTO Stack, 6 Fermenters, Centrifuges 04-A-227-S7
+- EP SV022 EU014-EU018 5 Centrifuge Units (RTO Bypass) 17-A-439-S1
+- 5 Centrifuges (EU014 – EU018) 50 tons/hour
+- Emission Unit Description: RTO Stack: Fermenters, Beer Wells, Centrifuges,
+- EU-014 Centrifuge #1 Whole Stillage 50 tons/hr
+- EU-015 Centrifuge #2 Whole Stillage 50 tons/hr
+- EU-016 Centrifuge #3 Whole Stillage 50 tons/hr
+- EU-017 Centrifuge #4 Whole Stillage 50 tons/hr
+- EU-018 Centrifuge #5 Whole Stillage 50 tons/hr
+- 5 Centrifuges (EU014 – EU018) 50 tons/hour (CE007)
+- Emission Unit Description: 5 Centrifuge Units (RTO Bypass)
+- Rated Capacity: 50 tons of whole stillage/hr (per centrifuge)
+- A. The Centrifuges (EU-14 – EU018) may bypass the regenerative thermal oxidizer (CE011)
+- i. The owner or operator shall record the amount of time the Centrifuges are operated
+- number of hours the Centrifuges are operated without being controlled by the RTO
+- Centrifuge 1 & 2 na
+
+Emissions / Environmental Constraints:
 - This permit is issued in accordance with 567 Iowa Administrative Code Chapter 22, and is issued
+- III. Emission Point Specific Conditions ..............................................................................11
+- G14. Excess Emissions and Excess Emissions Reporting Requirements
 - G16. Notification Requirements for Sources That Become Subject to NSPS and NESHAP
+- G17. Requirements for Making Changes to Emission Sources That Do Not Require Title V
+- G22. Acid Rain (Title IV) Emissions Allowances
+- G30. Notification and Reporting Requirements for Stack Tests or Monitor Certification
+- CEM ...........................continuous emission monitor
+- EIQ .............................emissions inventory questionnaire
+- EP ...............................emission point
+- EU ..............................emission unit
+- lb./hr ...........................pounds per hour
+- PM ..............................particulate matter
+- PM ...........................particulate matter ten microns or less in diameter
 - VOC…………………volatile organic compound
+- CO ..............................carbon monoxide
 - HAP............................hazardous air pollutant
+- Emission Emission Unit Emission Unit Description DNR
+- Insignificant Emission Insignificant Emission Unit Description
 - Emission Limits
+- supporting regulations apply to all emission points at this plant:
+- Opacity (visible emissions): 40% opacity
+- Particulate Matter:
+- No person shall cause or allow the emission of particulate matter from any source in excess of
 - the emission standards specified in this chapter, except as provided in 567 – Chapter 24. For
+- sources constructed, modified or reconstructed on or after July 21, 1999, the emission of
+- particulate matter from any process shall not exceed an emission standard of 0.1 grain per dry standard cubic foot of exhaust gas, except as provided in 567 – 21.2(455B), 23.1(455B), 23.4(455B) and 567 – Chapter 24.
 - 23.4(455B) and 567 – Chapter 24.
+- For sources constructed, modified or reconstructed prior to July 21, 1999, the emission of
+- particulate matter from any process shall not exceed the amount determined from Table I, or amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic foot of exhaust gas or established from standards provided in 23.1(455B) and 23.4(455B).
+- amount specified in a permit if based on an emission standard of 0.1 grain per standard cubic
+- prevent particulate matter from becoming airborne in quantities sufficient to cause a nuisance as
+- the discharge of visible emissions of fugitive dusts beyond the lot line of the property on which
+- the emissions originate. The public highway authority shall be responsible for taking corrective
+- emissions resulting from the handling and transfer of dusty materials, such as but not
+- SV058 and EP SV060. Applicable requirements are incorporated in the Emission Point Specific
+- Applicable requirements are incorporated in the Emission Point Specific conditions.
+- Provisions of NSPS Subpart A. Applicable requirements are incorporated in the Emission Point
+- The emission unit, SV060, Diesel Fire Pump is subject to the New Source Performance
+- Emission Point Specific conditions.
+- SV1. Applicable requirements are incorporated in the Emission Point Specific conditions.
 - This facility is subject to Standards of Performance for Equipment Leaks of VOC in the Synthetic
-- 2,862,000 bushels
+- EP SV036, and EP SV041. Applicable requirements are incorporated in the Emission Point
+- The diesel engines at this facility are subject to the National Emission Standard for Hazardous
+- EP SV21, SV059 and SV060. Applicable requirements are incorporated in the Emission Point
+- III. Emission Point-Specific Conditions
+- Emission Point ID Number: EP SV1
+- Associated Emission Unit ID Numbers: EU1, EU2, EU3
+- Emissions Control Equipment ID Number: CS1
+- Emissions Control Equipment Description: Pulse Jet Baghouse
+- Continuous Emissions Monitors ID Numbers: None
 - Emission Limits (lb./hr, gr./dscf, lb./MMBtu, % opacity, etc.)
+- The emissions from this emission point shall not exceed the levels specified below. Pollutant: Opacity Emission Limit(s): 0% (1)
+- Pollutant: Opacity
 - Emission Limit(s): 0% (1)
+- (1) If visible emissions are observed other than startup, shutdown or malfunction, a stack test may be required to
+- demonstrate compliance with the particulate standard.
+- Pollutant: Particulate Matter (PM )
 - Emission Limit(s): 1.0 lb/hr
+- Pollutant: Particulate Matter (PM)
 - Emission Limit(s): 1 lb/hr, 0.01 gr/dscf
-- Operational Limits & Requirements
-- The owner/operator of this equipment shall comply with the operational limits and requirements
-- shall not exceed 40.08 million bushels of corn per rolling 12-month period.
-- POET Biorefining-Emmetsburg in bushels. Calculate and record rolling 12-month totals.
+- (EU3) and shall continue to operate the system under negative pressure (vent emissions
+- F. The facility shall be limited to operating (i.e., unloading and loading materials) the emission unit (EU1) only between the hours of 6 AM to 11 PM daily. Reporting and Recordkeeping
+- the time the last material is loaded or unloaded from the emission unit (EU1).
 - NSPS and NESHAP Applicability
+- This emission unit is subject to the New Source Performance Standards (NSPS) Subpart DD –
+- Emission Point Characteristics
+- The emission point shall conform to the specifications listed below:
+- the permitted emission point. The Department recognizes that the temperature and flow rate may
+- emission point characteristics above are different than the values stated, the owner or operator
+- Visible emissions shall be observed on a weekly basis to ensure there are none when the
+- observation of visible emissions. If corrective action does not return the observation to no
+- visible emissions, then a Method 9 observation will be required. If observed, this would be a
+- Emission Point ID Number: EP SV2
+- Associated Emission Unit ID Number: EU4
+- Emissions Control Equipment ID Number: CE2
+- Emissions Control Equipment Description: Baghouse
+- Emission Unit vented through this Emission Point: EU4
 - Emission Limit(s): 40% (1)
-- Emission Limit(s): 0.11 lb/hr
-- Emission Limit(s): 0.11 lb/hr, 0.1 gr/dscf
-- Emission Limit(s): 0.39 lb/hr
-- Emission Limit(s): 0.39 lb/hr; 0.1 gr/dscf
+- (1) An exceedance of the indicator opacity of "no visible emissions" will require the owner/operator to promptly
 
 Derived Metrics:
-- Ethanol yield: not available gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: missing input | Note: requires both capacity and corn throughput.
-- DDGS yield: not available tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: missing input.
+- Ethanol yield: 38.435 gal/bu | Formula: ethanol capacity gal/year / permitted corn bu/year | Confidence: medium | Note: requires both capacity and corn throughput.
+- DDGS yield: 0.01747 tons/bu | Formula: DDGS tons/year / permitted corn bu/year | Confidence: medium.
 - Corn oil yield: not available | Formula: corn oil production / corn throughput | Confidence: missing input | Note: permit text generally identifies system presence but not annual corn oil production.
-- Grain throughput: not available bu/day | Formula: permitted corn bu/year / 365 | Confidence: missing input.
-- Grain storage days: not available days | Formula: grain storage bu / grain throughput bu/day | Confidence: missing input.
+- Grain throughput: 7,841 bu/day | Formula: permitted corn bu/year / 365 | Confidence: medium.
+- Grain storage days: 365.00 days | Formula: grain storage bu / grain throughput bu/day | Confidence: medium.
 - Fermenter volume: not available gal | Formula: reported total or fermenter count x vessel volume | Confidence: missing input.
 - Beer well volume: not available gal | Formula: reported beer well volume | Confidence: missing input.
 - Estimated fermentation time: not available hr | Formula: fermenter volume / (beer feed GPM x 60) | Confidence: missing input.
-- DDGS tons/day: not available tons/day | Formula: DDGS tons/year / 365 | Confidence: missing input.
-- DDGS lb/bu: not available lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: missing input.
+- DDGS tons/day: 136.99 tons/day | Formula: DDGS tons/year / 365 | Confidence: medium.
+- DDGS lb/bu: 34.94 lb/bu | Formula: DDGS tons/year x 2,000 / permitted corn bu/year | Confidence: medium.
 
 Confidence Notes / Assumptions:
 - Summary is generated from PDF text extraction and should be reviewed against the permit when numeric limits are material.
-- Batch extraction reads the first 18 pages of each permit, which captures the title page, equipment list, and plant-wide conditions in the Iowa Title V permit format; later source-specific conditions should be reviewed directly when needed.
+- Batch extraction reads the full PDF and scans all extracted permit text for operational limits, throughput rates, production constraints, loadout limits, storage limits, feed rates, and equipment design capacities.
 - Dropdown EPM, capacity, and facility metadata are used for identity matching and fallback capacity when the permit text does not expose a clear MGY limit.
 - Equipment counts are text-derived mentions from the equipment list, not engineering-verified counts.
 - Missing derived metrics mean the required source inputs were not reliably found in the extracted permit text.
