@@ -909,6 +909,40 @@ header, main{ position:relative; z-index:1; }
   margin-top:10px;
 }
 
+.detailToggleBlock{
+  margin-top:10px;
+}
+
+.detailToggleButton{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  border:0;
+  background:transparent;
+  color:var(--text);
+  padding:0;
+  font-size:12px;
+  font-weight:650;
+  cursor:pointer;
+}
+
+.detailToggleButton::before{
+  content:"";
+  width:0;
+  height:0;
+  border-left:5px solid transparent;
+  border-right:5px solid transparent;
+  border-top:6px solid var(--text);
+}
+
+.detailToggleButton:hover{
+  color:var(--accent);
+}
+
+.detailToggleButton:hover::before{
+  border-top-color:var(--accent);
+}
+
 .secondaryButton{
   border:1px solid var(--line);
   background:#0f1522;
@@ -1756,6 +1790,10 @@ The credit applies to qualifying carbon capture projects located in the United S
 </div>
 
 <div class="hr"></div>
+
+<div id="operatingDetailAction" class="detailToggleBlock" style="display:none;">
+  <button id="operatingDetailOpen" class="detailToggleButton" type="button">View Operating Detail</button>
+</div>
 
 <div class="note" id="lcfsDetailPanel" style="margin-top:10px; display:none;">
   <div style="margin-bottom:10px;">LCFS pathway detail</div>
@@ -4562,10 +4600,12 @@ function setOperatingDetailOpen(open){
 function renderPlantDetails(){
   const badges = document.getElementById("plantBadges");
   const kv = document.getElementById("plantKv");
+  const operatingAction = document.getElementById("operatingDetailAction");
   if (!badges || !kv) return;
 
     badges.innerHTML = "";
     kv.innerHTML = "";
+    if (operatingAction) operatingAction.style.display = "none";
 
     if (!selectedPlant){
       badges.innerHTML = `<span class="pill warn">No plant selected</span>`;
@@ -4756,20 +4796,7 @@ const items = [
     }
 
     const permit = operatingPermitBlock();
-    if (permit){
-      const action = document.createElement("div");
-      action.className = "detailActions";
-      action.style.gridColumn = "1 / -1";
-
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "secondaryButton";
-      btn.textContent = "Operating Detail";
-      btn.addEventListener("click", () => setOperatingDetailOpen(true));
-
-      action.appendChild(btn);
-      kv.appendChild(action);
-    }
+    if (operatingAction) operatingAction.style.display = permit ? "block" : "none";
 
     // If odd number of items, add 2 blank cells so the grid stays balanced
     if (items.length % 2 !== 0){
@@ -5587,6 +5614,8 @@ async function handlePlantSelectChange(){
 
   const opClose = document.getElementById("operatingDetailClose");
   const opModal = document.getElementById("operatingDetailModal");
+  const opOpen = document.getElementById("operatingDetailOpen");
+  if (opOpen) opOpen.addEventListener("click", () => setOperatingDetailOpen(true));
   if (opClose) opClose.addEventListener("click", () => setOperatingDetailOpen(false));
   if (opModal){
     opModal.addEventListener("click", (event) => {
