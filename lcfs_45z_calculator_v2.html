@@ -1422,6 +1422,26 @@ The credit applies to qualifying carbon capture projects located in the United S
 
   <div class="hr"></div>
 
+  <p class="sectionTitle">Additional Gallons</p>
+
+  <div class="scoreRow nowrap" style="margin-bottom:10px;">
+    <div class="scoreBox">
+      <div class="t">Additional annual gallons</div>
+      <input
+        id="additionalGallons"
+        class="small numBox"
+        type="number"
+        step="1000000"
+        min="0"
+        value="0"
+        title="Additional annual scenario gallons"
+      />
+      <div class="s">Added to plant capacity for scenario value math only</div>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+
       <!-- CHAPTER 2 (compact, matches Starting CI panel) -->
 <!-- CHAPTER 2 (compact, matches Starting CI panel) -->
 
@@ -4471,6 +4491,26 @@ function formatOperatingValue(value, units){
   return `${fmt(value, 2)}${u ? ` ${u}` : ""}`;
 }
 
+function scenarioGallonsPerYear(){
+  const capMgy = selectedPlant
+    ? Number(selectedPlant.ethanol_capacity_mgy ?? selectedPlant["ethanol_capacity_mgy"])
+    : NaN;
+  if (!Number.isFinite(capMgy)) return NaN;
+
+  const baseGallons = capMgy * 1_000_000;
+  const additionalGallonsRaw = getNumber("additionalGallons");
+  const additionalGallons = Number.isFinite(additionalGallonsRaw)
+    ? Math.max(0, additionalGallonsRaw)
+    : 0;
+
+  return baseGallons + additionalGallons;
+}
+
+function scenarioGallonsMgy(){
+  const gallons = scenarioGallonsPerYear();
+  return Number.isFinite(gallons) ? gallons / 1_000_000 : NaN;
+}
+
 const OPERATING_METRIC_ORDER = [
   ["total_corn_storage", "Total Grain Storage"],
   ["grain_storage_days", "Estimated Storage Days"],
@@ -4983,8 +5023,7 @@ res.fortyfiveq_effective_years = ch2Apply
 
 
 
-const capMgy = selectedPlant ? Number(selectedPlant.ethanol_capacity_mgy ?? selectedPlant["ethanol_capacity_mgy"]) : NaN;
-const gallonsPerYear = Number.isFinite(capMgy) ? capMgy * 1_000_000 : NaN;
+const gallonsPerYear = scenarioGallonsPerYear();
 
 if (ch2Apply && Number.isFinite(gallonsPerYear)){
   res.biogenic_co2_tons_per_year =
@@ -5341,10 +5380,8 @@ if (out45qValuePerGal){
     outRateDetailNote.textContent = "—";
   }
 
-  const cap = selectedPlant
-    ? Number(selectedPlant.ethanol_capacity_mgy ?? selectedPlant["ethanol_capacity_mgy"])
-    : NaN;
-  const gallonsPerYear = Number.isFinite(cap) ? cap * 1_000_000 : NaN;
+  const cap = scenarioGallonsMgy();
+  const gallonsPerYear = scenarioGallonsPerYear();
 
   let payout = NaN;
 
@@ -5584,6 +5621,7 @@ async function handlePlantSelectChange(){
     "caHub",
     "freightMultiplier","gPerMjPerMile",
     "subtractIluc","ilucValue",
+    "additionalGallons",
     "ckf_apply","ckf_share_pct",
     "applyMisc","ccsReduction",
     "ciBenchmark","maxRate",
