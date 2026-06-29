@@ -1,109 +1,4 @@
-﻿
-
-# -*- coding: utf-8 -*-
-r"""
-Created on Fri Feb 20 14:52:12 2026
-
-@author: ehakm
-
-write_lcfs_45z_calculator_v1.py
-
-Writes a single-file static HTML calculator into your docs/ folder.
-
-Output:
-  C:\Users\ehakm\Documents\ELHApp-Carbon_Calculator\docs\lcfs_45z_calculator_v2.html
-
-It loads:
-  ./static_data/LCFS/lcfs_dropdown_v2.json
-(relative to docs/)
-"""
-from datetime import datetime
-
-
-# =========================================================
-# DATA FILE SELECTION
-# =========================================================
-
-STATE_FILTER = None
-USE_EPM_SUBSET = False
-CUSTOM_JSON_NAME = None
-
-def build_data_json_name():
-    if CUSTOM_JSON_NAME:
-        return CUSTOM_JSON_NAME
-
-    suffix_parts = []
-
-    if STATE_FILTER:
-        suffix_parts.append(str(STATE_FILTER).strip().lower())
-
-    if USE_EPM_SUBSET:
-        suffix_parts.append("epm_subset")
-
-    if suffix_parts:
-        return f"lcfs_dropdown_v2_{'_'.join(suffix_parts)}.json"
-
-    return "lcfs_dropdown_v2.json"
-
-DATA_JSON_NAME = build_data_json_name()
-from pathlib import Path
-
-def target_repo_path() -> Path:
-    # Full national file goes to Carbon Calculator repo
-    if DATA_JSON_NAME == "lcfs_dropdown_v2.json":
-        return Path(r"C:\Users\ehakm\Documents\ELHApp-Carbon_Calculator")
-
-    # Any state or EPM subset goes to Sample KS repo
-    return Path(r"C:\Users\ehakm\Documents\ELHApp-Sample-45Z-KS")
-
-
-
-def find_repo_root() -> Path:
-    candidates = [
-        target_repo_path(),
-        Path.home() / "Documents" / "ELHApp-Carbon_Calculator",
-        Path.cwd(),
-    ]
-
-    for base in candidates:
-        try:
-            if base and (base / ".git").exists():
-                return base
-        except Exception:
-            pass
-
-    for p in [Path.cwd().resolve()] + list(Path.cwd().resolve().parents):
-        if (p / ".git").exists():
-            return p
-
-    raise SystemExit(
-        "❌ Could not find ELHApp-Carbon_Calculator repo root (.git). "
-        "Fix the path in find_repo_root()."
-    )
-
-REPO_ROOT = find_repo_root()
-
-def build_output_html_path():
-    if DATA_JSON_NAME == "lcfs_dropdown_v2.json":
-        return REPO_ROOT / "docs" / "lcfs_45z_calculator_v2.html"
-
-    stem_suffix = DATA_JSON_NAME.replace("lcfs_dropdown_v2_", "").replace(".json", "")
-    return REPO_ROOT / "docs" / f"lcfs_45z_calculator_v2_{stem_suffix}.html"
-
-OUT_HTML = build_output_html_path()
-
-print("REPO_ROOT =", REPO_ROOT)
-print("OUT_HTML =", OUT_HTML)
-print("DATA_JSON_NAME =", DATA_JSON_NAME)
-print("EXPECTED_JSON =", REPO_ROOT / "docs" / "static_data" / "LCFS" / DATA_JSON_NAME)
-
-
-
-
-BUILD_STAMP = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-
-HTML = r"""<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -1042,6 +937,72 @@ header, main{ position:relative; z-index:1; }
   margin-bottom:0;
 }
 
+.pathwayBenchmarkGrid{
+  display:grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.pathwayBenchmarkCard{
+  min-width:0;
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#0f1522;
+}
+
+.pathwayBenchmarkTitle{
+  font-size:12px;
+  color:var(--text);
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.pathwayBenchmarkTable{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+  font-size:11px;
+  color:var(--muted);
+}
+
+.pathwayBenchmarkTable th,
+.pathwayBenchmarkTable td{
+  padding:5px 4px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  vertical-align:top;
+  overflow-wrap:anywhere;
+}
+
+.pathwayBenchmarkTable th{
+  color:var(--text);
+  font-weight:650;
+  text-align:left;
+}
+
+.pathwayBenchmarkTable th:last-child,
+.pathwayBenchmarkTable td:last-child{
+  text-align:right;
+}
+
+.pathwayBenchmarkTable th:first-child,
+.pathwayBenchmarkTable td:first-child{
+  width:48px;
+  white-space:nowrap;
+}
+
+.pathwayBenchmarkTable tr:last-child td{
+  border-bottom:0;
+}
+
+.pathwayBenchmarkSource{
+  display:block;
+  margin-top:2px;
+  font-size:10px;
+  color:var(--accent);
+}
+
 .detailActions{
   display:flex;
   justify-content:flex-end;
@@ -1214,6 +1175,10 @@ header, main{ position:relative; z-index:1; }
 @media (max-width: 900px){
   .lcfsDetailGrid{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pathwayBenchmarkGrid{
+    grid-template-columns:1fr;
   }
 }
 
@@ -1531,6 +1496,23 @@ The credit applies to qualifying carbon capture projects located in the United S
 
 <!-- RIGHT column card: Scenario inputs -->
 <div class="card">
+  <p class="sectionTitle">Pathway Benchmark</p>
+  <div id="pathwayBenchmark" class="pathwayBenchmarkGrid">
+    <div class="pathwayBenchmarkCard">
+      <div class="pathwayBenchmarkTitle">Active Pathways</div>
+      <div id="benchmarkActiveRows"></div>
+    </div>
+    <div class="pathwayBenchmarkCard">
+      <div class="pathwayBenchmarkTitle">Market Average</div>
+      <div id="benchmarkAverageRows"></div>
+    </div>
+    <div class="pathwayBenchmarkCard">
+      <div class="pathwayBenchmarkTitle">Rank / Percentile</div>
+      <div id="benchmarkRankRows"></div>
+    </div>
+  </div>
+  <div class="hr"></div>
+
   <p class="sectionTitle">Scenario inputs</p>
 
   <p class="sectionTitle">Starting CI</p>
@@ -1999,6 +1981,21 @@ The credit applies to qualifying carbon capture projects located in the United S
     <div style="margin-bottom:6px;"><span class="mono">Oregon detail</span></div>
     <div id="orDetailRows"></div>
   </div>
+
+  <div id="waDetailSection" style="display:none; margin-top:14px;">
+    <div style="margin-bottom:6px;"><span class="mono">Washington detail</span></div>
+    <div id="waDetailRows"></div>
+  </div>
+
+  <div id="canadaDetailSection" style="display:none; margin-top:14px;">
+    <div style="margin-bottom:6px;"><span class="mono">Canada detail</span></div>
+    <div id="canadaDetailRows"></div>
+  </div>
+
+  <div id="bcDetailSection" style="display:none; margin-top:14px;">
+    <div style="margin-bottom:6px;"><span class="mono">British Columbia detail</span></div>
+    <div id="bcDetailRows"></div>
+  </div>
 </div>
 
 <div class="hr"></div>
@@ -2142,7 +2139,7 @@ The credit applies to qualifying carbon capture projects located in the United S
   const REGULATORY_JSON_URL = "./static_data/LCFS/lcfs_dropdown_v2.json";
   const DATA_URL = SEARCH_URL;
     console.log("✅ RUNNING CALC FILE:", window.location.href);
-    console.log("✅ BUILD_STAMP:", "%%BUILD_STAMP%%");
+    console.log("✅ BUILD_STAMP:", "2026-06-08 14:24:38");
     console.log("✅ SEARCH_URL:", SEARCH_URL);
   
 
@@ -2301,6 +2298,22 @@ function selectedStartingCoproductText(plant){
   if (!plant) return "";
 
   const start = startingCI(plant);
+  if (start.source === "wa_calibrated"){
+    const rows = asArray(plant?.wa_lcfs_ci_detail)
+      .filter(row => isActivePathway(row))
+      .map(row => {
+        const waCi = Number(row?.CI);
+        const feedstockClass = waFeedstockClass(row);
+        const adjustment = WA_CA_MEDIAN_ADJUSTMENTS[feedstockClass];
+        if (!Number.isFinite(waCi) || adjustment === undefined) return null;
+        return { row, value: waCi + adjustment };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.value - b.value);
+
+    return rows.length ? benchmarkCoproductLabel("WA", rows[0].row) : "";
+  }
+
   const rows =
     start.source === "or"
       ? (plant?.or_detail ?? plant?.lcfs_detail?.or_detail ?? [])
@@ -2860,6 +2873,80 @@ function bestOregonCi(p){
   return minCiFromDetailRows(p?.or_detail ?? p?.lcfs_detail?.or_detail);
 }
 
+const OR_CA_CORN_ILUC_CALIBRATION = 12.25;
+
+function oregonFeedstockClass(row){
+  const text = `${row?.feedstock || ""} ${row?.pathway_type || ""}`.toLowerCase();
+  if (text.includes("fiber") || text.includes("cellulosic")) return "fiber/cellulosic";
+  if (text.includes("sorghum")) return "sorghum";
+  if (text.includes("corn") || text.includes("starch")) return "corn starch";
+  return "";
+}
+
+function bestOregonPathway(p){
+  const rows = asArray(p?.or_detail ?? p?.lcfs_detail?.or_detail)
+    .filter(row => isActivePathway(row))
+    .map(row => {
+      const ci = Number(row?.ci_score);
+      if (!Number.isFinite(ci) || ci <= 0) return null;
+      return {
+        value: ci,
+        feedstockClass: oregonFeedstockClass(row),
+        feedstock: row?.feedstock || "Oregon pathway",
+        pathwayType: row?.pathway_type || "",
+        coproduct: row?.coproduct_type || "",
+        detailDate: row?.detail_date || ""
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.value - b.value);
+  return rows.length ? rows[0] : null;
+}
+
+const WA_CA_MEDIAN_ADJUSTMENTS = {
+  "corn starch": 0.19,
+  "fiber/cellulosic": 0.35,
+  "sorghum": 0.00
+};
+
+function waFeedstockClass(row){
+  const code = String(row?.["Fuel Pathway Code"] || "").toUpperCase();
+  const existing = String(row?.feedstock_class || "").trim().toLowerCase();
+  if (code.includes("WA012")) return "fiber/cellulosic";
+  if (code.includes("WA010")) return "sorghum";
+  if (code.includes("WA009")) return "corn starch";
+  if (existing) return existing;
+
+  const text = `${row?.["Fuel Name"] || ""} ${row?.["Pathway Description"] || ""}`.toLowerCase();
+  if (text.includes("fiber") || text.includes("cellulosic")) return "fiber/cellulosic";
+  if (text.includes("sorghum")) return "sorghum";
+  if (text.includes("corn")) return "corn starch";
+  return "";
+}
+
+function bestWashingtonCalibratedCi(p){
+  const rows = asArray(p?.wa_lcfs_ci_detail)
+    .filter(row => isActivePathway(row))
+    .map(row => {
+      const waCi = Number(row?.CI);
+      const feedstockClass = waFeedstockClass(row);
+      const adjustment = WA_CA_MEDIAN_ADJUSTMENTS[feedstockClass];
+      if (!Number.isFinite(waCi) || adjustment === undefined) return null;
+      return {
+        value: waCi + adjustment,
+        waCi,
+        feedstockClass,
+        adjustment,
+        code: row?.["Fuel Pathway Code"] || "",
+        fuelName: row?.["Fuel Name"] || "Washington pathway"
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.value - b.value);
+
+  return rows.length ? rows[0] : null;
+}
+
 function hasCaliforniaCi(p){
   return bestCaliforniaCi(p) !== null;
 }
@@ -2882,16 +2969,40 @@ function startingCI(p){
     };
   }
 
-  const orCi = bestOregonCi(p);
-  if (orCi !== null){
+  const waCalibrated = bestWashingtonCalibratedCi(p);
+  if (waCalibrated !== null){
+    return {
+      mode: "lcfs",
+      source: "wa_calibrated",
+      ci_source: "WA_CALIBRATED",
+      value: waCalibrated.value,
+      note: "Washington-derived CA proxy.",
+      enhancements: [],
+      ilucDefaultChecked: true,
+      ilucDefaultValue: 19.9,
+      waCalibrated
+    };
+  }
+
+  const orPathway = bestOregonPathway(p);
+  if (orPathway !== null){
+    const isCorn = orPathway.feedstockClass === "corn starch";
+    const adjustment = isCorn ? OR_CA_CORN_ILUC_CALIBRATION : 0;
     return {
       mode: "lcfs",
       source: "or",
-      value: orCi,
-      note: "Using Oregon CI fallback (Portland freight anchor).",
+      ci_source: isCorn ? "OR_CORN_ILUC_CALIBRATED" : "OR",
+      value: orPathway.value + adjustment,
+      note: isCorn ? "Oregon-to-California corn ILUC calibration." : "Using Oregon CI fallback.",
       enhancements: [],
-      ilucDefaultChecked: false,
-      ilucDefaultValue: 0
+      ilucDefaultChecked: isCorn,
+      ilucDefaultValue: isCorn ? 19.9 : 0,
+      orCalibrated: {
+        ...orPathway,
+        orCi: orPathway.value,
+        adjustment,
+        calibrationLabel: isCorn ? "Oregon-to-California corn ILUC calibration" : "Oregon CI"
+      }
     };
   }
 
@@ -3100,28 +3211,91 @@ function renderProgramSummary(){
   panel.style.display = (hasCA || hasOR) ? "block" : "none";
 }
 
+function asArray(value){
+  if (Array.isArray(value)) return value;
+  return value ? [value] : [];
+}
+
+function displayValue(value){
+  if (value === null || value === undefined || value === "") return "-";
+  return String(value);
+}
+
+function displayCi(value){
+  const n = Number(value);
+  return Number.isFinite(n) ? n.toFixed(2) : displayValue(value);
+}
+
+function escapeHtml(value){
+  return displayValue(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function statusRank(row){
+  const status = String(row?.status ?? row?.Status ?? row?.Active ?? "").toLowerCase();
+  if (status.includes("active") || status === "1" || status === "true") return 0;
+  if (status.includes("pending")) return 1;
+  if (status.includes("expired") || status === "0" || status === "false") return 2;
+  return 3;
+}
+
+function sortedDetailRows(rows){
+  return [...rows].sort((a, b) => statusRank(a) - statusRank(b));
+}
+
+function waCityState(row){
+  const cityRaw = displayValue(row?.["City"]);
+  const stateRaw = displayValue(row?.["State"]);
+  const cityLooksLikeState = /^[A-Z]{2}$/.test(cityRaw);
+  const stateLooksLikeCity = stateRaw.length > 2;
+  return {
+    city: cityLooksLikeState && stateLooksLikeCity ? stateRaw : cityRaw,
+    state: cityLooksLikeState && stateLooksLikeCity ? cityRaw : stateRaw
+  };
+}
+
 function renderLcfsDetail(){
   const panel = document.getElementById("lcfsDetailPanel");
 
   const caSection = document.getElementById("caDetailSection");
   const orSection = document.getElementById("orDetailSection");
+  const waSection = document.getElementById("waDetailSection");
+  const canadaSection = document.getElementById("canadaDetailSection");
+  const bcSection = document.getElementById("bcDetailSection");
 
   const caRowsEl = document.getElementById("caDetailRows");
   const orRowsEl = document.getElementById("orDetailRows");
+  const waRowsEl = document.getElementById("waDetailRows");
+  const canadaRowsEl = document.getElementById("canadaDetailRows");
+  const bcRowsEl = document.getElementById("bcDetailRows");
 
-  if (!panel || !caSection || !orSection || !caRowsEl || !orRowsEl) return;
+  if (!panel || !caSection || !orSection || !waSection || !canadaSection || !bcSection ||
+      !caRowsEl || !orRowsEl || !waRowsEl || !canadaRowsEl || !bcRowsEl) return;
+
+  const clearSection = (section, rowsEl) => {
+    section.style.display = "none";
+    rowsEl.innerHTML = "";
+  };
 
   if (!selectedPlant){
     panel.style.display = "none";
-    caSection.style.display = "none";
-    orSection.style.display = "none";
-    caRowsEl.innerHTML = "";
-    orRowsEl.innerHTML = "";
+    clearSection(caSection, caRowsEl);
+    clearSection(orSection, orRowsEl);
+    clearSection(waSection, waRowsEl);
+    clearSection(canadaSection, canadaRowsEl);
+    clearSection(bcSection, bcRowsEl);
     return;
   }
 
   const caRows = Array.isArray(selectedPlant.ca_detail) ? selectedPlant.ca_detail : [];
   const orRows = Array.isArray(selectedPlant.or_detail) ? selectedPlant.or_detail : [];
+  const waRows = asArray(selectedPlant.wa_lcfs_ci_detail);
+  const canadaRows = asArray(selectedPlant.canadian_fed_ci_detail);
+  const bcRows = asArray(selectedPlant.bc_lcfs_ci_detail);
 
   const buildCards = (rows) => {
     if (!rows.length) return "";
@@ -3149,15 +3323,81 @@ function renderLcfsDetail(){
     );
   };
 
+  const buildWaCards = (rows) => {
+    if (!rows.length) return "";
+
+    return (
+      `<div class="lcfsDetailGrid">` +
+      sortedDetailRows(rows).map(d => {
+        const loc = waCityState(d);
+        return `
+          <div class="lcfsDetailCard">
+            <div><span class="mono">Status:</span> ${escapeHtml(d?.status ?? d?.Active)}</div>
+            <div><span class="mono">Fuel:</span> ${escapeHtml(d?.["Fuel Name"])}</div>
+            <div><span class="mono">Feedstock:</span> ${escapeHtml(d?.feedstock_class)}</div>
+            <div><span class="mono">CI score:</span> ${escapeHtml(displayCi(d?.CI))}</div>
+            <div><span class="mono">Code:</span> ${escapeHtml(d?.["Fuel Pathway Code"])}</div>
+            <div><span class="mono">Effective:</span> ${escapeHtml(d?.["Eff. Start Qtr/Yr"])} to ${escapeHtml(d?.["Eff. End Qtr/Yr"])}</div>
+            <div><span class="mono">Location:</span> ${escapeHtml(loc.city)}, ${escapeHtml(loc.state)}</div>
+          </div>
+        `;
+      }).join("") +
+      `</div>`
+    );
+  };
+
+  const buildCanadaCards = (rows) => {
+    if (!rows.length) return "";
+
+    return (
+      `<div class="lcfsDetailGrid">` +
+      sortedDetailRows(rows).map(d => `
+        <div class="lcfsDetailCard">
+          <div><span class="mono">Status:</span> ${escapeHtml(d?.status)}</div>
+          <div><span class="mono">Facility:</span> ${escapeHtml(d?.facility_name)}</div>
+          <div><span class="mono">Fuel:</span> ${escapeHtml(d?.fuel_type)}</div>
+          <div><span class="mono">Grain source:</span> ${escapeHtml(d?.grain_source)}</div>
+          <div><span class="mono">Feedstock origin:</span> ${escapeHtml(d?.feedstock_origin)}</div>
+          <div><span class="mono">CI score:</span> ${escapeHtml(displayCi(d?.approved_ci_gco2e_mj))}</div>
+          <div><span class="mono">Approval date:</span> ${escapeHtml(d?.approval_date)}</div>
+        </div>
+      `).join("") +
+      `</div>`
+    );
+  };
+
+  const buildBcCards = (rows) => {
+    if (!rows.length) return "";
+
+    return (
+      `<div class="lcfsDetailGrid">` +
+      sortedDetailRows(rows).map(d => `
+        <div class="lcfsDetailCard">
+          <div><span class="mono">Status:</span> ${escapeHtml(d?.status)}</div>
+          <div><span class="mono">Fuel code:</span> ${escapeHtml(d?.fuel_code)}</div>
+          <div><span class="mono">Pathway:</span> ${escapeHtml(d?.pathway_base)}.${escapeHtml(d?.pathway_version)}</div>
+          <div><span class="mono">CI score:</span> ${escapeHtml(displayCi(d?.carbon_intensity_gCO2e_per_MJ))}</div>
+          <div><span class="mono">Effective:</span> ${escapeHtml(d?.effective_date)} to ${escapeHtml(d?.expiry_date)}</div>
+          <div><span class="mono">Company:</span> ${escapeHtml(d?.company)}</div>
+        </div>
+      `).join("") +
+      `</div>`
+    );
+  };
+
   const hasCA = caRows.length > 0;
   const hasOR = orRows.length > 0;
+  const hasWA = waRows.length > 0;
+  const hasCanada = canadaRows.length > 0;
+  const hasBC = bcRows.length > 0;
 
-  if (!hasCA && !hasOR){
+  if (!hasCA && !hasOR && !hasWA && !hasCanada && !hasBC){
     panel.style.display = "none";
-    caSection.style.display = "none";
-    orSection.style.display = "none";
-    caRowsEl.innerHTML = "";
-    orRowsEl.innerHTML = "";
+    clearSection(caSection, caRowsEl);
+    clearSection(orSection, orRowsEl);
+    clearSection(waSection, waRowsEl);
+    clearSection(canadaSection, canadaRowsEl);
+    clearSection(bcSection, bcRowsEl);
     return;
   }
 
@@ -3167,16 +3407,35 @@ function renderLcfsDetail(){
     caSection.style.display = "block";
     caRowsEl.innerHTML = buildCards(caRows);
   } else {
-    caSection.style.display = "none";
-    caRowsEl.innerHTML = "";
+    clearSection(caSection, caRowsEl);
   }
 
   if (hasOR){
     orSection.style.display = "block";
     orRowsEl.innerHTML = buildCards(orRows);
   } else {
-    orSection.style.display = "none";
-    orRowsEl.innerHTML = "";
+    clearSection(orSection, orRowsEl);
+  }
+
+  if (hasWA){
+    waSection.style.display = "block";
+    waRowsEl.innerHTML = buildWaCards(waRows);
+  } else {
+    clearSection(waSection, waRowsEl);
+  }
+
+  if (hasCanada){
+    canadaSection.style.display = "block";
+    canadaRowsEl.innerHTML = buildCanadaCards(canadaRows);
+  } else {
+    clearSection(canadaSection, canadaRowsEl);
+  }
+
+  if (hasBC){
+    bcSection.style.display = "block";
+    bcRowsEl.innerHTML = buildBcCards(bcRows);
+  } else {
+    clearSection(bcSection, bcRowsEl);
   }
 }
 
@@ -3308,20 +3567,47 @@ function renderStartingPanel(){
           <div style="margin-top:4px; color:var(--muted);">• <span class="mono">Freight hub</span>: selected California hub</div>`
         : `<div class="muted">California LCFS CI selected.</div>`;
     } else if (s.source === "or"){
-      const orRows = Array.isArray(selectedPlant?.or_detail) ? selectedPlant.or_detail : [];
-      const shown = orRows
-        .map(r => [`${r.feedstock || "Feedstock"}`, Number(r.ci_score)])
-        .filter(([_, v]) => Number.isFinite(v));
+      const or = s.orCalibrated || {};
+      const rawOrCi = Number(or.orCi);
+      const adjustment = Number(or.adjustment || 0);
+      const calibrated = Number(s.value);
+      const isCornBridge = s.ci_source === "OR_CORN_ILUC_CALIBRATED";
 
-      boxEl.innerHTML = shown.length
-        ? `<div class="threeColGrid">` +
-            shown.map(([k,v]) =>
-              `<div class="gridItem">• <span class="mono">${k}</span>: ${fmt(v,2)}</div>`
-            ).join("") +
-          `</div>
-          <div style="margin-top:8px; color:var(--muted);">• <span class="mono">Source</span>: Oregon fallback</div>
-          <div style="margin-top:4px; color:var(--muted);">• <span class="mono">Freight hub</span>: Portland</div>`
-        : `<div class="muted">Oregon fallback CI selected. Freight anchor = Portland.</div>`;
+      boxEl.innerHTML = `
+        <div class="threeColGrid">
+          <div class="gridItem">&bull; <span class="mono">Source</span>: Oregon CI</div>
+          <div class="gridItem">&bull; <span class="mono">CI source</span>: ${escapeHtml(s.ci_source || "OR")}</div>
+          <div class="gridItem">&bull; <span class="mono">Feed</span>: ${escapeHtml(or.feedstockClass || or.feedstock || "Oregon pathway")}</div>
+          <div class="gridItem">&bull; <span class="mono">OR CI</span>: ${Number.isFinite(rawOrCi) ? fmt(rawOrCi,2) : "&mdash;"}</div>
+          <div class="gridItem">&bull; <span class="mono">Adjustment</span>: ${Number.isFinite(adjustment) ? `+${fmt(adjustment,2)}` : "&mdash;"}</div>
+          <div class="gridItem">&bull; <span class="mono">Starting CI</span>: ${Number.isFinite(calibrated) ? fmt(calibrated,2) : "&mdash;"}</div>
+        </div>
+        <div style="margin-top:8px; color:var(--muted);">&bull; <span class="mono">${escapeHtml(or.calibrationLabel || "Oregon CI fallback")}</span></div>
+        ${
+          isCornBridge
+            ? `<div style="margin-top:4px; color:var(--muted);">&bull; Oregon corn pathways appear to include an approximately 7.8 CI ILUC factor, while California corn pathways use approximately 19.8 CI; the ~12 CI difference is applied to make Oregon corn comparable to California.</div>`
+            : `<div style="margin-top:4px; color:var(--muted);">&bull; California score not available; starting score is based on Oregon pathway data.</div>`
+        }
+      `;
+    } else if (s.source === "wa_calibrated"){
+      const wa = s.waCalibrated || {};
+      const feed = wa.feedstockClass || "Washington pathway";
+      const waCi = Number(wa.waCi);
+      const adjustment = Number(wa.adjustment);
+      const calibrated = Number(s.value);
+
+      boxEl.innerHTML = `
+        <div class="threeColGrid">
+          <div class="gridItem">â€¢ <span class="mono">Source</span>: Washington CI</div>
+          <div class="gridItem">â€¢ <span class="mono">CI source</span>: WA_CALIBRATED</div>
+          <div class="gridItem">â€¢ <span class="mono">Feed</span>: ${escapeHtml(feed)}</div>
+          <div class="gridItem">â€¢ <span class="mono">WA CI</span>: ${Number.isFinite(waCi) ? fmt(waCi,2) : "â€”"}</div>
+          <div class="gridItem">â€¢ <span class="mono">Median spread</span>: ${Number.isFinite(adjustment) ? `+${fmt(adjustment,2)}` : "â€”"}</div>
+          <div class="gridItem">â€¢ <span class="mono">Starting CI</span>: ${Number.isFinite(calibrated) ? fmt(calibrated,2) : "â€”"}</div>
+        </div>
+        <div style="margin-top:8px; color:var(--muted);">â€¢ California score not available; starting score is based on Washington pathway and adjusted using matched WA-to-CA pathway spreads.</div>
+        <div style="margin-top:4px; color:var(--muted);">â€¢ No separate Port of Tacoma freight correction is applied.</div>
+      `;
     } else {
       boxEl.innerHTML = `<div class="muted">LCFS CI selected.</div>`;
     }
@@ -3435,6 +3721,10 @@ function normalizePlantRow(p, i=0){
     ci_by_feedstock: p?.ci_by_feedstock ?? ci.ci_by_feedstock ?? {},
     ca_detail: p?.ca_detail ?? detail.ca_detail ?? [],
     or_detail: p?.or_detail ?? detail.or_detail ?? [],
+    wa_lcfs_ci_detail: p?.wa_lcfs_ci_detail ?? detail.wa_lcfs_ci_detail ?? [],
+    canadian_fed_ci: p?.canadian_fed_ci ?? detail.canadian_fed_ci ?? null,
+    canadian_fed_ci_detail: p?.canadian_fed_ci_detail ?? detail.canadian_fed_ci_detail ?? null,
+    bc_lcfs_ci_detail: p?.bc_lcfs_ci_detail ?? detail.bc_lcfs_ci_detail ?? [],
     high_pro: p?.high_pro ?? tech.high_pro ?? null,
     chp: p?.chp ?? tech.chp ?? null,
     white_fox: p?.white_fox ?? tech.white_fox ?? null,
@@ -3696,10 +3986,10 @@ function syncFreightUI(){
   if (!cb || !mult || !fac || !hub) return;
 
   // Determine LCFS vs proxy from Starting CI logic
-  const mode = selectedPlant ? (startingCI(selectedPlant).mode || "proxy") : "proxy";
-  const lcfsMode = (mode === "lcfs");
+  const start = selectedPlant ? startingCI(selectedPlant) : null;
+  const freightEligible = !!start && start.mode === "lcfs" && start.ci_source !== "WA_CALIBRATED";
 
-  if (!lcfsMode){
+  if (!freightEligible){
     // Proxy mode: force freight OFF and lock inputs
     cb.checked = false;
     cb.disabled = true;
@@ -3727,6 +4017,7 @@ function syncFreightUI(){
   const plantDetailCache = new Map();
   let regulatoryLookupPromise = null;
   let plantSelectionSeq = 0;
+  let benchmarkUniverseIds = [];
 
 function plantId(p){
   return String(
@@ -3826,6 +4117,278 @@ async function fetchPlantDetail(id){
   const plant = normalizePlantRow(row, 0);
   plantDetailCache.set(key, plant);
   return plant;
+}
+
+let benchmarkPeerPromise = null;
+
+async function loadBenchmarkPeers(){
+  if (benchmarkPeerPromise) return benchmarkPeerPromise;
+
+  benchmarkPeerPromise = (async () => {
+    const ids = benchmarkUniverseIds.length
+      ? benchmarkUniverseIds
+      : [...new Set(allPlants.map(plantId).filter(Boolean))];
+    const peers = [];
+    const batchSize = 8;
+
+    for (let i = 0; i < ids.length; i += batchSize){
+      const batch = ids.slice(i, i + batchSize);
+      const rows = await Promise.all(batch.map(async (id) => {
+        try {
+          return await fetchPlantDetail(id);
+        } catch (e) {
+          console.warn("Benchmark peer fetch failed:", id, e);
+          return null;
+        }
+      }));
+      peers.push(...rows.filter(Boolean));
+    }
+
+    return peers;
+  })();
+
+  return benchmarkPeerPromise;
+}
+
+function isActivePathway(row){
+  const status = String(row?.status ?? row?.Status ?? "").trim().toLowerCase();
+  if (status) return status === "active";
+
+  const active = String(row?.Active ?? "").trim().toLowerCase();
+  if (active) return active === "1" || active === "true" || active === "active";
+
+  const expiry = row?.expiry_date ?? row?.["Eff. End Qtr/Yr"];
+  if (!expiry) return true;
+
+  const parsed = Date.parse(expiry);
+  return Number.isNaN(parsed) ? true : parsed >= Date.now();
+}
+
+function benchmarkFeedstockLabel(program, row){
+  if (program === "CA" || program === "OR"){
+    return firstNonEmpty(row?.feedstock, row?.pathway_type, row?.program);
+  }
+  if (program === "WA"){
+    return firstNonEmpty(row?.feedstock_class, row?.["Fuel Name"], row?.["Fuel Pathway Code"]);
+  }
+  if (program === "BC"){
+    return firstNonEmpty(row?.feedstock_class, row?.feedstock, row?.pathway_base ? `Pathway ${row.pathway_base}` : "");
+  }
+  if (program === "Canada"){
+    return firstNonEmpty(row?.grain_source, row?.fuel_type, "Canada");
+  }
+  return "Pathway";
+}
+
+function benchmarkFeedstockSource(program, row){
+  return firstNonEmpty(row?.feedstock_class_source, row?.feedstock_source, row?.grain_source_source);
+}
+
+function benchmarkCoproductLabel(program, row){
+  if (program === "CA" || program === "OR"){
+    return firstNonEmpty(row?.coproduct_type, row?.co_product, row?.coproduct);
+  }
+  if (program === "WA"){
+    const desc = String(row?.["Pathway Description"] || "");
+    if (/\bWDGS\b|Wet DGS|Wet Distillers/i.test(desc)) return "WDGS";
+    if (/\bDDGS\b|Dry DGS|Dry Distillers/i.test(desc)) return "DDGS";
+    if (/Modified Wet/i.test(desc)) return "MWDGS";
+  }
+  return "";
+}
+
+function benchmarkCiValue(program, row){
+  const value =
+    program === "WA" ? row?.CI :
+    program === "BC" ? row?.carbon_intensity_gCO2e_per_MJ :
+    program === "Canada" ? row?.approved_ci_gco2e_mj :
+    row?.ci_score;
+
+  const n = Number(value);
+  return Number.isFinite(n) ? n : null;
+}
+
+function benchmarkDateValue(program, row){
+  const value =
+    program === "WA" ? row?.["Eff. Start Qtr/Yr"] :
+    program === "BC" ? row?.effective_date :
+    program === "Canada" ? row?.approval_date :
+    row?.detail_date;
+
+  const parsed = Date.parse(value);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function addBenchmarkEntry(entries, plant, program, row){
+  if (!isActivePathway(row)) return;
+
+  const ci = benchmarkCiValue(program, row);
+  if (ci === null) return;
+
+  const feedstock = benchmarkFeedstockLabel(program, row);
+  if (!feedstock || feedstock === "-") return;
+
+  entries.push({
+    plant_id: plantId(plant),
+    program,
+    feedstock,
+    feedstock_key: String(feedstock).trim().toLowerCase(),
+    coproduct: benchmarkCoproductLabel(program, row),
+    coproduct_key: String(benchmarkCoproductLabel(program, row)).trim().toLowerCase(),
+    feedstock_source: benchmarkFeedstockSource(program, row),
+    date_value: benchmarkDateValue(program, row),
+    ci
+  });
+}
+
+function benchmarkEntriesForPlant(plant){
+  const entries = [];
+  if (!plant) return entries;
+
+  asArray(plant.ca_detail).forEach(row => addBenchmarkEntry(entries, plant, "CA", row));
+  asArray(plant.or_detail).forEach(row => addBenchmarkEntry(entries, plant, "OR", row));
+  asArray(plant.wa_lcfs_ci_detail).forEach(row => addBenchmarkEntry(entries, plant, "WA", row));
+  asArray(plant.bc_lcfs_ci_detail).forEach(row => addBenchmarkEntry(entries, plant, "BC", row));
+  asArray(plant.canadian_fed_ci_detail).forEach(row => addBenchmarkEntry(entries, plant, "Canada", row));
+
+  return entries;
+}
+
+function dedupeBenchmarkEntries(entries){
+  const byKey = new Map();
+
+  entries.forEach(entry => {
+    const key = `${entry.plant_id}||${entry.program}||${entry.feedstock_key}||${entry.coproduct_key}`;
+    const existing = byKey.get(key);
+    if (
+      !existing ||
+      entry.date_value > existing.date_value ||
+      (entry.date_value === existing.date_value && entry.ci < existing.ci)
+    ){
+      byKey.set(key, entry);
+    }
+  });
+
+  return [...byKey.values()];
+}
+
+function groupKey(entry){
+  return `${entry.program}||${entry.feedstock_key}||${entry.coproduct_key}`;
+}
+
+function avg(values){
+  const nums = values.filter(Number.isFinite);
+  if (!nums.length) return null;
+  return nums.reduce((sum, value) => sum + value, 0) / nums.length;
+}
+
+function percentileFromRank(rank, count){
+  if (!Number.isFinite(rank) || !Number.isFinite(count) || count <= 1) return null;
+  return (1 - ((rank - 1) / (count - 1))) * 100;
+}
+
+function benchmarkTable(headers, rows, emptyText="—"){
+  if (!rows.length) return `<div class="muted" style="font-size:12px;">${emptyText}</div>`;
+  return `
+    <table class="pathwayBenchmarkTable">
+      <thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead>
+      <tbody>${rows.join("")}</tbody>
+    </table>
+  `;
+}
+
+function setBenchmarkLoading(text){
+  ["benchmarkActiveRows", "benchmarkAverageRows", "benchmarkRankRows"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = `<div class="muted" style="font-size:12px;">${escapeHtml(text)}</div>`;
+  });
+}
+
+async function renderPathwayBenchmark(){
+  const activeEl = document.getElementById("benchmarkActiveRows");
+  const avgEl = document.getElementById("benchmarkAverageRows");
+  const rankEl = document.getElementById("benchmarkRankRows");
+  if (!activeEl || !avgEl || !rankEl) return;
+
+  if (!selectedPlant){
+    setBenchmarkLoading("—");
+    return;
+  }
+
+  const selectedEntries = benchmarkEntriesForPlant(selectedPlant);
+  const selectedActiveEntries = dedupeBenchmarkEntries(selectedEntries);
+  if (!selectedActiveEntries.length){
+    setBenchmarkLoading("—");
+    return;
+  }
+
+  activeEl.innerHTML = benchmarkTable(
+    ["System", "Feed", "Co-prod", "CI"],
+    selectedActiveEntries.map(entry => `
+      <tr>
+        <td>${escapeHtml(entry.program)}</td>
+        <td>${escapeHtml(entry.feedstock)}${entry.feedstock_source ? `<span class="pathwayBenchmarkSource">${escapeHtml(entry.feedstock_source)}</span>` : ""}</td>
+        <td>${entry.coproduct ? escapeHtml(entry.coproduct) : "—"}</td>
+        <td>${escapeHtml(displayCi(entry.ci))}</td>
+      </tr>
+    `)
+  );
+  avgEl.innerHTML = `<div class="muted" style="font-size:12px;">Loading peers…</div>`;
+  rankEl.innerHTML = `<div class="muted" style="font-size:12px;">Loading peers…</div>`;
+
+  let peers = [];
+  try {
+    peers = await loadBenchmarkPeers();
+  } catch (e) {
+    console.error("Benchmark peer load failed:", e);
+    avgEl.innerHTML = `<div class="muted" style="font-size:12px;">Peer load failed</div>`;
+    rankEl.innerHTML = `<div class="muted" style="font-size:12px;">Peer load failed</div>`;
+    return;
+  }
+
+  const peerEntries = dedupeBenchmarkEntries(peers.flatMap(benchmarkEntriesForPlant));
+  const peerGroups = new Map();
+  peerEntries.forEach(entry => {
+    const key = groupKey(entry);
+    if (!peerGroups.has(key)) peerGroups.set(key, []);
+    peerGroups.get(key).push(entry);
+  });
+
+  avgEl.innerHTML = benchmarkTable(
+    ["System", "Feed", "Avg CI"],
+    selectedActiveEntries.map(entry => {
+      const group = peerGroups.get(groupKey(entry)) || [];
+      const mean = avg(group.map(row => row.ci));
+      return `
+        <tr>
+          <td>${escapeHtml(entry.program)}</td>
+          <td>${escapeHtml(entry.feedstock)}</td>
+          <td>${mean === null ? "—" : escapeHtml(displayCi(mean))}</td>
+        </tr>
+      `;
+    })
+  );
+
+  rankEl.innerHTML = benchmarkTable(
+    ["System", "Feed", "Rank"],
+    selectedActiveEntries.map(entry => {
+      const group = (peerGroups.get(groupKey(entry)) || [])
+        .filter(row => Number.isFinite(row.ci))
+        .sort((a, b) => a.ci - b.ci);
+      const rank = group.findIndex(row => row.plant_id === entry.plant_id && row.ci === entry.ci) + 1;
+      const pct = percentileFromRank(rank, group.length);
+      const label = rank > 0
+        ? `${rank}/${group.length}${pct === null ? "" : ` (${fmt(pct,0)}%)`}`
+        : "—";
+      return `
+        <tr>
+          <td>${escapeHtml(entry.program)}</td>
+          <td>${escapeHtml(entry.feedstock)}</td>
+          <td>${escapeHtml(label)}</td>
+        </tr>
+      `;
+    })
+  );
 }
 
   // ----------------------------
@@ -4006,6 +4569,9 @@ async function applyFilters(){
   }
 
   allPlants = rows.map((p, i) => normalizePlantRow(p, i));
+  if (!benchmarkUniverseIds.length){
+    benchmarkUniverseIds = [...new Set(allPlants.map(plantId).filter(Boolean))];
+  }
   filteredPlants = [...allPlants].sort((a, b) => plantLabel(a).localeCompare(plantLabel(b)));
   await renderPlantSelect();
 }
@@ -4070,12 +4636,11 @@ async function applyFilters(){
     // ✅ Force freight default + sync AFTER selectedPlant is finalized
     const freightCb = document.getElementById("applyFreight");
     if (freightCb){
-      const mode = selectedPlant ? (startingCI(selectedPlant).mode || "proxy") : "proxy";
-      freightCb.checked = (mode === "lcfs");
+      const start = selectedPlant ? startingCI(selectedPlant) : null;
+      freightCb.checked = !!start && start.mode === "lcfs" && start.ci_source !== "WA_CALIBRATED";
     }
     syncFreightUI();
     syncElectricityBridgeUI();
-    syncDgsBridgeUI();
     
     renderHubs();
     renderStartingPanel();
@@ -4406,6 +4971,11 @@ function renderPlantDetails(){
       pill.style.color = "#b91c1c";
       pill.style.borderColor = "#b91c1c";
       pill.textContent = "OR LCFS CI: available";
+    } else if (s.mode === "lcfs" && s.source === "wa_calibrated") {
+      pill.className = "pill";
+      pill.style.color = "#38bdf8";
+      pill.style.borderColor = "#38bdf8";
+      pill.textContent = "Washington-derived CA proxy: available";
     } else {
       pill.className = "pill warn";
       pill.textContent = "LCFS CI: missing";
@@ -4413,23 +4983,28 @@ function renderPlantDetails(){
 
 badges.appendChild(pill);
 
-
-
-   let sourcePillText = "";
-if (s.mode === "lcfs" && s.source === "ca") {
-  sourcePillText = "Source: California LCFS";
-} else if (s.mode === "lcfs" && s.source === "or") {
-  sourcePillText = "Source: Oregon CFP";
-} else {
-  const src = (selectedPlant.source_table || selectedPlant.score_source || "").trim();
-  if (src) sourcePillText = `Source: ${src}`;
-}
-
-if (sourcePillText){
+const addProgramPill = (label, color) => {
   const p = document.createElement("span");
   p.className = "pill";
-  p.textContent = sourcePillText;
+  p.style.color = color;
+  p.style.borderColor = color;
+  p.textContent = `${label}: available`;
   badges.appendChild(p);
+};
+
+const hasActiveProgramRows = (rows) =>
+  asArray(rows).some(row => isActivePathway(row));
+
+if (hasActiveProgramRows(selectedPlant.wa_lcfs_ci_detail)){
+  addProgramPill("WA LCFS CI", "#38bdf8");
+}
+
+if (hasActiveProgramRows(selectedPlant.canadian_fed_ci_detail)){
+  addProgramPill("Canada Federal CI", "#22c55e");
+}
+
+if (hasActiveProgramRows(selectedPlant.bc_lcfs_ci_detail)){
+  addProgramPill("BC LCFS CI", "#a78bfa");
 }
 
   // --- Enhanced Technologies line (plant-level display) ---
@@ -4996,7 +5571,7 @@ function renderFactorLevelsChart(r){
 
   if (!Number.isFinite(factor)){
     marker.classList.add("isHidden");
-    if (label) label.textContent = "Plant factor: â€”";
+    if (label) label.textContent = "Plant factor: —";
     return;
   }
 
@@ -5015,7 +5590,7 @@ function renderFactorLevelsChart(r){
   marker.classList.remove("isHidden");
 
   if (label){
-    const rateText = Number.isFinite(rate) ? `$${fmt(rate, 5)}/gal` : "â€”";
+    const rateText = Number.isFinite(rate) ? `$${fmt(rate, 5)}/gal` : "—";
     label.textContent = `Plant factor: ${fmt(factor, 1)} | Rate: ${rateText}`;
   }
 }
@@ -5349,8 +5924,8 @@ function wireEvents(){
     // Freight: auto-on for LCFS plants, forced off for proxy plants
     const freightCb = document.getElementById("applyFreight");
     if (freightCb){
-      const mode = selectedPlant ? (startingCI(selectedPlant).mode || "proxy") : "proxy";
-      freightCb.checked = (mode === "lcfs");
+      const start = selectedPlant ? startingCI(selectedPlant) : null;
+      freightCb.checked = !!start && start.mode === "lcfs" && start.ci_source !== "WA_CALIBRATED";
     }
     syncFreightUI();
     syncElectricityBridgeUI();
@@ -5368,6 +5943,7 @@ async function handlePlantSelectChange(){
   if (!chosenId){
     selectedPlant = null;
     syncDgsBridgeUI();
+    renderPathwayBenchmark().catch(e => console.error("BENCHMARK RENDER FAILED:", e));
     renderPlantDetails();
     renderOutputs();
     return;
@@ -5378,6 +5954,7 @@ async function handlePlantSelectChange(){
   selectedPlant = summaryPlant;
   logSelectedPlantRegulatory(selectedPlant);
   syncDgsBridgeUI();
+  renderPathwayBenchmark().catch(e => console.error("BENCHMARK RENDER FAILED:", e));
   renderPlantDetails();
   renderOutputs();
 
@@ -5407,11 +5984,12 @@ async function handlePlantSelectChange(){
   renderCkfChart();
   renderProgramSummary();
   renderLcfsDetail();
+  renderPathwayBenchmark().catch(e => console.error("BENCHMARK RENDER FAILED:", e));
 
   const freightCb = document.getElementById("applyFreight");
   if (freightCb){
-    const mode = selectedPlant ? (startingCI(selectedPlant).mode || "proxy") : "proxy";
-    freightCb.checked = (mode === "lcfs");
+    const start = selectedPlant ? startingCI(selectedPlant) : null;
+    freightCb.checked = !!start && start.mode === "lcfs" && start.ci_source !== "WA_CALIBRATED";
   }
   syncFreightUI();
   syncElectricityBridgeUI();
@@ -5631,6 +6209,10 @@ allPlants = rows.map((p, i) => {
     // ---- lcfs_detail ----
     ca_detail: p.ca_detail ?? detail.ca_detail ?? [],
     or_detail: p.or_detail ?? detail.or_detail ?? [],
+    wa_lcfs_ci_detail: p.wa_lcfs_ci_detail ?? detail.wa_lcfs_ci_detail ?? [],
+    canadian_fed_ci: p.canadian_fed_ci ?? detail.canadian_fed_ci ?? null,
+    canadian_fed_ci_detail: p.canadian_fed_ci_detail ?? detail.canadian_fed_ci_detail ?? null,
+    bc_lcfs_ci_detail: p.bc_lcfs_ci_detail ?? detail.bc_lcfs_ci_detail ?? [],
 
     // ---- tech_flags ----
     high_pro: p.high_pro ?? tech.high_pro ?? null,
@@ -5733,8 +6315,11 @@ allPlants = rows.map((p, i) => {
 
   return out;
 });
-
-
+if (!benchmarkUniverseIds.length){
+  benchmarkUniverseIds = [...new Set(allPlants.map(plantId).filter(Boolean))];
+}
+  
+  
     // ✅ Diagnostics MUST be outside the map
     console.log("Loaded rows:", allPlants.length);
     console.log("Sample keys:", allPlants[0] ? Object.keys(allPlants[0]) : "(none)");
@@ -5771,101 +6356,3 @@ allPlants = rows.map((p, i) => {
 </script>
 </body>
 </html>
-"""
-
-# ----------------------------
-# SAVE TO REPO + OPEN IN BROWSER
-# ----------------------------
-import webbrowser
-from urllib.parse import quote
-
-
-def main():
-    # 1) Write HTML to docs/
-    
-    print("\n================ DEBUG PATH CHECK ================")
-    print("REPO_ROOT      :", REPO_ROOT)
-    print("DATA_JSON_NAME :", DATA_JSON_NAME)
-    print("OUT_HTML       :", OUT_HTML)
-    
-    expected_json = REPO_ROOT / "docs" / "static_data" / "LCFS" / DATA_JSON_NAME
-    print("EXPECTED_JSON  :", expected_json)
-    print("JSON_EXISTS    :", expected_json.exists())
-    
-    if expected_json.exists():
-        print("JSON_SIZE      :", expected_json.stat().st_size, "bytes")
-    else:
-        print("JSON_SIZE      : MISSING")
-    print("=================================================\n")
-    
-    
-    
-    
-    
-    
-    OUT_HTML.parent.mkdir(parents=True, exist_ok=True)
-    html_out = HTML.replace("%%BUILD_STAMP%%", BUILD_STAMP)
-    html_out = html_out.replace("%%DATA_JSON_NAME%%", DATA_JSON_NAME)
-    OUT_HTML.write_text(html_out, encoding="utf-8")
-    print(f"OK Wrote HTML: {OUT_HTML}")
-
-    # 2) (Optional) delete stale *root* copy IF it exists and is not the same file
-    stale_root = (REPO_ROOT / "lcfs_45z_calculator.html")
-    if stale_root.exists() and stale_root.resolve() != OUT_HTML.resolve():
-        try:
-            stale_root.unlink()
-            print(f"OK Deleted stale root copy: {stale_root}")
-        except Exception as e:
-            print(f"WARNING Could not delete stale root copy: {stale_root} ({e})")
-
-    # 3) Open the correct URL
-    # This script serves from the docs folder, so the browser URL is just the HTML filename.
-    url = f"http://127.0.0.1:8011/{quote(OUT_HTML.name)}"
-
-    print("\nStart a local server from DOCS folder in another terminal with:")
-    print(f'   cd "{OUT_HTML.parent}"')
-    print("   python -m http.server 8011 --bind 127.0.0.1")
-    print("\nThen open:")
-    print(f"   {url}\n")
-
-    # The launcher batch file starts the server and opens this URL.
-
-def ensure_runtime_assets():
-    """
-    Ensures the logo exists in REPO_ROOT/docs/static_data/...
-    Does NOT overwrite the JSON file, because the exporter already built it.
-    """
-    import shutil
-
-    repo_docs = REPO_ROOT / "docs"
-    repo_static = repo_docs / "static_data"
-
-    # JSON should already exist in the repo's docs/static_data/LCFS folder
-    dst_json = repo_static / "LCFS" / DATA_JSON_NAME
-
-    if dst_json.exists():
-        print(f"OK Using repo JSON as-is: {dst_json}")
-    else:
-        print(f"ERROR JSON not found in repo: {dst_json}")
-        print("   Build/export the JSON first before running the calculator builder.")
-
-    # Copy logo only
-    onedrive_root = Path(r"C:\Users\ehakm\OneDrive\Documents\Python Code\Ethanol db")
-    src_logo = onedrive_root / "docs" / "static_data" / "Picture Files" / "Hakmiller-02.PNG"
-    dst_logo = repo_static / "Picture Files" / "Hakmiller-02.PNG"
-
-    dst_logo.parent.mkdir(parents=True, exist_ok=True)
-    if src_logo.exists():
-        if (not dst_logo.exists()) or (src_logo.stat().st_mtime > dst_logo.stat().st_mtime):
-            shutil.copy2(src_logo, dst_logo)
-            print(f"OK Synced logo: {dst_logo}")
-    else:
-        print(f"WARNING Missing source logo (won't copy): {src_logo}")
-
-
-
-
-if __name__ == "__main__":
-    ensure_runtime_assets()
-    main()
-  

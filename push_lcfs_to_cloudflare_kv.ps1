@@ -10,6 +10,7 @@ $PostExportScripts = @(
     "$RepoRoot\update_lcfs_json_canadian_fed_ci.py",
     "$RepoRoot\update_lcfs_json_bc_lcfs_ci.py",
     "$RepoRoot\update_lcfs_json_wa_lcfs_ci.py",
+    "$RepoRoot\update_lcfs_json_regulatory_pathways.py",
     "$RepoRoot\update_lcfs_json_operating_permits.py",
     "$RepoRoot\build_wa_ca_calibration.py",
     "$RepoRoot\build_or_ca_calibration.py"
@@ -18,6 +19,7 @@ $PostExportScripts = @(
 Write-Host "Running LCFS dropdown export..."
 & $CondaExe run --no-capture-output -n ethanolq python $ExportScript
 
+$env:LCFS_JSON_PATH = $JsonPath
 foreach ($script in $PostExportScripts) {
     if (!(Test-Path -LiteralPath $script)) {
         throw "Post-export updater was not found: $script"

@@ -152,6 +152,21 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Alcohol Residues",
+        "Bioethanol",
+        "ISCC EU"
+      ]
     }
   },
   {
@@ -380,6 +395,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -535,6 +561,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": true,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -690,6 +727,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -882,6 +930,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -1110,6 +1169,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -1265,6 +1335,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -1420,6 +1501,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -1575,6 +1667,23 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Alcohol Residues",
+        "Bioethanol",
+        "Fusel Oil",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -1730,6 +1839,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -1885,6 +2005,24 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Alcohol Residues",
+        "Bioethanol",
+        "Distillation Slurry",
+        "Fusel Oil",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -2040,6 +2178,21 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "ISCC EU",
+        "Starch Slurry"
+      ]
     }
   },
   {
@@ -2195,6 +2348,27 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Biomethane",
+        "Corn",
+        "Corn Oil",
+        "Fusel oil",
+        "Grain Residues",
+        "Industrial Wastewater",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -2335,6 +2509,26 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Corn Oil",
+        "Dextrose Retentate",
+        "Grain Residues",
+        "Industrial Wastewater",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -2475,6 +2669,27 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Alcohol Residues",
+        "Bioethanol",
+        "Corn",
+        "Corn Oil",
+        "Dextrose Retentate",
+        "Dried distillers’ grains with solubles (DDGS)",
+        "Grain Residues",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -2630,6 +2845,23 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Grain Residues",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -2770,6 +3002,26 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Alcohol Residues",
+        "Bioethanol",
+        "Corn",
+        "Corn Oil",
+        "Dextrose Retentate",
+        "Grain Residues",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -2910,6 +3162,27 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "CGF",
+        "CGM",
+        "Corn",
+        "Dextrose Retentate",
+        "Flour/ meal",
+        "Grain Residues",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -3050,6 +3323,24 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Dextrose Retentate",
+        "Grain Residues",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -3480,6 +3771,25 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Biomethane",
+        "Corn",
+        "Corn Oil",
+        "ISCC EU",
+        "ISCC PLUS",
+        "Sorghum"
+      ]
     }
   },
   {
@@ -3744,6 +4054,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -3899,6 +4220,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -4054,6 +4386,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -4209,6 +4552,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -4364,6 +4718,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -4519,6 +4884,24 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Alcohol Residues",
+        "Bioethanol",
+        "Corn",
+        "ISCC EU",
+        "ISCC PLUS",
+        "Mechanically processed vegetable oil"
+      ]
     }
   },
   {
@@ -4674,6 +5057,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": true,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -4993,6 +5387,24 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": true,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Corn Oil",
+        "ISCC EU",
+        "ISCC PLUS",
+        "Sorghum"
+      ]
     }
   },
   {
@@ -5197,6 +5609,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -5371,6 +5794,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -5563,6 +5997,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -5718,6 +6163,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -5873,6 +6329,24 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Corn Oil",
+        "Corn Residues",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -6028,6 +6502,21 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Dextrose Retentate",
+        "ISCC EU"
+      ]
     }
   },
   {
@@ -6168,6 +6657,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -6308,6 +6808,23 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Dextrose Retentate",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -6463,6 +6980,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -6618,6 +7146,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -6882,6 +7421,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -7110,6 +7660,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -7413,6 +7974,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -7568,6 +8140,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -7723,6 +8306,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -7878,6 +8472,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -8033,6 +8638,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -8408,6 +9024,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -8563,6 +9190,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -8829,6 +9467,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -8984,6 +9633,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -9139,6 +9799,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -9386,6 +10057,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -9541,6 +10223,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -9769,6 +10462,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -9924,6 +10628,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -10079,6 +10794,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -10234,6 +10960,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -10559,6 +11296,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": true,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -10714,6 +11462,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -10990,6 +11749,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -11145,6 +11915,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -11285,6 +12066,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -11425,6 +12217,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -11689,6 +12492,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -11881,6 +12695,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -12109,6 +12934,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -12445,6 +13281,21 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -12600,6 +13451,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -12755,6 +13617,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -12910,6 +13783,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -13065,6 +13949,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -13257,6 +14152,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": true,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -13412,6 +14318,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": true,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -13604,6 +14521,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -13832,6 +14760,21 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -13987,6 +14930,21 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -14142,6 +15100,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -14370,6 +15339,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -14668,6 +15648,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -14823,6 +15814,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -15051,6 +16053,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -15315,6 +16328,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -15579,6 +16603,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -15843,6 +16878,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -16071,6 +17117,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -16344,6 +17401,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -16499,6 +17567,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -16654,6 +17733,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -16919,6 +18009,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -17219,6 +18320,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -17485,6 +18597,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -17824,6 +18947,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -17979,6 +19113,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -18207,6 +19352,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -18509,6 +19665,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -18773,6 +19940,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -18928,6 +20106,24 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Alcohol Residues",
+        "Bioethanol",
+        "Corn",
+        "Corn Oil",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -19083,6 +20279,19 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -19238,6 +20447,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -19378,6 +20598,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -19629,6 +20860,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -19857,6 +21099,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -20049,6 +21302,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -20241,6 +21505,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -20469,6 +21744,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -20624,6 +21910,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -20787,6 +22084,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -20927,6 +22235,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -21082,6 +22401,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -21237,6 +22567,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -21392,6 +22733,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -21547,6 +22899,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -21739,6 +23102,22 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -22003,6 +23382,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -22305,6 +23695,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -22571,6 +23972,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -22904,6 +24316,23 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Grain Residues",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -23170,6 +24599,22 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -23436,6 +24881,20 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -23740,6 +25199,20 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -24006,6 +25479,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -24339,6 +25823,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -24672,6 +26167,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -24974,6 +26480,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -25276,6 +26793,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -25542,6 +27070,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -25806,6 +27345,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -26070,6 +27620,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -26403,6 +27964,23 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Grain Residues",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -26669,6 +28247,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -27002,6 +28591,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -27302,6 +28902,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -27635,6 +29246,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -27901,6 +29523,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -28167,6 +29800,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -28433,6 +30077,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -28699,6 +30354,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -28965,6 +30631,20 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -29267,6 +30947,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -29642,6 +31333,22 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -29908,6 +31615,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -30174,6 +31892,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -30440,6 +32169,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -30706,6 +32446,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -31008,6 +32759,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -31163,6 +32925,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -31502,6 +33275,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -31878,6 +33662,22 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "ISCC EU",
+        "ISCC PLUS",
+        "Starch Slurry"
+      ]
     }
   },
   {
@@ -32018,6 +33818,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -32173,6 +33984,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": true,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -32328,6 +34150,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": true,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -32590,6 +34423,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": true,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -32745,6 +34589,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -33175,6 +35030,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -33330,6 +35196,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -33485,6 +35362,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -33736,6 +35624,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -34001,6 +35900,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -34156,6 +36066,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -34422,6 +36343,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -34626,6 +36558,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -34766,6 +36709,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -34921,6 +36875,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -35076,6 +37041,22 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -35231,6 +37212,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -35590,6 +37582,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -35745,6 +37748,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -35900,6 +37914,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -36221,6 +38246,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -36376,6 +38412,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -36531,6 +38578,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -36795,6 +38853,23 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Corn Oil",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -37059,6 +39134,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -37323,6 +39409,21 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -37478,6 +39579,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -37633,6 +39745,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -37897,6 +40020,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -38161,6 +40295,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -38425,6 +40570,21 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC EU"
+      ]
     }
   },
   {
@@ -38580,6 +40740,23 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "Corn Oil",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -38844,6 +41021,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -38999,6 +41187,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -39154,6 +41353,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -39418,6 +41628,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -39558,6 +41779,19 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -39713,6 +41947,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -40000,6 +42245,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -40264,6 +42520,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -40603,6 +42870,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -40807,6 +43085,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": true,
+        "wa_lcfs": true,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -41073,6 +43362,22 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": true
+      },
+      "iscc_types": [
+        "Bioethanol",
+        "Corn",
+        "ISCC EU",
+        "ISCC PLUS"
+      ]
     }
   },
   {
@@ -41228,6 +43533,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -41458,6 +43774,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": true,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -41613,6 +43940,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -41753,6 +44091,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -41908,6 +44257,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -42048,6 +44408,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -42188,6 +44559,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -42328,6 +44710,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -42468,6 +44861,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -42608,6 +45012,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -42763,6 +45178,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": true,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   },
   {
@@ -42903,6 +45329,17 @@
         "fuel_summary": "derived_from_tech_flags_lcfs_detail_epa_ghg_derived",
         "dryer_analysis": "derived_from_ca_detail"
       }
+    },
+    "regulatory_pathways": {
+      "registered_programs": {
+        "ca_lcfs": false,
+        "or_lcfs": false,
+        "wa_lcfs": false,
+        "canadian_cfr": false,
+        "bc_carbon": false,
+        "iscc": false
+      },
+      "iscc_types": []
     }
   }
 ]
