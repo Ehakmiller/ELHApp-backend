@@ -1,9 +1,0 @@
-Iowa ethanol facilities still missing an air permit PDF/summary
-Excludes New Energy Blue because it is not running.
-
-EPM 3591: Corn LP - Goldfield, IA (80.0 MGY)
-EPM 3634: ICM Biofuels LLC - St Joseph, MO (50.0 MGY)
-EPM 3643: Louis Dreyfus Co - Grand Junction, IA (121.6 MGY)
-EPM 3696: Quad County Corn Processors Coop - Galva, IA (38.0 MGY)
-EPM 3705: Siouxland Energy Cooperative - Sioux Center, IA (65.0 MGY)
-EPM 3734: Verbio - Nevada, IA (60.0 MGY)
